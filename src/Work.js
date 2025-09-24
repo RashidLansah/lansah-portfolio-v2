@@ -9,9 +9,10 @@ function Work() {
       <nav className="navbar">
         <div className="nav-container">
           <Link to="/" className="nav-link">Lansah</Link>
+          <a href="#highlights" className="nav-link">Highlights</a>
           <Link to="/work" className="nav-link active">Work</Link>
-          <a href="https://linkedin.com" className="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="#contact" className="nav-link contact-btn">Get in touch</a>
+          <a href="https://linkedin.com/in/rashid-lansah" className="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://calendly.com/rashidlansahadam" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
         </div>
       </nav>
 

@@ -54,8 +54,10 @@ function Footer() {
         </div>
         <div className="resume-section">
           <a 
-            href="#resume" 
+            href="https://drive.google.com/file/d/1-n7H7VXxC8WuwY9bPyxqrpkCij9Cb2yo/view?usp=sharing" 
             className="resume-link"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Download Resume"
           >
             Download Resume

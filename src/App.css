@@ -1882,6 +1882,119 @@ html {
   background-color: #f8f8f8;
 }
 
+.receipt2recipe-container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.receipt2recipe-brand {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666666;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.recipe-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.receipt2recipe-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.receipt2recipe-description {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.receipt2recipe-interface {
+  margin-bottom: 40px;
+}
+
+.receipt2recipe-placeholder {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.receipt2recipe-app-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.receipt2recipe-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.innovation-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.waste-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.waste-metric .multiplier {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+.coming-soon-large {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f59e0b;
+  padding: 16px 32px;
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: 12px;
+  display: inline-block;
+}
+
 .recipe-badge {
   display: inline-flex;
   align-items: center;
