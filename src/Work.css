@@ -1,6 +1,6 @@
 .work-page {
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
 }
 
 .work-main {
@@ -593,6 +593,554 @@
 /* Bookify Card Styles */
 .bookify-card {
   background: linear-gradient(135deg, #f3e5d0 0%, #e8d5b7 100%);
+}
+
+/* BorlaPay Card Styles */
+.borlapay-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.borlapay-label {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.recycle-badge-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #22c55e;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.borlapay-preview {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.borlapay-app-image {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.borlapay-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.borlapay-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(34, 197, 94, 0.9);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.recycle-indicator {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+/* Novum Card Styles */
+.novum-card {
+  background-color: #ffffff;
+  border: none;
+}
+
+.novum-label {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.web-badge-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #6366f1;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.novum-preview {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.novum-app-image {
+  width: 120%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.novum-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.novum-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(99, 102, 241, 0.9);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.web-indicator {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+/* BusyBody Card Styles */
+.busybody-card {
+  background-color: #ffffff;
+  border: none;
+}
+
+.busybody-label {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.ecommerce-badge-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.busybody-preview {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.busybody-app-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Receipt2Recipe Card Styles */
+.receipt2recipe-card {
+  background-color: #ffffff;
+  border: none;
+}
+
+.receipt2recipe-label {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.recipe-badge-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.receipt2recipe-preview {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.receipt2recipe-app-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Article Link Styles */
+.article-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.article-link:hover {
+  background: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Article Card Text Colors */
+.work-card.article-card .work-card-title {
+  color: #000000 !important;
+}
+
+.work-card.article-card .work-card-description {
+  color: #000000 !important;
+}
+
+.work-card.article-card .work-card-label {
+  color: #000000 !important;
+}
+
+/* Article Card Height Consistency */
+.work-card.article-card {
+  height: 500px; /* Match other cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card.article-card .work-card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Remove character illustration */
+.work-card.article-card .character-illustration {
+  display: none;
+}
+
+.work-card.article-card .work-card-image {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* AI Tools Showcase Styles */
+.ai-tools-showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.ai-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 80px;
+  flex: 1;
+  max-width: 90px;
+}
+
+.tool-icon {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.ai-tool span {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Confidence-Based Feedback UI Card */
+.confidence-feedback-card {
+  background-color: #ffffff;
+  border: none;
+}
+
+.confidence-illustration {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.confidence-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.confidence-tag {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+.confidence-tag.green {
+  background: #10b981;
+}
+
+.confidence-tag.yellow {
+  background: #f59e0b;
+}
+
+.confidence-tag.red {
+  background: #ef4444;
+}
+
+.ai-badge {
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+}
+
+/* Design x Sales Card */
+.design-sales-card {
+  background-color: #ffffff;
+  border: none;
+}
+
+.sales-illustration {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sales-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.demo-screen {
+  width: 120px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.screen-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feature-highlight {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+}
+
+.feature-highlight:nth-child(2) {
+  width: 80%;
+}
+
+.feature-highlight:nth-child(3) {
+  width: 60%;
+}
+
+.sales-badge {
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+}
+
+/* Designing for Dignity Card */
+.dignity-design-card {
+  background-color: #ffffff;
+  border: none;
+}
+
+.dignity-illustration {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dignity-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobile-device {
+  width: 80px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 12px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.low-data-indicator {
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.data-bars {
+  display: flex;
+  gap: 3px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+}
+
+.bar-1 {
+  height: 12px;
+}
+
+.bar-2 {
+  height: 8px;
+}
+
+.bar-3 {
+  height: 4px;
+}
+
+.mtn-badge {
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+}
+
+.coming-soon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  border-radius: 12px;
+}
+
+.coming-soon-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .bookify-phone {

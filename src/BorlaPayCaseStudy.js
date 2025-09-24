@@ -258,6 +258,13 @@ function BorlaPayCaseStudy() {
                 Through research with 8 individuals from Accra, Kumasi, and Tamale, I discovered the core barriers preventing people from recycling consistently:
               </p>
               
+              <div className="problem-context-image-container">
+                <img src="/images/case-studies/borlapay-problem-context.png" alt="User Journey Map - Trying vs Conflict" className="problem-context-image" />
+                <p className="image-caption">
+                  User journey mapping showing the gap between trying to recycle and losing interest due to lack of feedback
+                </p>
+              </div>
+              
               <div className="business-issues">
                 <div className="issue">
                   <div className="issue-number">01</div>
