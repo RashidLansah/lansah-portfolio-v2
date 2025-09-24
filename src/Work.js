@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './Work.css';
+import { RecycleIcon, ShoppingIcon, AIIcon, LightningIcon, DesignIcon } from './Icons';
 
 function Work() {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="work-page">
       <nav className="navbar">
@@ -74,7 +79,9 @@ function Work() {
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label borlapay-label">
-                    <span className="recycle-badge-small">♻️</span>
+                    <span className="recycle-badge-small">
+                      <RecycleIcon size={16} />
+                    </span>
                     <span>BorlaPay</span>
                   </span>
                 </div>
@@ -86,7 +93,9 @@ function Work() {
                     <img src="/images/borlapay-full-image.svg" alt="BorlaPay Mobile App Interface" className="borlapay-app-image" />
                     <div className="borlapay-overlay">
                       <div className="borlapay-badge">
-                        <div className="recycle-indicator">♻️</div>
+                        <div className="recycle-indicator">
+                          <RecycleIcon size={16} />
+                        </div>
                         <span>Live Platform</span>
                       </div>
                     </div>
@@ -120,7 +129,9 @@ function Work() {
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label busybody-label">
-                    <span className="ecommerce-badge-small">🛍️</span>
+                    <span className="ecommerce-badge-small">
+                      <ShoppingIcon size={16} />
+                    </span>
                     <span>BusyBody</span>
                   </span>
                 </div>
@@ -168,15 +179,21 @@ function Work() {
                   <div className="article-illustration">
                     <div className="ai-tools-showcase">
                       <div className="ai-tool">
-                        <div className="tool-icon">🤖</div>
+                        <div className="tool-icon">
+                          <AIIcon size={20} />
+                        </div>
                         <span>AI Tools</span>
                       </div>
                       <div className="ai-tool">
-                        <div className="tool-icon">⚡</div>
+                        <div className="tool-icon">
+                          <LightningIcon size={20} />
+                        </div>
                         <span>Workflow</span>
                       </div>
                       <div className="ai-tool">
-                        <div className="tool-icon">🎨</div>
+                        <div className="tool-icon">
+                          <DesignIcon size={20} />
+                        </div>
                         <span>Design</span>
                       </div>
                     </div>

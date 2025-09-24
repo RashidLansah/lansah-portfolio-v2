@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './CaseStudy.css';
+import { DesignIcon, LightningIcon, MobileIcon, AIIcon } from './Icons';
 
 const BookIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -76,6 +77,11 @@ const GraduationCapIcon = () => (
 
 function CaseStudy() {
   const [activeSection, setActiveSection] = useState('getting-started');
+  
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   // Debug: Log when activeSection changes
   useEffect(() => {
@@ -302,7 +308,9 @@ function CaseStudy() {
                 <h3>Key Responsibilities</h3>
                 <div className="goals-grid">
                   <div className="goal-item">
-                    <div className="goal-icon">🎨</div>
+                    <div className="goal-icon">
+                      <DesignIcon size={20} />
+                    </div>
                     <div className="goal-content">
                       <h4>UX Foundation</h4>
                       <p>Built complete design system from 0→1</p>
@@ -442,12 +450,16 @@ function CaseStudy() {
                       <p>60% of users managed multiple companies, requiring sophisticated account separation</p>
                     </div>
                     <div className="insight-card">
-                      <div className="insight-icon">⚡</div>
+                      <div className="insight-icon">
+                        <LightningIcon size={20} />
+                      </div>
                       <h4>Speed vs Control</h4>
                       <p>Users wanted automation but needed ability to review and override AI decisions</p>
                     </div>
                     <div className="insight-card">
-                      <div className="insight-icon">📱</div>
+                      <div className="insight-icon">
+                        <MobileIcon size={20} />
+                      </div>
                       <h4>Mobile-First Mindset</h4>
                       <p>Business owners needed to manage finances on-the-go, not just from desktop</p>
                     </div>
@@ -553,7 +565,9 @@ function CaseStudy() {
                     <p>Designed comprehensive tracking of document history from upload to modification for compliance requirements</p>
                   </div>
                   <div className="solution-item">
-                    <div className="solution-icon">🤖</div>
+                    <div className="solution-icon">
+                      <AIIcon size={20} />
+                    </div>
                     <h4>AI Transparency</h4>
                     <p>Created patterns that showed AI reasoning, confidence levels, and allowed users to review and override decisions</p>
                   </div>
@@ -674,7 +688,9 @@ function CaseStudy() {
                       </div>
                     </div>
                     <div className="learning-item">
-                      <div className="learning-icon">🎨</div>
+                      <div className="learning-icon">
+                        <DesignIcon size={20} />
+                      </div>
                       <div className="learning-text">
                         <strong>Design Systems Scale:</strong> Building reusable components from day one enabled rapid iteration and consistency
                       </div>

@@ -2,8 +2,14 @@
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
+import { ShoppingIcon, RecycleIcon, RecipeIcon, ArticleIcon, BankingIcon } from './Icons';
+import { useEffect } from 'react';
 
 function Portfolio() {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="App">
       <nav className="navbar">
@@ -380,7 +386,9 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <span className="ecommerce-badge-small">🛍️</span>
+            <span className="ecommerce-badge-small">
+              <ShoppingIcon size={16} />
+            </span>
             BusyBody
           </motion.div>
           
@@ -429,7 +437,9 @@ function Portfolio() {
           >
             <div className="stat-item">
               <div className="busybody-logo-small">
-                <span className="ecommerce-badge">🛍️</span>
+                <span className="ecommerce-badge">
+                  <ShoppingIcon size={16} />
+                </span>
                 <span>BusyBody</span>
           </div>
         </div>
@@ -504,7 +514,9 @@ function Portfolio() {
               <img src="/images/borlapay-full-image.svg" alt="BorlaPay Mobile App Interface" className="project-interface-image" />
               <div className="interface-overlay">
                 <div className="ai-badge-overlay">
-                  <div className="ai-indicator">♻️</div>
+                  <div className="ai-indicator">
+                    <RecycleIcon size={16} />
+                  </div>
                   <span>Live Platform</span>
                         </div>
                       </div>
@@ -519,7 +531,9 @@ function Portfolio() {
           >
             <div className="stat-item">
               <div className="jenesys-logo-small">
-                <span className="ai-badge">♻️</span>
+                <span className="ai-badge">
+                  <RecycleIcon size={16} />
+                </span>
                 <span>BorlaPay</span>
                     </div>
                     </div>

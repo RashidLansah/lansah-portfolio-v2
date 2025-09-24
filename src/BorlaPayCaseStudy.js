@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './CaseStudy.css';
+import { RecycleIcon, MobileIcon, LightningIcon, InsightsIcon } from './Icons';
 
 const BookIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -71,6 +72,11 @@ const GraduationCapIcon = () => (
 function BorlaPayCaseStudy() {
   const [activeSection, setActiveSection] = useState('getting-started');
   const sectionRefs = useRef({});
+  
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const sections = [
     { id: 'getting-started', title: 'Getting started', icon: <BookIcon /> },
@@ -153,7 +159,9 @@ function BorlaPayCaseStudy() {
           <div className="jenesys-branding">
             <div className="jenesys-logo-section">
               <div className="jenesys-icon">
-                <div className="recycle-badge">♻️</div>
+                <div className="recycle-badge">
+                  <RecycleIcon size={24} />
+                </div>
                 <span className="jenesys-text">BorlaPayCaseStudy</span>
               </div>
             </div>
@@ -183,7 +191,9 @@ function BorlaPayCaseStudy() {
             <img src="/images/borlapay-full-image.svg" alt="BorlaPayCaseStudy Mobile Interface" className="hero-interface-image" />
             <div className="hero-interface-overlay">
               <div className="interface-badge">
-                <div className="recycle-indicator">♻️</div>
+                <div className="recycle-indicator">
+                  <RecycleIcon size={16} />
+                </div>
                 <span>Mobile App</span>
               </div>
             </div>
@@ -451,13 +461,17 @@ function BorlaPayCaseStudy() {
                   </div>
                   
                   <div className="insight-card">
-                    <div className="insight-icon">📱</div>
+                    <div className="insight-icon">
+                      <MobileIcon size={20} />
+                    </div>
                     <h4>Mobile Money Familiarity</h4>
                     <p>Preferred simple flows mirroring MoMo apps they already use daily for transactions</p>
                   </div>
                   
                   <div className="insight-card">
-                    <div className="insight-icon">⚡</div>
+                    <div className="insight-icon">
+                      <LightningIcon size={20} />
+                    </div>
                     <h4>Speed & Simplicity</h4>
                     <p>Always busy - needed fast, familiar experiences without learning new complex systems</p>
                   </div>
@@ -476,7 +490,9 @@ function BorlaPayCaseStudy() {
                 <h3>Core Solution Features</h3>
                 <div className="solution-grid">
                   <div className="solution-item quick-wins">
-                    <div className="solution-icon">⚡</div>
+                    <div className="solution-icon">
+                      <LightningIcon size={20} />
+                    </div>
                     <h4>Instant Rewards</h4>
                     <p>Mobile money integration for immediate payment after waste drop-off, mirroring familiar MoMo transaction flows</p>
                   </div>
@@ -617,14 +633,18 @@ function BorlaPayCaseStudy() {
                   <h3>Challenges & Solutions</h3>
                   <div className="learning-items">
                     <div className="learning-item">
-                      <div className="learning-icon">⚡</div>
+                      <div className="learning-icon">
+                        <LightningIcon size={20} />
+                      </div>
                       <div className="learning-text">
                         <strong>Building Initial Trust:</strong> Overcame skepticism by starting with known community members as Wastepreneurs and transparent transaction tracking.
                       </div>
                     </div>
                     
                     <div className="learning-item">
-                      <div className="learning-icon">⚡</div>
+                      <div className="learning-icon">
+                        <LightningIcon size={20} />
+                      </div>
                       <div className="learning-text">
                         <strong>Scaling Community Networks:</strong> Developed a referral system where successful Wastepreneurs could recommend and train new collectors.
                       </div>
