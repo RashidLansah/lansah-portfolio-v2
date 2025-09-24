@@ -1,7 +1,6 @@
-﻿import './App.css';
+import './App.css';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-import { motion } from 'framer-motion';
 
 function Portfolio() {
   return (
@@ -10,36 +9,22 @@ function Portfolio() {
         <div className="nav-container">
           <Link to="/" className="nav-link active">Lansah</Link>
           <Link to="/work" className="nav-link">Work</Link>
-          <a href="https://linkedin.com" className="nav-link">LinkedIn</a>
-          <a href="#contact" className="nav-link">Get in touch</a>
+          <a href="#highlights" className="nav-link">Highlights</a>
+          <a href="mailto:rashidlansahadam@gmail.com" className="nav-link">Get contact</a>
         </div>
       </nav>
+      
       <section className="hero">
         <div className="hero-content">
-          <motion.p 
-            className="hero-greeting"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          <p className="hero-greeting">
             Hello, my name is Lansah
-          </motion.p>
-          <motion.h1 
-            className="hero-title"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
+          </p>
+          <h1 className="hero-title">
             I Design for People, Build from 0–1, and Scale with Systems
-          </motion.h1>
-          <motion.p 
-            className="hero-subtitle"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
+          </h1>
+          <p className="hero-subtitle">
             I design digital experiences that connect user needs with business goals, blending research, design systems, and product strategy to drive growth and engagement.
-          </motion.p>
+          </p>
         </div>
       </section>
 
@@ -68,571 +53,261 @@ function Portfolio() {
         </div>
       </section>
 
-      <motion.section 
-        className="project-card-section jenesys-section" 
-        id="work"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+      <section className="project-card-section jenesys-section" id="highlights">
         <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+          <div className="project-brand">
             Jenesys AI
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
+          </div>
+          <h2 className="project-title">
             AI Bookkeeping Platform
-          </motion.h2>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            Transformed complex financial workflows into intuitive user experiences. 
-            Designed the complete UX foundation for an AI-powered bookkeeping platform 
-            that achieved 80% user adoption and 3x daily active users through thoughtful 
-            design and user-centered solutions.
-          </motion.p>
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
+          </h2>
+          <p className="project-description">
+            Designed and built an AI-powered bookkeeping platform from 0-1, streamlining financial workflows for small businesses and automating invoice processing with 95% accuracy.
+          </p>
+          <div className="project-interface">
             <div className="interface-wrapper">
-              <img src="/images/case-studies/jenesys-dashboard.png" alt="Jenesys AI Dashboard" className="project-interface-image" />
-              <div className="interface-overlay">
-                <div className="ai-badge-overlay">
-                  <div className="ai-indicator">AI</div>
-                  <span>Live Platform</span>
-                </div>
-              </div>
+              <img 
+                src="/images/jenesys-full-image.svg" 
+                alt="Jenesys AI Dashboard" 
+                className="project-interface-image"
+              />
             </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
+          </div>
+          <div className="project-stats">
             <div className="stat-item">
-              <div className="jenesys-logo-small">
-                <span className="ai-badge">AI</span>
-                <span>Jenesys</span>
-              </div>
+              <span className="stat-number">95%</span>
+              <span className="stat-label">Accuracy</span>
             </div>
             <div className="stat-item">
-              <div className="adoption-rate">
-                <span className="percentage">80%</span>
-                <span className="label">Adoption</span>
-              </div>
+              <span className="stat-number">3x</span>
+              <span className="stat-label">Faster</span>
             </div>
             <div className="stat-item">
-              <div className="growth-metric">
-                <span className="multiplier">3x</span>
-                <span className="label">User Growth</span>
-              </div>
+              <span className="stat-number">50+</span>
+              <span className="stat-label">Businesses</span>
             </div>
-            <Link to="/case-study" className="case-study-btn">
-              View Case Study 
-            </Link>
-          </motion.div>
+          </div>
+          <Link to="/jenesys-case-study" className="case-study-btn">
+            View Case Study
+          </Link>
         </div>
-      </motion.section>
+      </section>
 
-      <motion.section 
-        className="project-card-section tikiti-card-section"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Tikiti
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Event Discovery
-          </motion.h2>
-          <motion.div 
-            className="project-subtitle"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            & Ticketing
-          </motion.div>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            Designed an intuitive event discovery platform that simplifies ticket booking 
-            with seamless user experience and modern interface design.
-          </motion.p>
-          <motion.div 
-            className="tikiti-app-showcase"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            <div className="tikiti-app-wrapper">
-              <img src="/images/tikiti-app-preview.svg" alt="Tikiti App Interface" className="tikiti-main-image" />
-              <div className="tikiti-app-overlay">
-                <div className="tikiti-status-badge">
-                  <span>🎫</span>
-                  <span>Live App</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
+      <section className="tikiti-card-section">
+        <div className="tikiti-container">
+          <div className="tikiti-brand">
+            <span className="tikiti-badge">📱</span>
+            <span>Tikiti</span>
+          </div>
+          <h2 className="tikiti-title">
+            Event Management Platform
+          </h2>
+          <div className="tikiti-app-showcase">
+            <img 
+              src="/images/tikiti-app-preview.svg" 
+              alt="Tikiti App Interface" 
+              className="tikiti-app-image"
+            />
+          </div>
+          <div className="tikiti-stats">
             <div className="stats-left">
               <div className="company-name">Tikiti</div>
               <div className="rating">
-                <div className="ticket-icon">🎫</div>
                 <span className="rating-text">Event Platform</span>
+                <span className="ticket-icon">🎫</span>
               </div>
-                </div>
-            <a href="https://gettikiti.com/landing" target="_blank" rel="noopener noreferrer" className="tikiti-details-btn">View Details</a>
-          </motion.div>
-                </div>
-      </motion.section>
+            </div>
+            <div className="stats-right">
+              <a 
+                href="https://gettikiti.com/landing"
+                className="tikiti-details-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <motion.section 
-        className="project-card-section article-card"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+      <section className="article-card">
         <div className="article-container">
-          <motion.div 
-            className="article-label"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Medium Article
-          </motion.div>
-          <motion.h2 
-            className="article-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="article-brand">
+            <span className="article-badge">📝</span>
+            <span>Article</span>
+          </div>
+          <h2 className="article-title">
             How I Use AI to Supercharge My Design Process
-          </motion.h2>
-          <motion.p 
-            className="article-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            Discover how AI tools like ChatGPT and Cursor have transformed my workflow, reducing early-stage design time by 30x while maintaining creativity and user empathy.
-          </motion.p>
-          <motion.a 
-            href="https://medium.com/design-bootcamp/how-i-use-ai-to-supercharge-my-design-process-2ae95b0a7f91" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          </h2>
+          <div className="article-illustration">
+            <div className="ai-tools-showcase">
+              <div className="ai-tool">
+                <div className="tool-icon">🤖</div>
+                <span>AI Tools</span>
+              </div>
+              <div className="ai-tool">
+                <div className="tool-icon">⚡</div>
+                <span>Workflow</span>
+              </div>
+              <div className="ai-tool">
+                <div className="tool-icon">🎨</div>
+                <span>Design</span>
+              </div>
+            </div>
+          </div>
+          <a 
+            href="https://medium.com/design-bootcamp/how-i-use-ai-to-supercharge-my-design-process-2ae95b0a7f91"
             className="article-btn"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
-            viewport={{ once: true }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Read on Medium
-          </motion.a>
-                </div>
-      </motion.section>
+          </a>
+        </div>
+      </section>
 
-      <motion.section 
-        className="project-card-section novum-section"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <span className="novum-badge">🌐</span>
-            Novum
-          </motion.div>
-          
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Novum website
-          </motion.h2>
-          
-          
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img 
-                src="/images/novum-full-image.svg" 
-                alt="Novum Mobile Banking Application" 
-                className="project-interface-image"
-              />
-                  </div>
-          </motion.div>
-          
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
+      <section className="side-project-card novum-section">
+        <div className="side-project-container">
+          <div className="side-project-brand">
+            <span className="novum-badge">🏦</span>
+            <span>Novum</span>
+          </div>
+          <h2 className="side-project-title">
+            Mobile Banking Application
+          </h2>
+          <div className="side-project-image">
+            <img 
+              src="/images/novum-full-image.svg" 
+              alt="Novum Mobile Banking Application" 
+              className="novum-app-image"
+            />
+          </div>
+          <div className="side-project-stats">
             <div className="stat-item">
-              <div className="novum-logo-small">
-                <span className="web-badge">🌐</span>
-                <span>Novum</span>
-                  </div>
-                </div>
-            <div className="stat-item">
-              <div className="security-metric">
-                <span className="percentage">Enhanced</span>
-                <span className="label">Security</span>
-              </div>
+              <span className="stat-number">Enhanced</span>
+              <span className="stat-label">Security</span>
             </div>
             <div className="stat-item">
-              <div className="experience-metric">
-                <span className="multiplier">Intuitive</span>
-                <span className="label">UX</span>
-              </div>
-                </div>
-            <a href="#novum" className="case-study-btn">
-              View Project 
-            </a>
-          </motion.div>
-                </div>
-      </motion.section>
+              <span className="stat-number">Intuitive</span>
+              <span className="stat-label">UX</span>
+            </div>
+          </div>
+          <a href="#" className="side-project-btn">
+            Coming Soon
+          </a>
+        </div>
+      </section>
 
-      <motion.section 
-        className="project-card-section busybody-section"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+      <section className="side-project-card busybody-section">
+        <div className="side-project-container">
+          <div className="side-project-brand">
             <span className="ecommerce-badge-small">🛍️</span>
-            BusyBody
-          </motion.div>
-          
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
+            <span>BusyBody</span>
+          </div>
+          <h2 className="side-project-title">
             Elevated e-commerce experience
-          </motion.h2>
-          
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            Redesigned a comprehensive platform focusing on user experience and conversion optimization, implementing modern design patterns and streamlined checkout flows that drive business results.
-          </motion.p>
-          
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img 
-                src="/images/busybody-full-image.svg" 
-                alt="BusyBody E-commerce Platform" 
-                className="project-interface-image"
-              />
-                </div>
-          </motion.div>
-          
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="busybody-logo-small">
-                <span className="ecommerce-badge">🛍️</span>
-                <span>BusyBody</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="conversion-metric">
-                <span className="percentage">Enhanced</span>
-                <span className="label">UX</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="optimization-metric">
-                <span className="multiplier">Optimized</span>
-                <span className="label">Conversion</span>
+          </h2>
+          <div className="side-project-image">
+            <img 
+              src="/images/busybody-full-image.svg" 
+              alt="BusyBody E-commerce Platform" 
+              className="busybody-app-image"
+            />
           </div>
+          <div className="side-project-stats">
+            <div className="stat-item">
+              <span className="stat-number">3x</span>
+              <span className="stat-label">Conversion</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">Optimized</span>
+              <span className="stat-label">UX</span>
+            </div>
+          </div>
+          <a 
+            href="https://www.figma.com/design/WVp6Cjenyxnw6qCxFE5eAb/BusyBuddy?node-id=0-1" 
+            className="side-project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
-            <a 
-              href="https://www.figma.com/design/WVp6Cjenyxnw6qCxFE5eAb/BusyBuddy?node-id=0-1" 
-              className="case-study-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project 
-            </a>
-          </motion.div>
-        </div>
-      </motion.section>
+      </section>
 
-      <motion.section 
-        className="project-card-section borlapay-section"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            BorlaPay
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Recycle more, earn more
-          </motion.h2>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            A mobile-first recycling incentive platform that transforms waste management 
-            through gamified rewards and community-driven collection networks.
-          </motion.p>
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img src="/images/borlapay-full-image.svg" alt="BorlaPay Mobile App Interface" className="project-interface-image" />
-              <div className="interface-overlay">
-                <div className="ai-badge-overlay">
-                  <div className="ai-indicator">♻️</div>
-                  <span>Live Platform</span>
+      <section className="borlapay-section">
+        <div className="borlapay-container">
+          <div className="borlapay-brand">
+            <span className="recycle-badge">♻️</span>
+            <span>BorlaPay</span>
           </div>
-        </div>
+          <h2 className="borlapay-title">
+            Waste Management Platform
+          </h2>
+          <p className="borlapay-description">
+            Redesigned a comprehensive waste management platform focusing on user experience and community engagement, implementing modern design patterns and streamlined workflows.
+          </p>
+          <div className="borlapay-interface">
+            <img 
+              src="/images/borlapay-full-image.svg" 
+              alt="BorlaPay Platform Interface" 
+              className="borlapay-phone-image"
+            />
+          </div>
+          <div className="borlapay-bottom">
+            <div className="borlapay-stats">
+              <div className="stat-item">
+                <span className="stat-number">40%</span>
+                <span className="stat-label">Efficiency</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">Community</span>
+                <span className="stat-label">Driven</span>
+              </div>
             </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="jenesys-logo-small">
-                <span className="ai-badge">♻️</span>
-                <span>BorlaPay</span>
-                    </div>
-                        </div>
-            <div className="stat-item">
-              <div className="adoption-rate">
-                <span className="percentage">80%</span>
-                <span className="label">Retention</span>
-                        </div>
-                      </div>
-            <div className="stat-item">
-              <div className="growth-metric">
-                <span className="multiplier">3x</span>
-                <span className="label">Collection</span>
-                    </div>
-                    </div>
-            <Link to="/borlapay-case-study" className="case-study-btn">
-              View Case Study 
+            <Link to="/borlapay-case-study" className="borlapay-read-more-btn">
+              View Case Study
             </Link>
-          </motion.div>
-                    </div>
-      </motion.section>
+          </div>
+        </div>
+      </section>
 
-      <motion.section 
-        className="project-card-section receipt2recipe-section"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <span className="recipe-badge">🍳</span>
-            Receipt2Recipe
-          </motion.div>
-          
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Transform receipts into recipes
-          </motion.h2>
-          
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            An innovative mobile application that converts grocery receipts into personalized cooking recipes, helping users make the most of their ingredients and reduce food waste.
-          </motion.p>
-          
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
+      <section className="receipt2recipe-section">
+        <div className="receipt2recipe-container">
+          <div className="receipt2recipe-brand">
+            <span className="recipe-badge">🍽️</span>
+            <span>Receipt2Recipe</span>
+          </div>
+          <h2 className="receipt2recipe-title">
+            AI Recipe Generator
+          </h2>
+          <div className="receipt2recipe-interface">
+            <div className="receipt2recipe-placeholder">
               <img 
                 src="/images/receipt2recipe-image.png" 
                 alt="Receipt2Recipe App Interface" 
-                className="project-interface-image"
+                className="receipt2recipe-app-image"
               />
             </div>
-          </motion.div>
-          
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
+          </div>
+          <div className="receipt2recipe-stats">
             <div className="stat-item">
-              <div className="receipt2recipe-logo-small">
-                <span className="recipe-badge-small">🍳</span>
-                <span>Receipt2Recipe</span>
-              </div>
+              <span className="stat-number">AI</span>
+              <span className="stat-label">Innovation</span>
             </div>
             <div className="stat-item">
-              <div className="innovation-metric">
-                <span className="percentage">Innovative</span>
-                <span className="label">Solution</span>
+              <span className="stat-number">Zero</span>
+              <span className="stat-label">Waste</span>
             </div>
           </div>
-            <div className="stat-item">
-              <div className="waste-metric">
-                <span className="multiplier">Reduce</span>
-                <span className="label">Food Waste</span>
-              </div>
-            </div>
-            <a href="#receipt2recipe" className="case-study-btn">
-              Coming Soon
-            </a>
-          </motion.div>
+          <div className="coming-soon-large">Coming Soon</div>
         </div>
-      </motion.section>
-      
+      </section>
+
       <Footer />
     </div>
   );
 }
 
 export default Portfolio;
-
