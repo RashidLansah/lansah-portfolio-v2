@@ -25,7 +25,7 @@ function Footer() {
       <div className="footer-content">
         <div className="social-links">
           <a 
-            href="https://behance.net" 
+            href="https://behance.net/rashidlansah" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-link"
@@ -34,7 +34,7 @@ function Footer() {
             <BehanceIcon />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://linkedin.com/in/rashid-lansah" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-link"
@@ -43,13 +43,22 @@ function Footer() {
             <LinkedInIcon />
           </a>
           <a 
-            href="https://medium.com" 
+            href="https://medium.com/@rashidlansah" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-link"
             aria-label="Medium"
           >
             <MediumIcon />
+          </a>
+        </div>
+        <div className="resume-section">
+          <a 
+            href="#resume" 
+            className="resume-link"
+            aria-label="Download Resume"
+          >
+            Download Resume
           </a>
         </div>
       </div>

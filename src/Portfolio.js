@@ -8,7 +8,6 @@ function Portfolio() {
       <nav className="navbar">
         <div className="nav-container">
           <Link to="/" className="nav-link active">Lansah</Link>
-          <Link to="/#highlights" className="nav-link">Highlights</Link>
           <Link to="/work" className="nav-link">Work</Link>
           <a href="https://linkedin.com" className="nav-link">LinkedIn</a>
           <a href="#contact" className="nav-link">Get in touch</a>
@@ -24,66 +23,34 @@ function Portfolio() {
             I design digital experiences that connect user needs with business goals, blending research, design systems, and product strategy to drive growth and engagement.
           </p>
         </div>
-        <div className="hero-image-container">
-          <img 
-            src="/images/lansah-profile.png" 
-            alt="Lansah" 
-            className="hero-image"
-          />
-        </div>
       </section>
 
       <section className="companies">
         <div className="companies-container">
-          <div className="company-item">
-            <span className="flame-icon"></span>
-            <span>N26</span>
+          <div className="experience-item">
+            <div className="experience-year">01/2020 - Present</div>
+            <div className="experience-company">Upwork</div>
+            <div className="experience-role">Freelance Product Designer</div>
           </div>
-          <div className="company-item">
-            <div className="n26-line"></div>
-            <span>Contentsquare</span>
+          <div className="experience-item">
+            <div className="experience-year">04/2023 - 08/2025</div>
+            <div className="experience-company">Jenesys AI</div>
+            <div className="experience-role">Founding Product Designer</div>
           </div>
-          <div className="company-item">
-            <div className="i-icon">i</div>
-            <span>Article</span>
+          <div className="experience-item">
+            <div className="experience-year">11/2022 - 03/2023</div>
+            <div className="experience-company">Dbaza Health</div>
+            <div className="experience-role">Product Designer (Contract)</div>
+          </div>
+          <div className="experience-item">
+            <div className="experience-year">09/2017 - 03/2022</div>
+            <div className="experience-company">Guildbytes Tech Solutions</div>
+            <div className="experience-role">Lead Product Designer</div>
           </div>
         </div>
       </section>
 
-      <section className="highlights" id="highlights">
-        <div className="highlights-container">
-          <div className="highlight-card">
-            <div className="jenesys-logo">
-              <span className="ai-badge-small">AI</span>
-              <span>Jenesys</span>
-            </div>
-            <h3 className="card-title">AI Bookkeeping Platform</h3>
-            <p className="card-description">
-              Transformed complex financial workflows into intuitive user experiences, 
-              achieving 80% user adoption and 3x daily active users.
-            </p>
-            <Link to="/case-study" className="card-link">View Case Study </Link>
-          </div>
-          <div className="highlight-card">
-            <span className="card-icon"></span>
-            <h3 className="card-title">Analytics Platform</h3>
-            <p className="card-description">
-              Built comprehensive analytics tools for Contentsquare, 
-              enabling data-driven design decisions.
-            </p>
-            <a href="#" className="card-link">Learn More </a>
-          </div>
-          <div className="highlight-card">
-            <span className="card-icon"></span>
-            <h3 className="card-title">Design Writing</h3>
-            <p className="card-description">
-              Published articles on design thinking and user experience 
-              principles for the design community.
-            </p>
-            <a href="#" className="card-link">Read Articles </a>
-          </div>
-        </div>
-      </section>
+
 
       <section className="project-card-section jenesys-section" id="work">
         <div className="project-container">
@@ -132,78 +99,35 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="project-card-section contentsquare-card">
+      <section className="project-card-section tikiti-card-section">
         <div className="project-container">
-          <div className="project-brand">Contentsquare</div>
-          <h2 className="project-title">Designing</h2>
-          <div className="project-subtitle">Observing</div>
+          <div className="project-brand">Tikiti</div>
+          <h2 className="project-title">Event Discovery</h2>
+          <div className="project-subtitle">& Ticketing</div>
           <p className="project-description">
-            Built comprehensive analytics tools that help designers understand 
-            user behavior and make data-driven design decisions.
+            Designed an intuitive event discovery platform that simplifies ticket booking 
+            with seamless user experience and modern interface design.
           </p>
-          <div className="project-screens">
-            <div className="screen-left">
-              <div className="screen-content analytics">
-                <div className="analytics-header">Analytics</div>
-                <div className="analytics-score">94%</div>
-                <div className="analytics-chart">
-                  <div className="chart-bar"></div>
-                  <div className="chart-bar"></div>
-                  <div className="chart-bar"></div>
-                  <div className="chart-bar"></div>
-                </div>
-              </div>
-            </div>
-            <div className="screen-center">
-              <div className="screen-content main-app">
-                <div className="app-header">
-                  <div className="app-title">Contentsquare</div>
-                  <div className="app-subtitle">Analytics Platform</div>
-                </div>
-                <div className="search-section">
-                  <input type="text" className="search-field" placeholder="Search..." />
-                </div>
-                <div className="map-section">
-                  <span className="map-placeholder"></span>
-                </div>
-                <div className="video-call">
-                  <div className="video-window">
-                    <span className="video-person"></span>
-                  </div>
-                  <div className="call-controls">
-                    <div className="control-btn red"></div>
-                    <div className="control-btn blue"></div>
-                    <div className="control-btn purple"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="screen-right">
-              <div className="screen-content recordings">
-                <div className="recording-item">
-                  <span className="recording-time">2:34</span>
-                  <span className="recording-percentage">87%</span>
-                </div>
-                <div className="recording-item">
-                  <span className="recording-time">1:45</span>
-                  <span className="recording-percentage">92%</span>
-                </div>
-                <div className="recording-item">
-                  <span className="recording-time">3:12</span>
-                  <span className="recording-percentage">78%</span>
+          <div className="tikiti-app-showcase">
+            <div className="tikiti-app-wrapper">
+              <img src="/images/tikiti-app-preview.svg" alt="Tikiti App Interface" className="tikiti-main-image" />
+              <div className="tikiti-app-overlay">
+                <div className="tikiti-status-badge">
+                  <span>🎫</span>
+                  <span>Live App</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="project-stats">
             <div className="stats-left">
-              <div className="company-name">Contentsquare</div>
+              <div className="company-name">Tikiti</div>
               <div className="rating">
-                <div className="g-logo">G</div>
-                <span className="rating-text">4.8 rating</span>
+                <div className="ticket-icon">🎫</div>
+                <span className="rating-text">Event Platform</span>
               </div>
             </div>
-            <button className="coming-soon-btn">Coming Soon</button>
+            <a href="https://gettikiti.com/landing" target="_blank" rel="noopener noreferrer" className="tikiti-details-btn">View Details</a>
           </div>
         </div>
       </section>
@@ -217,12 +141,12 @@ function Portfolio() {
             <div className="decoration-4"></div>
             <div className="decoration-5"></div>
           </div>
-          <div className="article-label">Article</div>
-          <h2 className="article-title">The power of visual in product design</h2>
+          <div className="article-label">Medium Article</div>
+          <h2 className="article-title">How I Use AI to Supercharge My Design Process</h2>
           <p className="article-description">
-            How visual elements affect our perception, recognition and memory by interacting with digital products.
+            Discover how AI tools like ChatGPT and Cursor have transformed my workflow, reducing early-stage design time by 30x while maintaining creativity and user empathy.
           </p>
-          <button className="article-btn">Full article </button>
+          <a href="https://medium.com/design-bootcamp/how-i-use-ai-to-supercharge-my-design-process-2ae95b0a7f91" target="_blank" rel="noopener noreferrer" className="article-btn">Read on Medium</a>
         </div>
       </section>
 
@@ -248,67 +172,32 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="project-card-section bookify-card">
-        <div className="bookify-container">
-          <div className="bookify-content">
-            <div className="bookify-text">
-              <div className="bookify-brand">Bookify</div>
-              <h2 className="bookify-title">Read more, discover more</h2>
-              <p className="bookify-description">
-                A mobile app that helps users discover and track their reading habits, 
-                with personalized recommendations and reading challenges.
+      <section className="project-card-section borlapay-card">
+        <div className="borlapay-container">
+          <div className="borlapay-content">
+            <div className="borlapay-text">
+              <div className="borlapay-brand">BorlaPayCaseStudy</div>
+              <h2 className="borlapay-title">Recycle more, earn more</h2>
+              <p className="borlapay-description">
+                A mobile-first recycling incentive platform that transforms waste management 
+                through gamified rewards and community-driven collection networks.
               </p>
             </div>
-            <div className="bookify-phone">
-              <div className="bookify-phone-mockup">
-                <div className="bookify-phone-screen">
-                  <div className="bookify-app-interface">
-                    <div className="bookify-header">
-                      <span className="bookify-search">Search books...</span>
-                      <span className="bookify-profile"></span>
-                    </div>
-                    <div className="bookify-section">
-                      <h3 className="bookify-section-title">Currently Reading</h3>
-                      <div className="bookify-books">
-                        <div className="book-item">
-                          <div className="book-cover"></div>
-                          <div className="book-title">Design Systems</div>
-                          <div className="book-author">Alla Kholmatova</div>
-                          <div className="book-rating"></div>
-                        </div>
-                        <div className="book-item">
-                          <div className="book-cover"></div>
-                          <div className="book-title">Atomic Design</div>
-                          <div className="book-author">Brad Frost</div>
-                          <div className="book-rating"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bookify-categories">
-                      <span className="category-item">Fiction</span>
-                      <span className="category-item">Non-fiction</span>
-                      <span className="category-item">Design</span>
-                    </div>
-                    <div className="bookify-nav">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
+            <div className="borlapay-phone">
+              <div className="borlapay-phone-mockup">
+                <img src="/images/borlapay-full-image.svg" alt="BorlaPayCaseStudy Mobile App Interface" className="borlapay-phone-image" />
               </div>
             </div>
           </div>
-          <div className="bookify-bottom">
-            <div className="bookify-case-study">
-              <div className="bookify-icon"></div>
-              <div className="bookify-case-text">
-                <h3 className="bookify-case-title">Bookify Case Study</h3>
-                <p className="bookify-case-subtitle">Reading app design process</p>
+          <div className="borlapay-bottom">
+            <div className="borlapay-case-study">
+              <div className="borlapay-icon">♻️</div>
+              <div className="borlapay-case-text">
+                <h3 className="borlapay-case-title">BorlaPayCaseStudy Case Study</h3>
+                <p className="borlapay-case-subtitle">Recycling app design process</p>
               </div>
             </div>
-            <button className="bookify-read-more-btn">Read more </button>
+            <Link to="/borlapay-case-study" className="borlapay-read-more-btn">Read more</Link>
           </div>
         </div>
       </section>

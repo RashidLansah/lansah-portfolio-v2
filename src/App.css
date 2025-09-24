@@ -1,4 +1,4 @@
-﻿.App {
+.App {
   min-height: 100vh;
   background-color: #ffffff;
 }
@@ -115,43 +115,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.company-item {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1px;
+.experience-item {
+  text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 8px;
 }
 
-.flame-icon {
+.experience-year {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+}
+
+.experience-company {
   font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
-.n26-line {
-  width: 20px;
-  height: 2px;
-  background-color: #ffffff;
-  margin-right: 8px;
-}
-
-.i-icon {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.experience-role {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.3px;
 }
 
 .highlights {
@@ -206,6 +202,19 @@
   gap: 8px;
   font-size: 24px;
   font-weight: 700;
+}
+
+.borlapay-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.recycle-icon {
+  font-size: 28px;
 }
 
 .ai-badge-small {
@@ -639,8 +648,87 @@
   font-weight: 500;
 }
 
-.contentsquare-card {
+.tikiti-card-section {
   background-color: #f8f8f8;
+}
+
+.tikiti-app-showcase {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.tikiti-app-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tikiti-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.tikiti-app-wrapper:hover .tikiti-main-image {
+  transform: scale(1.02);
+}
+
+.tikiti-app-overlay {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+}
+
+.tikiti-status-badge {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.ticket-icon {
+  font-size: 16px;
+}
+
+.tikiti-card-section .project-stats {
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  border: 1px solid rgba(251, 146, 60, 0.2);
+}
+
+.tikiti-details-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tikiti-details-btn:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  color: #ffffff;
 }
 
 .contentsquare-card .project-container {
@@ -894,12 +982,13 @@
 }
 
 .article-card {
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
 }
 
 .article-container {
   max-width: 1200px;
   width: 100%;
+  height: 600px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 24px;
   padding: 80px 60px;
@@ -908,6 +997,10 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .article-label {
@@ -1027,6 +1120,8 @@
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
 }
+
+
 
 .side-project-card {
   background-color: #f5f5f5;
@@ -1485,6 +1580,72 @@
   .ai-badge-overlay span {
     font-size: 11px;
   }
+  
+  /* Mobile Card Styles - Hide case study details and simplify buttons */
+  .project-stats {
+    display: none !important;
+  }
+  
+  .borlapay-bottom {
+    display: none !important;
+  }
+  
+  /* Reduce description text size on mobile */
+  .project-description,
+  .article-description,
+  .side-project-description,
+  .borlapay-description {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Simple big buttons - no background styling */
+  .case-study-btn,
+  .tikiti-details-btn,
+  .article-btn,
+  .side-project-btn,
+  .borlapay-read-more-btn {
+    background: none !important;
+    border: 2px solid #000000 !important;
+    color: #000000 !important;
+    padding: 24px 48px !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+    margin-top: 40px !important;
+    border-radius: 0 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .case-study-btn:hover,
+  .tikiti-details-btn:hover,
+  .article-btn:hover,
+  .side-project-btn:hover,
+  .borlapay-read-more-btn:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Ensure cards are centered and have proper spacing on mobile */
+  .project-container,
+  .article-container,
+  .side-project-container,
+  .borlapay-container {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  /* Make sure content is properly spaced */
+  .borlapay-content {
+    margin-bottom: 20px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1512,5 +1673,183 @@
   
   .bookify-container {
     padding: 30px 20px;
+  }
+}
+
+/* BorlaPayCaseStudy Card Styles */
+.borlapay-card {
+  background-color: #f8f8f8;
+  padding: 120px 20px;
+  margin: 0;
+}
+
+.borlapay-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 60px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.borlapay-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.borlapay-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.borlapay-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.borlapay-brand {
+  color: #22c55e;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.borlapay-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.1;
+  margin: 0 0 24px 0;
+}
+
+.borlapay-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0;
+}
+
+.borlapay-phone {
+  flex-shrink: 0;
+}
+
+.borlapay-phone-mockup {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.borlapay-phone-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Remove the detailed phone interface since we're using the SVG image */
+
+.borlapay-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 20px 24px;
+  border: 1px solid #e0e0e0;
+}
+
+.borlapay-case-study {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.borlapay-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.borlapay-case-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.borlapay-case-text p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+
+.borlapay-read-more-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.borlapay-read-more-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .borlapay-card {
+    padding: 80px 20px;
+  }
+  
+  .borlapay-container {
+    padding: 40px 20px;
+  }
+  
+  .borlapay-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .borlapay-title {
+    font-size: 36px;
+  }
+  
+  .borlapay-phone-mockup {
+    width: 240px;
+    height: 320px;
+  }
+  
+  .borlapay-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .borlapay-read-more-btn {
+    padding: 16px 32px;
+    font-size: 16px;
   }
 }

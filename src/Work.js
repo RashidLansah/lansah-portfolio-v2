@@ -45,40 +45,22 @@ function Work() {
               </div>
             </div>
 
-            {/* Whiteboard Challenge Card */}
-            <div className="work-card whiteboard-card">
+            {/* Tikiti Card */}
+            <div className="work-card tikiti-card">
               <div className="work-card-content">
                 <div className="work-card-header">
-                  <span className="work-card-label">Ace your next UX Job Interview</span>
+                  <span className="work-card-label">Tikiti</span>
                 </div>
-                <h2 className="work-card-title">Whiteboard Challenge explained</h2>
-                <p className="work-card-description">10 solved exercises, Figma template, Wireframe UI library to help you ace your next UX Job Interview.</p>
+                <h2 className="work-card-title">Event Discovery & Ticketing App</h2>
+                <p className="work-card-description">Designed an intuitive event discovery platform that simplifies ticket booking with seamless user experience and modern interface design.</p>
                 
                 <div className="work-card-image">
-                  <div className="whiteboard-diagram">
-                    <div className="diagram-section problem-space">
-                      <div className="diagram-label">Problem Space</div>
-                      <div className="diagram-boxes">
-                        <div className="diagram-box"></div>
-                        <div className="diagram-box"></div>
-                        <div className="diagram-box"></div>
-                      </div>
-                    </div>
-                    <div className="diagram-arrow">
-                      <span>design an app to find the perfect flatmate</span>
-                    </div>
-                    <div className="diagram-section solution-space">
-                      <div className="diagram-label">Brainstorming</div>
-                      <div className="diagram-label">Wireframes</div>
-                      <div className="wireframe-grid">
-                        <div className="wireframe-box"></div>
-                        <div className="wireframe-box"></div>
-                        <div className="wireframe-box"></div>
-                        <div className="wireframe-box"></div>
-                        <div className="wireframe-box"></div>
-                        <div className="wireframe-box"></div>
-                        <div className="wireframe-box"></div>
-                        <div className="wireframe-box"></div>
+                  <div className="tikiti-preview">
+                    <img src="/images/tikiti-app-preview.svg" alt="Tikiti App Interface" className="tikiti-app-image" />
+                    <div className="tikiti-overlay">
+                      <div className="tikiti-badge">
+                        <span>🎫</span>
+                        <span>Live App</span>
                       </div>
                     </div>
                   </div>
