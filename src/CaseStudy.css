@@ -2848,6 +2848,7 @@
   .content-description,
   .case-study-description {
     color: #000000 !important;
+    font-size: 15px !important;
   }
   
   /* Problem context image mobile styles */
@@ -2887,6 +2888,100 @@
   
   .interview-step p {
     font-size: 13px !important;
+  }
+}
+
+/* UI Showcase Layout Styles */
+.ui-showcase-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 60px;
+}
+
+.ui-showcase-item {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 0;
+}
+
+.ui-showcase-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.ui-showcase-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.ui-showcase-content h4 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.ui-showcase-content p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ui-showcase-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+}
+
+.ui-showcase-mockup img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ui-showcase-mockup img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ui-showcase-item {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .ui-showcase-item:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .ui-showcase-content {
+    max-width: 100%;
+  }
+  
+  .ui-showcase-content h4 {
+    font-size: 24px;
+  }
+  
+  .ui-showcase-content p {
+    font-size: 15px;
+  }
+  
+  .ui-showcase-mockup {
+    max-width: 250px;
+  }
+  
+  .ui-showcase-mockup img {
+    max-width: 250px;
   }
 }
 

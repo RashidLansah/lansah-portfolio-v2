@@ -122,12 +122,12 @@ function Portfolio() {
           >
             <div className="interface-wrapper">
               <img src="/images/case-studies/jenesys-dashboard.png" alt="Jenesys AI Dashboard" className="project-interface-image" />
-              <div className="interface-overlay">
-                <div className="ai-badge-overlay">
-                  <div className="ai-indicator">AI</div>
-                  <span>Live Platform</span>
-                    </div>
+            <div className="interface-overlay">
+              <div className="ai-badge-overlay">
+                <div className="ai-indicator">AI</div>
+                <span>Platform</span>
                   </div>
+                </div>
                 </div>
           </motion.div>
           <motion.div 
@@ -399,7 +399,7 @@ function Portfolio() {
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            Elevated e-commerce experience
+            Task Manager UX Design
           </motion.h2>
           
           <motion.p 
@@ -409,7 +409,7 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            Redesigned a comprehensive platform focusing on user experience and conversion optimization, implementing modern design patterns and streamlined checkout flows that drive business results.
+            A comprehensive mobile task management application designed to enhance productivity through intuitive user experience, streamlined workflows, and modern UI patterns that help users organize and prioritize their daily tasks effectively.
           </motion.p>
           
           <motion.div 
@@ -517,7 +517,7 @@ function Portfolio() {
                   <div className="ai-indicator">
                     <RecycleIcon size={16} />
                   </div>
-                  <span>Live Platform</span>
+                  <span>Platform</span>
                         </div>
                       </div>
                     </div>
@@ -636,9 +636,9 @@ function Portfolio() {
                 <span className="label">Food Waste</span>
           </div>
         </div>
-            <a href="#receipt2recipe" className="case-study-btn">
-              Coming Soon
-            </a>
+            <Link to="/receipt2recipe-case-study" className="case-study-btn">
+              View Case Study
+            </Link>
           </motion.div>
         </div>
       </motion.section>

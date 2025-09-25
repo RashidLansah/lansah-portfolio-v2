@@ -863,7 +863,7 @@
 
 /* Article Card Height Consistency */
 .work-card.article-card {
-  height: 500px; /* Match other cards */
+  height: 600px; /* Increased height for AI tools showcase */
   display: flex;
   flex-direction: column;
 }
@@ -972,6 +972,27 @@
 
 .confidence-tag.red {
   background: #ef4444;
+}
+
+/* Clickable Card Styles */
+.clickable-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.clickable-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.clickable-card:hover .work-card-title {
+  color: #007bff;
+}
+
+.clickable-card:active {
+  transform: translateY(-2px);
 }
 
 .ai-badge {

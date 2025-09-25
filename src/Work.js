@@ -91,14 +91,6 @@ function Work() {
                 <div className="work-card-image">
                   <div className="borlapay-preview">
                     <img src="/images/borlapay-full-image.svg" alt="BorlaPay Mobile App Interface" className="borlapay-app-image" />
-                    <div className="borlapay-overlay">
-                      <div className="borlapay-badge">
-                        <div className="recycle-indicator">
-                          <RecycleIcon size={16} />
-                        </div>
-                        <span>Live Platform</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -135,8 +127,8 @@ function Work() {
                     <span>BusyBody</span>
                   </span>
                 </div>
-                <h2 className="work-card-title">Elevated e-commerce experience</h2>
-                <p className="work-card-description">Redesigned a comprehensive platform focusing on user experience and conversion optimization, implementing modern design patterns and streamlined checkout flows.</p>
+                <h2 className="work-card-title">Task Manager UX Design</h2>
+                <p className="work-card-description">A comprehensive mobile task management application designed to enhance productivity through intuitive user experience, streamlined workflows, and modern UI patterns that help users organize and prioritize their daily tasks effectively.</p>
                 
                 <div className="work-card-image">
                   <div className="busybody-preview">
@@ -167,7 +159,12 @@ function Work() {
             </div>
 
             {/* Medium Article Card */}
-            <div className="work-card article-card">
+            <a 
+              href="https://medium.com/design-bootcamp/how-i-use-ai-to-supercharge-my-design-process-2ae95b0a7f91"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="work-card article-card clickable-card"
+            >
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label">Article</span>
@@ -199,20 +196,16 @@ function Work() {
                     </div>
                   </div>
                 </div>
-                
-                <a 
-                  href="https://medium.com/design-bootcamp/how-i-use-ai-to-supercharge-my-design-process-2ae95b0a7f91"
-                  className="article-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read on Medium
-                </a>
               </div>
-            </div>
+            </a>
 
             {/* Confidence-Based Feedback UI Card */}
-            <div className="work-card confidence-feedback-card">
+            <a 
+              href="https://medium.com/design-bootcamp/designing-a-confidence-based-feedback-ui-f5eba0420c8c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="work-card confidence-feedback-card clickable-card"
+            >
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label">Article</span>
@@ -238,20 +231,16 @@ function Work() {
                     </div>
                   </div>
                 </div>
-                
-                <a 
-                  href="https://medium.com/design-bootcamp/designing-a-confidence-based-feedback-ui-f5eba0420c8c"
-                  className="article-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read on Medium
-                </a>
               </div>
-            </div>
+            </a>
 
             {/* Design x Sales Card */}
-            <div className="work-card design-sales-card">
+            <a 
+              href="https://medium.com/design-bootcamp/design-x-sales-why-i-joined-demo-calls-as-a-product-designer-9db4a702937b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="work-card design-sales-card clickable-card"
+            >
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label">Article</span>
@@ -275,20 +264,16 @@ function Work() {
                     </div>
                   </div>
                 </div>
-                
-                <a 
-                  href="https://medium.com/design-bootcamp/design-x-sales-why-i-joined-demo-calls-as-a-product-designer-9db4a702937b"
-                  className="article-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read on Medium
-                </a>
               </div>
-            </div>
+            </a>
 
             {/* Designing for Dignity Card */}
-            <div className="work-card dignity-design-card">
+            <a 
+              href="https://medium.com/design-bootcamp/designing-for-dignity-improving-the-low-data-experience-on-mtn-2e5447290266"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="work-card dignity-design-card clickable-card"
+            >
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label">Article</span>
@@ -315,17 +300,8 @@ function Work() {
                     </div>
                   </div>
                 </div>
-                
-                <a 
-                  href="https://medium.com/design-bootcamp/designing-for-dignity-improving-the-low-data-experience-on-mtn-2e5447290266"
-                  className="article-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read on Medium
-                </a>
               </div>
-            </div>
+            </a>
 
           </div>
         </div>
