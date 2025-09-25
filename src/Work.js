@@ -26,7 +26,7 @@ function Work() {
           <div className="work-grid">
             
             {/* Jenesys AI Card */}
-            <div className="work-card jenesys-card">
+            <Link to="/case-study" className="work-card jenesys-card clickable-card">
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label jenesys-label">
@@ -49,7 +49,7 @@ function Work() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Tikiti Card */}
             <div className="work-card tikiti-card">
@@ -75,7 +75,7 @@ function Work() {
             </div>
 
             {/* BorlaPay Card */}
-            <div className="work-card borlapay-card">
+            <Link to="/borlapay-case-study" className="work-card borlapay-card clickable-card">
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label borlapay-label">
@@ -94,7 +94,7 @@ function Work() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Novum Card */}
             <div className="work-card novum-card">
@@ -139,7 +139,7 @@ function Work() {
             </div>
 
             {/* Receipt2Recipe Card */}
-            <div className="work-card receipt2recipe-card">
+            <Link to="/receipt2recipe-case-study" className="work-card receipt2recipe-card clickable-card">
               <div className="work-card-content">
                 <div className="work-card-header">
                   <span className="work-card-label receipt2recipe-label">
@@ -156,7 +156,7 @@ function Work() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Medium Article Card */}
             <a 

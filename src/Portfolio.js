@@ -244,6 +244,93 @@ function Portfolio() {
       </motion.section>
 
       <motion.section 
+        className="project-card-section receipt2recipe-section"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="project-container">
+          <motion.div 
+            className="project-brand"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <span className="recipe-badge">🍳</span>
+            Receipt2Recipe
+          </motion.div>
+          
+          <motion.h2 
+            className="project-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Transform receipts into recipes
+          </motion.h2>
+          
+          <motion.p 
+            className="project-description"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            An innovative mobile application that converts grocery receipts into personalized cooking recipes, helping users make the most of their ingredients and reduce food waste.
+          </motion.p>
+          
+          <motion.div 
+            className="project-interface"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+            viewport={{ once: true }}
+          >
+            <div className="interface-wrapper">
+              <img 
+                src="/images/receipt2recipe-image.png" 
+                alt="Receipt2Recipe App Interface" 
+                className="project-interface-image"
+              />
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            className="project-stats"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="stat-item">
+              <div className="receipt2recipe-logo-small">
+                <span className="recipe-badge-small">🍳</span>
+                <span>Receipt2Recipe</span>
+            </div>
+          </div>
+            <div className="stat-item">
+              <div className="innovation-metric">
+                <span className="percentage">Innovative</span>
+                <span className="label">Solution</span>
+              </div>
+            </div>
+            <div className="stat-item">
+              <div className="waste-metric">
+                <span className="multiplier">Reduce</span>
+                <span className="label">Food Waste</span>
+          </div>
+        </div>
+            <Link to="/receipt2recipe-case-study" className="case-study-btn">
+              View Case Study
+            </Link>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      <motion.section 
         className="project-card-section article-card"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -556,92 +643,6 @@ function Portfolio() {
                     </div>
       </motion.section>
 
-      <motion.section 
-        className="project-card-section receipt2recipe-section"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <span className="recipe-badge">🍳</span>
-            Receipt2Recipe
-          </motion.div>
-          
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Transform receipts into recipes
-          </motion.h2>
-          
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            An innovative mobile application that converts grocery receipts into personalized cooking recipes, helping users make the most of their ingredients and reduce food waste.
-          </motion.p>
-          
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img 
-                src="/images/receipt2recipe-image.png" 
-                alt="Receipt2Recipe App Interface" 
-                className="project-interface-image"
-              />
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="receipt2recipe-logo-small">
-                <span className="recipe-badge-small">🍳</span>
-                <span>Receipt2Recipe</span>
-            </div>
-          </div>
-            <div className="stat-item">
-              <div className="innovation-metric">
-                <span className="percentage">Innovative</span>
-                <span className="label">Solution</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="waste-metric">
-                <span className="multiplier">Reduce</span>
-                <span className="label">Food Waste</span>
-          </div>
-        </div>
-            <Link to="/receipt2recipe-case-study" className="case-study-btn">
-              View Case Study
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section>
       
       <Footer />
     </div>
