@@ -1729,8 +1729,12 @@ html {
     font-size: 36px;
   }
   
-  /* Hide navigation completely on mobile */
+  /* Mobile navigation styles */
   .navbar {
+    display: none !important;
+  }
+  
+  .nav-container {
     display: none !important;
   }
   

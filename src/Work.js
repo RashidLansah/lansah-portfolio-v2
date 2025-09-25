@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import MobileMenu from './MobileMenu';
 import './Work.css';
 import { RecycleIcon, ShoppingIcon, AIIcon, LightningIcon, DesignIcon } from './Icons';
 
@@ -20,6 +21,7 @@ function Work() {
           <a href="https://calendly.com/rashidlansahadam" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
         </div>
       </nav>
+      <MobileMenu />
 
       <main className="work-main">
         <div className="work-container">

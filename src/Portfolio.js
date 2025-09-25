@@ -1,6 +1,7 @@
 ﻿import './App.css';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import MobileMenu from './MobileMenu';
 import { motion } from 'framer-motion';
 import { ShoppingIcon, RecycleIcon, RecipeIcon, ArticleIcon, BankingIcon } from './Icons';
 import { useEffect } from 'react';
@@ -20,6 +21,7 @@ function Portfolio() {
           <a href="https://calendly.com/rashidlansahadam" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
         </div>
       </nav>
+      <MobileMenu />
       <section className="hero">
         <div className="hero-content">
           <motion.p 
