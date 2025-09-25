@@ -134,7 +134,6 @@ const MobileMenu = () => {
                 className="mobile-schedule-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={closeMenu}
               >
                 Schedule Call
               </a>
