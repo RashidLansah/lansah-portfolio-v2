@@ -1,7 +1,7 @@
 {
   "name": "lansah-portfolio",
   "version": "1.0.0",
-  "description": "Lansah - Product Designer & UX Researcher Portfolio",
+  "description": "Lansah - Product Designer Portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
