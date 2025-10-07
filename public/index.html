@@ -5,9 +5,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L72ZFT62PN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){window.dataLayer.push(arguments);}
+      window.gtag = gtag;
       gtag('js', new Date());
-
       gtag('config', 'G-L72ZFT62PN');
     </script>
     <meta charset="utf-8" />
