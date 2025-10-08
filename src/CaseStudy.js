@@ -180,8 +180,8 @@ function CaseStudy() {
         <div className="nav-container">
           <Link to="/" className="nav-link active">Lansah</Link>
           <Link to="/" className="nav-link">Work</Link>
-          <a href="https://linkedin.com" className="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="#contact" className="nav-link contact-btn">Get in touch</a>
+          <a href="https://linkedin.com/in/rashid-lansah" className="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:rashidlansahadam@gmail.com" className="nav-link contact-btn" target="_blank" rel="noopener noreferrer">Get in touch</a>
         </div>
       </nav>
 
