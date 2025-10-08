@@ -4,6 +4,12 @@ import Footer from './Footer';
 import './CaseStudy.css';
 import { DesignIcon, LightningIcon, MobileIcon, AIIcon } from './Icons';
 
+const BackIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M19 12H5M12 19l-7-7 7-7"/>
+  </svg>
+);
+
 const BookIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V6.5A2.5 2.5 0 0 0 17.5 4h-11A2.5 2.5 0 0 0 4 6.5v13z"></path>
@@ -176,7 +182,16 @@ function CaseStudy() {
 
   return (
     <div className="case-study-page">
-      <nav className="navbar case-study-navbar">
+      {/* Mobile Header - Only visible on mobile */}
+      <div className="mobile-case-study-header">
+        <Link to="/" className="mobile-back-button">
+          <BackIcon />
+          <span>Back</span>
+        </Link>
+      </div>
+
+      {/* Desktop Navigation - Hidden on mobile */}
+      <nav className="navbar case-study-navbar desktop-navbar">
         <div className="nav-container">
           <Link to="/" className="nav-link active">Lansah</Link>
           <Link to="/" className="nav-link">Work</Link>
