@@ -173,6 +173,84 @@ function Portfolio() {
       </motion.section>
 
       <motion.section 
+        className="project-card-section tumapay-section"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="project-container">
+          <motion.div 
+            className="project-brand"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            TumaPay
+          </motion.div>
+          <motion.h2 
+            className="project-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Designing a Voice-First Fintech Experience for Non-Literate Users
+          </motion.h2>
+          <motion.p 
+            className="project-description"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            How can we make digital finance accessible to users who can't read or type in English? 
+            Building a voice-first mobile money app using local languages and voice pattern recognition to help millions of non-literate users in Ghana perform transactions confidently.
+          </motion.p>
+          <motion.div 
+            className="project-interface"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+            viewport={{ once: true }}
+          >
+            <div className="interface-wrapper tumapay-interface">
+              <img src="/images/tumapay-placeholder.png" alt="TumaPay Voice Interface" className="project-interface-image" />
+            </div>
+          </motion.div>
+          <motion.div 
+            className="project-stats"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="stat-item">
+              <div className="jenesys-logo-small">
+                <span>TumaPay</span>
+              </div>
+            </div>
+            <div className="stat-item">
+              <div className="adoption-rate">
+                <span className="percentage">100%</span>
+                <span className="label">No Reading</span>
+              </div>
+            </div>
+            <div className="stat-item">
+              <div className="growth-metric">
+                <span className="multiplier">80%</span>
+                <span className="label">Trust Rate</span>
+              </div>
+            </div>
+            <Link to="/tumapay-case-study" className="case-study-btn">
+              View Case Study 
+            </Link>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      <motion.section 
         className="project-card-section tikiti-card-section"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

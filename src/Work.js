@@ -53,6 +53,32 @@ function Work() {
               </div>
             </Link>
 
+            {/* TumaPay Card */}
+            <Link to="/tumapay-case-study" className="work-card tumapay-card clickable-card">
+              <div className="work-card-content">
+                <div className="work-card-header">
+                  <span className="work-card-label tumapay-label">
+                    <span>TumaPay</span>
+                  </span>
+                </div>
+                <h2 className="work-card-title">Voice-First Fintech for Non-Literate Users</h2>
+                <p className="work-card-description">Designed a voice-first mobile money app using local languages and voice pattern recognition to help non-literate users in Ghana perform transactions confidently.</p>
+                
+                <div className="work-card-image">
+                  <div className="tumapay-preview">
+                    <div className="iphone-mockup-small">
+                      <div className="iphone-frame-small">
+                        <div className="iphone-notch-small"></div>
+                        <div className="iphone-screen-small">
+                          <img src="/images/tumapay-placeholder.png" alt="TumaPay Voice Interface" className="tumapay-app-image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
             {/* Tikiti Card */}
             <div className="work-card tikiti-card">
               <div className="work-card-content">

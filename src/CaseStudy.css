@@ -95,7 +95,7 @@
 }
 
 .case-study-hero {
-  padding: 120px 20px;
+  padding: 60px 20px 40px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -249,8 +249,9 @@
 
 /* Hero Interface Section */
 .hero-interface-section {
-  padding: 80px 20px;
+  padding: 20px 20px 80px;
   background-color: #ffffff;
+  margin-top: -60px;
 }
 
 .hero-interface-container {
@@ -261,25 +262,53 @@
   align-items: center;
 }
 
-.hero-interface-wrapper {
+/* iPhone 15 Pro Max Mockup */
+.iphone-mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.iphone-frame {
   position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin-bottom: 24px;
+  width: 390px;
+  height: 844px;
+  background: #1f1f1f;
+  border-radius: 55px;
+  padding: 12px;
+  box-shadow: 
+    0 0 0 2px #2d2d2d,
+    0 0 0 3px #1a1a1a,
+    0 25px 80px rgba(0, 0, 0, 0.3);
 }
 
-.hero-interface-image {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.iphone-notch {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 30px;
+  background: #1f1f1f;
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
 }
 
-.hero-interface-image:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+.iphone-screen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 45px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mockup-screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-interface-overlay {
@@ -2541,8 +2570,20 @@
     padding: 60px 16px;
   }
   
-  .hero-interface-image {
-    border-radius: 16px;
+  .iphone-frame {
+    width: 300px;
+    height: 650px;
+    border-radius: 45px;
+    padding: 10px;
+  }
+  
+  .iphone-notch {
+    width: 100px;
+    height: 25px;
+  }
+  
+  .iphone-screen {
+    border-radius: 38px;
   }
   
   .hero-interface-overlay {
@@ -3029,6 +3070,283 @@
   
   .ui-showcase-mockup img {
     max-width: 250px;
+  }
+}
+
+/* TumaPay Case Study Specific Styles */
+
+/* Meta Info Grid - matches existing project meta styling */
+.meta-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.meta-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.meta-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Callout Box - like quote styling */
+.callout-box {
+  background: #f8f8f8;
+  border-left: 4px solid #000000;
+  padding: 24px;
+  margin: 30px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.callout-text {
+  font-size: 16px;
+  font-style: italic;
+  color: #333333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.callout-box.reflection {
+  background: #f8f8f8;
+  border-left-color: #000000;
+}
+
+.reflection-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.callout-text.quote {
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+/* Highlight Section - emphasis boxes */
+.highlight-section {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 30px 0;
+  border: 1px solid #e0e0e0;
+}
+
+.highlight-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 12px 0;
+}
+
+.highlight-text {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.highlight-text.centered {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Content List - matches existing list styling */
+.content-list {
+  margin: 20px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.content-list li {
+  position: relative;
+  padding-left: 24px;
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.content-list li::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Subsection Title */
+.subsection-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin: 32px 0 16px 0;
+}
+
+/* Flow Title - for individual user flows */
+.flow-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin: 24px 0 16px 0;
+  padding-left: 16px;
+  border-left: 3px solid #000000;
+}
+
+/* Insight Cards - stacked vertical layout */
+.insight-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.insight-card {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #000000;
+}
+
+.insight-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.insight-card-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.insight-card-text {
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .insight-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Process Image Container */
+.process-image-container {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.process-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.flow-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-caption {
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  margin-top: 12px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Impact Metrics - like the result cards */
+.impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.impact-metric {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.impact-metric:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #000000;
+}
+
+.impact-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.impact-description {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .meta-info-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .insight-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .impact-metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .callout-box {
+    padding: 20px;
+  }
+  
+  .highlight-section {
+    padding: 20px;
   }
 }
 
