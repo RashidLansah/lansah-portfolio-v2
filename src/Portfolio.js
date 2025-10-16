@@ -1,22 +1,31 @@
 ﻿import './App.css';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
 import MobileMenu from './MobileMenu';
 import { motion } from 'framer-motion';
-import { ShoppingIcon, RecycleIcon, RecipeIcon, ArticleIcon, BankingIcon } from './Icons';
+import { ShoppingIcon, RecycleIcon, RecipeIcon, ArticleIcon, BankingIcon, TeamIcon, BriefcaseIcon, MentorIcon, AIIcon } from './Icons';
 import { useEffect } from 'react';
 
 function Portfolio() {
-  // Scroll to top when component mounts
+  // Scroll to top or hash on mount
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const hash = window.location.hash;
+    if (hash === '#highlights') {
+      setTimeout(() => {
+        document.getElementById('highlights')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, []);
   return (
     <div className="App">
       <nav className="navbar">
         <div className="nav-container">
           <Link to="/" className="nav-link active">Lansah</Link>
-          <a href="#highlights" className="nav-link">Highlights</a>
+          <a href="#highlights" className="nav-link" onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('highlights')?.scrollIntoView({ behavior: 'smooth' });
+          }}>Highlights</a>
           <Link to="/work" className="nav-link">Work</Link>
           <a href="https://calendly.com/rashidlansahadam" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
         </div>
@@ -92,7 +101,7 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Jenesys AI
+            ✨ Featured: Jenesys AI
           </motion.div>
           <motion.h2 
             className="project-title"
@@ -101,7 +110,7 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            AI Bookkeeping Platform
+            From MVP to Scale
           </motion.h2>
           <motion.p 
             className="project-description"
@@ -110,10 +119,9 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            Transformed complex financial workflows into intuitive user experiences. 
-            Designed the complete UX foundation for an AI-powered bookkeeping platform 
-            that achieved 80% user adoption and 3x daily active users through thoughtful 
-            design and user-centered solutions.
+            How I helped an AI fintech platform simplify accounting workflows and grow adoption by 60%. 
+            As Founding Product Designer, I built the complete design system and UX foundation that powered 
+            $1M ARR and 3x user growth — from zero to scale in 12 months.
           </motion.p>
           <motion.div 
             className="project-interface"
@@ -188,7 +196,7 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            Event Discovery
+            Simplifying Event Ticketing in Ghana
           </motion.h2>
           <motion.div 
             className="project-subtitle"
@@ -197,7 +205,7 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.7 }}
             viewport={{ once: true }}
           >
-            & Ticketing
+            Event Discovery & Mobile Ticketing
           </motion.div>
           <motion.p 
             className="project-description"
@@ -206,8 +214,8 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            Designed an intuitive event discovery platform that simplifies ticket booking 
-            with seamless user experience and modern interface design.
+            Designed a seamless mobile flow for users to discover, pay, and verify tickets via MoMo. 
+            Delivered 25% faster checkout and reduced booking errors by 40% through intuitive UX patterns.
           </motion.p>
           <motion.div 
             className="tikiti-app-showcase"
@@ -271,7 +279,7 @@ function Portfolio() {
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            Transform receipts into recipes
+            An AI Experiment That Turns Receipts Into Meal Ideas
           </motion.h2>
           
           <motion.p 
@@ -281,7 +289,8 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            An innovative mobile application that converts grocery receipts into personalized cooking recipes, helping users make the most of their ingredients and reduce food waste.
+            Concept, UX flow, and prototype built in under a week using Cursor + Figma. 
+            An AI-powered mobile app that scans your grocery receipts and generates personalized 7-day meal plans — making meal planning effortless and reducing food waste.
           </motion.p>
           
           <motion.div 
@@ -580,7 +589,7 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            Recycle more, earn more
+            Making Recycling Rewarding in Ghana
           </motion.h2>
           <motion.p 
             className="project-description"
@@ -589,8 +598,8 @@ function Portfolio() {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            A mobile-first recycling incentive platform that transforms waste management 
-            through gamified rewards and community-driven collection networks.
+            Designed a mobile-first recycling platform that connects users with local "Wastepreneurs" through mobile money rewards. 
+            Achieved 80% retention and 3x waste collection by making recycling as easy as sending MoMo.
           </motion.p>
           <motion.div 
             className="project-interface"
@@ -645,8 +654,152 @@ function Portfolio() {
                     </div>
       </motion.section>
 
-      
-      <Footer />
+      <motion.section 
+        className="about-section"
+        id="about"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="about-container">
+          <motion.h2 
+            className="about-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            About Me
+          </motion.h2>
+          
+          <motion.p 
+            className="about-intro"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            I'm a Senior Product Designer passionate about turning complex systems into simple, human-centered experiences. 
+            I've worked across fintech, marketplaces, and AI tools — from early startups to scale-ups — helping teams move from zero to one, and then from one to ten.
+          </motion.p>
+
+          <motion.div 
+            className="about-highlights"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="highlight-item">
+              <div className="highlight-icon">
+                <TeamIcon size={32} />
+              </div>
+              <h3>Founder Collaboration</h3>
+              <p>Worked with founders and PMs to ship AI-powered products from concept to scale</p>
+            </div>
+            
+            <div className="highlight-item">
+              <div className="highlight-icon">
+                <BriefcaseIcon size={32} />
+              </div>
+              <h3>Cross-Industry Experience</h3>
+              <p>Freelance and agency experience across fintech, events, recycling, and food tech</p>
+            </div>
+            
+            <div className="highlight-item">
+              <div className="highlight-icon">
+                <MentorIcon size={32} />
+              </div>
+              <h3>Community Contributor</h3>
+              <p>Mentored designers through ADPList and local design communities in Ghana</p>
+            </div>
+            
+            <div className="highlight-item">
+              <div className="highlight-icon">
+                <AIIcon size={32} />
+              </div>
+              <h3>AI-Assisted Workflows</h3>
+              <p>Exploring AI-assisted design using Cursor, Figma AI, and rapid prototyping tools</p>
+            </div>
+          </motion.div>
+
+          <motion.p 
+            className="about-personal"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
+            viewport={{ once: true }}
+          >
+            Outside of work, I read manga and webtoons, watch anime, and play soccer on weekends. 
+            I believe creativity thrives at the intersection of curiosity and play.
+          </motion.p>
+        </div>
+      </motion.section>
+
+      <motion.section 
+        className="contact-section"
+        id="contact"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="contact-container">
+          <motion.h2 
+            className="contact-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            Let's build something that solves real problems
+          </motion.h2>
+          
+          <motion.p 
+            className="contact-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Reach out if you're hiring, collaborating, or want to chat design.
+          </motion.p>
+
+          <motion.div 
+            className="contact-buttons"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <a 
+              href="mailto:rashidlansahadam@gmail.com" 
+              className="contact-btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email Me
+            </a>
+            <a 
+              href="https://drive.google.com/file/d/1-n7H7VXxC8WuwY9bPyxqrpkCij9Cb2yo/view?usp=sharing" 
+              className="contact-btn secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume
+            </a>
+            <a 
+              href="https://linkedin.com/in/rashid-lansah" 
+              className="contact-btn secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </motion.div>
+        </div>
+      </motion.section>
     </div>
   );
 }

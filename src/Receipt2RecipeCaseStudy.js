@@ -101,12 +101,6 @@ function Receipt2RecipeCaseStudy() {
     window.scrollTo(0, 0);
   }, []);
   
-  // Debug: Log when activeSection changes
-  useEffect(() => {
-    console.log('Active section changed to:', activeSection);
-    console.log('All sections:', sections.map(s => s.id));
-    console.log('Section refs:', Object.keys(sectionRefs.current));
-  }, [activeSection]);
   const sectionRefs = useRef({});
 
   const sections = [
@@ -145,7 +139,6 @@ function Receipt2RecipeCaseStudy() {
           });
           
           if (mostVisible && mostVisible !== activeSection) {
-            console.log('Setting active section:', mostVisible);
             setActiveSection(mostVisible);
           }
         }, 100); // 100ms debounce
@@ -161,7 +154,6 @@ function Receipt2RecipeCaseStudy() {
       sections.forEach((section) => {
         const ref = sectionRefs.current[section.id];
         if (ref) {
-          console.log('Observing section:', section.id, ref);
           observer.observe(ref);
         }
       });
@@ -176,10 +168,10 @@ function Receipt2RecipeCaseStudy() {
         }
       });
     };
-  }, [sections]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const scrollToSection = (id) => {
-    console.log('Scrolling to section:', id);
     const element = sectionRefs.current[id];
     if (element) {
       element.scrollIntoView({ 
@@ -187,7 +179,6 @@ function Receipt2RecipeCaseStudy() {
         block: 'start',
         inline: 'nearest'
       });
-      // Manually set active section when clicking
       setActiveSection(id);
     }
   };
@@ -227,8 +218,8 @@ function Receipt2RecipeCaseStudy() {
               </div>
             </div>
           </div>
-          <h1 className="case-study-title">From Receipts to Recipes</h1>
-          <p className="case-study-subtitle">A mobile app that transforms grocery receipts into personalized 7-day meal plans using OCR and AI, reducing food waste and making meal planning effortless</p>
+          <h1 className="case-study-title">An AI Experiment That Turns Grocery Receipts Into Meal Ideas</h1>
+          <p className="case-study-subtitle">Concept, UX flow, and prototype built in under a week using Cursor + Figma. Exploring how AI can transform everyday grocery shopping into zero-effort meal planning.</p>
         </div>
       </section>
 
@@ -268,16 +259,16 @@ function Receipt2RecipeCaseStudy() {
 
           <div className="main-content">
             <div id="getting-started" ref={(el) => (sectionRefs.current['getting-started'] = el)} className="content-section">
-              <p className="section-label">Getting started</p>
-              <h2 className="section-title">AI-powered meal planning revolution</h2>
+              <p className="section-label">Overview</p>
+              <h2 className="section-title">What If Your Receipt Knew What to Cook?</h2>
               <p className="section-paragraph">
-                Before we dive in, I want to note that, in compliance with my non-disclosure agreement, I've omitted any confidential information from this case study.
+                Receipt2Recipe is an AI experiment that turns grocery receipts into meal ideas. Built in under a week using Cursor and Figma, it explores how we can make meal planning effortless by starting with what you actually bought — not what you wish you had.
               </p>
               <p className="section-paragraph">
-                The insights shared here are my own and don't necessarily represent the views of Receipt2Recipe. Receipt2Recipe is a mobile app that transforms grocery receipts into personalized meal plans using OCR technology and AI. Users simply snap a photo of their grocery receipt, and the app generates a 7-day meal plan based on what they've already purchased.
+                <strong>The Concept:</strong> Snap a photo of your grocery receipt. AI reads the items, understands what you have, and generates a week of meal ideas. No manual input. No endless recipe browsing. Just practical, achievable meals based on what's in your kitchen.
               </p>
               <p className="section-paragraph">
-                As the Product Designer, I designed the complete user experience from receipt upload to meal plan customization, focusing on making AI-powered meal planning feel intuitive and trustworthy to users who were skeptical of automated food management.
+                This project taught me how to rapidly prototype AI-assisted workflows while keeping the experience human-centered and approachable.
               </p>
             </div>
 
@@ -311,15 +302,15 @@ function Receipt2RecipeCaseStudy() {
 
             <div id="my-role" ref={(el) => (sectionRefs.current['my-role'] = el)} className="content-section">
               <p className="section-label">My Role</p>
-              <h2 className="section-title">Product Designer</h2>
+              <h2 className="section-title">Rapid Prototyping & UX Design</h2>
               <p className="section-paragraph">
-                <strong>UX Design:</strong> Designed the complete user experience from receipt upload to meal plan customization, focusing on making AI-powered meal planning feel intuitive and trustworthy. Created patterns where AI explained its reasoning to build user confidence.
+                Designed the complete user flow — from receipt snap to meal suggestions — in under a week. Used Cursor for rapid prototyping and Figma for polished UI. The goal was to test if receipt-based meal planning could feel magical while staying practical.
               </p>
               <p className="section-paragraph">
-                <strong>Mobile-First Approach:</strong> Prioritized mobile experience since users would primarily use the app while shopping and cooking. Designed for one-handed use and quick interactions during busy meal prep times.
+                <strong>Key Challenge:</strong> Making complex AI processes (OCR, ingredient matching, recipe generation) feel simple and trustworthy. The answer was showing just enough detail to build confidence without overwhelming users.
               </p>
               <p className="section-paragraph">
-                <strong>AI Transparency:</strong> Created visual patterns that showed AI processing steps, confidence levels, and allowed users to review and override AI decisions. Made complex OCR and meal generation feel transparent and controllable.
+                <strong>Design Approach:</strong> Mobile-first, one-handed interactions, instant feedback. Designed for busy shoppers who want answers now — not complex settings menus.
               </p>
               
               <div className="goals-container">
@@ -714,10 +705,10 @@ function Receipt2RecipeCaseStudy() {
             </div>
 
             <div id="learnings" ref={(el) => (sectionRefs.current['learnings'] = el)} className="content-section">
-              <p className="section-label">Learnings</p>
-              <h2 className="section-title">Key insights & impact</h2>
+              <p className="section-label">Reflection</p>
+              <h2 className="section-title">What I Learned from a Week-Long Sprint</h2>
               <p className="section-paragraph">
-                This project taught me valuable lessons about mobile-first AI UX patterns, designing for food-related workflows, and building trust in automated meal planning. The experience of working on a consumer food app provided insights into user behavior and mobile interaction patterns.
+                Building Receipt2Recipe in under a week taught me that speed and creativity thrive together. By focusing on one core insight — that people want meal plans based on what they actually have — I could strip away complexity and design for delight.
               </p>
               
               <div className="learnings-content">

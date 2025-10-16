@@ -130,7 +130,8 @@ function BorlaPayCaseStudy() {
       clearTimeout(timeoutId);
       observer.disconnect();
     };
-  }, [sections]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const scrollToSection = (sectionId) => {
     const element = sectionRefs.current[sectionId];
@@ -180,8 +181,8 @@ function BorlaPayCaseStudy() {
               </div>
             </div>
           </div>
-          <h1 className="case-study-title">Reward-Based Recycling Platform</h1>
-          <p className="case-study-subtitle">As Lead Product Designer, I designed a mobile-first recycling incentive platform that achieved 80% user retention, 3x waste collection through Wastepreneur network, and addresses Ghana's 1M+ ton annual plastic waste crisis.</p>
+          <h1 className="case-study-title">Making Recycling Rewarding in Ghana</h1>
+          <p className="case-study-subtitle">Designed a mobile-first platform that connects users with local "Wastepreneurs" through mobile money rewards. Achieved 80% retention by making recycling as easy — and rewarding — as sending MoMo to family.</p>
         </div>
       </section>
 
@@ -223,16 +224,16 @@ function BorlaPayCaseStudy() {
 
           <div className="main-content">
             <div id="getting-started" ref={(el) => (sectionRefs.current['getting-started'] = el)} className="content-section">
-              <p className="section-label">Getting Started</p>
-              <h2 className="section-title">Transforming Waste Management Through Design</h2>
+              <p className="section-label">Overview</p>
+              <h2 className="section-title">What If Recycling Paid Like MoMo?</h2>
               <p className="section-paragraph">
-                <strong>The Challenge:</strong> Ghana generates over 1M tons of plastic waste annually with only 5% being recycled. Most people don't recycle because there's no direct reward, no community structure, and no way to track impact.
+                BorlaPay turns Ghana's recycling problem into an opportunity by making it rewarding. Drop off your plastic waste with a local "Wastepreneur," scan a QR code, and get paid instantly through mobile money. Simple as that.
               </p>
               <p className="section-paragraph">
-                <strong>The Opportunity:</strong> With 70% mobile money penetration, there was a massive opportunity to create a digital reward system that makes recycling rewarding and trackable.
+                <strong>The Problem:</strong> Ghana generates 1M+ tons of plastic waste annually, but only 5% gets recycled. Why? No reward, no community support, and no way to see your impact. Meanwhile, 70% of Ghanaians use mobile money daily — a ready-made trust layer waiting to be tapped.
               </p>
               <p className="section-paragraph">
-                <strong>My Approach:</strong> I designed a mobile-first platform that gamifies recycling by connecting users with local "Wastepreneurs" (community collectors) through a reward system similar to mobile money apps that Ghanaians already trust and use daily.
+                <strong>The Solution:</strong> A mobile-first platform that mirrors the MoMo apps Ghanaians already love. Familiar UI. Instant rewards. Community-driven trust. The result? 80% retention and 3x waste collection.
               </p>
             </div>
 
@@ -306,13 +307,13 @@ function BorlaPayCaseStudy() {
               <p className="section-label">My Role</p>
               <h2 className="section-title">Lead Product Designer</h2>
               <p className="section-paragraph">
-                <strong>Research & Strategy:</strong> Conducted 8 user interviews across Ghana's major cities to understand recycling barriers and mobile money usage patterns. Synthesized insights to define the core product strategy and user experience approach.
+                Led research, strategy, and complete UX design. Conducted 8 interviews across Accra, Kumasi, and Tamale to understand why people don't recycle and how they use mobile money. The insight? Trust community members over institutions, and familiar UX beats novelty every time.
               </p>
               <p className="section-paragraph">
-                <strong>Design Leadership:</strong> Led the complete UX design process from research to final implementation. Created user personas, journey maps, and designed the entire mobile interface with a focus on familiarity and trust-building.
+                <strong>Design Approach:</strong> Mirrored mobile money apps Ghanaians already love. Familiar flows. Instant rewards. Community-first trust mechanics. Designed a two-sided marketplace where "Wastepreneurs" collect waste and users get paid — all through interfaces that feel like home.
               </p>
               <p className="section-paragraph">
-                <strong>Community-Centered Design:</strong> Designed a two-sided marketplace connecting individual recyclers with community "Wastepreneurs" through gamified mobile money-style rewards that felt familiar and trustworthy to users.
+                <strong>Key Insight:</strong> People don't need to be convinced to recycle. They need to be rewarded and supported by their community. The UX just needed to get out of the way.
               </p>
               
               <div className="goals-container">
@@ -599,8 +600,8 @@ function BorlaPayCaseStudy() {
             </div>
 
             <div id="learnings" ref={(el) => (sectionRefs.current['learnings'] = el)} className="content-section">
-              <p className="section-label">Learnings</p>
-              <h2 className="section-title">Key Insights & Takeaways</h2>
+              <p className="section-label">Reflection</p>
+              <h2 className="section-title">What Worked (and What I'd Do Differently)</h2>
               
               <div className="learnings-content">
                 <div className="learning-section">

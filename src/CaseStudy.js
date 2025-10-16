@@ -89,12 +89,6 @@ function CaseStudy() {
     window.scrollTo(0, 0);
   }, []);
   
-  // Debug: Log when activeSection changes
-  useEffect(() => {
-    console.log('Active section changed to:', activeSection);
-    console.log('All sections:', sections.map(s => s.id));
-    console.log('Section refs:', Object.keys(sectionRefs.current));
-  }, [activeSection]);
   const sectionRefs = useRef({});
 
   const sections = [
@@ -133,7 +127,6 @@ function CaseStudy() {
           });
           
           if (mostVisible && mostVisible !== activeSection) {
-            console.log('Setting active section:', mostVisible);
             setActiveSection(mostVisible);
           }
         }, 100); // 100ms debounce
@@ -149,7 +142,6 @@ function CaseStudy() {
       sections.forEach((section) => {
         const ref = sectionRefs.current[section.id];
         if (ref) {
-          console.log('Observing section:', section.id, ref);
           observer.observe(ref);
         }
       });
@@ -164,10 +156,10 @@ function CaseStudy() {
         }
       });
     };
-  }, [sections]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const scrollToSection = (id) => {
-    console.log('Scrolling to section:', id);
     const element = sectionRefs.current[id];
     if (element) {
       element.scrollIntoView({ 
@@ -175,7 +167,6 @@ function CaseStudy() {
         block: 'start',
         inline: 'nearest'
       });
-      // Manually set active section when clicking
       setActiveSection(id);
     }
   };
@@ -224,8 +215,8 @@ function CaseStudy() {
               </div>
             </div>
           </div>
-          <h1 className="case-study-title">From MVP to $1M ARR</h1>
-          <p className="case-study-subtitle">As founding Product Designer, I built the complete UX foundation for an AI-powered bookkeeping platform that achieved 80% adoption rate, 3x daily active users, and contributed to $1M ARR</p>
+          <h1 className="case-study-title">Scaling an AI-Powered Fintech Platform from MVP to Impact</h1>
+          <p className="case-study-subtitle">As Founding Product Designer at Jenesys, I led design for an AI-driven accounting system that automated invoice and receipt management for small businesses. My goal was to simplify workflows while building scalable, compliant systems that achieved $1M ARR and 80% feature adoption.</p>
         </div>
       </section>
 
@@ -265,16 +256,16 @@ function CaseStudy() {
 
           <div className="main-content">
             <div id="getting-started" ref={(el) => (sectionRefs.current['getting-started'] = el)} className="content-section">
-              <p className="section-label">Getting started</p>
-              <h2 className="section-title">An AI-powered revolution</h2>
+              <p className="section-label">Overview</p>
+              <h2 className="section-title">Building an AI Platform That Accountants Trust</h2>
               <p className="section-paragraph">
-                Before we dive in, I want to note that, in compliance with my non-disclosure agreement, I've omitted any confidential information from this case study.
+                As the Founding Product Designer at Jenesys, I led design for an AI-driven accounting system that automated invoice and receipt management for small businesses. My goal was to simplify workflows while building scalable, compliant systems.
               </p>
               <p className="section-paragraph">
-                The insights shared here are my own and don't necessarily represent the views of Jenesys AI. Jenesys is an AI-powered bookkeeping platform that automates financial workflows for SMEs. You can connect your accounting system (Xero, QuickBooks, FreeAgent), upload invoices via email, and let AI handle categorization, reconciliation, and compliance tracking.
+                Jenesys is an AI-powered bookkeeping platform that automates financial workflows for SMEs. You can connect your accounting system (Xero, QuickBooks, FreeAgent), upload invoices via email, and let AI handle categorization, reconciliation, and compliance tracking — all while maintaining the transparency that financial professionals demand.
               </p>
               <p className="section-paragraph">
-                As the founding Product Designer, I built the complete UX foundation from scratch, helping the platform achieve $1M ARR within 12 months with a team of 15 employees across London and remote locations.
+                <strong>Note:</strong> In compliance with my non-disclosure agreement, I've omitted confidential information from this case study. The insights shared here are my own and don't necessarily represent the views of Jenesys AI.
               </p>
             </div>
 
@@ -308,15 +299,15 @@ function CaseStudy() {
 
             <div id="my-role" ref={(el) => (sectionRefs.current['my-role'] = el)} className="content-section">
               <p className="section-label">My Role</p>
-              <h2 className="section-title">Founding Product Designer</h2>
+              <h2 className="section-title">Leading Design from Zero to Scale</h2>
               <p className="section-paragraph">
-                <strong>Design Leadership:</strong> As the first and only designer, I built the complete UX foundation from scratch while helping shape product strategy. I advocated for AI transparency in UX, designing patterns where AI explained its reasoning to build user trust.
+                Led product discovery, UX strategy, design systems, prototyping, and developer handoff. Collaborated with founders, PMs, and engineers to align design with business goals and technical constraints.
               </p>
               <p className="section-paragraph">
-                <strong>Cross-functional Collaboration:</strong> Worked directly with founders, engineers, and sales teams to align design decisions with business goals and technical constraints. Prepared investor-ready product demos that contributed to securing $2.2M in funding.
+                <strong>Key Contributions:</strong> Built the complete UX foundation from scratch, established design processes, created 40+ reusable components, and designed 8 core workflows. Prepared investor-ready demos that helped secure $2.2M in funding.
               </p>
               <p className="section-paragraph">
-                <strong>Systems & Scale:</strong> Established design processes, built scalable design systems, and mentored junior teammates. Created 40+ reusable components and 8 core workflow designs that became the foundation for future product development.
+                <strong>Impact-Driven Approach:</strong> Advocated for AI transparency in UX, designing patterns where AI explained its reasoning to build user trust. This became a competitive advantage and influenced how the team approached all product decisions.
               </p>
               
               <div className="goals-container">
@@ -680,10 +671,10 @@ function CaseStudy() {
             </div>
 
             <div id="learnings" ref={(el) => (sectionRefs.current['learnings'] = el)} className="content-section">
-              <p className="section-label">Learnings</p>
-              <h2 className="section-title">Key insights & impact</h2>
+              <p className="section-label">Reflection</p>
+              <h2 className="section-title">What I Learned</h2>
               <p className="section-paragraph">
-                This project taught me valuable lessons about AI UX patterns, designing for multi-account complexity, and building design foundations that scale. The experience of working at a startup during the 0→1 phase provided insights into cross-functional collaboration and rapid iteration.
+                This project reinforced how design systems accelerate iteration speed and maintain clarity across fast-scaling teams. I learned to balance AI complexity with simplicity for everyday users — a challenge that required deep collaboration with engineers and continuous user feedback.
               </p>
               
               <div className="learnings-content">
@@ -720,31 +711,31 @@ function CaseStudy() {
                 </div>
 
                 <div className="learning-section">
-                  <h3>Business Impact</h3>
+                  <h3>Results & Impact</h3>
                   <div className="impact-metrics">
                     <div className="impact-item">
-                      <div className="impact-value">$1M</div>
-                      <div className="impact-label">ARR achieved in 12 months</div>
+                      <div className="impact-value">60%</div>
+                      <div className="impact-label">Reduced document processing time</div>
+                    </div>
+                    <div className="impact-item">
+                      <div className="impact-value">40%</div>
+                      <div className="impact-label">Increased accuracy through AI validation</div>
+                    </div>
+                    <div className="impact-item">
+                      <div className="impact-value">80%</div>
+                      <div className="impact-label">Feature adoption rate across core workflows</div>
                     </div>
                     <div className="impact-item">
                       <div className="impact-value">3x</div>
                       <div className="impact-label">Daily active user growth</div>
                     </div>
                     <div className="impact-item">
-                      <div className="impact-value">80%</div>
-                      <div className="impact-label">Feature adoption rate</div>
+                      <div className="impact-value">$1M</div>
+                      <div className="impact-label">ARR achieved in 12 months</div>
                     </div>
                     <div className="impact-item">
-                      <div className="impact-value">45%</div>
-                      <div className="impact-label">Reduction in support tickets</div>
-                    </div>
-                    <div className="impact-item">
-                      <div className="impact-value">$2.2M</div>
-                      <div className="impact-label">Funding secured</div>
-                    </div>
-                    <div className="impact-item">
-                      <div className="impact-value">4.8/5</div>
-                      <div className="impact-label">User satisfaction rating</div>
+                      <div className="impact-value">3 products</div>
+                      <div className="impact-label">Built a scalable design system now used across</div>
                     </div>
                   </div>
                 </div>
