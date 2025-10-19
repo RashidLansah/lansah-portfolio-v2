@@ -135,6 +135,25 @@
   letter-spacing: 0.5px;
 }
 
+.blockchain-badge {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockchain-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .jenesys-text {
   font-size: 28px;
   font-weight: 700;
@@ -761,6 +780,10 @@
   line-height: 1.7;
   color: #333333;
   margin-bottom: 24px;
+}
+
+.section-paragraph + .process-image-container {
+  margin-top: 16px;
 }
 
 /* Goals Container */
@@ -2221,26 +2244,34 @@
 }
 
 .insights-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   max-width: 100%;
 }
 
 .insight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
   background: #f8f8f8;
   border-radius: 12px;
   padding: 20px;
   border: 1px solid #e0e0e0;
-  text-align: center;
   overflow: hidden;
   word-wrap: break-word;
 }
 
 .insight-icon {
-  font-size: 32px;
-  margin-bottom: 12px;
-  display: block;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #667eea;
 }
 
 .insight-card h4 {
@@ -2253,7 +2284,72 @@
 .insight-card p {
   font-size: 14px;
   color: #666666;
-  line-height: 1.4;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Goals Grid */
+.goals-container {
+  margin: 40px 0;
+}
+
+.goals-container h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 24px 0;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.goal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.goal-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #667eea;
+}
+
+.goal-content {
+  flex: 1;
+}
+
+.goal-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+.goal-content p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -3193,7 +3289,11 @@
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  margin: 32px 0 16px 0;
+  margin: 40px 0 12px 0;
+}
+
+.subsection-title:first-of-type {
+  margin-top: 32px;
 }
 
 /* Flow Title - for individual user flows */
@@ -3262,8 +3362,18 @@
 
 /* Process Image Container */
 .process-image-container {
-  margin: 30px 0;
+  margin: 0;
   width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.process-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
 }
 
 .process-image {
@@ -3278,6 +3388,9 @@
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center bottom;
 }
 
 .image-caption {
@@ -3347,6 +3460,159 @@
   
   .highlight-section {
     padding: 20px;
+  }
+
+  /* ReliefLedger Mobile Fixes */
+  .process-image-container {
+    margin: 0 10px !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100vw - 40px) !important;
+    overflow: hidden !important;
+  }
+  
+  .process-image-container img,
+  .flow-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+  
+  .section-paragraph {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    padding: 0 10px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+  
+  .section-title {
+    font-size: 28px !important;
+    padding: 0 10px !important;
+    word-wrap: break-word !important;
+  }
+  
+  .subsection-title {
+    font-size: 20px !important;
+    padding: 0 10px !important;
+    margin: 30px 0 12px 0 !important;
+  }
+  
+  .content-section {
+    padding: 0 10px !important;
+  }
+  
+  .highlight-section {
+    margin: 20px 10px !important;
+    padding: 20px !important;
+  }
+  
+  .highlight-text {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Additional mobile overrides */
+  body {
+    overflow-x: hidden !important;
+  }
+  
+  .main-content {
+    overflow-x: hidden !important;
+  }
+  
+  .detailed-content-section {
+    overflow-x: hidden !important;
+  }
+  
+  /* ReliefLedger Hero Interface Mobile Fixes */
+  .hero-interface-section {
+    padding: 20px 10px !important;
+    overflow-x: hidden !important;
+  }
+  
+  .hero-interface-container {
+    width: 100% !important;
+    max-width: calc(100vw - 20px) !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+  }
+  
+  .hero-interface-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  
+  .hero-interface-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+  
+  .hero-interface-caption {
+    font-size: 14px !important;
+    padding: 0 10px !important;
+    margin: 15px 0 !important;
+    text-align: center !important;
+  }
+  
+  /* Add space between intro description and hero image */
+  .case-study-hero {
+    margin-bottom: 40px !important;
+  }
+  
+  .hero-interface-section {
+    padding: 40px 10px 20px 10px !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* ReliefLedger Case Study Specific Mobile Fixes */
+  .reliefledger-case-study {
+    overflow-x: hidden !important;
+  }
+  
+  .reliefledger-case-study * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* ReliefLedger Title and Description Mobile Fixes */
+  .case-study-hero h1 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    padding: 0 10px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .case-study-hero .case-study-description {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    padding: 0 10px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .case-study-hero .case-study-meta {
+    padding: 0 10px !important;
+  }
+  
+  .case-study-hero .meta-info-grid {
+    gap: 12px !important;
+  }
+  
+  .meta-item {
+    font-size: 14px !important;
+  }
+  
+  .meta-label {
+    font-size: 12px !important;
+  }
+  
+  .meta-value {
+    font-size: 14px !important;
   }
 }
 

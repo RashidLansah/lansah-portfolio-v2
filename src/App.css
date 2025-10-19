@@ -2102,6 +2102,52 @@ html {
   background-color: #f8f8f8;
 }
 
+/* Blockchain Badge Styles */
+.blockchain-badge {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockchain-badge-small {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockchain-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* ReliefLedger Section Styles */
+.reliefledger-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.reliefledger-section:hover {
+  transform: translateY(-4px) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.reliefledger-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* About Section Styles */
 .about-section {
   padding: 120px 40px;

@@ -5,6 +5,7 @@ import CaseStudy from './CaseStudy';
 import BorlaPayCaseStudy from './BorlaPayCaseStudy';
 import Receipt2RecipeCaseStudy from './Receipt2RecipeCaseStudy';
 import TumaPayCaseStudy from './TumaPayCaseStudy';
+import ReliefLedgerCaseStudy from './ReliefLedgerCaseStudy';
 import Work from './Work';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/tumapay-case-study" element={<TumaPayCaseStudy />} />
         <Route path="/borlapay-case-study" element={<BorlaPayCaseStudy />} />
         <Route path="/receipt2recipe-case-study" element={<Receipt2RecipeCaseStudy />} />
+        <Route path="/reliefledger-case-study" element={<ReliefLedgerCaseStudy />} />
       </Routes>
     </Router>
   );

@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 import { motion } from 'framer-motion';
-import { ShoppingIcon, RecycleIcon, RecipeIcon, ArticleIcon, BankingIcon, TeamIcon, BriefcaseIcon, MentorIcon, AIIcon } from './Icons';
+import { ShoppingIcon, RecycleIcon, RecipeIcon, ArticleIcon, BankingIcon, TeamIcon, BriefcaseIcon, MentorIcon, AIIcon, BlockchainIcon } from './Icons';
 import { useEffect } from 'react';
 
 function Portfolio() {
@@ -641,6 +641,97 @@ function Portfolio() {
             </a>
           </motion.div>
                         </div>
+      </motion.section>
+
+      <motion.section 
+        className="project-card-section reliefledger-section"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="project-container">
+          <motion.div 
+            className="project-brand"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <span className="blockchain-badge-small">
+              <BlockchainIcon size={16} />
+            </span>
+            ReliefLedger
+          </motion.div>
+          <motion.h2 
+            className="project-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Rebuilding Trust in Humanitarian Aid Through Blockchain
+          </motion.h2>
+          <motion.p 
+            className="project-description"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            A blockchain-powered transparency ecosystem that connects NGOs, field agents, and communities through verifiable proof of delivery — making every act of giving traceable across Africa.
+          </motion.p>
+          <motion.div 
+            className="project-interface"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+            viewport={{ once: true }}
+          >
+            <div className="interface-wrapper">
+              <img src="/images/reliefledger-full-image.svg" alt="ReliefLedger Platform Interface" className="project-interface-image" />
+              <div className="interface-overlay">
+                <div className="ai-badge-overlay">
+                  <div className="ai-indicator">
+                    <BlockchainIcon size={16} />
+                  </div>
+                  <span>Blockchain</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div 
+            className="project-stats"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="stat-item">
+              <div className="jenesys-logo-small">
+                <span className="ai-badge">
+                  <BlockchainIcon size={16} />
+                </span>
+                <span>ReliefLedger</span>
+              </div>
+            </div>
+            <div className="stat-item">
+              <div className="adoption-rate">
+                <span className="percentage">Web3</span>
+                <span className="label">Blockchain</span>
+              </div>
+            </div>
+            <div className="stat-item">
+              <div className="growth-metric">
+                <span className="multiplier">Trust</span>
+                <span className="label">Transparency</span>
+              </div>
+            </div>
+            <Link to="/reliefledger-case-study" className="case-study-btn">
+              View Case Study 
+            </Link>
+          </motion.div>
+        </div>
       </motion.section>
 
       <motion.section 
