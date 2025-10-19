@@ -79,6 +79,28 @@ function Work() {
               </div>
             </Link>
 
+            {/* ReliefLedger Card */}
+            <Link to="/reliefledger-case-study" className="work-card reliefledger-card clickable-card">
+              <div className="work-card-content">
+                <div className="work-card-header">
+                  <span className="work-card-label reliefledger-label">
+                    <span className="blockchain-badge-small">
+                      <BlockchainIcon size={16} />
+                    </span>
+                    <span>ReliefLedger</span>
+                  </span>
+                </div>
+                <h2 className="work-card-title">Rebuilding Trust in Humanitarian Aid</h2>
+                <p className="work-card-description">A blockchain-powered transparency ecosystem that connects NGOs, field agents, and communities through verifiable proof of delivery — making aid traceable across Africa.</p>
+                
+                <div className="work-card-image">
+                  <div className="reliefledger-preview">
+                    <img src="/images/reliefledger-full-image.svg" alt="ReliefLedger Platform Interface" className="reliefledger-app-image" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
             {/* Tikiti Card */}
             <div className="work-card tikiti-card">
               <div className="work-card-content">
@@ -101,28 +123,6 @@ function Work() {
                 </div>
               </div>
             </div>
-
-            {/* ReliefLedger Card */}
-            <Link to="/reliefledger-case-study" className="work-card reliefledger-card clickable-card">
-              <div className="work-card-content">
-                <div className="work-card-header">
-                  <span className="work-card-label reliefledger-label">
-                    <span className="blockchain-badge-small">
-                      <BlockchainIcon size={16} />
-                    </span>
-                    <span>ReliefLedger</span>
-                  </span>
-                </div>
-                <h2 className="work-card-title">Rebuilding Trust in Humanitarian Aid</h2>
-                <p className="work-card-description">A blockchain-powered transparency ecosystem that connects NGOs, field agents, and communities through verifiable proof of delivery — making aid traceable across Africa.</p>
-                
-                <div className="work-card-image">
-                  <div className="reliefledger-preview">
-                    <img src="/images/reliefledger-full-image.svg" alt="ReliefLedger Platform Interface" className="reliefledger-app-image" />
-                  </div>
-                </div>
-              </div>
-            </Link>
 
             {/* BorlaPay Card */}
             <Link to="/borlapay-case-study" className="work-card borlapay-card clickable-card">

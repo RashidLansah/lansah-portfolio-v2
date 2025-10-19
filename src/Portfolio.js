@@ -35,7 +35,7 @@ function Portfolio() {
         <div className="hero-content">
           <motion.p 
             className="hero-greeting"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
@@ -51,9 +51,9 @@ function Portfolio() {
           </motion.h1>
           <motion.p 
             className="hero-subtitle"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
           >
             I design digital experiences that connect user needs with business goals, blending research, design systems, and product strategy to drive growth and engagement.
           </motion.p>
@@ -88,35 +88,35 @@ function Portfolio() {
       <motion.section 
         className="project-card-section jenesys-section" 
         id="highlights"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="project-container">
           <motion.div 
             className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             ✨ Featured: Jenesys AI
           </motion.div>
           <motion.h2 
             className="project-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
             From MVP to Scale
           </motion.h2>
           <motion.p 
             className="project-description"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             How I helped an AI fintech platform simplify accounting workflows and grow adoption by 60%. 
@@ -125,9 +125,9 @@ function Portfolio() {
           </motion.p>
           <motion.div 
             className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <div className="interface-wrapper">
@@ -142,9 +142,9 @@ function Portfolio() {
           </motion.div>
           <motion.div 
             className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <div className="stat-item">
@@ -174,35 +174,35 @@ function Portfolio() {
 
       <motion.section 
         className="project-card-section tumapay-section"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="project-container">
           <motion.div 
             className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             TumaPay
           </motion.div>
           <motion.h2 
             className="project-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
             Designing a Voice-First Fintech Experience for Non-Literate Users
           </motion.h2>
           <motion.p 
             className="project-description"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             How can we make digital finance accessible to users who can't read or type in English? 
@@ -210,9 +210,9 @@ function Portfolio() {
           </motion.p>
           <motion.div 
             className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <div className="interface-wrapper tumapay-interface">
@@ -221,9 +221,9 @@ function Portfolio() {
           </motion.div>
           <motion.div 
             className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <div className="stat-item">
@@ -251,34 +251,125 @@ function Portfolio() {
       </motion.section>
 
       <motion.section 
-        className="project-card-section tikiti-card-section"
-        initial={{ opacity: 0, y: 50 }}
+        className="project-card-section reliefledger-section"
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="project-container">
           <motion.div 
             className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <span className="blockchain-badge-small">
+              <BlockchainIcon size={16} />
+            </span>
+            ReliefLedger
+          </motion.div>
+          <motion.h2 
+            className="project-title"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            Rebuilding Trust in Humanitarian Aid Through Blockchain
+          </motion.h2>
+          <motion.p 
+            className="project-description"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            A blockchain-powered transparency ecosystem that connects NGOs, field agents, and communities through verifiable proof of delivery — making every act of giving traceable across Africa.
+          </motion.p>
+          <motion.div 
+            className="project-interface"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="interface-wrapper">
+              <img src="/images/reliefledger-full-image.svg" alt="ReliefLedger Platform Interface" className="project-interface-image" />
+              <div className="interface-overlay">
+                <div className="ai-badge-overlay">
+                  <div className="ai-indicator">
+                    <BlockchainIcon size={16} />
+                  </div>
+                  <span>Blockchain</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div 
+            className="project-stats"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="stat-item">
+              <div className="jenesys-logo-small">
+                <span className="ai-badge">
+                  <BlockchainIcon size={16} />
+                </span>
+                <span>ReliefLedger</span>
+              </div>
+            </div>
+            <div className="stat-item">
+              <div className="adoption-rate">
+                <span className="percentage">Web3</span>
+                <span className="label">Blockchain</span>
+              </div>
+            </div>
+            <div className="stat-item">
+              <div className="growth-metric">
+                <span className="multiplier">Trust</span>
+                <span className="label">Transparency</span>
+              </div>
+            </div>
+            <Link to="/reliefledger-case-study" className="case-study-btn">
+              View Case Study 
+            </Link>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      <motion.section 
+        className="project-card-section tikiti-card-section"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="project-container">
+          <motion.div 
+            className="project-brand"
+            initial={{ opacity: 0, x: -15 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             Tikiti
           </motion.div>
           <motion.h2 
             className="project-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
             Simplifying Event Ticketing in Ghana
           </motion.h2>
           <motion.div 
             className="project-subtitle"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
             viewport={{ once: true }}
@@ -287,9 +378,9 @@ function Portfolio() {
           </motion.div>
           <motion.p 
             className="project-description"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             Designed a seamless mobile flow for users to discover, pay, and verify tickets via MoMo. 
@@ -297,9 +388,9 @@ function Portfolio() {
           </motion.p>
           <motion.div 
             className="tikiti-app-showcase"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <div className="tikiti-app-wrapper">
@@ -314,9 +405,9 @@ function Portfolio() {
           </motion.div>
           <motion.div 
             className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <div className="stats-left">
@@ -333,17 +424,17 @@ function Portfolio() {
 
       <motion.section 
         className="project-card-section receipt2recipe-section"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="project-container">
           <motion.div 
             className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <span className="recipe-badge">🍳</span>
@@ -352,7 +443,7 @@ function Portfolio() {
           
           <motion.h2 
             className="project-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
@@ -362,9 +453,9 @@ function Portfolio() {
           
           <motion.p 
             className="project-description"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             Concept, UX flow, and prototype built in under a week using Cursor + Figma. 
@@ -373,9 +464,9 @@ function Portfolio() {
           
           <motion.div 
             className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <div className="interface-wrapper">
@@ -389,9 +480,9 @@ function Portfolio() {
           
           <motion.div 
             className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <div className="stat-item">
@@ -421,35 +512,35 @@ function Portfolio() {
 
       <motion.section 
         className="project-card-section article-card"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="article-container">
           <motion.div 
             className="article-label"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             Medium Article
           </motion.div>
           <motion.h2 
             className="article-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
             How I Use AI to Supercharge My Design Process
           </motion.h2>
           <motion.p 
             className="article-description"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             Discover how AI tools like ChatGPT and Cursor have transformed my workflow, reducing early-stage design time by 30x while maintaining creativity and user empathy.
@@ -459,7 +550,7 @@ function Portfolio() {
             target="_blank" 
             rel="noopener noreferrer" 
             className="article-btn"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
             viewport={{ once: true }}
@@ -471,17 +562,17 @@ function Portfolio() {
 
       <motion.section 
         className="project-card-section novum-section"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="project-container">
           <motion.div 
             className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <span className="novum-badge">🌐</span>
@@ -490,7 +581,7 @@ function Portfolio() {
           
           <motion.h2 
             className="project-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
@@ -501,9 +592,9 @@ function Portfolio() {
           
           <motion.div 
             className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <div className="interface-wrapper">
@@ -517,9 +608,9 @@ function Portfolio() {
           
           <motion.div 
             className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <div className="stat-item">
@@ -549,17 +640,17 @@ function Portfolio() {
 
       <motion.section 
         className="project-card-section busybody-section"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="project-container">
           <motion.div 
             className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <span className="ecommerce-badge-small">
@@ -570,7 +661,7 @@ function Portfolio() {
           
           <motion.h2 
             className="project-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
@@ -580,9 +671,9 @@ function Portfolio() {
           
           <motion.p 
             className="project-description"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             A comprehensive mobile task management application designed to enhance productivity through intuitive user experience, streamlined workflows, and modern UI patterns that help users organize and prioritize their daily tasks effectively.
@@ -590,9 +681,9 @@ function Portfolio() {
           
           <motion.div 
             className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <div className="interface-wrapper">
@@ -606,9 +697,9 @@ function Portfolio() {
           
           <motion.div 
             className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <div className="stat-item">
@@ -644,127 +735,36 @@ function Portfolio() {
       </motion.section>
 
       <motion.section 
-        className="project-card-section reliefledger-section"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <span className="blockchain-badge-small">
-              <BlockchainIcon size={16} />
-            </span>
-            ReliefLedger
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Rebuilding Trust in Humanitarian Aid Through Blockchain
-          </motion.h2>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-          >
-            A blockchain-powered transparency ecosystem that connects NGOs, field agents, and communities through verifiable proof of delivery — making every act of giving traceable across Africa.
-          </motion.p>
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img src="/images/reliefledger-full-image.svg" alt="ReliefLedger Platform Interface" className="project-interface-image" />
-              <div className="interface-overlay">
-                <div className="ai-badge-overlay">
-                  <div className="ai-indicator">
-                    <BlockchainIcon size={16} />
-                  </div>
-                  <span>Blockchain</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="jenesys-logo-small">
-                <span className="ai-badge">
-                  <BlockchainIcon size={16} />
-                </span>
-                <span>ReliefLedger</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="adoption-rate">
-                <span className="percentage">Web3</span>
-                <span className="label">Blockchain</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="growth-metric">
-                <span className="multiplier">Trust</span>
-                <span className="label">Transparency</span>
-              </div>
-            </div>
-            <Link to="/reliefledger-case-study" className="case-study-btn">
-              View Case Study 
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section>
-
-      <motion.section 
         className="project-card-section borlapay-section"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="project-container">
           <motion.div 
             className="project-brand"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             BorlaPay
           </motion.div>
           <motion.h2 
             className="project-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
             Making Recycling Rewarding in Ghana
           </motion.h2>
           <motion.p 
             className="project-description"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             Designed a mobile-first recycling platform that connects users with local "Wastepreneurs" through mobile money rewards. 
@@ -772,9 +772,9 @@ function Portfolio() {
           </motion.p>
           <motion.div 
             className="project-interface"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <div className="interface-wrapper">
@@ -791,9 +791,9 @@ function Portfolio() {
           </motion.div>
           <motion.div 
             className="project-stats"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <div className="stat-item">
@@ -826,17 +826,17 @@ function Portfolio() {
       <motion.section 
         className="about-section"
         id="about"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="about-container">
           <motion.h2 
             className="about-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             About Me
@@ -844,9 +844,9 @@ function Portfolio() {
           
           <motion.p 
             className="about-intro"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
             I'm a Senior Product Designer passionate about turning complex systems into simple, human-centered experiences. 
@@ -855,9 +855,9 @@ function Portfolio() {
 
           <motion.div 
             className="about-highlights"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             <div className="highlight-item">
@@ -895,7 +895,7 @@ function Portfolio() {
 
           <motion.p 
             className="about-personal"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
             viewport={{ once: true }}
@@ -909,17 +909,17 @@ function Portfolio() {
       <motion.section 
         className="contact-section"
         id="contact"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="contact-container">
           <motion.h2 
             className="contact-title"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
           >
             Let's build something that solves real problems
@@ -927,9 +927,9 @@ function Portfolio() {
           
           <motion.p 
             className="contact-subtitle"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
             Reach out if you're hiring, collaborating, or want to chat design.
@@ -937,9 +937,9 @@ function Portfolio() {
 
           <motion.div 
             className="contact-buttons"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
             <a 
