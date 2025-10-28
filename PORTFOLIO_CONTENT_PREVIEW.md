@@ -15,10 +15,9 @@
 ---
 
 ### Experience Timeline
-- **01/2020 - Present** | Upwork | Freelance Product Designer
 - **04/2023 - 08/2025** | Jenesys AI | Founding Product Designer
-- **11/2022 - 03/2023** | Dbaza Health | Product Designer (Contract)
-- **09/2017 - 03/2022** | Guildbytes Tech Solutions | Lead Product Designer
+- **09/2020 - 05/2023** | Upwork | Freelance Product Designer
+- **11/2022 - 03/2023** | Dbaza Health | Product Designer
 
 ---
 

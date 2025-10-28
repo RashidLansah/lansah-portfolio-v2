@@ -63,24 +63,19 @@ function Portfolio() {
       <section className="companies">
         <div className="companies-container">
           <div className="experience-item">
-            <div className="experience-year">01/2020 - Present</div>
-            <div className="experience-company">Upwork</div>
-            <div className="experience-role">Freelance Product Designer</div>
-          </div>
-          <div className="experience-item">
             <div className="experience-year">04/2023 - 08/2025</div>
             <div className="experience-company">Jenesys AI</div>
             <div className="experience-role">Founding Product Designer</div>
           </div>
           <div className="experience-item">
-            <div className="experience-year">11/2022 - 03/2023</div>
-            <div className="experience-company">Dbaza Health</div>
-            <div className="experience-role">Product Designer (Contract)</div>
+            <div className="experience-year">09/2020 - 05/2023</div>
+            <div className="experience-company">Upwork</div>
+            <div className="experience-role">Freelance Product Designer</div>
           </div>
           <div className="experience-item">
-            <div className="experience-year">09/2017 - 03/2022</div>
-            <div className="experience-company">Guildbytes Tech Solutions</div>
-            <div className="experience-role">Lead Product Designer</div>
+            <div className="experience-year">11/2022 - 03/2023</div>
+            <div className="experience-company">Dbaza Health</div>
+            <div className="experience-role">Product Designer</div>
           </div>
         </div>
       </section>
