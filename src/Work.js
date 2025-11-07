@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import MobileMenu from './MobileMenu';
 import './Work.css';
-import { RecycleIcon, ShoppingIcon, AIIcon, LightningIcon, DesignIcon, BlockchainIcon } from './Icons';
+import { RecycleIcon, AIIcon, LightningIcon, DesignIcon, BlockchainIcon } from './Icons';
 
 function Work() {
   // Scroll to top when component mounts
@@ -145,48 +145,6 @@ function Work() {
                 </div>
               </div>
             </Link>
-
-            {/* Novum Card */}
-            <div className="work-card novum-card">
-              <div className="work-card-content">
-                <div className="work-card-header">
-                  <span className="work-card-label novum-label">
-                    <span className="web-badge-small">🌐</span>
-                    <span>Novum</span>
-                  </span>
-                </div>
-                <h2 className="work-card-title">Novum website</h2>
-                <p className="work-card-description">A modern, mobile-responsive landing page designed for optimal user experience across all devices, featuring clean typography and intuitive navigation.</p>
-                
-                <div className="work-card-image">
-                  <div className="novum-preview">
-                    <img src="/images/novum-full-image.svg" alt="Novum Mobile Banking Application" className="novum-app-image" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* BusyBody Card */}
-            <div className="work-card busybody-card">
-              <div className="work-card-content">
-                <div className="work-card-header">
-                  <span className="work-card-label busybody-label">
-                    <span className="ecommerce-badge-small">
-                      <ShoppingIcon size={16} />
-                    </span>
-                    <span>BusyBody</span>
-                  </span>
-                </div>
-                <h2 className="work-card-title">Task Manager UX Design</h2>
-                <p className="work-card-description">A comprehensive mobile task management application designed to enhance productivity through intuitive user experience, streamlined workflows, and modern UI patterns that help users organize and prioritize their daily tasks effectively.</p>
-                
-                <div className="work-card-image">
-                  <div className="busybody-preview">
-                    <img src="/images/busybody-full-image.svg" alt="BusyBody E-commerce Platform" className="busybody-app-image" />
-                  </div>
-                </div>
-              </div>
-            </div>
 
             {/* Receipt2Recipe Card */}
             <Link to="/receipt2recipe-case-study" className="work-card receipt2recipe-card clickable-card">

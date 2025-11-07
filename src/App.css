@@ -236,25 +236,6 @@ html {
   font-size: 28px;
 }
 
-.busybody-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.ecommerce-badge {
-  background: linear-gradient(135deg, #7c3aed, #a855f7);
-  color: white;
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
 .highlight-image {
   width: 100%;
   height: 200px;
@@ -267,7 +248,6 @@ html {
   overflow: hidden;
 }
 
-.busybody-preview,
 .jenesys-preview,
 .borlapay-preview {
   width: 100%;
@@ -1781,134 +1761,6 @@ html {
   .bookify-container {
     padding: 30px 20px;
   }
-}
-
-/* Novum Section Styles */
-.novum-section {
-  background-color: #f8f8f8;
-}
-
-.novum-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  background: #6366f1;
-  color: white;
-  border-radius: 4px;
-  font-size: 12px;
-  margin-right: 8px;
-}
-
-.novum-status-badge {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 6px 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.novum-status-badge .web-indicator {
-  background: #6366f1;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 9px;
-  font-weight: 700;
-}
-
-.novum-status-badge span {
-  font-size: 12px;
-  font-weight: 600;
-  color: #1e293b;
-}
-
-.novum-logo-small {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.web-badge {
-  background: #6366f1;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.security-metric {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.experience-metric {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.experience-metric .multiplier {
-  font-size: 16px;
-  font-weight: 700;
-  color: #6366f1;
-}
-
-/* BusyBody Section Styles */
-.busybody-section {
-  background-color: #f8f8f8;
-}
-
-.ecommerce-badge-small {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(135deg, #7c3aed, #a855f7);
-  color: white;
-  border-radius: 4px;
-  font-size: 12px;
-  margin-right: 8px;
-}
-
-.busybody-logo-small {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.conversion-metric {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.optimization-metric {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.optimization-metric .multiplier {
-  font-size: 16px;
-  font-weight: 700;
-  color: #7c3aed;
 }
 
 /* Receipt2Recipe Section Styles */
