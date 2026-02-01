@@ -353,9 +353,6 @@ function AboutMe() {
           <p className="about-section-text">
             <a href="https://medium.com/design-bootcamp/designing-a-confidence-based-feedback-ui-f5eba0420c8c" target="_blank" rel="noopener noreferrer" className="about-link">Here's something I wrote</a> about designing interfaces that communicate AI uncertainty and keep users in control.
           </p>
-          <div className="about-arrow-button">
-            <span>→</span>
-          </div>
         </motion.div>
 
         <motion.div
@@ -374,9 +371,6 @@ function AboutMe() {
           <p className="about-section-text">
             I've been a design mentor on <a href="https://adplist.org" target="_blank" rel="noopener noreferrer" className="about-link">ADPList</a> for over 2 years now. Shoot me a line if you'd like to connect on mentorship.
           </p>
-          <div className="about-arrow-button">
-            <span>→</span>
-          </div>
         </motion.div>
       </section>
 
