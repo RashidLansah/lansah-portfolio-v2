@@ -263,9 +263,13 @@ function AboutMe() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <CompanyIcon size={72} />
-          </div>
+          </motion.div>
           <h2 className="about-section-title">
             Right now, I'm exploring new opportunities
           </h2>
@@ -281,9 +285,13 @@ function AboutMe() {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <WorkBriefcaseIcon size={72} />
-          </div>
+          </motion.div>
           <h2 className="about-section-title">
             Previously, I was Founding Product Designer at Jenesys
           </h2>
@@ -344,9 +352,13 @@ function AboutMe() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <PlantIcon size={72} />
-          </div>
+          </motion.div>
           <h2 className="about-section-title">
             I'm passionate about projects that create positive social impact
           </h2>
@@ -362,9 +374,13 @@ function AboutMe() {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <MentorTeachIcon size={72} />
-          </div>
+          </motion.div>
           <h2 className="about-section-title">
             I also teach and mentor aspiring designers and developers
           </h2>
@@ -449,9 +465,13 @@ function AboutMe() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <SportsIcon size={72} />
-          </div>
+          </motion.div>
           <h2 className="about-section-title">
             Outside of work, I'm a football fanatic — Messi is the GOAT
           </h2>
@@ -467,9 +487,13 @@ function AboutMe() {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <RocketIcon size={72} />
-          </div>
+          </motion.div>
           <h2 className="about-section-title">
             And an aspiring founder (100% serious)
           </h2>
@@ -488,9 +512,13 @@ function AboutMe() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <GamepadIcon size={72} />
-          </div>
+          </motion.div>
           <h3 className="about-small-title">Playing:</h3>
           <p className="about-small-text">
             FIFA, God of War, Ghost of Tsushima
@@ -504,9 +532,13 @@ function AboutMe() {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <HeadphonesIcon size={72} />
-          </div>
+          </motion.div>
           <h3 className="about-small-title">Listening to:</h3>
           <p className="about-small-text">
             Afrobeats, Hip-hop, Lofi beats, Jazz
@@ -520,9 +552,13 @@ function AboutMe() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <div className="about-icon-wrapper">
+          <motion.div
+            className="about-icon-wrapper"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             <ReadingIcon size={72} />
-          </div>
+          </motion.div>
           <h3 className="about-small-title">Reading:</h3>
           <p className="about-small-text">
             Sci-fi, Manga
