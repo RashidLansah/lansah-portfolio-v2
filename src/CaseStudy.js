@@ -139,9 +139,10 @@ function CaseStudy() {
     );
 
     // Add a small delay to ensure all refs are set
+    const currentRefs = sectionRefs.current;
     const observerTimeoutId = setTimeout(() => {
       sections.forEach((section) => {
-        const ref = sectionRefs.current[section.id];
+        const ref = currentRefs[section.id];
         if (ref) {
           observer.observe(ref);
         }
@@ -151,7 +152,7 @@ function CaseStudy() {
     return () => {
       clearTimeout(observerTimeoutId);
       sections.forEach((section) => {
-        const ref = sectionRefs.current[section.id];
+        const ref = currentRefs[section.id];
         if (ref) {
           observer.unobserve(ref);
         }
