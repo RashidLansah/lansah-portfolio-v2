@@ -272,9 +272,6 @@ function AboutMe() {
           <p className="about-section-text">
             Open to roles in fintech, healthcare, HR, heavy data systems, iGaming, or social impact. Let's build something meaningful together.
           </p>
-          <div className="about-arrow-button">
-            <span>→</span>
-          </div>
         </motion.div>
 
         <motion.div
@@ -293,9 +290,6 @@ function AboutMe() {
           <p className="about-section-text">
             2023 — 2025: Led product design for AI-powered financial management tools, reconciliation systems, and business dashboards that helped achieve $1M ARR.
           </p>
-          <div className="about-arrow-button">
-            <span>→</span>
-          </div>
         </motion.div>
       </section>
 
