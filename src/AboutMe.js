@@ -270,7 +270,7 @@ function AboutMe() {
             Right now, I'm exploring new opportunities
           </h2>
           <p className="about-section-text">
-            Open to roles where I can design impactful fintech, healthcare, or social impact products. Let's build something meaningful together.
+            Open to roles in fintech, healthcare, HR, heavy data systems, iGaming, or social impact. Let's build something meaningful together.
           </p>
           <div className="about-arrow-button">
             <span>→</span>
