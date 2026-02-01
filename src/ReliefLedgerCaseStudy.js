@@ -86,11 +86,12 @@ function ReliefLedgerCaseStudy() {
 
   const sections = [
     { id: 'overview', title: 'Overview', icon: <BookIcon /> },
+    { id: 'my-role', title: 'My Role', icon: <IdBadgeIcon /> },
     { id: 'problem', title: 'Problem', icon: <TargetIcon /> },
     { id: 'research', title: 'Research', icon: <PersonIcon /> },
     { id: 'epiphany', title: 'Epiphany', icon: <SparklesIcon /> },
     { id: 'process', title: 'Process', icon: <ContextIcon /> },
-    { id: 'solution', title: 'Solution', icon: <IdBadgeIcon /> },
+    { id: 'solution', title: 'Solution', icon: <SparklesIcon /> },
     { id: 'results', title: 'Results', icon: <ChartIcon /> },
     { id: 'learnings', title: 'Learnings', icon: <GraduationCapIcon /> },
   ];
@@ -254,6 +255,93 @@ function ReliefLedgerCaseStudy() {
               <p className="section-paragraph">
                 The humanitarian aid system in Ghana operates on trust without verification. Blockchain technology could create a single source of truth, connecting every actor in the aid delivery chain through immutable, verifiable records.
               </p>
+            </div>
+
+            {/* MY ROLE SECTION */}
+            <div id="my-role" ref={(el) => (sectionRefs.current['my-role'] = el)} className="content-section">
+              <p className="section-label">My Role</p>
+              <h2 className="section-title">Designing Trust in a Web3 Ecosystem</h2>
+
+              <div className="role-overview-card">
+                <div className="role-meta-grid">
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Role</span>
+                    <span className="role-meta-value">Lead Product Designer</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Duration</span>
+                    <span className="role-meta-value">Concept to Prototype</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Platform</span>
+                    <span className="role-meta-value">Web3 Blockchain (Built on Celo)</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Focus</span>
+                    <span className="role-meta-value">Humanitarian Aid Transparency</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="role-sections-grid">
+                <div className="role-section">
+                  <h3>What I Owned</h3>
+                  <ul className="role-responsibilities-list">
+                    <li>End-to-end design of 4 connected interfaces (NGO Dashboard, Field Agent App, Beneficiary Portal, Blockchain Explorer)</li>
+                    <li>Field research with NGOs, field agents, and community members across Ghana</li>
+                    <li>Web3 UX strategy: making blockchain invisible while transparency remains visible</li>
+                    <li>Offline-first design patterns for low-connectivity environments</li>
+                    <li>Wallet-less authentication system design</li>
+                    <li>Visual language for blockchain verification states (glow, motion, color)</li>
+                  </ul>
+                </div>
+
+                <div className="role-section">
+                  <h3>Stakeholders Served</h3>
+                  <ul className="role-collaborators-list">
+                    <li><strong>NGO Administrators</strong> — Campaign tracking, proof management, donor reporting</li>
+                    <li><strong>Field Agents</strong> — Offline proof capture, delivery verification</li>
+                    <li><strong>Communities</strong> — Public record access, delivery verification</li>
+                    <li><strong>Donors & Auditors</strong> — Blockchain audit trails, transaction verification</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="goals-container">
+                <h3>Key Contributions</h3>
+                <div className="goals-grid">
+                  <div className="goal-item">
+                    <div className="goal-icon">
+                      <BlockchainIcon size={20} />
+                    </div>
+                    <div className="goal-content">
+                      <h4>Web3 UX Design</h4>
+                      <p>Made blockchain invisible, transparency visible</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">📱</div>
+                    <div className="goal-content">
+                      <h4>Offline-First</h4>
+                      <p>Designed for rural, low-connectivity contexts</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">🔗</div>
+                    <div className="goal-content">
+                      <h4>4 Interfaces</h4>
+                      <p>Created connected ecosystem for all stakeholders</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">🔐</div>
+                    <div className="goal-content">
+                      <h4>Wallet-less Auth</h4>
+                      <p>No crypto knowledge required for users</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* PROBLEM SECTION */}

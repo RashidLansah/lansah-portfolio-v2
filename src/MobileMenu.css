@@ -229,6 +229,29 @@
   transform: scale(1.05);
 }
 
+.mobile-menu-item.active .menu-item-icon {
+  background: rgba(90, 79, 207, 0.15);
+}
+
+.mobile-menu-item.active .menu-item-label {
+  color: #5a4fcf;
+}
+
+.menu-item-icon svg {
+  stroke: #575861;
+}
+
+.menu-item-profile {
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu-item-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .menu-item-label {
   font-size: 12px;
   font-weight: 500;

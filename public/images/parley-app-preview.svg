@@ -1,0 +1,78 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#1a1a1a"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="100" height="800" fill="#111111"/>
+
+  <!-- Logo area -->
+  <rect x="20" y="20" width="60" height="40" rx="8" fill="#f59e0b"/>
+  <text x="50" y="45" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">P</text>
+
+  <!-- Sidebar items -->
+  <circle cx="50" cy="120" r="20" fill="#2a2a2a"/>
+  <text x="50" y="125" font-family="Arial, sans-serif" font-size="18" fill="#888" text-anchor="middle">+</text>
+
+  <rect x="20" y="170" width="60" height="40" rx="8" fill="transparent" stroke="#333" stroke-width="1"/>
+  <text x="50" y="195" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">History</text>
+
+  <rect x="20" y="220" width="60" height="40" rx="8" fill="transparent" stroke="#333" stroke-width="1"/>
+  <text x="50" y="245" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">Library</text>
+
+  <!-- Main content area -->
+  <rect x="100" y="0" width="1100" height="800" fill="#1f1f1f"/>
+
+  <!-- Header -->
+  <rect x="100" y="0" width="1100" height="60" fill="#1a1a1a"/>
+  <text x="130" y="38" font-family="Arial, sans-serif" font-size="14" fill="#888">History</text>
+
+  <!-- Trial badge -->
+  <rect x="950" y="18" width="80" height="28" rx="14" fill="#333"/>
+  <text x="990" y="37" font-family="Arial, sans-serif" font-size="11" fill="#f59e0b" text-anchor="middle">TRIAL 3/3</text>
+
+  <!-- Sign In button -->
+  <rect x="1040" y="18" width="60" height="28" rx="14" fill="transparent" stroke="#444" stroke-width="1"/>
+  <text x="1070" y="37" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">Sign In</text>
+
+  <!-- Sign Up button -->
+  <rect x="1110" y="18" width="70" height="28" rx="14" fill="#f59e0b"/>
+  <text x="1145" y="37" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Sign Up</text>
+
+  <!-- Council badge -->
+  <rect x="550" y="280" width="120" height="30" rx="15" fill="#333"/>
+  <text x="610" y="300" font-family="Arial, sans-serif" font-size="12" fill="#aaa" text-anchor="middle">Council of LLMs</text>
+
+  <!-- Main heading -->
+  <text x="650" y="360" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="bold">Get answers from a council</text>
+  <text x="650" y="400" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="bold">of leading AI models</text>
+
+  <!-- Input container -->
+  <rect x="350" y="450" width="600" height="100" rx="16" fill="#2a2a2a"/>
+
+  <!-- Input label -->
+  <text x="380" y="485" font-family="Arial, sans-serif" font-size="13" fill="#888">Multiple AI models collaborate to give you the best answer</text>
+
+  <!-- Online indicator -->
+  <circle cx="870" cy="478" r="5" fill="#22c55e"/>
+  <text x="920" y="483" font-family="Arial, sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">Council is online</text>
+
+  <!-- Input field -->
+  <rect x="370" y="500" width="560" height="35" rx="8" fill="#333"/>
+  <text x="390" y="523" font-family="Arial, sans-serif" font-size="14" fill="#666">Ask anything</text>
+
+  <!-- Send button -->
+  <polygon points="910,517 895,510 895,525" fill="#f59e0b"/>
+
+  <!-- Quick prompts -->
+  <rect x="380" y="580" width="180" height="35" rx="17" fill="transparent" stroke="#444" stroke-width="1"/>
+  <text x="470" y="603" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">Quick ideas for your business</text>
+
+  <rect x="580" y="580" width="180" height="35" rx="17" fill="transparent" stroke="#444" stroke-width="1"/>
+  <text x="670" y="603" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">Quick ideas for your business</text>
+
+  <rect x="780" y="580" width="80" height="35" rx="17" fill="transparent" stroke="#444" stroke-width="1"/>
+  <text x="820" y="603" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">Tech</text>
+
+  <!-- Coming soon -->
+  <text x="50" y="750" font-family="Arial, sans-serif" font-size="10" fill="#444" text-anchor="middle">Coming soon</text>
+</svg>

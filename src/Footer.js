@@ -1,71 +1,52 @@
 import React from 'react';
+import { LinkedInIcon, GitHubIcon, MediumIcon } from './Icons';
 import './Footer.css';
-
-const BehanceIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.504 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.76-.61.16-1.25.24-1.92.24H0V4.51h6.938v-.007zM3.495 8.48h2.563c.62 0 1.11-.89 1.11-.89s.48-.48.48-1.23c0-.75-.49-1.23-.49-1.23s-.49-.89-1.11-.89H3.495V8.48zm0 6.25h2.98c.75 0 1.36-.1 1.36-.1s.6-.33.6-1.04-.6-1.04-.6-1.04-.61-.1-1.36-.1H3.495v2.28zM22.43 8.84c-.73-1.34-1.95-2.01-3.66-2.01-1.4 0-2.6.42-3.59 1.27-.99.85-1.56 2.19-1.71 4.02h7.1c0-.75-.22-1.34-.66-1.78-.44-.44-1-.66-1.68-.66-.92 0-1.64.33-2.16.99-.52.66-.78 1.57-.78 2.73 0 1.16.26 2.07.78 2.73.52.66 1.24.99 2.16.99.68 0 1.24-.22 1.68-.66.44-.44.66-1.03.66-1.78h2.34c-.15 1.83-.72 3.17-1.71 4.02-.99.85-2.19 1.27-3.59 1.27-1.71 0-2.93-.67-3.66-2.01-.73-1.34-1.1-3.11-1.1-5.31s.37-3.97 1.1-5.31zM17.22 6.3h5.61v1.28h-5.61V6.3z"/>
-  </svg>
-);
-
-const LinkedInIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-  </svg>
-);
-
-const MediumIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-  </svg>
-);
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="social-links">
-          <a 
-            href="https://behance.net/rashidlansah" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="social-link"
-            aria-label="Behance"
-          >
-            <BehanceIcon />
+        <div className="footer-text">
+          <p>Feel free to reach out for collaborations or just a friendly hello</p>
+          <a href="mailto:rashidlansahadam@gmail.com" className="footer-email">
+            rashidlansahadam@gmail.com
           </a>
-          <a 
-            href="https://linkedin.com/in/rashid-lansah" 
-            target="_blank" 
+        </div>
+        <div className="social-links">
+          <a
+            href="https://linkedin.com/in/rashid-lansah"
+            target="_blank"
             rel="noopener noreferrer"
             className="social-link"
             aria-label="LinkedIn"
           >
-            <LinkedInIcon />
+            <LinkedInIcon size={24} />
           </a>
-          <a 
-            href="https://medium.com/@rashidlansah" 
-            target="_blank" 
+          <a
+            href="https://github.com/RashidLansah"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+            aria-label="GitHub"
+          >
+            <GitHubIcon size={24} />
+          </a>
+          <a
+            href="https://medium.com/@rashidlansah"
+            target="_blank"
             rel="noopener noreferrer"
             className="social-link"
             aria-label="Medium"
           >
-            <MediumIcon />
+            <MediumIcon size={24} />
           </a>
         </div>
-        <div className="resume-section">
-          <a 
-            href="https://drive.google.com/file/d/1-n7H7VXxC8WuwY9bPyxqrpkCij9Cb2yo/view?usp=sharing" 
-            className="resume-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Download Resume"
-          >
-            Download Resume
-          </a>
+        <div className="footer-copyright">
+          <p>&copy; {new Date().getFullYear()} Lansah. All rights reserved.</p>
         </div>
       </div>
     </footer>
   );
 }
 
-export default Footer; 
+export default Footer;

@@ -305,31 +305,84 @@ function BorlaPayCaseStudy() {
 
             <div id="my-role" ref={(el) => (sectionRefs.current['my-role'] = el)} className="content-section">
               <p className="section-label">My Role</p>
-              <h2 className="section-title">Lead Product Designer</h2>
-              <p className="section-paragraph">
-                Led research, strategy, and complete UX design. Conducted 8 interviews across Accra, Kumasi, and Tamale to understand why people don't recycle and how they use mobile money. The insight? Trust community members over institutions, and familiar UX beats novelty every time.
-              </p>
-              <p className="section-paragraph">
-                <strong>Design Approach:</strong> Mirrored mobile money apps Ghanaians already love. Familiar flows. Instant rewards. Community-first trust mechanics. Designed a two-sided marketplace where "Wastepreneurs" collect waste and users get paid — all through interfaces that feel like home.
-              </p>
-              <p className="section-paragraph">
-                <strong>Key Insight:</strong> People don't need to be convinced to recycle. They need to be rewarded and supported by their community. The UX just needed to get out of the way.
-              </p>
-              
-              <div className="goals-container">
-                <div className="goal">
-                  <div className="goal-number">01</div>
-                  <div className="goal-title">Make Recycling Rewarding</div>
-                  <div className="goal-description">
-                    Design immediate, tangible rewards that motivate consistent recycling behavior through mobile money integration.
+              <h2 className="section-title">Designing Behavior Change Through Familiar UX</h2>
+
+              <div className="role-overview-card">
+                <div className="role-meta-grid">
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Role</span>
+                    <span className="role-meta-value">Lead Product Designer</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Duration</span>
+                    <span className="role-meta-value">Concept to Prototype</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Research</span>
+                    <span className="role-meta-value">8 interviews across 3 cities in Ghana</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Focus</span>
+                    <span className="role-meta-value">Mobile Money + Recycling Rewards</span>
                   </div>
                 </div>
-                
-                <div className="goal">
-                  <div className="goal-number">02</div>
-                  <div className="goal-title">Build Community Trust</div>
-                  <div className="goal-description">
-                    Create a system where users trust local Wastepreneurs more than distant officials through transparent, community-driven interactions.
+              </div>
+
+              <div className="role-sections-grid">
+                <div className="role-section">
+                  <h3>What I Owned</h3>
+                  <ul className="role-responsibilities-list">
+                    <li>End-to-end UX research and design for mobile-first recycling platform</li>
+                    <li>User research: 8 interviews across Accra, Kumasi, and Tamale</li>
+                    <li>Two-sided marketplace design (Users + Wastepreneurs)</li>
+                    <li>Mobile money integration UX mimicking familiar MoMo patterns</li>
+                    <li>Gamification system design (badges, streaks, leaderboards)</li>
+                    <li>QR-based transaction verification flows</li>
+                  </ul>
+                </div>
+
+                <div className="role-section">
+                  <h3>Key Users Designed For</h3>
+                  <ul className="role-collaborators-list">
+                    <li><strong>Urban Recyclers</strong> — Busy individuals wanting rewards for waste drop-off</li>
+                    <li><strong>Wastepreneurs</strong> — Community collectors managing pickups and processing</li>
+                    <li><strong>Market Sellers</strong> — Primary persona (Amina, 24) seeking extra income</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="goals-container">
+                <h3>Key Contributions</h3>
+                <div className="goals-grid">
+                  <div className="goal-item">
+                    <div className="goal-icon">
+                      <RecycleIcon size={20} />
+                    </div>
+                    <div className="goal-content">
+                      <h4>Behavior Design</h4>
+                      <p>Made recycling as easy as sending MoMo</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">💰</div>
+                    <div className="goal-content">
+                      <h4>Instant Rewards</h4>
+                      <p>Mobile money integration for immediate payouts</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">🤝</div>
+                    <div className="goal-content">
+                      <h4>Community Trust</h4>
+                      <p>Local Wastepreneur network built on social trust</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">🎮</div>
+                    <div className="goal-content">
+                      <h4>Gamification</h4>
+                      <p>Achievement system for sustained engagement</p>
+                    </div>
                   </div>
                 </div>
               </div>

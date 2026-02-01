@@ -302,19 +302,55 @@ function Receipt2RecipeCaseStudy() {
 
             <div id="my-role" ref={(el) => (sectionRefs.current['my-role'] = el)} className="content-section">
               <p className="section-label">My Role</p>
-              <h2 className="section-title">Rapid Prototyping & UX Design</h2>
-              <p className="section-paragraph">
-                Designed the complete user flow — from receipt snap to meal suggestions — in under a week. Used Cursor for rapid prototyping and Figma for polished UI. The goal was to test if receipt-based meal planning could feel magical while staying practical.
-              </p>
-              <p className="section-paragraph">
-                <strong>Key Challenge:</strong> Making complex AI processes (OCR, ingredient matching, recipe generation) feel simple and trustworthy. The answer was showing just enough detail to build confidence without overwhelming users.
-              </p>
-              <p className="section-paragraph">
-                <strong>Design Approach:</strong> Mobile-first, one-handed interactions, instant feedback. Designed for busy shoppers who want answers now — not complex settings menus.
-              </p>
-              
+              <h2 className="section-title">From Idea to Prototype in One Week</h2>
+
+              <div className="role-overview-card">
+                <div className="role-meta-grid">
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Role</span>
+                    <span className="role-meta-value">Solo Designer & Builder</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Duration</span>
+                    <span className="role-meta-value">Under 1 week (rapid prototype)</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Tools</span>
+                    <span className="role-meta-value">Cursor, Figma, Claude AI</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Focus</span>
+                    <span className="role-meta-value">AI-Powered Meal Planning from Receipts</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="role-sections-grid">
+                <div className="role-section">
+                  <h3>What I Owned</h3>
+                  <ul className="role-responsibilities-list">
+                    <li>Complete concept, UX flow, and prototype — soup to nuts</li>
+                    <li>AI workflow design: OCR processing, ingredient extraction, meal generation</li>
+                    <li>Mobile-first UI design optimized for one-handed use</li>
+                    <li>AI transparency patterns showing processing steps and confidence</li>
+                    <li>Rapid prototyping using Cursor and Figma</li>
+                    <li>User research synthesis from 20+ interviews</li>
+                  </ul>
+                </div>
+
+                <div className="role-section">
+                  <h3>AI-Assisted Workflow</h3>
+                  <ul className="role-collaborators-list">
+                    <li><strong>Cursor</strong> — Rapid prototyping and code generation</li>
+                    <li><strong>Figma</strong> — UI design and component library</li>
+                    <li><strong>Claude AI</strong> — UX copy, flow ideation, research synthesis</li>
+                    <li><strong>Self-directed</strong> — Full ownership from concept to delivery</li>
+                  </ul>
+                </div>
+              </div>
+
               <div className="goals-container">
-                <h3>Key Responsibilities</h3>
+                <h3>Key Contributions</h3>
                 <div className="goals-grid">
                   <div className="goal-item">
                     <div className="goal-icon">

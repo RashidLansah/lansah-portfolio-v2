@@ -1,0 +1,70 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Light beige -->
+  <rect width="1200" height="800" fill="#f5f3ef"/>
+
+  <!-- Navigation bar -->
+  <rect x="0" y="0" width="1200" height="70" fill="#ffffff"/>
+
+  <!-- Logo -->
+  <circle cx="100" cy="35" r="18" fill="#2563eb"/>
+  <text x="100" y="40" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">MV</text>
+  <text x="135" y="32" font-family="Arial, sans-serif" font-size="14" fill="#1a1a1a" font-weight="bold">Mr. VISA</text>
+  <text x="135" y="46" font-family="Arial, sans-serif" font-size="9" fill="#888">Powered by VO, your AI Visa Officer</text>
+
+  <!-- Nav links -->
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">What we do</text>
+  <text x="460" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Who we help</text>
+  <text x="575" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Why Mr. VISA</text>
+  <text x="690" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Pricing</text>
+  <text x="770" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Testimonials</text>
+  <text x="870" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Final call</text>
+
+  <!-- Login button -->
+  <rect x="960" y="20" width="70" height="32" rx="16" fill="transparent" stroke="#ddd" stroke-width="1"/>
+  <text x="995" y="41" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">Login</text>
+
+  <!-- Get started button -->
+  <rect x="1045" y="20" width="100" height="32" rx="16" fill="#2563eb"/>
+  <text x="1095" y="41" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Get started</text>
+
+  <!-- Badge -->
+  <rect x="500" y="120" width="200" height="30" rx="15" fill="transparent" stroke="#2563eb" stroke-width="1"/>
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="11" fill="#2563eb" text-anchor="middle" letter-spacing="2">VISA INTERVIEW MASTERY</text>
+
+  <!-- Main heading -->
+  <text x="600" y="220" font-family="Georgia, serif" font-size="48" fill="#1a1a1a" text-anchor="middle">Ace every visa interview</text>
+  <text x="600" y="280" font-family="Georgia, serif" font-size="48" fill="#1a1a1a" text-anchor="middle">with Mr. VISA's <tspan fill="#2563eb">AI-powered</tspan></text>
+  <text x="600" y="340" font-family="Georgia, serif" font-size="48" fill="#2563eb" text-anchor="middle">coaching.</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="400" font-family="Arial, sans-serif" font-size="16" fill="#666" text-anchor="middle">Personalized rehearsals, immigration intelligence, and concierge support keep your answers</text>
+  <text x="600" y="425" font-family="Arial, sans-serif" font-size="16" fill="#666" text-anchor="middle">sharp, your paperwork clean, and your approval odds soaring.</text>
+
+  <!-- User avatars -->
+  <circle cx="530" cy="480" r="22" fill="#e5e7eb"/>
+  <circle cx="570" cy="480" r="22" fill="#d1d5db"/>
+  <circle cx="610" cy="480" r="22" fill="#9ca3af"/>
+  <circle cx="650" cy="480" r="22" fill="#6b7280"/>
+
+  <!-- CTA Buttons -->
+  <rect x="420" y="530" width="160" height="48" rx="24" fill="#2563eb"/>
+  <text x="500" y="560" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="500">Start practicing</text>
+
+  <rect x="600" y="530" width="160" height="48" rx="24" fill="transparent" stroke="#2563eb" stroke-width="1"/>
+  <text x="680" y="560" font-family="Arial, sans-serif" font-size="14" fill="#2563eb" text-anchor="middle" font-weight="500">Talk to an advisor</text>
+
+  <!-- Bottom decorative card -->
+  <rect x="250" y="620" width="700" height="160" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+
+  <!-- Card content placeholder -->
+  <rect x="280" y="650" width="200" height="100" rx="10" fill="#f0f0f0"/>
+  <rect x="500" y="650" width="200" height="100" rx="10" fill="#f0f0f0"/>
+  <rect x="720" y="650" width="200" height="100" rx="10" fill="#f0f0f0"/>
+
+  <!-- Shadow filter -->
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="15" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+</svg>

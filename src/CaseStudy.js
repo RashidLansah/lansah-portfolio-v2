@@ -99,6 +99,7 @@ function CaseStudy() {
     { id: 'business', title: 'Business', icon: <ChartIcon /> },
     { id: 'competitors', title: 'Competitors', icon: <BuildingsIcon /> },
     { id: 'user-interviews', title: 'User Interviews', icon: <PersonIcon /> },
+    { id: 'iterations', title: 'Iterations', icon: <DesignIcon /> },
     { id: 'the-solution', title: 'The solution', icon: <SparklesIcon /> },
     { id: 'learnings', title: 'Learnings', icon: <GraduationCapIcon /> },
   ];
@@ -300,18 +301,54 @@ function CaseStudy() {
             <div id="my-role" ref={(el) => (sectionRefs.current['my-role'] = el)} className="content-section">
               <p className="section-label">My Role</p>
               <h2 className="section-title">Leading Design from Zero to Scale</h2>
-              <p className="section-paragraph">
-                Led product discovery, UX strategy, design systems, prototyping, and developer handoff. Collaborated with founders, PMs, and engineers to align design with business goals and technical constraints.
-              </p>
-              <p className="section-paragraph">
-                <strong>Key Contributions:</strong> Built the complete UX foundation from scratch, established design processes, created 40+ reusable components, and designed 8 core workflows. Prepared investor-ready demos that helped secure $2.2M in funding.
-              </p>
-              <p className="section-paragraph">
-                <strong>Impact-Driven Approach:</strong> Advocated for AI transparency in UX, designing patterns where AI explained its reasoning to build user trust. This became a competitive advantage and influenced how the team approached all product decisions.
-              </p>
-              
+
+              <div className="role-overview-card">
+                <div className="role-meta-grid">
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Role</span>
+                    <span className="role-meta-value">Founding Product Designer</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Duration</span>
+                    <span className="role-meta-value">Apr 2023 – Aug 2025 (2+ years)</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Team</span>
+                    <span className="role-meta-value">Cross-functional (Design, Engineering, Product)</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Stage</span>
+                    <span className="role-meta-value">0→1 Product Build to Scale</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="role-sections-grid">
+                <div className="role-section">
+                  <h3>What I Owned</h3>
+                  <ul className="role-responsibilities-list">
+                    <li>End-to-end UX strategy from discovery to developer handoff</li>
+                    <li>Complete design system architecture (40+ components, tokens, documentation)</li>
+                    <li>User research: 25+ interviews, usability testing, competitive analysis</li>
+                    <li>8 core workflow designs (onboarding, reconciliation, invoicing, settings)</li>
+                    <li>Investor-ready prototypes and demos contributing to $2.2M funding</li>
+                    <li>AI transparency patterns that became a competitive differentiator</li>
+                  </ul>
+                </div>
+
+                <div className="role-section">
+                  <h3>Collaborated With</h3>
+                  <ul className="role-collaborators-list">
+                    <li><strong>2 Co-founders</strong> — Product strategy, roadmap prioritization</li>
+                    <li><strong>4 Engineers</strong> — Technical feasibility, design handoff, iteration</li>
+                    <li><strong>1 Product Manager</strong> — Requirements, user stories, sprint planning</li>
+                    <li><strong>External Stakeholders</strong> — Accountants, SME owners for user research</li>
+                  </ul>
+                </div>
+              </div>
+
               <div className="goals-container">
-                <h3>Key Responsibilities</h3>
+                <h3>Key Contributions</h3>
                 <div className="goals-grid">
                   <div className="goal-item">
                     <div className="goal-icon">
@@ -437,10 +474,74 @@ function CaseStudy() {
             <div id="user-interviews" ref={(el) => (sectionRefs.current['user-interviews'] = el)} className="content-section">
               <p className="section-label">User Interviews</p>
               <h2 className="section-title">Understanding user needs</h2>
-              <p className="section-paragraph">
-                I conducted 25+ user interviews with SME owners, accountants, and bookkeepers to understand their workflows, pain points, and requirements for AI-powered automation.
-              </p>
-              
+
+              <div className="research-summary-card">
+                <div className="research-meta">
+                  <div className="research-stat">
+                    <span className="stat-number">25+</span>
+                    <span className="stat-label">Users Interviewed</span>
+                  </div>
+                  <div className="research-stat">
+                    <span className="stat-number">3</span>
+                    <span className="stat-label">User Segments</span>
+                  </div>
+                  <div className="research-stat">
+                    <span className="stat-number">6</span>
+                    <span className="stat-label">Week Study</span>
+                  </div>
+                </div>
+                <div className="research-methods">
+                  <strong>Methods:</strong> Semi-structured interviews, Contextual inquiry, Usability testing, Competitive analysis
+                </div>
+              </div>
+
+              <h3 className="subsection-title">Key User Personas</h3>
+              <div className="personas-grid">
+                <div className="persona-card">
+                  <div className="persona-header">
+                    <div className="persona-avatar">👨‍💼</div>
+                    <div className="persona-info">
+                      <h4>David</h4>
+                      <span className="persona-role">SME Owner</span>
+                    </div>
+                  </div>
+                  <p className="persona-quote">"I don't have time to chase invoices. I need something that just handles it automatically."</p>
+                  <div className="persona-details">
+                    <div className="detail-item">
+                      <strong>Goals:</strong> Reduce time spent on bookkeeping, maintain cash flow visibility
+                    </div>
+                    <div className="detail-item">
+                      <strong>Pain Points:</strong> Manual data entry, reconciliation errors, lost invoices
+                    </div>
+                    <div className="detail-item">
+                      <strong>Tech Savvy:</strong> Moderate — uses mobile banking, QuickBooks
+                    </div>
+                  </div>
+                </div>
+
+                <div className="persona-card">
+                  <div className="persona-header">
+                    <div className="persona-avatar">👩‍💻</div>
+                    <div className="persona-info">
+                      <h4>Sarah</h4>
+                      <span className="persona-role">Bookkeeper</span>
+                    </div>
+                  </div>
+                  <p className="persona-quote">"I manage books for 12 clients. Anything that saves me switching between systems is gold."</p>
+                  <div className="persona-details">
+                    <div className="detail-item">
+                      <strong>Goals:</strong> Efficient multi-company management, accurate categorization
+                    </div>
+                    <div className="detail-item">
+                      <strong>Pain Points:</strong> Context switching, manual invoice entry, client miscommunication
+                    </div>
+                    <div className="detail-item">
+                      <strong>Tech Savvy:</strong> High — uses multiple accounting platforms daily
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="user-interview-images">
                 <div className="interview-insights">
                   <h3>Key Research Insights</h3>
@@ -533,6 +634,102 @@ function CaseStudy() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div id="iterations" ref={(el) => (sectionRefs.current['iterations'] = el)} className="content-section">
+              <p className="section-label">Design Iterations</p>
+              <h2 className="section-title">Learning Through User Feedback</h2>
+              <p className="section-paragraph">
+                Building from 0→1 meant constant iteration. Here are three key design challenges where user feedback fundamentally changed our approach.
+              </p>
+
+              <div className="iteration-story">
+                <h3 className="iteration-title">Iteration 1: Onboarding Flow</h3>
+                <div className="iteration-content">
+                  <div className="iteration-version">
+                    <div className="version-badge v1">V1</div>
+                    <h4>Initial Approach</h4>
+                    <p>A comprehensive 8-step onboarding wizard that captured all user preferences, company details, and accounting system connections upfront.</p>
+                    <div className="iteration-feedback">
+                      <strong>User Feedback:</strong> "This feels like filling out tax forms. I just want to see what the app does before committing 20 minutes."
+                    </div>
+                    <div className="iteration-data">
+                      <strong>Data Insight:</strong> 45% abandonment rate at step 4 (Company Details)
+                    </div>
+                  </div>
+
+                  <div className="iteration-arrow">→</div>
+
+                  <div className="iteration-version">
+                    <div className="version-badge v2">V2</div>
+                    <h4>Progressive Disclosure</h4>
+                    <p>Reduced to 3 essential steps: Email → Connect Accounting System → Upload First Invoice. Additional settings deferred to contextual moments.</p>
+                    <div className="iteration-result">
+                      <strong>Result:</strong> 85% onboarding completion rate (+40% improvement), 3x faster time-to-first-value
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="iteration-story">
+                <h3 className="iteration-title">Iteration 2: AI Confidence Display</h3>
+                <div className="iteration-content">
+                  <div className="iteration-version">
+                    <div className="version-badge v1">V1</div>
+                    <h4>Binary AI Status</h4>
+                    <p>Simple "AI Processed" or "Needs Review" labels with no visibility into AI reasoning or confidence levels.</p>
+                    <div className="iteration-feedback">
+                      <strong>User Feedback:</strong> "I don't trust it. How do I know if the AI got it right? I'm still checking everything manually."
+                    </div>
+                    <div className="iteration-data">
+                      <strong>Data Insight:</strong> 70% of users manually reviewed AI-processed transactions anyway
+                    </div>
+                  </div>
+
+                  <div className="iteration-arrow">→</div>
+
+                  <div className="iteration-version">
+                    <div className="version-badge v2">V2</div>
+                    <h4>Transparent Confidence Scores</h4>
+                    <p>Added confidence percentages, AI reasoning explanations, and visual indicators (green for high confidence, yellow for medium, red for needs review). Users could expand to see why AI made each decision.</p>
+                    <div className="iteration-result">
+                      <strong>Result:</strong> Users trusted AI decisions 3x more, manual review rate dropped from 70% to 15% for high-confidence items
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="iteration-story">
+                <h3 className="iteration-title">Iteration 3: Multi-Company Invoice Routing</h3>
+                <div className="iteration-content">
+                  <div className="iteration-version">
+                    <div className="version-badge v1">V1</div>
+                    <h4>Manual Company Selection</h4>
+                    <p>Users had to manually select which company an emailed invoice belonged to after upload.</p>
+                    <div className="iteration-feedback">
+                      <strong>User Feedback:</strong> "I forward invoices to a generic email. By the time I review them, I've forgotten which company they're for."
+                    </div>
+                    <div className="iteration-data">
+                      <strong>Data Insight:</strong> 40% of invoices were initially assigned to the wrong company
+                    </div>
+                  </div>
+
+                  <div className="iteration-arrow">→</div>
+
+                  <div className="iteration-version">
+                    <div className="version-badge v2">V2</div>
+                    <h4>AI-Powered Auto-Routing</h4>
+                    <p>AI analyzed invoice content, sender patterns, and historical data to automatically suggest the correct company. Added unique forwarding emails per company as backup.</p>
+                    <div className="iteration-result">
+                      <strong>Result:</strong> 95% auto-routing accuracy, eliminated 8+ hours/month of manual sorting for multi-company users
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p className="section-paragraph" style={{ marginTop: '40px', fontStyle: 'italic', color: '#666' }}>
+                These iterations taught me that user feedback isn't just about fixing problems — it's about discovering opportunities we couldn't have imagined in the initial design phase.
+              </p>
             </div>
 
             <div id="the-solution" ref={(el) => (sectionRefs.current['the-solution'] = el)} className="content-section">

@@ -1,798 +1,480 @@
-﻿import './App.css';
+import './App.css';
 import { Link } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
+import Sidebar from './Sidebar';
 import { motion } from 'framer-motion';
-import { RecycleIcon, RecipeIcon, ArticleIcon, BankingIcon, TeamIcon, BriefcaseIcon, MentorIcon, AIIcon, BlockchainIcon } from './Icons';
-import { useEffect } from 'react';
+import { LinkedInIcon, GitHubIcon, MediumIcon, ArrowRightIcon } from './Icons';
+import { useEffect, useState } from 'react';
 
 function Portfolio() {
-  // Scroll to top or hash on mount
+  const [activeTab, setActiveTab] = useState('Top');
+  const [currentTime, setCurrentTime] = useState('');
+  const [weather, setWeather] = useState({ temp: '--', condition: 'Loading...' });
+  const [currentQuote, setCurrentQuote] = useState(0);
+
+  const quotes = [
+    "Design is not just what it looks like. Design is how it works.",
+    "Simplicity is the ultimate sophistication.",
+    "Good design is obvious. Great design is transparent.",
+    "The details are not the details. They make the design.",
+    "Design creates culture. Culture shapes values. Values determine the future."
+  ];
+
+  // Update time every second (Accra timezone - GMT)
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash === '#highlights') {
-      setTimeout(() => {
-        document.getElementById('highlights')?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else {
-      window.scrollTo(0, 0);
-    }
+    const updateTime = () => {
+      const now = new Date();
+      const options = {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+        timeZone: 'Africa/Accra'
+      };
+      setCurrentTime(now.toLocaleTimeString('en-US', options));
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
   }, []);
+
+  // Rotate quotes every 8 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentQuote((prev) => (prev + 1) % quotes.length);
+    }, 8000);
+    return () => clearInterval(interval);
+  }, [quotes.length]);
+
+  // Fetch weather for Accra
+  useEffect(() => {
+    const fetchWeather = async () => {
+      try {
+        // Using wttr.in for simple weather data (no API key needed)
+        const response = await fetch('https://wttr.in/Accra?format=%t+%C');
+        const data = await response.text();
+        const parts = data.trim().split(' ');
+        const temp = parts[0] || '--';
+        const condition = parts.slice(1).join(' ') || 'Clear';
+        setWeather({ temp, condition });
+      } catch (error) {
+        setWeather({ temp: '28°C', condition: 'Sunny' }); // Fallback for Accra
+      }
+    };
+
+    fetchWeather();
+    // Refresh weather every 30 minutes
+    const interval = setInterval(fetchWeather, 30 * 60 * 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const categories = ['Top', 'Finance', 'Food', 'Books', 'Business', 'Productivity', 'Maps', 'Health', 'Music', 'Shopping', 'Misc'];
+
+  // Project data - main case studies
+  const mainProjects = [
+    {
+      id: 1,
+      title: 'Jenesys',
+      description: 'AI-powered bookkeeping platform that helped SMEs automate reconciliation and reach $1M ARR.',
+      link: '/case-study',
+      bgColor: '#e4dbea',
+      image: '/images/case-studies/jenesys-dashboard.png'
+    },
+    {
+      id: 2,
+      title: 'Kaaka',
+      description: 'AI cooking assistant that turns grocery receipts into personalized meal plans—making meal planning effortless.',
+      link: '/kaaka-case-study',
+      bgColor: '#1a1a1a',
+      image: '/images/case-studies/kaaka-home.png'
+    },
+    {
+      id: 3,
+      title: 'SheFundIt',
+      description: 'Milestone-based crowdfunding platform empowering women entrepreneurs in Ghana to fund their businesses.',
+      link: '/shefundit-case-study',
+      bgColor: '#e8f5e9',
+      image: '/images/case-studies/shefundit-screen-7.png'
+    },
+    {
+      id: 4,
+      title: 'Tikiti',
+      description: 'Event ticketing app with 900+ downloads helping Ghanaians discover events and manage tickets with QR scanning.',
+      link: '/tikiti-case-study',
+      bgColor: '#5a4fcf',
+      image: '/images/case-studies/tikiti-screen-5.png'
+    },
+    {
+      id: 5,
+      title: 'Tikiti Dashboard',
+      description: 'B2B event management platform for NGOs—multi-channel messaging, attendee management, and AI-generated reports.',
+      link: '/tikiti-dashboard-case-study',
+      bgColor: '#1e293b',
+      image: '/images/tikiti-dashboard-hero.png'
+    },
+  ];
+
+  // Thumbnail projects for "Other works" grid
+  const thumbnailProjects = Array(9).fill({
+    image: '/images/thumbnails/thumbnail-placeholder.png',
+    link: '/case-study'
+  });
+
   return (
     <div className="App">
-      <nav className="navbar">
-        <div className="nav-container">
-          <Link to="/" className="nav-link active">Lansah</Link>
-          <a href="#highlights" className="nav-link" onClick={(e) => {
-            e.preventDefault();
-            document.getElementById('highlights')?.scrollIntoView({ behavior: 'smooth' });
-          }}>Highlights</a>
-          <Link to="/work" className="nav-link">Work</Link>
-          <a href="https://calendly.com/rashidlansahadam" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
+      {/* Top Header Bar - Desktop Only */}
+      <header className="top-header-bar">
+        {/* Quote - Center */}
+        <div className="header-quote">
+          <motion.span
+            key={currentQuote}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            "{quotes[currentQuote]}"
+          </motion.span>
         </div>
-      </nav>
+
+        {/* Weather & Time - Right */}
+        <div className="header-weather-time">
+          <div className="header-item">
+            <span className="header-label">Accra</span>
+            <span className="header-value">{weather.temp}</span>
+          </div>
+          <div className="header-divider" />
+          <div className="header-item">
+            <span className="header-label">Local</span>
+            <span className="header-value">{currentTime}</span>
+          </div>
+        </div>
+      </header>
+
+      {/* Sidebar Navigation (desktop only) - includes brand logo */}
+      <Sidebar />
+
+      {/* Mobile Menu */}
       <MobileMenu />
-      <section className="hero">
-        <div className="hero-content">
-          <motion.p 
-            className="hero-greeting"
+
+      {/* Hero Section */}
+      <section className="hero-redesign">
+        <div className="hero-content-centered">
+          <div className="hero-text-group">
+            <motion.div
+              className="hero-badge-pill"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              Senior Product Designer
+            </motion.div>
+
+            <motion.h1
+              className="hero-headline-large"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              I turn complexity into clarity.
+            </motion.h1>
+
+            <motion.p
+              className="hero-subheadline"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              I design the first version, build the system, and stay until it scales—from zero users to millions in revenue.
+            </motion.p>
+          </div>
+
+          {/* Previously At and Featured In sections - hidden for now
+          <motion.div
+            className="hero-companies"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
           >
-            Hello, my name is Lansah
-          </motion.p>
-          <motion.h1 
-            className="hero-title"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            I Design for People, Build from 0–1, and Scale with Systems
-          </motion.h1>
-          <motion.p 
-            className="hero-subtitle"
+            <span className="previously-at">Previously at</span>
+            <div className="company-logos">
+              <img src="/images/logos/jenesys-logo.png" alt="Jenesys" />
+              <img src="/images/logos/jenesys-logo.png" alt="Company 2" />
+              <img src="/images/logos/jenesys-logo.png" alt="Company 3" />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="hero-featured-in"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
           >
-            I design digital experiences that connect user needs with business goals, blending research, design systems, and product strategy to drive growth and engagement.
-          </motion.p>
+            <span className="featured-in-label">Featured in</span>
+            <div className="featured-logos-grid">
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="Lapa" />
+              </div>
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="Landbook" />
+              </div>
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="Bestfolios" />
+              </div>
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="Medium" />
+              </div>
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="UX Planet" />
+              </div>
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="Designer Hunt" />
+              </div>
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="Case Study Club" />
+              </div>
+              <div className="featured-logo-card">
+                <img src="/images/logos/jenesys-logo.png" alt="UX Collective" />
+              </div>
+            </div>
+          </motion.div>
+          */}
         </div>
       </section>
 
-      <section className="companies">
-        <div className="companies-container">
-          <div className="experience-item">
-            <div className="experience-year">04/2023 - 08/2025</div>
-            <div className="experience-company">Jenesys AI</div>
-            <div className="experience-role">Founding Product Designer</div>
+      {/* Two-Column Project Grid */}
+      <section className="project-grid-section">
+        <div className="project-grid-container">
+          {/* Row 1 */}
+          <div className="project-grid-row">
+            <motion.div
+              className="project-card-large"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Link to={mainProjects[0].link} className="project-card-inner" style={{ background: mainProjects[0].bgColor }}>
+                <div className="project-card-content">
+                  <h3 className="project-card-title">{mainProjects[0].title}</h3>
+                  <p className="project-card-description">{mainProjects[0].description}</p>
+                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
+                </div>
+                <div className="project-card-image-wrapper">
+                  <img src={mainProjects[0].image} alt={mainProjects[0].title} className="project-card-image" />
+                </div>
+              </Link>
+            </motion.div>
+            <motion.div
+              className="project-card-large"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Link to={mainProjects[1].link} className="project-card-inner mobile-card dark-card" style={{ background: mainProjects[1].bgColor }}>
+                <div className="project-card-content">
+                  <h3 className="project-card-title">{mainProjects[1].title}</h3>
+                  <p className="project-card-description">{mainProjects[1].description}</p>
+                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
+                </div>
+                <div className="project-card-image-wrapper">
+                  <img src={mainProjects[1].image} alt={mainProjects[1].title} className="project-card-image" />
+                </div>
+              </Link>
+            </motion.div>
           </div>
-          <div className="experience-item">
-            <div className="experience-year">09/2020 - 05/2023</div>
-            <div className="experience-company">Upwork</div>
-            <div className="experience-role">Freelance Product Designer</div>
+          {/* Row 2 */}
+          <div className="project-grid-row">
+            <motion.div
+              className="project-card-large"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Link to={mainProjects[2].link} className="project-card-inner mobile-card" style={{ background: mainProjects[2].bgColor }}>
+                <div className="project-card-content">
+                  <h3 className="project-card-title">{mainProjects[2].title}</h3>
+                  <p className="project-card-description">{mainProjects[2].description}</p>
+                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
+                </div>
+                <div className="project-card-image-wrapper">
+                  <img src={mainProjects[2].image} alt={mainProjects[2].title} className="project-card-image" />
+                </div>
+              </Link>
+            </motion.div>
+            <motion.div
+              className="project-card-large"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Link to={mainProjects[3].link} className="project-card-inner mobile-card dark-card" style={{ background: mainProjects[3].bgColor }}>
+                <div className="project-card-content">
+                  <h3 className="project-card-title">{mainProjects[3].title}</h3>
+                  <p className="project-card-description">{mainProjects[3].description}</p>
+                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
+                </div>
+                <div className="project-card-image-wrapper">
+                  <img src={mainProjects[3].image} alt={mainProjects[3].title} className="project-card-image" />
+                </div>
+              </Link>
+            </motion.div>
           </div>
-          <div className="experience-item">
-            <div className="experience-year">11/2022 - 03/2023</div>
-            <div className="experience-company">Dbaza Health</div>
-            <div className="experience-role">Product Designer</div>
+          {/* Row 3 */}
+          <div className="project-grid-row">
+            <motion.div
+              className="project-card-large"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Link to={mainProjects[4].link} className="project-card-inner dark-card" style={{ background: mainProjects[4].bgColor }}>
+                <div className="project-card-content">
+                  <h3 className="project-card-title">{mainProjects[4].title}</h3>
+                  <p className="project-card-description">{mainProjects[4].description}</p>
+                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
+                </div>
+                <div className="project-card-image-wrapper">
+                  <img src={mainProjects[4].image} alt={mainProjects[4].title} className="project-card-image" />
+                </div>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <motion.section 
-        className="project-card-section jenesys-section" 
-        id="highlights"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            ✨ Featured: Jenesys AI
-          </motion.div>
-          <motion.h2 
-            className="project-title"
+      {/* Landing Pages Gallery Section */}
+      <section className="landing-pages-section">
+        <div className="landing-pages-container">
+          <motion.div
+            className="landing-pages-header"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            From MVP to Scale
-          </motion.h2>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            How I helped an AI fintech platform simplify accounting workflows and grow adoption by 60%. 
-            As Founding Product Designer, I built the complete design system and UX foundation that powered 
-            $1M ARR and 3x user growth — from zero to scale in 12 months.
-          </motion.p>
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img src="/images/case-studies/jenesys-dashboard.png" alt="Jenesys AI Dashboard" className="project-interface-image" />
-            <div className="interface-overlay">
-              <div className="ai-badge-overlay">
-                <div className="ai-indicator">AI</div>
-                <span>Platform</span>
-                  </div>
-                </div>
-                </div>
+            <h2 className="landing-pages-title">Landing Pages & Websites</h2>
+            <p className="landing-pages-subtitle">Visual designs I've crafted for clients and personal projects</p>
           </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="jenesys-logo-small">
-                <span className="ai-badge">AI</span>
-                <span>Jenesys</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="adoption-rate">
-                <span className="percentage">80%</span>
-                <span className="label">Adoption</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="growth-metric">
-                <span className="multiplier">3x</span>
-                <span className="label">User Growth</span>
-              </div>
-            </div>
-            <Link to="/case-study" className="case-study-btn">
-              View Case Study 
-            </Link>
-          </motion.div>
-          </div>
-      </motion.section>
 
-      <motion.section 
-        className="project-card-section tumapay-section"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            TumaPay
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            Designing a Voice-First Fintech Experience for Non-Literate Users
-          </motion.h2>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            How can we make digital finance accessible to users who can't read or type in English? 
-            Building a voice-first mobile money app using local languages and voice pattern recognition to help millions of non-literate users in Ghana perform transactions confidently.
-          </motion.p>
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper tumapay-interface">
-              <img src="/images/tumapay-placeholder.png" alt="TumaPay Voice Interface" className="project-interface-image" />
-            </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="jenesys-logo-small">
-                <span>TumaPay</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="adoption-rate">
-                <span className="percentage">100%</span>
-                <span className="label">No Reading</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="growth-metric">
-                <span className="multiplier">80%</span>
-                <span className="label">Trust Rate</span>
-              </div>
-            </div>
-            <Link to="/tumapay-case-study" className="case-study-btn">
-              View Case Study 
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section>
-
-      <motion.section 
-        className="project-card-section reliefledger-section"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <span className="blockchain-badge-small">
-              <BlockchainIcon size={16} />
-            </span>
-            ReliefLedger
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            Rebuilding Trust in Humanitarian Aid Through Blockchain
-          </motion.h2>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            A blockchain-powered transparency ecosystem that connects NGOs, field agents, and communities through verifiable proof of delivery — making every act of giving traceable across Africa.
-          </motion.p>
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img src="/images/reliefledger-full-image.svg" alt="ReliefLedger Platform Interface" className="project-interface-image" />
-              <div className="interface-overlay">
-                <div className="ai-badge-overlay">
-                  <div className="ai-indicator">
-                    <BlockchainIcon size={16} />
-                  </div>
-                  <span>Blockchain</span>
+          <div className="landing-pages-grid">
+            {/* BeOrchid */}
+            <motion.a
+              href="https://beorchid.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="landing-page-card"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className="landing-page-image-wrapper">
+                <img src="/images/landing-pages/beorchid-landing.png" alt="BeOrchid Website" />
+                <div className="landing-page-overlay">
+                  <span className="view-site-btn">View Live Site <ArrowRightIcon size={16} /></span>
                 </div>
               </div>
-            </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="jenesys-logo-small">
-                <span className="ai-badge">
-                  <BlockchainIcon size={16} />
-                </span>
-                <span>ReliefLedger</span>
+              <div className="landing-page-info">
+                <h3 className="landing-page-name">BeOrchid</h3>
+                <p className="landing-page-description">Technology studio website with modern aesthetics and clear service offerings</p>
               </div>
-            </div>
-            <div className="stat-item">
-              <div className="adoption-rate">
-                <span className="percentage">Web3</span>
-                <span className="label">Blockchain</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="growth-metric">
-                <span className="multiplier">Trust</span>
-                <span className="label">Transparency</span>
-              </div>
-            </div>
-            <Link to="/reliefledger-case-study" className="case-study-btn">
-              View Case Study 
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section>
+            </motion.a>
 
-      <motion.section 
-        className="project-card-section tikiti-card-section"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Tikiti
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            Simplifying Event Ticketing in Ghana
-          </motion.h2>
-          <motion.div 
-            className="project-subtitle"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            Event Discovery & Mobile Ticketing
-          </motion.div>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Designed a seamless mobile flow for users to discover, pay, and verify tickets via MoMo. 
-            Delivered 25% faster checkout and reduced booking errors by 40% through intuitive UX patterns.
-          </motion.p>
-          <motion.div 
-            className="tikiti-app-showcase"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <div className="tikiti-app-wrapper">
-              <img src="/images/tikiti-app-preview.svg" alt="Tikiti App Interface" className="tikiti-main-image" />
-              <div className="tikiti-app-overlay">
-                <div className="tikiti-status-badge">
-                  <span>🎫</span>
-                  <span>Live App</span>
+            {/* HerGuided Tours */}
+            <motion.a
+              href="https://herguidedtours.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="landing-page-card"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className="landing-page-image-wrapper">
+                <img src="/images/landing-pages/herguidedtours-landing.png" alt="HerGuided Tours Website" />
+                <div className="landing-page-overlay">
+                  <span className="view-site-btn">View Live Site <ArrowRightIcon size={16} /></span>
                 </div>
               </div>
-            </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="stats-left">
-              <div className="company-name">Tikiti</div>
-              <div className="rating">
-                <div className="ticket-icon">🎫</div>
-                <span className="rating-text">Event Platform</span>
-                  </div>
-                </div>
-            <a href="https://gettikiti.com/landing" target="_blank" rel="noopener noreferrer" className="tikiti-details-btn">View Details</a>
-          </motion.div>
+              <div className="landing-page-info">
+                <h3 className="landing-page-name">HerGuided Tours</h3>
+                <p className="landing-page-description">Curated travel experiences platform helping travelers find their paradise</p>
               </div>
-      </motion.section>
-
-      <motion.section 
-        className="project-card-section receipt2recipe-section"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <span className="recipe-badge">🍳</span>
-            Receipt2Recipe
-          </motion.div>
-          
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            An AI Experiment That Turns Receipts Into Meal Ideas
-          </motion.h2>
-          
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Concept, UX flow, and prototype built in under a week using Cursor + Figma. 
-            An AI-powered mobile app that scans your grocery receipts and generates personalized 7-day meal plans — making meal planning effortless and reducing food waste.
-          </motion.p>
-          
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img 
-                src="/images/receipt2recipe-image.png" 
-                alt="Receipt2Recipe App Interface" 
-                className="project-interface-image"
-              />
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="receipt2recipe-logo-small">
-                <span className="recipe-badge-small">🍳</span>
-                <span>Receipt2Recipe</span>
-            </div>
-          </div>
-            <div className="stat-item">
-              <div className="innovation-metric">
-                <span className="percentage">Innovative</span>
-                <span className="label">Solution</span>
-              </div>
-            </div>
-            <div className="stat-item">
-              <div className="waste-metric">
-                <span className="multiplier">Reduce</span>
-                <span className="label">Food Waste</span>
+            </motion.a>
           </div>
         </div>
-            <Link to="/receipt2recipe-case-study" className="case-study-btn">
-              View Case Study
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section>
+      </section>
 
-      <motion.section 
-        className="project-card-section article-card"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="article-container">
-          <motion.div 
-            className="article-label"
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Medium Article
-          </motion.div>
-          <motion.h2 
-            className="article-title"
+      {/* Contact Footer */}
+      <footer className="contact-footer-simple" id="contact">
+        <div className="contact-footer-container">
+          <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
+            style={{ textAlign: 'center' }}
           >
-            How I Use AI to Supercharge My Design Process
-          </motion.h2>
-          <motion.p 
-            className="article-description"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Discover how AI tools like ChatGPT and Cursor have transformed my workflow, reducing early-stage design time by 30x while maintaining creativity and user empathy.
-          </motion.p>
-          <motion.a 
-            href="https://medium.com/design-bootcamp/how-i-use-ai-to-supercharge-my-design-process-2ae95b0a7f91" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="article-btn"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
-            viewport={{ once: true }}
-          >
-            Read on Medium
-          </motion.a>
-            </div>
-      </motion.section>
-
-      <motion.section 
-        className="project-card-section borlapay-section"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="project-container">
-          <motion.div 
-            className="project-brand"
-            initial={{ opacity: 0, x: -15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            BorlaPay
-          </motion.div>
-          <motion.h2 
-            className="project-title"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            Making Recycling Rewarding in Ghana
-          </motion.h2>
-          <motion.p 
-            className="project-description"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Designed a mobile-first recycling platform that connects users with local "Wastepreneurs" through mobile money rewards. 
-            Achieved 80% retention and 3x waste collection by making recycling as easy as sending MoMo.
-          </motion.p>
-          <motion.div 
-            className="project-interface"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <div className="interface-wrapper">
-              <img src="/images/borlapay-full-image.svg" alt="BorlaPay Mobile App Interface" className="project-interface-image" />
-              <div className="interface-overlay">
-                <div className="ai-badge-overlay">
-                  <div className="ai-indicator">
-                    <RecycleIcon size={16} />
-                  </div>
-                  <span>Platform</span>
-                        </div>
-                      </div>
-                    </div>
-          </motion.div>
-          <motion.div 
-            className="project-stats"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="stat-item">
-              <div className="jenesys-logo-small">
-                <span className="ai-badge">
-                  <RecycleIcon size={16} />
-                </span>
-                <span>BorlaPay</span>
-                    </div>
-                    </div>
-            <div className="stat-item">
-              <div className="adoption-rate">
-                <span className="percentage">80%</span>
-                <span className="label">Retention</span>
-                    </div>
-                  </div>
-            <div className="stat-item">
-              <div className="growth-metric">
-                <span className="multiplier">3x</span>
-                <span className="label">Collection</span>
-                </div>
-              </div>
-            <Link to="/borlapay-case-study" className="case-study-btn">
-              View Case Study 
-            </Link>
-          </motion.div>
-                    </div>
-      </motion.section>
-
-      <motion.section 
-        className="about-section"
-        id="about"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="about-container">
-          <motion.h2 
-            className="about-title"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            About Me
-          </motion.h2>
-          
-          <motion.p 
-            className="about-intro"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            I'm a Senior Product Designer passionate about turning complex systems into simple, human-centered experiences. 
-            I've worked across fintech, marketplaces, and AI tools — from early startups to scale-ups — helping teams move from zero to one, and then from one to ten.
-          </motion.p>
-
-          <motion.div 
-            className="about-highlights"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <div className="highlight-item">
-              <div className="highlight-icon">
-                <TeamIcon size={32} />
-              </div>
-              <h3>Founder Collaboration</h3>
-              <p>Worked with founders and PMs to ship AI-powered products from concept to scale</p>
-            </div>
-            
-            <div className="highlight-item">
-              <div className="highlight-icon">
-                <BriefcaseIcon size={32} />
-              </div>
-              <h3>Cross-Industry Experience</h3>
-              <p>Freelance and agency experience across fintech, events, recycling, and food tech</p>
-            </div>
-            
-            <div className="highlight-item">
-              <div className="highlight-icon">
-                <MentorIcon size={32} />
-              </div>
-              <h3>Community Contributor</h3>
-              <p>Mentored designers through ADPList and local design communities in Ghana</p>
-            </div>
-            
-            <div className="highlight-item">
-              <div className="highlight-icon">
-                <AIIcon size={32} />
-              </div>
-              <h3>AI-Assisted Workflows</h3>
-              <p>Exploring AI-assisted design using Cursor, Figma AI, and rapid prototyping tools</p>
-            </div>
+            <h2 className="contact-heading-simple">Let's Connect</h2>
+            <p className="contact-subtext">
+              Feel free to reach out for collaborations or just a friendly hello{' '}
+              <span role="img" aria-label="smile">😀</span>
+            </p>
+            <a
+              href="mailto:rashidlansahadam@gmail.com"
+              className="contact-email-link"
+            >
+              rashidlansahadam@gmail.com
+            </a>
           </motion.div>
 
-          <motion.p 
-            className="about-personal"
+          <motion.div
+            className="social-icons-row"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Outside of work, I read manga and webtoons, watch anime, and play soccer on weekends. 
-            I believe creativity thrives at the intersection of curiosity and play.
-          </motion.p>
-        </div>
-      </motion.section>
-
-      <motion.section 
-        className="contact-section"
-        id="contact"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="contact-container">
-          <motion.h2 
-            className="contact-title"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Let's build something that solves real problems
-          </motion.h2>
-          
-          <motion.p 
-            className="contact-subtitle"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            Reach out if you're hiring, collaborating, or want to chat design.
-          </motion.p>
-
-          <motion.div 
-            className="contact-buttons"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <a 
-              href="mailto:rashidlansahadam@gmail.com" 
-              className="contact-btn primary"
+            <a
+              href="https://linkedin.com/in/rashid-lansah"
+              className="social-icon-link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Email Me
+              <LinkedInIcon size={24} />
             </a>
-            <a 
-              href="https://drive.google.com/file/d/1-n7H7VXxC8WuwY9bPyxqrpkCij9Cb2yo/view?usp=sharing" 
-              className="contact-btn secondary"
+            <a
+              href="https://github.com/RashidLansah"
+              className="social-icon-link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Resume
+              <GitHubIcon size={24} />
             </a>
-            <a 
-              href="https://linkedin.com/in/rashid-lansah" 
-              className="contact-btn secondary"
+            <a
+              href="https://medium.com/@rashidlansah"
+              className="social-icon-link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <MediumIcon size={24} />
             </a>
           </motion.div>
         </div>
-      </motion.section>
+      </footer>
     </div>
   );
 }
 
 export default Portfolio;
-

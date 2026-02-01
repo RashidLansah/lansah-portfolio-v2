@@ -61,6 +61,14 @@ const BookIcon = () => (
   </svg>
 );
 
+const IdBadgeIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+    <circle cx="9" cy="7" r="4"></circle>
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+  </svg>
+);
+
 function TumaPayCaseStudy() {
   const [activeSection, setActiveSection] = useState('overview');
   
@@ -72,6 +80,7 @@ function TumaPayCaseStudy() {
 
   const sections = [
     { id: 'overview', title: 'Overview', icon: <BookIcon /> },
+    { id: 'my-role', title: 'My Role', icon: <IdBadgeIcon /> },
     { id: 'problem', title: 'Problem', icon: <TargetIcon /> },
     { id: 'research', title: 'Research', icon: <SearchIcon /> },
     { id: 'epiphany', title: 'Epiphany', icon: <LightbulbIcon /> },
@@ -248,6 +257,90 @@ function TumaPayCaseStudy() {
                 <div className="meta-info-item">
                   <span className="meta-label">Methods</span>
                   <span className="meta-value">Contextual Inquiry, Usability Testing, Cognitive Walkthroughs</span>
+                </div>
+              </div>
+            </div>
+
+            <div id="my-role" ref={(el) => (sectionRefs.current['my-role'] = el)} className="content-section">
+              <p className="section-label">My Role</p>
+              <h2 className="section-title">Designing for Accessibility from Day One</h2>
+
+              <div className="role-overview-card">
+                <div className="role-meta-grid">
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Role</span>
+                    <span className="role-meta-value">Product Designer</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Duration</span>
+                    <span className="role-meta-value">4 weeks (ongoing concept)</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Team</span>
+                    <span className="role-meta-value">Solo designer with user research participants</span>
+                  </div>
+                  <div className="role-meta-item">
+                    <span className="role-meta-label">Focus</span>
+                    <span className="role-meta-value">Voice-First Fintech for Non-Literate Users</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="role-sections-grid">
+                <div className="role-section">
+                  <h3>What I Owned</h3>
+                  <ul className="role-responsibilities-list">
+                    <li>End-to-end UX research and design for voice-first mobile money</li>
+                    <li>Contextual inquiry with non-literate users in Ghana (including family members)</li>
+                    <li>Voice UI pattern design and local language integration</li>
+                    <li>Accessibility-first interaction design (no reading/typing required)</li>
+                    <li>Alternative authentication using voice patterns and visual memory</li>
+                    <li>Lo-fi to hi-fi prototyping with audio feedback integration</li>
+                  </ul>
+                </div>
+
+                <div className="role-section">
+                  <h3>Research Methods</h3>
+                  <ul className="role-collaborators-list">
+                    <li><strong>Contextual Inquiry</strong> — Observed users performing transactions on phones</li>
+                    <li><strong>Cognitive Walkthroughs</strong> — Simulated USSD menu interactions step by step</li>
+                    <li><strong>Usability Testing</strong> — Tested with low-fidelity prototypes and audio prompts</li>
+                    <li><strong>The Grandma Test</strong> — If my mom could use it without reading, it passed</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="goals-container">
+                <h3>Key Contributions</h3>
+                <div className="goals-grid">
+                  <div className="goal-item">
+                    <div className="goal-icon">🎤</div>
+                    <div className="goal-content">
+                      <h4>Voice-First UX</h4>
+                      <p>Designed conversational UI patterns in local languages</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">🔐</div>
+                    <div className="goal-content">
+                      <h4>Accessible Auth</h4>
+                      <p>Created voice + visual pattern authentication system</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">♿</div>
+                    <div className="goal-content">
+                      <h4>Inclusive Design</h4>
+                      <p>Zero reading/typing required for all transactions</p>
+                    </div>
+                  </div>
+                  <div className="goal-item">
+                    <div className="goal-icon">👵</div>
+                    <div className="goal-content">
+                      <h4>User Research</h4>
+                      <p>Conducted research with real non-literate users</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
