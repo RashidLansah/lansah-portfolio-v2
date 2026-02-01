@@ -267,10 +267,10 @@ function AboutMe() {
             <CompanyIcon size={72} />
           </div>
           <h2 className="about-section-title">
-            Right now, I design fintech experiences at Jenesys
+            Right now, I'm exploring new opportunities
           </h2>
           <p className="about-section-text">
-            2023 — Present: Leading product design for financial management tools, reconciliation systems, and business dashboards.
+            Open to roles where I can design impactful fintech, healthcare, or social impact products. Let's build something meaningful together.
           </p>
           <div className="about-arrow-button">
             <span>→</span>
@@ -288,10 +288,10 @@ function AboutMe() {
             <WorkBriefcaseIcon size={72} />
           </div>
           <h2 className="about-section-title">
-            Previously, I was a Product Designer at TumaPay
+            Previously, I was Founding Product Designer at Jenesys
           </h2>
           <p className="about-section-text">
-            Lead designer for mobile money transfer experiences, USSD integrations, and cross-border payment flows. I also led design for their consumer-facing mobile applications.
+            2023 — 2025: Led product design for AI-powered financial management tools, reconciliation systems, and business dashboards that helped achieve $1M ARR.
           </p>
           <div className="about-arrow-button">
             <span>→</span>
