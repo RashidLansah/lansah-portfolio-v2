@@ -7,7 +7,6 @@ import { LinkedInIcon, GitHubIcon, MediumIcon, ArrowRightIcon } from './Icons';
 import { useEffect, useState } from 'react';
 
 function Portfolio() {
-  const [activeTab, setActiveTab] = useState('Top');
   const [currentTime, setCurrentTime] = useState('');
   const [weather, setWeather] = useState({ temp: '--', condition: 'Loading...' });
   const [currentQuote, setCurrentQuote] = useState(0);
@@ -73,8 +72,6 @@ function Portfolio() {
     window.scrollTo(0, 0);
   }, []);
 
-  const categories = ['Top', 'Finance', 'Food', 'Books', 'Business', 'Productivity', 'Maps', 'Health', 'Music', 'Shopping', 'Misc'];
-
   // Project data - main case studies
   const mainProjects = [
     {
@@ -118,12 +115,6 @@ function Portfolio() {
       image: '/images/tikiti-dashboard-hero.png'
     },
   ];
-
-  // Thumbnail projects for "Other works" grid
-  const thumbnailProjects = Array(9).fill({
-    image: '/images/thumbnails/thumbnail-placeholder.png',
-    link: '/case-study'
-  });
 
   return (
     <div className="App">

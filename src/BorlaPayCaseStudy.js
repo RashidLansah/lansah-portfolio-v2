@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './CaseStudy.css';
-import { RecycleIcon, MobileIcon, LightningIcon, InsightsIcon } from './Icons';
+import { RecycleIcon, MobileIcon, LightningIcon } from './Icons';
 
 const BookIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
