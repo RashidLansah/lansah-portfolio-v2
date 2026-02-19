@@ -70,91 +70,115 @@ function TikitiDashboardCaseStudy() {
   const [isPanelOpen, setIsPanelOpen] = useState(false);
 
   const features = {
-    eventManagement: {
+    eventCreation: {
       label: 'Feature 01',
       title: 'Event Creation & Management',
-      challenge: 'Event organizers were managing events through spreadsheets and WhatsApp groups. Creating an event meant manually coordinating across multiple platforms with no centralized system.',
+      challenge: 'Event organizers relied on spreadsheets, WhatsApp groups, and email threads to coordinate events. Creating an event meant juggling multiple platforms with no centralized workflow, leading to missed details and inconsistent information across channels.',
       decisions: [
-        'Designed a 6-step guided wizard for event creation (Basic Info → Date/Time → Location → Tickets → Program → Review)',
-        'Built drag-and-drop image upload with recommended dimensions',
-        'Created event status workflow: Draft → Published → Archived',
-        'Added category and status filters for quick event organization'
+        'Designed a 9-step guided wizard (Details, Date & Time, Location, Tickets, Program, Speakers, Registration Form, Preview, Publish) that breaks complex event setup into manageable stages',
+        'Built a single-event overview page with at-a-glance stats, quick actions, and sub-navigation to all event-level features',
+        'Created event status workflow (Draft, Published, Archived) with status-based filtering on the events list',
+        'Added category filters, search, and date sorting on the events list for quick organization across multiple events'
       ],
-      outcome: 'Event creation time reduced from hours of manual coordination to under 10 minutes. Organizations can now manage multiple events from one dashboard.',
+      outcome: 'Event creation time reduced from hours of manual coordination to under 15 minutes. Organizations can now manage their full event lifecycle from a single dashboard, from initial setup through post-event reporting.',
       screens: [
-        { src: '/images/tikiti-dashboard-organizer.png', alt: 'Event Creation' }
+        { src: '/images/case-studies/tikiti-dashboard-events.png', alt: 'Events list with filters' },
+        { src: '/images/case-studies/tikiti-dashboard-create.png', alt: 'Create event wizard - Step 1 of 9' },
+        { src: '/images/case-studies/tikiti-dashboard-event-details.png', alt: 'Single event overview' },
+        { src: '/images/case-studies/tikiti-dashboard-event-preview.png', alt: 'Attendee-facing event preview' }
       ]
     },
     attendeeManagement: {
       label: 'Feature 02',
-      title: 'Attendee Management & Export',
-      challenge: 'Organizers had no visibility into who registered for their events. Attendance tracking was done manually at the door with paper lists, making post-event reporting impossible.',
+      title: 'Attendee Management & Check-in',
+      challenge: 'Organizers had no visibility into who registered for their events. Attendance tracking was done manually at the door with paper lists, and there was no way to resend tickets or verify attendees digitally on event day.',
       decisions: [
-        'Designed attendee cards showing Total, Confirmed, This Month, and Active Events stats',
-        'Built search and filter by event, status, name, email, or phone',
-        'Added one-click CSV export for external reporting and CRM integration',
-        'Created real-time sync with mobile app registrations'
+        'Designed organization-level attendee dashboard with Total, Confirmed, This Month, and Active Events stat cards',
+        'Built event-level attendee list with search, status filters, and one-click ticket resend functionality',
+        'Created QR code-based check-in system with real-time scanning for fast, paperless entry verification',
+        'Added one-click CSV export for external CRM integration and post-event attendee analysis',
+        'Built a custom registration form builder so organizers can collect the exact data they need per event'
       ],
-      outcome: 'Organizations now have complete visibility into their attendee base. Export feature enabled seamless integration with existing CRM systems.',
+      outcome: 'Organizations now have complete attendee visibility from registration through check-in. QR scanning eliminated manual paper lists, reducing check-in time per attendee from minutes to seconds.',
       screens: [
-        { src: '/images/tikiti-dashboard-attendees.png', alt: 'Attendees Management' }
+        { src: '/images/case-studies/tikiti-dashboard-attendees.png', alt: 'Organization-level attendee management' },
+        { src: '/images/case-studies/tikiti-dashboard-event-attendees.png', alt: 'Event attendees with ticket resend' },
+        { src: '/images/case-studies/tikiti-dashboard-event-checkin.png', alt: 'QR code check-in scanner' },
+        { src: '/images/case-studies/tikiti-dashboard-event-form.png', alt: 'Registration form builder' }
       ]
     },
-    analytics: {
+    reportsAnalytics: {
       label: 'Feature 03',
-      title: 'Analytics & Insights',
-      challenge: 'After events, organizers had no data on performance. They couldn\'t tell which events worked, what categories performed best, or track revenue without manual calculations.',
+      title: 'Reports & Analytics',
+      challenge: 'After events, organizers had no data on performance. Post-event reporting took days of manual work compiling attendance figures, feedback, and financials into coherent reports for stakeholders and sponsors.',
       decisions: [
-        'Built key metrics dashboard: Total Events, Attendees, Revenue, Upcoming Events',
-        'Created Events by Status visualization (Published, Draft, Archived)',
-        'Added Events by Category breakdown for performance analysis',
-        'Designed Top Performing Events ranking by attendee count',
-        'Included date range filters (Last 7/30/90 days) for trend analysis'
+        'Built organization-level analytics dashboard with Total Events, Attendees, Revenue, and Ticket Sales metrics',
+        'Created event performance charts and attendee status visualizations for trend analysis',
+        'Designed event-level reports page with registration timeline, attendee breakdown, and engagement stats',
+        'Added AI-powered one-click report generation that compiles attendee data, feedback, and financials automatically',
+        'Included date range filters and Top Performing Events rankings for strategic planning'
       ],
-      outcome: 'Organizations can now make data-driven decisions about which event types to run and when to schedule them based on historical performance.',
+      outcome: 'Organizations can now make data-driven decisions about event strategy. AI-generated reports reduced post-event reporting from days of manual compilation to seconds, enabling immediate stakeholder summaries.',
       screens: [
-        { src: '/images/tikiti-dashboard-analytics.png', alt: 'Analytics Dashboard' }
+        { src: '/images/case-studies/tikiti-dashboard-analytics.png', alt: 'Organization-level analytics dashboard' },
+        { src: '/images/case-studies/tikiti-dashboard-event-reports.png', alt: 'Event-level reports with charts' },
+        { src: '/images/case-studies/tikiti-dashboard-home.png', alt: 'Dashboard home with key stats' }
       ]
     },
-    messaging: {
+    communication: {
       label: 'Feature 04',
       title: 'Multi-Channel Communication',
-      challenge: 'Organizers communicated with attendees through personal WhatsApp, losing professional credibility and having no delivery tracking. Updates often didn\'t reach all attendees.',
+      challenge: 'Organizers communicated with attendees through personal WhatsApp and scattered emails, losing professional credibility with no delivery tracking. Event updates often failed to reach all attendees, and there was no centralized message history.',
       decisions: [
-        'Designed unified messaging hub supporting WhatsApp, Email, SMS, and in-app push',
-        'Built audience segmentation by event, ticket type, or registration date',
-        'Created message templates for common updates (reminders, changes, thank-yous)',
-        'Added delivery tracking and read receipts for accountability'
+        'Designed a unified messaging hub for organization-wide broadcasts across Email, Push, SMS, and WhatsApp',
+        'Built event-specific messaging for targeted communication to individual event attendees',
+        'Created a post-event updates system for sharing announcements, schedule changes, and follow-up content',
+        'Added event-level surveys and feedback collection to capture attendee sentiment immediately post-event'
       ],
-      outcome: 'Communication reach improved from ~60% to 95%+ with multi-channel delivery. Organizations maintain professional brand presence.',
-      screens: []
-    },
-    reports: {
-      label: 'Feature 05',
-      title: 'AI-Generated Reports',
-      challenge: 'Post-event reporting took days of manual work. Organizers struggled to compile feedback, attendance data, and financials into coherent reports for stakeholders and sponsors.',
-      decisions: [
-        'Built one-click report generation using AI to analyze event data',
-        'Compiled attendee feedback, attendance metrics, and revenue automatically',
-        'Created downloadable PDF reports with professional formatting',
-        'Added sponsor-ready summaries with key highlights and recommendations'
-      ],
-      outcome: 'Report generation time reduced from days to seconds. Organizations can now provide immediate post-event summaries to stakeholders.',
-      screens: []
-    },
-    orgSwitcher: {
-      label: 'Feature 06',
-      title: 'Multi-Organization Support',
-      challenge: 'Event managers often work with multiple organizations (company events, NGO programs, personal projects). Switching between accounts was cumbersome and error-prone.',
-      decisions: [
-        'Designed organization switcher in the sidebar for quick context switching',
-        'Built separate data isolation per organization (events, attendees, analytics)',
-        'Created role-based access for team collaboration within organizations',
-        'Added organization branding (logo, colors) to maintain identity'
-      ],
-      outcome: 'Users can now manage multiple organizations from a single account. Event managers report 50% faster workflow when handling multiple clients.',
+      outcome: 'Communication reach improved from approximately 60% to over 95% with multi-channel delivery. Organizations maintain a professional brand presence and have full message history for accountability.',
       screens: [
-        { src: '/images/tikiti-dashboard-organizer.png', alt: 'Dashboard with Organization Switcher' }
+        { src: '/images/case-studies/tikiti-dashboard-messaging.png', alt: 'Organization messaging hub' },
+        { src: '/images/case-studies/tikiti-dashboard-event-messaging.png', alt: 'Event-specific messaging' },
+        { src: '/images/case-studies/tikiti-dashboard-event-updates.png', alt: 'Post-event updates' },
+        { src: '/images/case-studies/tikiti-dashboard-event-surveys.png', alt: 'Surveys and feedback collection' }
+      ]
+    },
+    speakerProgram: {
+      label: 'Feature 05',
+      title: 'Speaker & Program Management',
+      challenge: 'Managing speakers and building event programs was done through back-and-forth emails and shared documents. There was no way to invite speakers directly, build session agendas, or add interactive engagement tools from a single place.',
+      decisions: [
+        'Built a speakers management page with confirmed speakers, pending invitations, and profile submission tracking',
+        'Designed a speaker invitation flow with role selection (Speaker, Panelist, Moderator, Host) and personalized messages',
+        'Created a program builder for organizing keynotes, sessions, panels, and breaks into a structured agenda',
+        'Added engagement tools including live polls and quizzes to drive attendee interaction during sessions'
+      ],
+      outcome: 'Speaker management is now centralized with invitation tracking and profile collection. Program building that previously took multiple coordination calls can now be done in minutes with structured session ordering.',
+      screens: [
+        { src: '/images/case-studies/tikiti-dashboard-speakers.png', alt: 'Speakers and panelists directory' },
+        { src: '/images/case-studies/tikiti-dashboard-speaker-invite-modal.png', alt: 'Speaker invitation modal' },
+        { src: '/images/case-studies/tikiti-dashboard-event-program.png', alt: 'Session and keynote agenda builder' },
+        { src: '/images/case-studies/tikiti-dashboard-event-engagement.png', alt: 'Polls and quizzes engagement tools' }
+      ]
+    },
+    orgSettings: {
+      label: 'Feature 06',
+      title: 'Organization Settings & Team',
+      challenge: 'Event managers working with multiple organizations had no way to customize branding per org, manage team access, or control notification preferences. Switching between organizations and managing billing was cumbersome and error-prone.',
+      decisions: [
+        'Designed a settings hub with tabbed navigation: General, Branding, Notifications, Team, and Subscription',
+        'Built branding customization with logo upload and primary/secondary color scheme per organization',
+        'Created team management with role-based access control (Owner, Project Manager) for collaborative event management',
+        'Added notification preference controls for Email, Push, and SMS channel toggles',
+        'Designed subscription and billing management with Free vs Pro plan comparison and upgrade flow'
+      ],
+      outcome: 'Organizations can fully customize their dashboard experience. Role-based team access enabled delegation, and multi-org users report 50% faster workflows when managing multiple clients from a single account.',
+      screens: [
+        { src: '/images/case-studies/tikiti-dashboard-settings.png', alt: 'Settings - General tab' },
+        { src: '/images/case-studies/tikiti-dashboard-settings-branding.png', alt: 'Settings - Branding with logo and colors' },
+        { src: '/images/case-studies/tikiti-dashboard-settings-team.png', alt: 'Settings - Team members and roles' },
+        { src: '/images/case-studies/tikiti-dashboard-settings-notifications.png', alt: 'Settings - Notification toggles' },
+        { src: '/images/case-studies/tikiti-dashboard-settings-subscription.png', alt: 'Settings - Plans and billing' }
       ]
     }
   };
@@ -242,8 +266,8 @@ function TikitiDashboardCaseStudy() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <img
-          src="/images/tikiti-dashboard-hero.png"
-          alt="Tikiti Dashboard"
+          src="/images/case-studies/tikiti-dashboard-landing.png"
+          alt="Tikiti Dashboard Landing Page"
           className="case-hero-screen-desktop"
         />
       </motion.section>
@@ -293,7 +317,7 @@ function TikitiDashboardCaseStudy() {
               </div>
               <div className="role-item">
                 <strong>Tikiti Dashboard (Subscription)</strong>
-                <p>Event creation and management, attendee tracking and export, multi-channel messaging (WhatsApp, Email, SMS, Push), analytics and insights, AI-generated reports</p>
+                <p>Event creation wizard, attendee management and QR check-in, multi-channel messaging (Email, Push, SMS, WhatsApp), reports and AI analytics, speaker and program management, organization settings and team roles</p>
                 <p className="role-note">Per-user subscription fee for organizations</p>
               </div>
             </div>
