@@ -197,7 +197,7 @@ function TumaPayCaseStudy() {
           </div>
           <h1 className="case-study-title">Designing a Voice-First Fintech Experience for Non-Literate Users</h1>
           <p className="case-study-subtitle">
-            As Product Designer for TumaPay, I designed a voice-first mobile money app using local languages and voice pattern recognition to help non-literate users in Ghana perform transactions confidently. No typing, no reading, just conversation.
+            As Product Designer for TumaPay, I designed a voice-first mobile money app using local languages and voice pattern recognition to help non-literate users perform transactions confidently. No typing, no reading, just conversation.
           </p>
         </div>
       </section>
@@ -237,7 +237,7 @@ function TumaPayCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">Making Mobile Money Accessible to Everyone</h2>
               <p className="section-paragraph">
-                In Ghana, mobile money is the backbone of financial access. Yet, millions of people (especially older or less educated users) struggle to use MoMo and USSD apps because they require reading, typing, and memorizing numeric codes.
+                In many emerging markets, mobile money is the backbone of financial access. Yet, millions of people (especially older or less educated users) struggle to use existing apps because they require reading, typing, and memorizing numeric codes.
               </p>
               <p className="section-paragraph">
                 <strong>Challenge:</strong> How can we make digital finance accessible to users who can't read or type in English?
@@ -292,7 +292,7 @@ function TumaPayCaseStudy() {
                   <h3>What I Owned</h3>
                   <ul className="role-responsibilities-list">
                     <li>End-to-end UX research and design for voice-first mobile money</li>
-                    <li>Contextual inquiry with non-literate users in Ghana (including family members)</li>
+                    <li>Contextual inquiry with non-literate users (including family members)</li>
                     <li>Voice UI pattern design and local language integration</li>
                     <li>Accessibility-first interaction design (no reading/typing required)</li>
                     <li>Alternative authentication using voice patterns and visual memory</li>
@@ -303,10 +303,10 @@ function TumaPayCaseStudy() {
                 <div className="role-section">
                   <h3>Research Methods</h3>
                   <ul className="role-collaborators-list">
-                    <li><strong>Contextual Inquiry</strong> — Observed users performing transactions on phones</li>
-                    <li><strong>Cognitive Walkthroughs</strong> — Simulated USSD menu interactions step by step</li>
-                    <li><strong>Usability Testing</strong> — Tested with low-fidelity prototypes and audio prompts</li>
-                    <li><strong>The Grandma Test</strong> — If my mom could use it without reading, it passed</li>
+                    <li><strong>Contextual Inquiry</strong>: Observed users performing transactions on phones</li>
+                    <li><strong>Cognitive Walkthroughs</strong>: Simulated USSD menu interactions step by step</li>
+                    <li><strong>Usability Testing</strong>: Tested with low-fidelity prototypes and audio prompts</li>
+                    <li><strong>The Grandma Test</strong>: If my mom could use it without reading, it passed</li>
                   </ul>
                 </div>
               </div>
@@ -350,7 +350,7 @@ function TumaPayCaseStudy() {
               <p className="section-label">Problem Definition</p>
               <h2 className="section-title">The Literacy Gap in Digital Finance</h2>
               <p className="section-paragraph">
-                In Ghana, mobile money is the backbone of financial access. Yet, millions of people (especially older or less educated users) struggle to use MoMo and USSD apps because they require reading, typing, and memorizing numeric codes.
+                In many emerging markets, mobile money is the backbone of financial access. Yet, millions of people (especially older or less educated users) struggle to use existing apps because they require reading, typing, and memorizing numeric codes.
               </p>
               <div className="callout-box">
                 <p className="callout-text">

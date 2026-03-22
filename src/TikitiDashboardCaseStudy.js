@@ -235,7 +235,7 @@ function TikitiDashboardCaseStudy() {
         >
           <div className="case-meta-pills">
             <span className="case-pill">B2B SaaS</span>
-            <span className="case-pill">2024 — Present</span>
+            <span className="case-pill">2024 to Present</span>
             <span className="case-pill">Events / Productivity</span>
           </div>
           <h1 className="about-headline">
@@ -285,13 +285,13 @@ function TikitiDashboardCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">From mobile-only to B2B platform</h2>
             <p className="about-section-text">
-              After launching Tikiti mobile app and reaching 900+ downloads, a clear pattern emerged: our power users weren't individual attendees—they were <strong>NGOs, companies, and organizations</strong> running events.
+              After launching Tikiti mobile app and reaching 1.7k downloads, a clear pattern emerged: our power users weren't individual attendees. They were <strong>NGOs, companies, and organizations</strong> running events.
             </p>
             <p className="about-section-text">
               These organizations needed more than a mobile app. They needed a command center to create events, manage attendees, send updates through multiple channels, and generate reports for stakeholders and sponsors.
             </p>
             <p className="about-section-text">
-              This insight led to Tikiti's pivot to a <strong>B2B SaaS model</strong>—the mobile app for attendees to discover and attend events, and a web dashboard for organizations to manage everything behind the scenes.
+              This insight led to Tikiti's pivot to a <strong>B2B SaaS model</strong>. The mobile app for attendees to discover and attend events, and a web dashboard for organizations to manage everything behind the scenes.
             </p>
           </div>
         </motion.div>
@@ -432,7 +432,7 @@ function TikitiDashboardCaseStudy() {
           <div className="about-text-content">
             <span className="section-label">Related Project</span>
             <Link to="/tikiti-case-study" className="next-case-link">
-              <h2 className="about-section-title">Tikiti Mobile — Event Discovery App</h2>
+              <h2 className="about-section-title">Tikiti Mobile: Event Discovery App</h2>
               <ArrowButton />
             </Link>
           </div>

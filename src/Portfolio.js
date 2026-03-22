@@ -12,11 +12,11 @@ function Portfolio() {
   const [currentQuote, setCurrentQuote] = useState(0);
 
   const quotes = [
-    "Design is not just what it looks like. Design is how it works.",
+    "The best products ship, not sit in Figma.",
     "Simplicity is the ultimate sophistication.",
-    "Good design is obvious. Great design is transparent.",
-    "The details are not the details. They make the design.",
-    "Design creates culture. Culture shapes values. Values determine the future."
+    "Good design solves the problem. Great design removes it.",
+    "The details are not the details. They make the product.",
+    "Strategy without execution is a slideshow."
   ];
 
   // Update time every second (Accra timezone - GMT)
@@ -77,39 +77,39 @@ function Portfolio() {
     {
       id: 1,
       title: 'Jenesys',
-      description: 'AI-powered bookkeeping platform that helped SMEs automate reconciliation and reach $1M ARR.',
+      description: 'Designed the product experience for an AI bookkeeping platform that reached $1M ARR and 80% feature adoption.',
       link: '/case-study',
       bgColor: '#e4dbea',
       image: '/images/case-studies/jenesys-dashboard.png'
     },
     {
       id: 2,
-      title: 'Kaaka',
-      description: 'AI cooking assistant that turns grocery receipts into personalized meal plans—making meal planning effortless.',
-      link: '/kaaka-case-study',
-      bgColor: '#1a1a1a',
-      image: '/images/case-studies/kaaka-home.png'
-    },
-    {
-      id: 3,
-      title: 'SheFundIt',
-      description: 'Milestone-based crowdfunding platform empowering women entrepreneurs in Ghana to fund their businesses.',
-      link: '/shefundit-case-study',
-      bgColor: '#e8f5e9',
-      image: '/images/case-studies/shefundit-screen-7.png'
-    },
-    {
-      id: 4,
       title: 'Tikiti',
-      description: 'Event ticketing app with 900+ downloads helping Ghanaians discover events and manage tickets with QR scanning.',
+      description: 'Designed and shipped an event ticketing app with 1.7k downloads. Event discovery, mobile payments, QR scanning.',
       link: '/tikiti-case-study',
       bgColor: '#5a4fcf',
       image: '/images/case-studies/tikiti-screen-5.png'
     },
     {
+      id: 3,
+      title: 'Kaaka',
+      description: 'Designed and shipped an AI cooking assistant that turns grocery receipts into personalized meal plans.',
+      link: '/kaaka-case-study',
+      bgColor: '#1a1a1a',
+      image: '/images/case-studies/kaaka-home.png'
+    },
+    {
+      id: 4,
+      title: 'SheFundIt',
+      description: 'Designed and shipped a milestone-based crowdfunding platform empowering women entrepreneurs to fund their businesses.',
+      link: '/shefundit-case-study',
+      bgColor: '#e8f5e9',
+      image: '/images/case-studies/shefundit-screen-7.png'
+    },
+    {
       id: 5,
       title: 'Tikiti Dashboard',
-      description: 'B2B event management platform for NGOs—multi-channel messaging, attendee management, and AI-generated reports.',
+      description: 'Designed and shipped a B2B event management platform. Multi-channel messaging, attendee management, and AI reports.',
       link: '/tikiti-dashboard-case-study',
       bgColor: '#1e293b',
       image: '/images/tikiti-dashboard-hero.png'
@@ -163,7 +163,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Senior Product Designer
+              Product Strategist & Builder
             </motion.div>
 
             <motion.h1
@@ -172,7 +172,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I turn complexity into clarity.
+              I design products and ship them.
             </motion.h1>
 
             <motion.p
@@ -181,7 +181,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              I design the first version, build the system, and stay until it scales—from zero users to millions in revenue.
+              Product strategy, behavioral design, and bespoke interfaces backed by real market insight. I use AI tools like Claude and Cursor to go from concept to production.
             </motion.p>
           </div>
 
@@ -289,7 +289,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[2].link} className="project-card-inner mobile-card" style={{ background: mainProjects[2].bgColor }}>
+              <Link to={mainProjects[2].link} className="project-card-inner mobile-card dark-card" style={{ background: mainProjects[2].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[2].title}</h3>
                   <p className="project-card-description">{mainProjects[2].description}</p>
@@ -307,7 +307,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[3].link} className="project-card-inner mobile-card dark-card" style={{ background: mainProjects[3].bgColor }}>
+              <Link to={mainProjects[3].link} className="project-card-inner mobile-card" style={{ background: mainProjects[3].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[3].title}</h3>
                   <p className="project-card-description">{mainProjects[3].description}</p>
@@ -343,6 +343,67 @@ function Portfolio() {
         </div>
       </section>
 
+      {/* What I Bring Section */}
+      <section className="expertise-section">
+        <div className="expertise-container">
+          <motion.div
+            className="expertise-header"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="expertise-title">What I bring to the table</h2>
+          </motion.div>
+
+          <div className="expertise-grid">
+            <motion.div
+              className="expertise-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="expertise-card-title">Product Expertise</h3>
+              <p className="expertise-card-text">I specialize in market trend analysis, product performance forecasting, and identifying hidden opportunities and threats. I use data research and strategic frameworks to develop products that keep clients ahead of the competition, guiding teams through the entire product lifecycle.</p>
+            </motion.div>
+
+            <motion.div
+              className="expertise-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="expertise-card-title">Behavioral Design</h3>
+              <p className="expertise-card-text">I integrate neuroscience and UX principles with the psychology of user interactions, ensuring every design decision is informed by how users think, feel, and act. By applying behavioral models, I create interfaces that are not just functional but deeply resonant with the user's psychological drivers.</p>
+            </motion.div>
+
+            <motion.div
+              className="expertise-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="expertise-card-title">Strategy</h3>
+              <p className="expertise-card-text">I craft comprehensive product strategies that encompass market analysis, competitive positioning, and lifecycle planning. Through a deep understanding of market dynamics and consumer behavior, I develop actionable strategies that anticipate market shifts and position your product for long-term growth.</p>
+            </motion.div>
+
+            <motion.div
+              className="expertise-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="expertise-card-title">AI-Assisted Development</h3>
+              <p className="expertise-card-text">I use tools like Claude and Cursor to go from design to production-level code. No dev team needed. I ship real products, not just prototypes, guiding the entire journey from concept to launch.</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Landing Pages Gallery Section */}
       <section className="landing-pages-section">
         <div className="landing-pages-container">
@@ -354,7 +415,7 @@ function Portfolio() {
             viewport={{ once: true }}
           >
             <h2 className="landing-pages-title">Landing Pages & Websites</h2>
-            <p className="landing-pages-subtitle">Visual designs I've crafted for clients and personal projects</p>
+            <p className="landing-pages-subtitle">Designed and built for clients and personal projects</p>
           </motion.div>
 
           <div className="landing-pages-grid">
@@ -417,10 +478,9 @@ function Portfolio() {
             viewport={{ once: true }}
             style={{ textAlign: 'center' }}
           >
-            <h2 className="contact-heading-simple">Let's Connect</h2>
+            <h2 className="contact-heading-simple">Let's Work Together</h2>
             <p className="contact-subtext">
-              Feel free to reach out for collaborations or just a friendly hello{' '}
-              <span role="img" aria-label="smile">😀</span>
+              Have a product that needs designing or shipping? Let's talk.
             </p>
             <a
               href="mailto:rashidlansahadam@gmail.com"

@@ -87,7 +87,7 @@ function AboutMe() {
     {
       id: 3,
       name: 'Susu Collection System',
-      tagline: 'Digitizing traditional savings for Ghana',
+      tagline: 'Digitizing traditional savings groups',
       icon: <PiggyBankIcon size={72} />,
       userPains: [
         'Traditional Susu collectors use paper records prone to loss',
@@ -101,7 +101,7 @@ function AboutMe() {
         'Desire to build a verifiable financial history',
         'Looking for convenience without losing the personal touch'
       ],
-      solution: 'A web application that modernizes the traditional Susu savings collection system in Ghana. It digitizes record-keeping, provides real-time balance tracking, and maintains the trusted collector-customer relationship while adding security and transparency.',
+      solution: 'A web application that modernizes the traditional Susu savings collection system. It digitizes record-keeping, provides real-time balance tracking, and maintains the trusted collector-customer relationship while adding security and transparency.',
       impact: [
         'Eliminates paper-based record losses',
         'Provides customers with 24/7 balance visibility',
@@ -233,7 +233,7 @@ function AboutMe() {
         <div className="about-breadcrumb">
           <Link to="/" className="about-breadcrumb-link">Home</Link>
           <span className="about-breadcrumb-separator">/</span>
-          <span className="about-breadcrumb-current">About me</span>
+          <span className="about-breadcrumb-current">About</span>
         </div>
       </nav>
 
@@ -249,7 +249,7 @@ function AboutMe() {
             <img src="/images/lansah-profile.png" alt="Lansah" />
           </div>
           <h1 className="about-headline">
-            Hi, I'm Lansah — a designer fascinated by the fintech and social impact space. This is where I grow ideas.
+            Hi, I'm Lansah. I'm a product strategist and builder with 7+ years of experience. I design products, then I ship them.
           </h1>
         </motion.div>
       </section>
@@ -271,10 +271,10 @@ function AboutMe() {
             <CompanyIcon size={72} />
           </motion.div>
           <h2 className="about-section-title">
-            Right now, I'm exploring new opportunities
+            Currently exploring opportunities across AI, education, fintech, consumer, and B2B SaaS
           </h2>
           <p className="about-section-text">
-            Open to roles in fintech, healthcare, HR, heavy data systems, iGaming, or social impact. Let's build something meaningful together.
+            I use AI tools like Claude and Cursor to go from design to working product without waiting on a dev team. Open to roles where I can design, build, and lead.
           </p>
         </motion.div>
 
@@ -293,10 +293,10 @@ function AboutMe() {
             <WorkBriefcaseIcon size={72} />
           </motion.div>
           <h2 className="about-section-title">
-            Previously, I was Founding Product Designer at Jenesys
+            Previously, Founding Product Designer at Jenesys
           </h2>
           <p className="about-section-text">
-            2023 — 2025: Led product design for AI-powered financial management tools, reconciliation systems, and business dashboards that helped achieve $1M ARR.
+            2023 to 2025: Led product design for AI-powered financial management tools, reconciliation systems, and business dashboards that helped achieve $1M ARR.
           </p>
         </motion.div>
       </section>
@@ -311,9 +311,9 @@ function AboutMe() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
-            <h2 className="about-section-title">My path to design was anything but linear</h2>
+            <h2 className="about-section-title">My path to product was anything but linear</h2>
             <p className="about-section-text">
-              I studied Biochemistry and earned an MPhil in Molecular Medicine. Along the way, I've been a Radio DJ, high school Biology & Chemistry teacher, pharma sales rep, graphic designer, digital marketer — and even started a business that failed.
+              I studied Biochemistry and earned an MPhil in Molecular Medicine. Along the way, I've been a Radio DJ, high school Biology and Chemistry teacher, pharma sales rep, graphic designer, digital marketer, and even started a business that failed.
             </p>
           </div>
           <div className="about-illustration">
@@ -332,13 +332,76 @@ function AboutMe() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
-            <h2 className="about-section-title">All those experiences led me to Product Design</h2>
+            <h2 className="about-section-title">All those experiences led me to building products</h2>
             <p className="about-section-text">
-              Every role taught me something about people — how they think, what they need, and why they behave the way they do. Now I channel all of that into designing products that actually work for humans.
+              Every role taught me something about people, how they think, what they need, and why they behave the way they do. Now I channel all of that into designing and shipping products that actually work for humans.
             </p>
           </div>
           <div className="about-illustration">
             <CodeIcon size={200} />
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Product Expertise Section */}
+      <section className="about-full-width">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
+            <h2 className="about-section-title">I build products that solve real problems and look good doing it</h2>
+            <p className="about-section-text">
+              With 7+ years across fintech, education, and B2B SaaS, I bring a deep understanding of how products succeed in competitive markets. I study user needs, analyze what is working (and what is not), and use that insight to shape product decisions from concept through launch. I have taken products from zero to one, guided teams through full product lifecycles, and shipped across web and mobile.
+            </p>
+          </div>
+          <div className="about-illustration">
+            <WorkBriefcaseIcon size={200} />
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Bespoke User Interfaces Section */}
+      <section className="about-full-width">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
+            <h2 className="about-section-title">Every product deserves an interface that feels like it was made just for its users</h2>
+            <p className="about-section-text">
+              I design bespoke user interfaces that are visually refined, intentional, and built around how people actually think and behave. I combine strong visual design craft with UX principles rooted in behavioral psychology, making sure that every layout, interaction, and micro-detail serves a purpose. The result is products that don't just function well but feel right.
+            </p>
+          </div>
+          <div className="about-illustration">
+            <PlantIcon size={200} />
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Strategy Section */}
+      <section className="about-full-width">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
+            <h2 className="about-section-title">Good design without strategy is just decoration</h2>
+            <p className="about-section-text">
+              I start every engagement by understanding the business problem, the market landscape, and where the real opportunity sits. From there, I develop a product strategy that connects user needs to business goals. I don't just hand over a strategy deck. I stay involved through execution, making sure the product we ship reflects the thinking behind it.
+            </p>
+          </div>
+          <div className="about-illustration">
+            <BrainIcon size={200} />
           </div>
         </motion.div>
       </section>
@@ -360,7 +423,7 @@ function AboutMe() {
             <PlantIcon size={72} />
           </motion.div>
           <h2 className="about-section-title">
-            I'm passionate about projects that create positive social impact
+            I care about products that create real impact
           </h2>
           <p className="about-section-text">
             <a href="https://medium.com/design-bootcamp/designing-a-confidence-based-feedback-ui-f5eba0420c8c" target="_blank" rel="noopener noreferrer" className="about-link">Here's something I wrote</a> about designing interfaces that communicate AI uncertainty and keep users in control.
@@ -382,10 +445,10 @@ function AboutMe() {
             <MentorTeachIcon size={72} />
           </motion.div>
           <h2 className="about-section-title">
-            I also teach and mentor aspiring designers and developers
+            I mentor 20+ designers on ADPList
           </h2>
           <p className="about-section-text">
-            I've been a design mentor on <a href="https://adplist.org" target="_blank" rel="noopener noreferrer" className="about-link">ADPList</a> for over 2 years now. Shoot me a line if you'd like to connect on mentorship.
+            UX strategy, visual storytelling, career development. I've been mentoring on <a href="https://adplist.org" target="_blank" rel="noopener noreferrer" className="about-link">ADPList</a> for over 2 years. Shoot me a line if you'd like to connect.
           </p>
         </motion.div>
       </section>
@@ -401,10 +464,10 @@ function AboutMe() {
         >
           <div className="about-text-content">
             <h2 className="about-section-title">
-              In addition to Fintech, I'm passionate about Healthcare, HR, Blockchain, and Heavy Data Systems
+              Beyond fintech, I'm drawn to healthcare, education, AI, and complex data systems
             </h2>
             <p className="about-section-text">
-              This is where I find the intersection of technology and social impact the most fascinating, assuming there are the appropriate safeguards.
+              These are the spaces where thoughtful product design has the most leverage, as long as the right safeguards are in place.
             </p>
           </div>
           <div className="about-illustration">
@@ -431,7 +494,7 @@ function AboutMe() {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          Things I'm building in my spare time
+          Products I'm designing and shipping on the side
         </motion.p>
 
         <div className="about-side-projects-grid">
@@ -473,10 +536,10 @@ function AboutMe() {
             <SportsIcon size={72} />
           </motion.div>
           <h2 className="about-section-title">
-            Outside of work, I'm a football fanatic — Messi is the GOAT
+            Outside of work, I'm a football fanatic. Messi is the GOAT
           </h2>
           <p className="about-section-text">
-            I play and watch football religiously. Proud Barça supporter and huge fan of the Black Stars of Ghana. I also enjoy exploring new cuisines and traveling to new places.
+            I play and watch football religiously. Proud Barca supporter. I also enjoy exploring new cuisines and traveling to new places.
           </p>
         </motion.div>
 
@@ -495,10 +558,10 @@ function AboutMe() {
             <RocketIcon size={72} />
           </motion.div>
           <h2 className="about-section-title">
-            And an aspiring founder (100% serious)
+            And a builder at heart
           </h2>
           <p className="about-section-text">
-            I'm working on building products that solve real problems. The side projects above are just the beginning — I'm in it for the long game.
+            I'm working on building products that solve real problems. The side projects above are just the beginning. I'm in it for the long game.
           </p>
         </motion.div>
       </section>
@@ -580,14 +643,14 @@ function AboutMe() {
           </div>
           <div className="about-footer-text">
             <p className="about-footer-heading">
-              Always down to collaborate when I have the time. Reach out for case studies.
+              Have a product to design or ship? Reach out.
             </p>
             <p className="about-footer-heading">
               All the best,<br />
               Lansah
             </p>
             <p className="about-footer-small">
-              This site is hand-crafted and coded. Feel free to <a href="https://linkedin.com/in/rashid-lansah" className="about-link">visit my LinkedIn.</a>
+              This site was designed and built by me. Feel free to <a href="https://linkedin.com/in/rashid-lansah" className="about-link">visit my LinkedIn.</a>
               <br />
               Copyright © Lansah. All rights reserved.
             </p>

@@ -263,7 +263,7 @@ function Receipt2RecipeCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">What If Your Receipt Knew What to Cook?</h2>
               <p className="section-paragraph">
-                Receipt2Recipe is an AI experiment that turns grocery receipts into meal ideas. Built in under a week using Cursor and Figma, it explores how we can make meal planning effortless by starting with what you actually bought — not what you wish you had.
+                Receipt2Recipe is an AI experiment that turns grocery receipts into meal ideas. Built in under a week using Cursor and Figma, it explores how we can make meal planning effortless by starting with what you actually bought, not what you wish you had.
               </p>
               <p className="section-paragraph">
                 <strong>The Concept:</strong> Snap a photo of your grocery receipt. AI reads the items, understands what you have, and generates a week of meal ideas. No manual input. No endless recipe browsing. Just practical, achievable meals based on what's in your kitchen.
@@ -283,7 +283,7 @@ function Receipt2RecipeCaseStudy() {
                 The existing recipe apps created a false choice: either browse endless inspiration (Tasty, Yummly) that didn't match what was actually in the kitchen, or use basic meal planning tools that required manual input of every ingredient. This gap left millions struggling with food waste and meal planning stress.
               </p>
               <p className="section-paragraph">
-                Our research revealed that people weren't just looking for recipe inspiration—they needed practical meal planning that started with what they already had. They wanted AI that could understand their purchases and create realistic meal plans, not just suggest random recipes.
+                Our research revealed that people weren't just looking for recipe inspiration. They needed practical meal planning that started with what they already had. They wanted AI that could understand their purchases and create realistic meal plans, not just suggest random recipes.
               </p>
             </div>
 
@@ -330,7 +330,7 @@ function Receipt2RecipeCaseStudy() {
                 <div className="role-section">
                   <h3>What I Owned</h3>
                   <ul className="role-responsibilities-list">
-                    <li>Complete concept, UX flow, and prototype — soup to nuts</li>
+                    <li>Complete concept, UX flow, and prototype, soup to nuts</li>
                     <li>AI workflow design: OCR processing, ingredient extraction, meal generation</li>
                     <li>Mobile-first UI design optimized for one-handed use</li>
                     <li>AI transparency patterns showing processing steps and confidence</li>
@@ -342,10 +342,10 @@ function Receipt2RecipeCaseStudy() {
                 <div className="role-section">
                   <h3>AI-Assisted Workflow</h3>
                   <ul className="role-collaborators-list">
-                    <li><strong>Cursor</strong> — Rapid prototyping and code generation</li>
-                    <li><strong>Figma</strong> — UI design and component library</li>
-                    <li><strong>Claude AI</strong> — UX copy, flow ideation, research synthesis</li>
-                    <li><strong>Self-directed</strong> — Full ownership from concept to delivery</li>
+                    <li><strong>Cursor</strong>: Rapid prototyping and code generation</li>
+                    <li><strong>Figma</strong>: UI design and component library</li>
+                    <li><strong>Claude AI</strong>: UX copy, flow ideation, research synthesis</li>
+                    <li><strong>Self-directed</strong>: Full ownership from concept to delivery</li>
                   </ul>
                 </div>
               </div>
@@ -475,7 +475,7 @@ function Receipt2RecipeCaseStudy() {
               </div>
               
               <p className="section-paragraph">
-                <strong>Our Opportunity:</strong> Create a solution that starts with receipts (what you actually bought) and generates personalized meal plans using AI, while providing transparency in AI decision-making—two areas where competitors were weak.
+                <strong>Our Opportunity:</strong> Create a solution that starts with receipts (what you actually bought) and generates personalized meal plans using AI, while providing transparency in AI decision-making, two areas where competitors were weak.
               </p>
             </div>
 
@@ -745,7 +745,7 @@ function Receipt2RecipeCaseStudy() {
               <p className="section-label">Reflection</p>
               <h2 className="section-title">What I Learned from a Week-Long Sprint</h2>
               <p className="section-paragraph">
-                Building Receipt2Recipe in under a week taught me that speed and creativity thrive together. By focusing on one core insight — that people want meal plans based on what they actually have — I could strip away complexity and design for delight.
+                Building Receipt2Recipe in under a week taught me that speed and creativity thrive together. By focusing on one core insight, that people want meal plans based on what they actually have, I could strip away complexity and design for delight.
               </p>
               
               <div className="learnings-content">

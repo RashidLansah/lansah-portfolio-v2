@@ -2969,6 +2969,79 @@ html {
   object-fit: cover;
 }
 
+/* Expertise Section */
+.expertise-section {
+  padding: 120px 20px;
+  position: relative;
+}
+
+.expertise-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.expertise-header {
+  margin-bottom: 60px;
+}
+
+.expertise-title {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.expertise-card {
+  padding: 40px;
+  background: #fafafa;
+  border-radius: 16px;
+  border: 1px solid #eee;
+}
+
+.expertise-card-title {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.expertise-card-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .expertise-section {
+    padding: 80px 20px;
+  }
+
+  .expertise-title {
+    font-size: 32px;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .expertise-card {
+    padding: 28px 24px;
+  }
+
+  .expertise-header {
+    margin-bottom: 40px;
+  }
+}
+
 /* Landing Pages Gallery Section */
 .landing-pages-section {
   padding: 120px 20px;
@@ -3387,13 +3460,26 @@ html {
     height: auto !important;
   }
 
-  .project-card-image-wrapper,
-  .project-card-inner.mobile-card .project-card-image-wrapper {
+  .project-card-image-wrapper {
     position: relative !important;
     top: auto !important;
     left: auto !important;
     width: 100% !important;
     height: 220px !important;
+    padding: 0 20px 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    order: 2;
+  }
+
+  .project-card-inner.mobile-card .project-card-image-wrapper {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 360px !important;
     padding: 0 20px 24px;
     box-sizing: border-box;
     display: flex;
@@ -3411,7 +3497,7 @@ html {
   }
 
   .project-card-inner.mobile-card .project-card-image {
-    max-width: 140px;
+    max-width: 220px;
     height: 100%;
   }
 

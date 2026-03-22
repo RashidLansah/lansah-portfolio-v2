@@ -264,7 +264,7 @@ function CaseStudy() {
                 As the Founding Product Designer at Jenesys, I led design for an AI-driven accounting system that automated invoice and receipt management for small businesses. My goal was to simplify workflows while building scalable, compliant systems.
               </p>
               <p className="section-paragraph">
-                Jenesys is an AI-powered bookkeeping platform that automates financial workflows for SMEs. You can connect your accounting system (Xero, QuickBooks, FreeAgent), upload invoices via email, and let AI handle categorization, reconciliation, and compliance tracking — all while maintaining the transparency that financial professionals demand.
+                Jenesys is an AI-powered bookkeeping platform that automates financial workflows for SMEs. You can connect your accounting system (Xero, QuickBooks, FreeAgent), upload invoices via email, and let AI handle categorization, reconciliation, and compliance tracking, all while maintaining the transparency that financial professionals demand.
               </p>
               <p className="section-paragraph">
                 <strong>Note:</strong> In compliance with my non-disclosure agreement, I've omitted confidential information from this case study. The insights shared here are my own and don't necessarily represent the views of Jenesys AI.
@@ -281,7 +281,7 @@ function CaseStudy() {
                 The existing market solutions created a false choice: either expensive enterprise-grade software ($500+/month) that was too complex for non-accountants, or basic tools that lacked the sophistication needed for growing businesses. This gap left millions of SMEs struggling with time-consuming manual processes that pulled focus away from core business activities.
               </p>
               <p className="section-paragraph">
-                Our research revealed that business owners weren't just looking for automation—they needed transparency and control. They wanted to understand how AI made decisions about their financial data, especially given the critical nature of financial accuracy and compliance requirements.
+                Our research revealed that business owners weren't just looking for automation. They needed transparency and control. They wanted to understand how AI made decisions about their financial data, especially given the critical nature of financial accuracy and compliance requirements.
               </p>
             </div>
 
@@ -340,10 +340,10 @@ function CaseStudy() {
                 <div className="role-section">
                   <h3>Collaborated With</h3>
                   <ul className="role-collaborators-list">
-                    <li><strong>2 Co-founders</strong> — Product strategy, roadmap prioritization</li>
-                    <li><strong>4 Engineers</strong> — Technical feasibility, design handoff, iteration</li>
-                    <li><strong>1 Product Manager</strong> — Requirements, user stories, sprint planning</li>
-                    <li><strong>External Stakeholders</strong> — Accountants, SME owners for user research</li>
+                    <li><strong>2 Co-founders</strong>: Product strategy, roadmap prioritization</li>
+                    <li><strong>4 Engineers</strong>: Technical feasibility, design handoff, iteration</li>
+                    <li><strong>1 Product Manager</strong>: Requirements, user stories, sprint planning</li>
+                    <li><strong>External Stakeholders</strong>: Accountants, SME owners for user research</li>
                   </ul>
                 </div>
               </div>
@@ -468,7 +468,7 @@ function CaseStudy() {
               </div>
               
               <p className="section-paragraph">
-                <strong>Our Opportunity:</strong> Create a solution that combines enterprise-grade AI automation with SME-friendly pricing, while prioritizing AI transparency and multi-company management—two areas where competitors were weak.
+                <strong>Our Opportunity:</strong> Create a solution that combines enterprise-grade AI automation with SME-friendly pricing, while prioritizing AI transparency and multi-company management, two areas where competitors were weak.
               </p>
             </div>
 
@@ -515,7 +515,7 @@ function CaseStudy() {
                       <strong>Pain Points:</strong> Manual data entry, reconciliation errors, lost invoices
                     </div>
                     <div className="detail-item">
-                      <strong>Tech Savvy:</strong> Moderate — uses mobile banking, QuickBooks
+                      <strong>Tech Savvy:</strong> Moderate, uses mobile banking, QuickBooks
                     </div>
                   </div>
                 </div>
@@ -537,7 +537,7 @@ function CaseStudy() {
                       <strong>Pain Points:</strong> Context switching, manual invoice entry, client miscommunication
                     </div>
                     <div className="detail-item">
-                      <strong>Tech Savvy:</strong> High — uses multiple accounting platforms daily
+                      <strong>Tech Savvy:</strong> High, uses multiple accounting platforms daily
                     </div>
                   </div>
                 </div>
@@ -729,7 +729,7 @@ function CaseStudy() {
               </div>
 
               <p className="section-paragraph" style={{ marginTop: '40px', fontStyle: 'italic', color: '#666' }}>
-                These iterations taught me that user feedback isn't just about fixing problems — it's about discovering opportunities we couldn't have imagined in the initial design phase.
+                These iterations taught me that user feedback isn't just about fixing problems. It's about discovering opportunities we couldn't have imagined in the initial design phase.
               </p>
             </div>
 
@@ -872,7 +872,7 @@ function CaseStudy() {
               <p className="section-label">Reflection</p>
               <h2 className="section-title">What I Learned</h2>
               <p className="section-paragraph">
-                This project reinforced how design systems accelerate iteration speed and maintain clarity across fast-scaling teams. I learned to balance AI complexity with simplicity for everyday users — a challenge that required deep collaboration with engineers and continuous user feedback.
+                This project reinforced how design systems accelerate iteration speed and maintain clarity across fast-scaling teams. I learned to balance AI complexity with simplicity for everyday users, a challenge that required deep collaboration with engineers and continuous user feedback.
               </p>
               
               <div className="learnings-content">

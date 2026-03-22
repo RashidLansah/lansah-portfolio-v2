@@ -249,8 +249,8 @@ function ParleyAICaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">A Council of AI Models Working Together</h2>
               <p className="section-paragraph">
-                Parley AI is a revolutionary platform that brings together multiple leading AI models — GPT-4, Claude, Gemini,
-                and more — to deliberate on your questions and synthesize the best possible answers. Instead of relying on a
+                Parley AI is a revolutionary platform that brings together multiple leading AI models (GPT-4, Claude, Gemini,
+                and more) to deliberate on your questions and synthesize the best possible answers. Instead of relying on a
                 single AI that might hallucinate or have blind spots, Parley creates a "council of LLMs" that independently
                 analyze, peer-review, and synthesize responses.
               </p>
@@ -308,9 +308,9 @@ function ParleyAICaseStudy() {
                 <div className="role-section">
                   <h3>Collaborated With</h3>
                   <ul className="role-collaborators-list">
-                    <li><strong>Founder/Engineer</strong> — Product vision, technical architecture</li>
-                    <li><strong>AI/ML Team</strong> — Model selection, deliberation logic</li>
-                    <li><strong>Beta Users</strong> — Feedback on deliberation transparency</li>
+                    <li><strong>Founder/Engineer</strong>: Product vision, technical architecture</li>
+                    <li><strong>AI/ML Team</strong>: Model selection, deliberation logic</li>
+                    <li><strong>Beta Users</strong>: Feedback on deliberation transparency</li>
                   </ul>
                 </div>
               </div>

@@ -73,7 +73,7 @@ function KaakaCaseStudy() {
     receiptScanning: {
       label: 'Feature 01',
       title: 'Receipt Scanning & AI Extraction',
-      challenge: 'Users manually typed out grocery items from receipts—a tedious process that took 10+ minutes per shopping trip. Most people gave up after a few attempts, abandoning the habit of meal planning.',
+      challenge: 'Users manually typed out grocery items from receipts. A tedious process that took 10+ minutes per shopping trip. Most people gave up after a few attempts, abandoning the habit of meal planning.',
       decisions: [
         'Designed a camera-first experience with real-time OCR feedback',
         'Built a visual review step where users could verify and correct extracted items',
@@ -90,7 +90,7 @@ function KaakaCaseStudy() {
     mealPlanning: {
       label: 'Feature 02',
       title: 'AI Meal Planning',
-      challenge: 'Users had groceries but no idea what to cook. Existing recipe apps required them to search manually—they wanted suggestions based on what they actually bought.',
+      challenge: 'Users had groceries but no idea what to cook. Existing recipe apps required them to search manually. They wanted suggestions based on what they actually bought.',
       decisions: [
         'Built an AI chat interface where users describe what they want to cook',
         'Designed personalized 7-day meal plans based on scanned groceries',
@@ -190,7 +190,7 @@ function KaakaCaseStudy() {
         >
           <div className="case-meta-pills">
             <span className="case-pill">Side Project</span>
-            <span className="case-pill">2024 — Present</span>
+            <span className="case-pill">2024 to Present</span>
             <span className="case-pill">Consumer / AI</span>
           </div>
           <h1 className="about-headline">
@@ -243,7 +243,7 @@ function KaakaCaseStudy() {
               People buy groceries with good intentions but often don't know what to cook. They end up wasting food, ordering takeout, or eating the same repetitive meals. The disconnect between "what I bought" and "what I can make" was causing frustration and food waste.
             </p>
             <p className="about-section-text">
-              I built Kaaka as a side project to solve my own problem—and discovered many others shared the same struggle. The idea: snap a photo of your receipt, and AI figures out what you can cook.
+              I built Kaaka as a side project to solve my own problem and discovered many others shared the same struggle. The idea: snap a photo of your receipt, and AI figures out what you can cook.
             </p>
           </div>
         </motion.div>
@@ -260,7 +260,7 @@ function KaakaCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">My Role</span>
-            <h2 className="about-section-title">Solo founder—design, code, and ship</h2>
+            <h2 className="about-section-title">Designed and shipped the entire product</h2>
             <div className="role-grid">
               <div className="role-item">
                 <strong>Research</strong>
@@ -296,7 +296,7 @@ function KaakaCaseStudy() {
             <span className="section-label">The Core Challenge</span>
             <h2 className="about-section-title">Making AI feel like a helpful friend, not a robot</h2>
             <p className="about-section-text">
-              Early testers loved the concept but felt disconnected from the AI suggestions. "It feels like a database lookup, not a cooking buddy," one user said. The challenge wasn't just accuracy—it was <strong>personality and trust</strong>.
+              Early testers loved the concept but felt disconnected from the AI suggestions. "It feels like a database lookup, not a cooking buddy," one user said. The challenge wasn't just accuracy. It was <strong>personality and trust</strong>.
             </p>
             <p className="about-section-text">
               I redesigned the experience around conversation. Instead of showing a list of recipes, Kaaka asks what you're in the mood for. It feels like texting a friend who happens to be a chef.
@@ -318,7 +318,7 @@ function KaakaCaseStudy() {
             <span className="section-label">What I Built</span>
             <h2 className="about-section-title">4 core features that make meal planning effortless</h2>
             <p className="about-section-text">
-              Click any feature to see the design story—the challenge, decisions, and outcome.
+              Click any feature to see the design story. The challenge, decisions, and outcome.
             </p>
           </div>
         </motion.div>
@@ -412,11 +412,11 @@ function KaakaCaseStudy() {
               </div>
               <div className="learning-item">
                 <strong>Solve your own problem first.</strong>
-                <p>Building something I personally needed meant I was the first user. Every pain point I felt, others felt too—this made prioritization easy.</p>
+                <p>Building something I personally needed meant I was the first user. Every pain point I felt, others felt too. This made prioritization easy.</p>
               </div>
               <div className="learning-item">
                 <strong>Ship fast, iterate faster.</strong>
-                <p>The first version was embarrassingly simple—just receipt scanning and a list. User feedback shaped every feature that followed.</p>
+                <p>The first version was embarrassingly simple. Just receipt scanning and a list. User feedback shaped every feature that followed.</p>
               </div>
             </div>
           </div>
@@ -435,7 +435,7 @@ function KaakaCaseStudy() {
           <div className="about-text-content">
             <span className="section-label">Next Project</span>
             <Link to="/case-study" className="next-case-link">
-              <h2 className="about-section-title">Jenesys — AI Bookkeeping Platform</h2>
+              <h2 className="about-section-title">Jenesys: AI Bookkeeping Platform</h2>
               <ArrowButton />
             </Link>
           </div>

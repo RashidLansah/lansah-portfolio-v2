@@ -73,7 +73,7 @@ function TikitiCaseStudy() {
     eventDiscovery: {
       label: 'Feature 01',
       title: 'Event Discovery & Search',
-      challenge: 'Event discovery in Ghana was fragmented across WhatsApp forwards, Instagram posts, and word of mouth. Users had no single place to find all events happening near them.',
+      challenge: 'Event discovery was fragmented across WhatsApp forwards, Instagram posts, and word of mouth. Users had no single place to find all events happening near them.',
       decisions: [
         'Designed a location-aware home feed showing "Events near you"',
         'Created filter tabs: All, Live Now, Today, Tomorrow for quick browsing',
@@ -82,8 +82,8 @@ function TikitiCaseStudy() {
       ],
       outcome: 'Users browse an average of 8 events per session. "Events near you" became the most-used feature.',
       screens: [
-        { src: '/images/case-studies/tikiti-screen-5.png', alt: 'Event Discovery Home' },
-        { src: '/images/case-studies/tikiti-screen-6.png', alt: 'Event Details' }
+        { src: '/images/case-studies/tikiti-screen-5.png', alt: 'Events Near You Home Screen' },
+        { src: '/images/case-studies/tikiti-screen-6.png', alt: 'Event Details Page' }
       ]
     },
     ticketing: {
@@ -98,31 +98,46 @@ function TikitiCaseStudy() {
       ],
       outcome: 'Entry verification dropped from 30+ seconds to under 3 seconds per attendee. Zero reported ticket fraud since launch.',
       screens: [
-        { src: '/images/case-studies/tikiti-screen-7.png', alt: 'My Tickets List' },
-        { src: '/images/case-studies/tikiti-screen-8.png', alt: 'Ticket QR Code' }
+        { src: '/images/case-studies/tikiti-screen-9.png', alt: 'Digital Ticket with QR Code' },
+        { src: '/images/case-studies/tikiti-screen-10.png', alt: 'Registered Events List' }
       ]
     },
-    organiserMode: {
+    registration: {
       label: 'Feature 03',
-      title: 'Organiser Mode & Scanner',
-      challenge: 'Event organizers needed to switch between being an attendee and managing their own events. They also needed a way to scan tickets at the door without additional hardware.',
+      title: 'Event Registration & Program',
+      challenge: 'Attendees needed a seamless way to register for events with custom fields, dietary requirements, and accessibility needs, while also viewing the event agenda before attending.',
       decisions: [
-        'Designed a dual-mode app: Attendee mode and Organiser mode',
-        'Created a welcoming onboarding for first-time organizers',
-        'Built an in-app ticket scanner with real-time validation stats',
-        'Added manual entry fallback for edge cases'
+        'Designed smart registration forms with custom organizer fields',
+        'Added dietary and accessibility preference options',
+        'Built a detailed event program view with session schedules',
+        'Created tabbed event details: Ticket, Program, Updates, Messages'
       ],
-      outcome: 'Organizers can manage events entirely from their phones. Scanner mode processes 50+ tickets per minute.',
+      outcome: 'Registration completion rate increased with the streamlined form. Attendees arrive better prepared with advance agenda access.',
       screens: [
-        { src: '/images/case-studies/tikiti-screen-12.png', alt: 'Organiser Mode Welcome' },
-        { src: '/images/case-studies/tikiti-screen-13.png', alt: 'Ticket Scanner' },
-        { src: '/images/case-studies/tikiti-screen-14.png', alt: 'Organiser Profile' }
+        { src: '/images/case-studies/tikiti-screen-7.png', alt: 'Event Registration Form' },
+        { src: '/images/case-studies/tikiti-screen-8.png', alt: 'Event Program & Schedule' }
+      ]
+    },
+    networking: {
+      label: 'Feature 04',
+      title: 'Attendee Networking',
+      challenge: 'Event attendees exchanged contacts via WhatsApp or business cards, losing connections after events ended. There was no way to maintain professional relationships built at events.',
+      decisions: [
+        'Built an event-based networking tab to discover fellow attendees',
+        'Designed connection profiles with social links (Instagram, Twitter, LinkedIn)',
+        'Added QR code scanning for instant connection exchange',
+        'Created a persistent network across all attended events'
+      ],
+      outcome: 'Attendees can build lasting connections at events. The Network tab encourages repeat engagement with the app.',
+      screens: [
+        { src: '/images/case-studies/tikiti-screen-12.png', alt: 'Network Connections List' },
+        { src: '/images/case-studies/tikiti-screen-11.png', alt: 'Connection Profile with Social Links' }
       ]
     },
     webDashboard: {
-      label: 'Feature 04',
+      label: 'Feature 05',
       title: 'Web Dashboard for Organizers',
-      challenge: 'As the platform grew to 900+ App Store downloads, organizers needed more powerful tools than mobile could provide—bulk attendee management, detailed analytics, and event promotion.',
+      challenge: 'As the platform grew to 1.7k App Store downloads, organizers needed more powerful tools than mobile could provide. Bulk attendee management, detailed analytics, and event promotion.',
       decisions: [
         'Built a responsive web dashboard with sidebar navigation',
         'Designed analytics views: Total Events, Attendees, Tickets Sold, Growth Rate',
@@ -134,35 +149,19 @@ function TikitiCaseStudy() {
         { src: '/images/case-studies/tikiti-screen-5.png', alt: 'Mobile Home' }
       ]
     },
-    notifications: {
-      label: 'Feature 05',
-      title: 'Smart Notifications',
-      challenge: 'Users forgot about events they had tickets for, leading to no-shows. Organizers wanted a way to remind attendees without spamming them.',
-      decisions: [
-        'Designed event reminders that fire 1 hour before start time',
-        'Created RSVP confirmations with clear event details',
-        'Built a notification center with clear categorization',
-        'Added push notification preferences in settings'
-      ],
-      outcome: 'No-show rate dropped by 35%. Users report feeling "never surprised" by event timing.',
-      screens: [
-        { src: '/images/case-studies/tikiti-screen-9.png', alt: 'Notifications' }
-      ]
-    },
-    darkMode: {
+    profile: {
       label: 'Feature 06',
-      title: 'Dark Mode & Personalization',
-      challenge: 'Users attending evening events often found the bright interface uncomfortable. Power users wanted more control over their experience.',
+      title: 'Profile & Personalization',
+      challenge: 'Users needed a central hub to manage their event activity, view their ticket history, and access quick actions. All within a clean, dark-mode-first interface.',
       decisions: [
-        'Implemented full dark mode with one-tap toggle',
-        'Designed notification preferences for granular control',
-        'Added account settings accessible from profile screen',
-        'Created clean settings UI with support links'
+        'Designed a profile dashboard showing total tickets and upcoming events',
+        'Created quick action shortcuts: Browse Events, My Tickets, Share My Card',
+        'Built full dark mode as the default experience',
+        'Added account settings with support and preference controls'
       ],
-      outcome: '45% of users enable dark mode. Settings engagement increased after redesign.',
+      outcome: 'Profile became a key navigation hub. Users check their stats and access tickets directly from their profile.',
       screens: [
-        { src: '/images/case-studies/tikiti-screen-10.png', alt: 'Profile Light Mode' },
-        { src: '/images/case-studies/tikiti-screen-11.png', alt: 'Settings Dark Mode' }
+        { src: '/images/case-studies/tikiti-screen-13.png', alt: 'User Profile Dashboard' }
       ]
     }
   };
@@ -220,15 +219,15 @@ function TikitiCaseStudy() {
         >
           <div className="case-meta-pills">
             <span className="case-pill">Side Project</span>
-            <span className="case-pill">2024 — Present</span>
+            <span className="case-pill">2024 to Present</span>
             <span className="case-pill">Consumer / Events</span>
           </div>
           <h1 className="about-headline">
-            Making event ticketing <span className="highlight-text">seamless for Ghana</span>
+            Making event ticketing <span className="highlight-text">seamless and simple</span>
           </h1>
           <div className="case-impact-stats">
             <div className="impact-stat-item">
-              <span className="stat-number">900+</span>
+              <span className="stat-number">1.7k</span>
               <span className="stat-label">App downloads</span>
             </div>
             <div className="impact-stat-item">
@@ -268,12 +267,12 @@ function TikitiCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">The Context</span>
-            <h2 className="about-section-title">Event ticketing was broken in Ghana</h2>
+            <h2 className="about-section-title">Event ticketing was broken</h2>
             <p className="about-section-text">
-              Ghana's events industry was fragmented. Event discovery happened through WhatsApp forwards and Instagram posts, while ticketing relied on physical purchases or error-prone manual processes. Attendees waited 30+ minutes in verification queues, and organizers had no real-time visibility into sales.
+              The local events industry was fragmented. Event discovery happened through WhatsApp forwards and Instagram posts, while ticketing relied on physical purchases or error-prone manual processes. Attendees waited 30+ minutes in verification queues, and organizers had no real-time visibility into sales.
             </p>
             <p className="about-section-text">
-              I built Tikiti to unify discovery, purchase, and entry into one mobile experience that works with the payment methods Ghanaians already trust—MTN MoMo and Vodafone Cash.
+              I built Tikiti to unify discovery, purchase, and entry into one mobile experience that works with the payment methods people already trust.
             </p>
           </div>
         </motion.div>
@@ -290,11 +289,11 @@ function TikitiCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">My Role</span>
-            <h2 className="about-section-title">Solo founder—design, build, ship</h2>
+            <h2 className="about-section-title">Designed and shipped the entire product</h2>
             <div className="role-grid">
               <div className="role-item">
                 <strong>Research</strong>
-                <p>User interviews with event-goers and organizers across Accra</p>
+                <p>User interviews with event-goers and organizers</p>
               </div>
               <div className="role-item">
                 <strong>Design</strong>
@@ -329,7 +328,7 @@ function TikitiCaseStudy() {
               The mobile app launched successfully, but organizers quickly outgrew it. They needed <strong>bulk attendee management, detailed analytics, and promotion tools</strong> that mobile couldn't efficiently provide.
             </p>
             <p className="about-section-text">
-              I'm now building a web dashboard that gives organizers the power tools they need while keeping the mobile app focused on what it does best—helping attendees discover and attend events.
+              I'm now building a web dashboard that gives organizers the power tools they need while keeping the mobile app focused on what it does best. Helping attendees discover and attend events.
             </p>
           </div>
         </motion.div>
@@ -346,9 +345,9 @@ function TikitiCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">What I Built</span>
-            <h2 className="about-section-title">6 features that power Ghana's events</h2>
+            <h2 className="about-section-title">6 features that power the platform</h2>
             <p className="about-section-text">
-              Click any feature to see the design story—the challenge, decisions, and outcome.
+              Click any feature to see the design story. The challenge, decisions, and outcome.
             </p>
           </div>
         </motion.div>
@@ -383,7 +382,7 @@ function TikitiCaseStudy() {
           <span className="feature-number">02</span>
           <h2 className="about-section-title">Digital Tickets & QR</h2>
           <p className="about-section-text">
-            Secure QR tickets with instant verification—no more paper fraud.
+            Secure QR tickets with instant verification. No more paper fraud.
           </p>
           <ArrowButton />
         </motion.div>
@@ -396,12 +395,12 @@ function TikitiCaseStudy() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          onClick={() => openPanel('organiserMode')}
+          onClick={() => openPanel('registration')}
         >
           <span className="feature-number">03</span>
-          <h2 className="about-section-title">Organiser Mode</h2>
+          <h2 className="about-section-title">Registration & Program</h2>
           <p className="about-section-text">
-            In-app ticket scanner and event management for organizers on the go.
+            Smart registration forms and detailed event agendas for attendees.
           </p>
           <ArrowButton />
         </motion.div>
@@ -412,33 +411,33 @@ function TikitiCaseStudy() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          onClick={() => openPanel('webDashboard')}
+          onClick={() => openPanel('networking')}
         >
           <span className="feature-number">04</span>
+          <h2 className="about-section-title">Attendee Networking</h2>
+          <p className="about-section-text">
+            Build lasting connections with fellow attendees across events.
+          </p>
+          <ArrowButton />
+        </motion.div>
+      </section>
+
+      <section className="about-two-column feature-cards-section">
+        <motion.div
+          className="about-column about-column-bordered feature-card"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          onClick={() => openPanel('webDashboard')}
+        >
+          <span className="feature-number">05</span>
           <h2 className="about-section-title">Web Dashboard</h2>
           <p className="about-section-text">
             Analytics, attendee management, and event tools for power users.
           </p>
           <ArrowButton />
         </motion.div>
-      </section>
-
-      <section className="about-two-column feature-cards-section">
-        <motion.div
-          className="about-column about-column-bordered feature-card"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          onClick={() => openPanel('notifications')}
-        >
-          <span className="feature-number">05</span>
-          <h2 className="about-section-title">Smart Notifications</h2>
-          <p className="about-section-text">
-            Event reminders that reduced no-show rate by 35%.
-          </p>
-          <ArrowButton />
-        </motion.div>
 
         <motion.div
           className="about-column feature-card"
@@ -446,12 +445,12 @@ function TikitiCaseStudy() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          onClick={() => openPanel('darkMode')}
+          onClick={() => openPanel('profile')}
         >
           <span className="feature-number">06</span>
-          <h2 className="about-section-title">Dark Mode</h2>
+          <h2 className="about-section-title">Profile & Personalization</h2>
           <p className="about-section-text">
-            Full dark theme and personalization settings for power users.
+            Central hub for event activity, ticket stats, and quick actions.
           </p>
           <ArrowButton />
         </motion.div>
@@ -472,7 +471,7 @@ function TikitiCaseStudy() {
             <div className="learnings-list">
               <div className="learning-item">
                 <strong>Leverage existing trust.</strong>
-                <p>Integrating with MoMo patterns users already trusted dramatically reduced friction. Users said "it feels like paying for airtime"—the highest compliment.</p>
+                <p>Integrating with mobile money patterns users already trusted dramatically reduced friction. Users said "it feels like paying for airtime." The highest compliment.</p>
               </div>
               <div className="learning-item">
                 <strong>Mobile-first, but not mobile-only.</strong>
@@ -499,7 +498,7 @@ function TikitiCaseStudy() {
           <div className="about-text-content">
             <span className="section-label">Related Project</span>
             <Link to="/tikiti-dashboard-case-study" className="next-case-link">
-              <h2 className="about-section-title">Tikiti Dashboard — B2B Event Management</h2>
+              <h2 className="about-section-title">Tikiti Dashboard: B2B Event Management</h2>
               <ArrowButton />
             </Link>
           </div>

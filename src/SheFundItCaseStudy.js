@@ -73,7 +73,7 @@ function SheFundItCaseStudy() {
     onboarding: {
       label: 'Feature 01',
       title: 'Empowering Onboarding Experience',
-      challenge: 'Women entrepreneurs in Ghana often feel intimidated by crowdfunding platforms. Traditional platforms use generic, corporate language that doesn\'t resonate with local business owners, leading to high drop-off rates during sign-up.',
+      challenge: 'Women entrepreneurs often feel intimidated by crowdfunding platforms. Traditional platforms use generic, corporate language that doesn\'t resonate with local business owners, leading to high drop-off rates during sign-up.',
       decisions: [
         'Designed a 4-step onboarding flow that tells a story: "Funding Her Future Starts Here"',
         'Used warm, encouraging language that speaks directly to women entrepreneurs',
@@ -91,7 +91,7 @@ function SheFundItCaseStudy() {
     campaignCreation: {
       label: 'Feature 02',
       title: '6-Step Campaign Builder',
-      challenge: 'Creating a fundraising campaign is complex—users need to define their ask, tell their story, set goals, and provide documentation. Most platforms overwhelm users with long forms, causing abandonment.',
+      challenge: 'Creating a fundraising campaign is complex. Users need to define their ask, tell their story, set goals, and provide documentation. Most platforms overwhelm users with long forms, causing abandonment.',
       decisions: [
         'Broke campaign creation into 6 digestible steps with clear progress indicators',
         'Designed campaign type selection (Grant vs. Crowdfunding) as the first choice',
@@ -124,7 +124,7 @@ function SheFundItCaseStudy() {
     milestones: {
       label: 'Feature 04',
       title: 'Milestone-Based Funding',
-      challenge: 'Traditional crowdfunding is all-or-nothing—either you hit your goal or get nothing. This creates anxiety for both campaigners and backers, and doesn\'t account for partial progress.',
+      challenge: 'Traditional crowdfunding is all-or-nothing. Either you hit your goal or get nothing. This creates anxiety for both campaigners and backers, and doesn\'t account for partial progress.',
       decisions: [
         'Designed milestone-based funding where goals are broken into achievable chunks',
         'Created visual milestone progress indicators that celebrate partial wins',
@@ -224,7 +224,7 @@ function SheFundItCaseStudy() {
         >
           <div className="case-meta-pills">
             <span className="case-pill">Side Project</span>
-            <span className="case-pill">2024 — Present</span>
+            <span className="case-pill">2024 to Present</span>
             <span className="case-pill">Fintech / Social Impact</span>
           </div>
           <h1 className="about-headline">
@@ -240,8 +240,8 @@ function SheFundItCaseStudy() {
               <span className="stat-label">More funding with stories</span>
             </div>
             <div className="impact-stat-item">
-              <span className="stat-number">Ghana</span>
-              <span className="stat-label">Focused market</span>
+              <span className="stat-number">Mobile</span>
+              <span className="stat-label">First platform</span>
             </div>
           </div>
         </motion.div>
@@ -272,12 +272,12 @@ function SheFundItCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">The Context</span>
-            <h2 className="about-section-title">The funding gap for women-led businesses in Ghana</h2>
+            <h2 className="about-section-title">The funding gap for women-led businesses</h2>
             <p className="about-section-text">
-              Women entrepreneurs in Ghana face significant barriers to accessing capital. Traditional banks require collateral most women don't have. International crowdfunding platforms feel foreign and disconnected from local realities. The result: brilliant business ideas that never get funded.
+              Women entrepreneurs in emerging markets face significant barriers to accessing capital. Traditional banks require collateral most women don't have. International crowdfunding platforms feel foreign and disconnected from local realities. The result: brilliant business ideas that never get funded.
             </p>
             <p className="about-section-text">
-              SheFundIt was born from a simple observation: women support other women. What if we created a platform specifically designed for Ghanaian women entrepreneurs, with features that understand their unique challenges?
+              SheFundIt was born from a simple observation: women support other women. What if we created a platform specifically designed for women entrepreneurs, with features that understand their unique challenges?
             </p>
           </div>
         </motion.div>
@@ -330,7 +330,7 @@ function SheFundItCaseStudy() {
             <span className="section-label">The Core Challenge</span>
             <h2 className="about-section-title">Building trust in a market skeptical of online giving</h2>
             <p className="about-section-text">
-              Ghanaians have been burned by scams. Asking someone to send money to a stranger online triggers immediate skepticism. The challenge wasn't just building a platform—it was <strong>building trust from the ground up</strong>.
+              People have been burned by scams. Asking someone to send money to a stranger online triggers immediate skepticism. The challenge wasn't just building a platform. It was <strong>building trust from the ground up</strong>.
             </p>
             <p className="about-section-text">
               I focused on three trust pillars: verified identities (KYC), milestone-based fund release (accountability), and story-driven campaigns (emotional connection). Every design decision was filtered through the question: "Does this make both campaigners and backers feel safer?"
@@ -352,7 +352,7 @@ function SheFundItCaseStudy() {
             <span className="section-label">What I Built</span>
             <h2 className="about-section-title">6 features designed for women entrepreneurs</h2>
             <p className="about-section-text">
-              Click any feature to see the design story—the challenge, decisions, and outcome.
+              Click any feature to see the design story. The challenge, decisions, and outcome.
             </p>
           </div>
         </motion.div>
@@ -387,7 +387,7 @@ function SheFundItCaseStudy() {
           <span className="feature-number">02</span>
           <h2 className="about-section-title">6-Step Campaign Builder</h2>
           <p className="about-section-text">
-            Break down campaign creation into manageable steps—from type to launch.
+            Break down campaign creation into manageable steps. From type to launch.
           </p>
           <ArrowButton />
         </motion.div>
@@ -476,7 +476,7 @@ function SheFundItCaseStudy() {
             <div className="learnings-list">
               <div className="learning-item">
                 <strong>Design for trust first, features second.</strong>
-                <p>In markets with low digital trust, every interaction is a chance to build or break confidence. Trust signals aren't nice-to-haves—they're the foundation.</p>
+                <p>In markets with low digital trust, every interaction is a chance to build or break confidence. Trust signals aren't nice-to-haves. They're the foundation.</p>
               </div>
               <div className="learning-item">
                 <strong>Localization goes beyond language.</strong>
@@ -484,7 +484,7 @@ function SheFundItCaseStudy() {
               </div>
               <div className="learning-item">
                 <strong>Milestones change behavior.</strong>
-                <p>Breaking big goals into smaller ones doesn't just help campaigners—it makes backers feel their contribution has immediate, visible impact.</p>
+                <p>Breaking big goals into smaller ones doesn't just help campaigners. It makes backers feel their contribution has immediate, visible impact.</p>
               </div>
             </div>
           </div>
@@ -503,7 +503,7 @@ function SheFundItCaseStudy() {
           <div className="about-text-content">
             <span className="section-label">Next Project</span>
             <Link to="/kaaka-case-study" className="next-case-link">
-              <h2 className="about-section-title">Kaaka — AI Cooking Assistant</h2>
+              <h2 className="about-section-title">Kaaka: AI Cooking Assistant</h2>
               <ArrowButton />
             </Link>
           </div>

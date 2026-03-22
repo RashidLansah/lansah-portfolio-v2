@@ -188,9 +188,9 @@ function ReliefLedgerCaseStudy() {
             </div>
           </div>
           <h1 className="case-study-title">Designing Trust Through Blockchain Transparency</h1>
-          <p className="case-study-subtitle">ReliefLedger is a blockchain-powered transparency ecosystem designed to rebuild trust in humanitarian aid across Africa. It connects NGOs, field agents, and communities through verifiable proof of delivery — making every act of giving traceable and human.</p>
+          <p className="case-study-subtitle">ReliefLedger is a blockchain-powered transparency ecosystem designed to rebuild trust in humanitarian aid. It connects NGOs, field agents, and communities through verifiable proof of delivery, making every act of giving traceable and human.</p>
           <div className="hero-caption" style={{ textAlign: 'center', marginTop: '20px', color: '#666', fontSize: '16px', fontWeight: '500' }}>
-            Built on Celo · Designed for Ghana · Made for Transparency
+            Built on Celo · Designed for Impact · Made for Transparency
           </div>
         </div>
       </section>
@@ -237,7 +237,7 @@ function ReliefLedgerCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">The Hidden Gap in Humanitarian Transparency</h2>
               <p className="section-paragraph">
-                Billions are spent on aid each year, but the proof rarely reaches those who need it most. In rural Ghana, NGOs rely on fragmented spreadsheets and reports — leaving donors blind to outcomes and communities powerless to confirm deliveries.
+                Billions are spent on aid each year, but the proof rarely reaches those who need it most. In rural communities, NGOs rely on fragmented spreadsheets and reports, leaving donors blind to outcomes and communities powerless to confirm deliveries.
               </p>
               <p className="section-paragraph">
                 ReliefLedger reimagines this process with data integrity at its core. By connecting NGOs, field agents, and communities through verifiable proof of delivery, every act of giving becomes traceable and human.
@@ -246,14 +246,14 @@ function ReliefLedgerCaseStudy() {
               <h3 className="subsection-title">Project Context</h3>
               <ul className="content-list">
                 <li><strong>Platform:</strong> Web3 blockchain platform (Built on Celo)</li>
-                <li><strong>Target Users:</strong> NGOs, field agents, donors, and communities in Ghana</li>
+                <li><strong>Target Users:</strong> NGOs, field agents, donors, and communities in emerging markets</li>
                 <li><strong>My Role:</strong> Lead Product Designer</li>
                 <li><strong>Timeline:</strong> Concept to prototype</li>
               </ul>
 
               <h3 className="subsection-title">The Opportunity</h3>
               <p className="section-paragraph">
-                The humanitarian aid system in Ghana operates on trust without verification. Blockchain technology could create a single source of truth, connecting every actor in the aid delivery chain through immutable, verifiable records.
+                The humanitarian aid system operates on trust without verification. Blockchain technology could create a single source of truth, connecting every actor in the aid delivery chain through immutable, verifiable records.
               </p>
             </div>
 
@@ -288,7 +288,7 @@ function ReliefLedgerCaseStudy() {
                   <h3>What I Owned</h3>
                   <ul className="role-responsibilities-list">
                     <li>End-to-end design of 4 connected interfaces (NGO Dashboard, Field Agent App, Beneficiary Portal, Blockchain Explorer)</li>
-                    <li>Field research with NGOs, field agents, and community members across Ghana</li>
+                    <li>Field research with NGOs, field agents, and community members</li>
                     <li>Web3 UX strategy: making blockchain invisible while transparency remains visible</li>
                     <li>Offline-first design patterns for low-connectivity environments</li>
                     <li>Wallet-less authentication system design</li>
@@ -299,10 +299,10 @@ function ReliefLedgerCaseStudy() {
                 <div className="role-section">
                   <h3>Stakeholders Served</h3>
                   <ul className="role-collaborators-list">
-                    <li><strong>NGO Administrators</strong> — Campaign tracking, proof management, donor reporting</li>
-                    <li><strong>Field Agents</strong> — Offline proof capture, delivery verification</li>
-                    <li><strong>Communities</strong> — Public record access, delivery verification</li>
-                    <li><strong>Donors & Auditors</strong> — Blockchain audit trails, transaction verification</li>
+                    <li><strong>NGO Administrators</strong>: Campaign tracking, proof management, donor reporting</li>
+                    <li><strong>Field Agents</strong>: Offline proof capture, delivery verification</li>
+                    <li><strong>Communities</strong>: Public record access, delivery verification</li>
+                    <li><strong>Donors & Auditors</strong>: Blockchain audit trails, transaction verification</li>
                   </ul>
                 </div>
               </div>
@@ -349,7 +349,7 @@ function ReliefLedgerCaseStudy() {
               <p className="section-label">The Problem</p>
               <h2 className="section-title">The Trust Gap Between Intent and Impact</h2>
               <p className="section-paragraph">
-                The humanitarian aid system in Ghana — and across Africa — operates on trust without verification. NGOs distribute aid based on reports and spreadsheets. Donors make decisions based on periodic updates. Communities receive supplies without any public record of delivery.
+                The humanitarian aid system in many regions operates on trust without verification. NGOs distribute aid based on reports and spreadsheets. Donors make decisions based on periodic updates. Communities receive supplies without any public record of delivery.
               </p>
 
               <h3 className="subsection-title">Core Issues</h3>
@@ -389,7 +389,7 @@ function ReliefLedgerCaseStudy() {
               <p className="section-label">Research</p>
               <h2 className="section-title">Understanding the Relief Chain</h2>
               <p className="section-paragraph">
-                I conducted field research with NGOs, field agents, and community members across Ghana to understand the end-to-end aid delivery process. The insights revealed that transparency wasn't missing because of malicious actors — it was missing because of systemic disconnection.
+                I conducted field research with NGOs, field agents, and community members to understand the end-to-end aid delivery process. The insights revealed that transparency wasn't missing because of malicious actors. It was missing because of systemic disconnection.
               </p>
               
               <h3 className="subsection-title">Key Research Insights</h3>
@@ -461,12 +461,12 @@ function ReliefLedgerCaseStudy() {
 
               <div className="highlight-section">
                 <p className="highlight-text centered">
-                  🔑 <strong>The best Web3 UX is when users never think about crypto wallets or transaction hashes — they just see verified proof.</strong>
+                  🔑 <strong>The best Web3 UX is when users never think about crypto wallets or transaction hashes. They just see verified proof.</strong>
                 </p>
               </div>
 
               <p className="section-paragraph">
-                This insight shaped every design decision: wallet-less authentication, offline-first data capture, and visual indicators that made blockchain confirmations feel tangible and human. Users wouldn't need to understand how blockchain worked — they would simply see trust in action.
+                This insight shaped every design decision: wallet-less authentication, offline-first data capture, and visual indicators that made blockchain confirmations feel tangible and human. Users wouldn't need to understand how blockchain worked. They would simply see trust in action.
               </p>
             </div>
 
@@ -520,7 +520,7 @@ function ReliefLedgerCaseStudy() {
 
               <h3 className="subsection-title">The Complete Aid Cycle</h3>
               <p className="section-paragraph">
-                Before diving into individual interfaces, here's how all four apps connect to create a complete transparency ecosystem — from the moment aid is pledged to final community verification.
+                Before diving into individual interfaces, here's how all four apps connect to create a complete transparency ecosystem, from the moment aid is pledged to final community verification.
               </p>
               <div className="process-image-container">
                 <img 
@@ -584,7 +584,7 @@ function ReliefLedgerCaseStudy() {
               <p className="section-label">The Solution</p>
               <h2 className="section-title">Four Interfaces, One Source of Truth</h2>
               <p className="section-paragraph">
-                ReliefLedger evolved into a full ecosystem of connected experiences. Each interface was designed for a specific stakeholder, but all share the same underlying blockchain — creating a circular system of trust from field to dashboard to community.
+                ReliefLedger evolved into a full ecosystem of connected experiences. Each interface was designed for a specific stakeholder, but all share the same underlying blockchain, creating a circular system of trust from field to dashboard to community.
               </p>
               
               <h3 className="subsection-title">The ReliefLedger Ecosystem</h3>
@@ -619,7 +619,7 @@ function ReliefLedgerCaseStudy() {
                 </div>
               </div>
               <p className="section-paragraph" style={{ marginTop: '24px', fontStyle: 'italic', textAlign: 'center', color: '#666' }}>
-                Together, they form a circular system of trust — field → blockchain → dashboard → community.
+                Together, they form a circular system of trust: field → blockchain → dashboard → community.
               </p>
 
               <h3 className="subsection-title">Key Features & Flows</h3>
@@ -653,7 +653,7 @@ function ReliefLedgerCaseStudy() {
 
               <h3 className="subsection-title">Community Campaign Feed</h3>
               <p className="section-paragraph">
-                Aid you can actually see. Real-time updates showing what was delivered, when, and where — all blockchain-verified. Communities can access public records of all aid distributions in their area.
+                Aid you can actually see. Real-time updates showing what was delivered, when, and where, all blockchain-verified. Communities can access public records of all aid distributions in their area.
               </p>
               <div className="process-image-container">
                 <img 
@@ -695,7 +695,7 @@ function ReliefLedgerCaseStudy() {
                 </div>
                 <div className="impact-metric">
                   <div className="impact-number">100%</div>
-                  <p className="impact-description">Traceable proof chain — complete transparency</p>
+                  <p className="impact-description">Traceable proof chain, complete transparency</p>
                 </div>
               </div>
 
@@ -712,12 +712,12 @@ function ReliefLedgerCaseStudy() {
               <p className="section-label">Learnings & Next Steps</p>
               <h2 className="section-title">Designing for Trust in a Decentralized World</h2>
               <p className="section-paragraph">
-                ReliefLedger taught me that transparency is not just a technical feature — it's a user experience. When every screen reinforces clarity and agency, trust becomes the product.
+                ReliefLedger taught me that transparency is not just a technical feature. It's a user experience. When every screen reinforces clarity and agency, trust becomes the product.
               </p>
               
               <h3 className="subsection-title">Key Learnings</h3>
               <ul className="content-list">
-                <li><strong>Blockchain Should Be Invisible:</strong> The best Web3 UX is when users never think about crypto wallets or transaction hashes — they just see verified proof</li>
+                <li><strong>Blockchain Should Be Invisible:</strong> The best Web3 UX is when users never think about crypto wallets or transaction hashes. They just see verified proof</li>
                 <li><strong>Offline-First Is Essential:</strong> In rural contexts, connectivity is unreliable. Design for offline by default, sync when possible</li>
                 <li><strong>Trust Needs Visibility:</strong> Every stakeholder needs to see the same truth. Multi-interface design creates accountability through shared transparency</li>
                 <li><strong>Visual Language Matters:</strong> Using color, motion, and glow states to indicate verification status made blockchain confirmations feel tangible and human</li>
@@ -749,7 +749,7 @@ function ReliefLedgerCaseStudy() {
                   </div>
                   <div>
                     <h4>NGO Pilot Deployments</h4>
-                    <p>Partner with NGOs in Northern Ghana to test real-world implementation and gather feedback from field agents</p>
+                    <p>Partner with NGOs in the region to test real-world implementation and gather feedback from field agents</p>
                   </div>
                 </div>
               </div>

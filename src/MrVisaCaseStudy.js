@@ -302,10 +302,10 @@ function MrVisaCaseStudy() {
                 <div className="role-section">
                   <h3>Collaborated With</h3>
                   <ul className="role-collaborators-list">
-                    <li><strong>Founder/CEO</strong> — Product vision, immigration expertise</li>
-                    <li><strong>Engineering Team</strong> — AI integration, technical feasibility</li>
-                    <li><strong>Visa Strategists</strong> — Consular expectations, compliance rules</li>
-                    <li><strong>Beta Users</strong> — Interview preparation feedback</li>
+                    <li><strong>Founder/CEO</strong>: Product vision, immigration expertise</li>
+                    <li><strong>Engineering Team</strong>: AI integration, technical feasibility</li>
+                    <li><strong>Visa Strategists</strong>: Consular expectations, compliance rules</li>
+                    <li><strong>Beta Users</strong>: Interview preparation feedback</li>
                   </ul>
                 </div>
               </div>
@@ -357,7 +357,7 @@ function MrVisaCaseStudy() {
               <h2 className="section-title">Visa Interviews Are a Black Box</h2>
               <p className="section-paragraph">
                 For many visa applicants, the embassy interview is a high-stakes moment with little preparation
-                guidance. The consequences of rejection are significant — lost deposits, missed opportunities,
+                guidance. The consequences of rejection are significant. Lost deposits, missed opportunities,
                 and long wait times for reapplication.
               </p>
 

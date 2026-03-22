@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-text">
-          <p>Feel free to reach out for collaborations or just a friendly hello</p>
+          <p>Have a product that needs designing or shipping? Let's talk</p>
           <a href="mailto:rashidlansahadam@gmail.com" className="footer-email">
             rashidlansahadam@gmail.com
           </a>

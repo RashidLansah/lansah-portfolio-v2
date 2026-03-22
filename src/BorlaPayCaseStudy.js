@@ -181,8 +181,8 @@ function BorlaPayCaseStudy() {
               </div>
             </div>
           </div>
-          <h1 className="case-study-title">Making Recycling Rewarding in Ghana</h1>
-          <p className="case-study-subtitle">Designed a mobile-first platform that connects users with local "Wastepreneurs" through mobile money rewards. Achieved 80% retention by making recycling as easy — and rewarding — as sending MoMo to family.</p>
+          <h1 className="case-study-title">Making Recycling Rewarding</h1>
+          <p className="case-study-subtitle">Designed a mobile-first platform that connects users with local "Wastepreneurs" through mobile money rewards. Achieved 80% retention by making recycling as easy, and rewarding, as sending mobile money.</p>
         </div>
       </section>
 
@@ -225,23 +225,23 @@ function BorlaPayCaseStudy() {
           <div className="main-content">
             <div id="getting-started" ref={(el) => (sectionRefs.current['getting-started'] = el)} className="content-section">
               <p className="section-label">Overview</p>
-              <h2 className="section-title">What If Recycling Paid Like MoMo?</h2>
+              <h2 className="section-title">What If Recycling Paid Like Mobile Money?</h2>
               <p className="section-paragraph">
-                BorlaPay turns Ghana's recycling problem into an opportunity by making it rewarding. Drop off your plastic waste with a local "Wastepreneur," scan a QR code, and get paid instantly through mobile money. Simple as that.
+                BorlaPay turns a recycling problem into an opportunity by making it rewarding. Drop off your plastic waste with a local "Wastepreneur," scan a QR code, and get paid instantly through mobile money. Simple as that.
               </p>
               <p className="section-paragraph">
-                <strong>The Problem:</strong> Ghana generates 1M+ tons of plastic waste annually, but only 5% gets recycled. Why? No reward, no community support, and no way to see your impact. Meanwhile, 70% of Ghanaians use mobile money daily — a ready-made trust layer waiting to be tapped.
+                <strong>The Problem:</strong> The region generates 1M+ tons of plastic waste annually, but only 5% gets recycled. Why? No reward, no community support, and no way to see your impact. Meanwhile, 70% of people use mobile money daily, a ready-made trust layer waiting to be tapped.
               </p>
               <p className="section-paragraph">
-                <strong>The Solution:</strong> A mobile-first platform that mirrors the MoMo apps Ghanaians already love. Familiar UI. Instant rewards. Community-driven trust. The result? 80% retention and 3x waste collection.
+                <strong>The Solution:</strong> A mobile-first platform that mirrors the mobile money apps people already love. Familiar UI. Instant rewards. Community-driven trust. The result? 80% retention and 3x waste collection.
               </p>
             </div>
 
             <div id="context" ref={(el) => (sectionRefs.current['context'] = el)} className="content-section">
               <p className="section-label">Context</p>
-              <h2 className="section-title">Understanding Ghana's Waste Crisis</h2>
+              <h2 className="section-title">Understanding the Waste Crisis</h2>
               <p className="section-paragraph">
-                Ghana is facing a waste management crisis. Every day, cities like Accra and Kumasi generate tons of plastic waste with little incentive for individuals to separate and recycle. While some informal collectors exist, the system is fragmented and lacks transparency.
+                Many cities face a waste management crisis. Every day, urban centers generate tons of plastic waste with little incentive for individuals to separate and recycle. While some informal collectors exist, the system is fragmented and lacks transparency.
               </p>
               <p className="section-paragraph">
                 <strong>Market Research Revealed:</strong> 1M+ tons of plastic waste annually with only 5% currently recycled, but 70% mobile money penetration showing readiness for digital reward systems. The opportunity was massive - we just needed to make recycling as easy and rewarding as sending mobile money.
@@ -266,7 +266,7 @@ function BorlaPayCaseStudy() {
               <p className="section-label">The Challenge</p>
               <h2 className="section-title">Why People Don't Recycle</h2>
               <p className="section-paragraph">
-                Through research with 8 individuals from Accra, Kumasi, and Tamale, I discovered the core barriers preventing people from recycling consistently:
+                Through research with 8 individuals across 3 cities, I discovered the core barriers preventing people from recycling consistently:
               </p>
               
               <div className="problem-context-image-container">
@@ -319,7 +319,7 @@ function BorlaPayCaseStudy() {
                   </div>
                   <div className="role-meta-item">
                     <span className="role-meta-label">Research</span>
-                    <span className="role-meta-value">8 interviews across 3 cities in Ghana</span>
+                    <span className="role-meta-value">8 interviews across 3 cities</span>
                   </div>
                   <div className="role-meta-item">
                     <span className="role-meta-label">Focus</span>
@@ -333,9 +333,9 @@ function BorlaPayCaseStudy() {
                   <h3>What I Owned</h3>
                   <ul className="role-responsibilities-list">
                     <li>End-to-end UX research and design for mobile-first recycling platform</li>
-                    <li>User research: 8 interviews across Accra, Kumasi, and Tamale</li>
+                    <li>User research: 8 interviews across 3 cities</li>
                     <li>Two-sided marketplace design (Users + Wastepreneurs)</li>
-                    <li>Mobile money integration UX mimicking familiar MoMo patterns</li>
+                    <li>Mobile money integration UX mimicking familiar mobile money patterns</li>
                     <li>Gamification system design (badges, streaks, leaderboards)</li>
                     <li>QR-based transaction verification flows</li>
                   </ul>
@@ -344,9 +344,9 @@ function BorlaPayCaseStudy() {
                 <div className="role-section">
                   <h3>Key Users Designed For</h3>
                   <ul className="role-collaborators-list">
-                    <li><strong>Urban Recyclers</strong> — Busy individuals wanting rewards for waste drop-off</li>
-                    <li><strong>Wastepreneurs</strong> — Community collectors managing pickups and processing</li>
-                    <li><strong>Market Sellers</strong> — Primary persona (Amina, 24) seeking extra income</li>
+                    <li><strong>Urban Recyclers:</strong> Busy individuals wanting rewards for waste drop-off</li>
+                    <li><strong>Wastepreneurs:</strong> Community collectors managing pickups and processing</li>
+                    <li><strong>Market Sellers:</strong> Primary persona (Amina, 24) seeking extra income</li>
                   </ul>
                 </div>
               </div>
@@ -360,7 +360,7 @@ function BorlaPayCaseStudy() {
                     </div>
                     <div className="goal-content">
                       <h4>Behavior Design</h4>
-                      <p>Made recycling as easy as sending MoMo</p>
+                      <p>Made recycling as easy as sending mobile money</p>
                     </div>
                   </div>
                   <div className="goal-item">
@@ -392,7 +392,7 @@ function BorlaPayCaseStudy() {
               <p className="section-label">Business</p>
               <h2 className="section-title">Market Opportunity & Business Model</h2>
               <p className="section-paragraph">
-                The business opportunity was massive: Ghana's 1M+ tons of annual plastic waste with only 5% recycling rate, combined with 70% mobile money penetration, created perfect conditions for a digital recycling incentive platform.
+                The business opportunity was massive: 1M+ tons of annual plastic waste with only 5% recycling rate, combined with 70% mobile money penetration, created perfect conditions for a digital recycling incentive platform.
               </p>
               
               <div className="business-model">
@@ -418,11 +418,11 @@ function BorlaPayCaseStudy() {
                 <div className="market-stats">
                   <div className="market-stat">
                     <span className="market-number">$50M+</span>
-                    <span className="market-label">Annual waste management market in Ghana</span>
+                    <span className="market-label">Annual waste management market in the region</span>
                   </div>
                   <div className="market-stat">
                     <span className="market-number">28M</span>
-                    <span className="market-label">Mobile phone users in Ghana</span>
+                    <span className="market-label">Mobile phone users in the region</span>
                   </div>
                 </div>
               </div>
@@ -479,7 +479,7 @@ function BorlaPayCaseStudy() {
               <div className="competitive-advantage">
                 <h3>Our Competitive Advantage</h3>
                 <p className="section-paragraph">
-                  <strong>Local-First Design:</strong> Built specifically for Ghana's mobile money ecosystem with familiar UX patterns and community-driven trust mechanisms that existing solutions lacked.
+                  <strong>Local-First Design:</strong> Built specifically for the local mobile money ecosystem with familiar UX patterns and community-driven trust mechanisms that existing solutions lacked.
                 </p>
               </div>
             </div>
@@ -488,14 +488,14 @@ function BorlaPayCaseStudy() {
               <p className="section-label">User Interviews</p>
               <h2 className="section-title">Research Insights from 8 Users</h2>
               <p className="section-paragraph">
-                I conducted interviews with individuals from Accra, Kumasi, and Tamale to understand recycling motivation, consistency barriers, and familiarity with digital rewards. The insights shaped our entire product strategy.
+                I conducted interviews with individuals across 3 cities to understand recycling motivation, consistency barriers, and familiarity with digital rewards. The insights shaped our entire product strategy.
               </p>
               
               <div className="user-interview-images">
                 <div className="interview-step">
-                  <img src="/images/case-studies/borlapay-persona-amina.svg" alt="Primary persona Amina - market seller in Accra" />
+                  <img src="/images/case-studies/borlapay-persona-amina.svg" alt="Primary persona Amina - market seller" />
                   <h4>Primary Persona: Amina</h4>
-                  <p>24-year-old market seller in Accra who wants to earn extra income without extra effort</p>
+                  <p>24-year-old market seller who wants to earn extra income without extra effort</p>
                 </div>
               </div>
 
@@ -519,7 +519,7 @@ function BorlaPayCaseStudy() {
                       <MobileIcon size={20} />
                     </div>
                     <h4>Mobile Money Familiarity</h4>
-                    <p>Preferred simple flows mirroring MoMo apps they already use daily for transactions</p>
+                    <p>Preferred simple flows mirroring mobile money apps they already use daily for transactions</p>
                   </div>
                   
                   <div className="insight-card">
@@ -548,7 +548,7 @@ function BorlaPayCaseStudy() {
                       <LightningIcon size={20} />
                     </div>
                     <h4>Instant Rewards</h4>
-                    <p>Mobile money integration for immediate payment after waste drop-off, mirroring familiar MoMo transaction flows</p>
+                    <p>Mobile money integration for immediate payment after waste drop-off, mirroring familiar mobile money transaction flows</p>
                   </div>
                   
                   <div className="solution-item major-projects">
@@ -574,7 +574,7 @@ function BorlaPayCaseStudy() {
               <div className="interface-showcase">
                 <h3>Interface Design & User Flows</h3>
                 <p className="section-paragraph">
-                  The interface design focused on familiarity and trust, mirroring mobile money apps that Ghanaians already use. I created visual patterns that made recycling feel as natural as sending money to family.
+                  The interface design focused on familiarity and trust, mirroring mobile money apps that people already use. I created visual patterns that made recycling feel as natural as sending money to family.
                 </p>
                 <div className="interface-image-container">
                   <img src="/images/borlapay-full-image.svg" alt="BorlaPayCaseStudy Mobile Interface Design" className="interface-main-image" />
@@ -738,7 +738,7 @@ function BorlaPayCaseStudy() {
                 </div>
                 <div className="impact-item">
                   <div className="impact-value">1M+ Tons Addressable</div>
-                  <div className="impact-label">Total market opportunity for plastic waste recycling in Ghana</div>
+                  <div className="impact-label">Total market opportunity for plastic waste recycling in the region</div>
                 </div>
               </div>
             </div>

@@ -37,7 +37,7 @@ function Work() {
                   </span>
                 </div>
                 <h2 className="work-card-title">AI Bookkeeping Platform</h2>
-                <p className="work-card-description">Designed UX foundation for an AI-powered platform that achieved $1M ARR and 80% adoption rate.</p>
+                <p className="work-card-description">Designed the product experience for an AI bookkeeping platform that achieved $1M ARR and 80% adoption rate.</p>
                 
                 <div className="work-card-image">
                   <div className="interface-preview">
@@ -62,7 +62,7 @@ function Work() {
                   </span>
                 </div>
                 <h2 className="work-card-title">Voice-First Fintech for Non-Literate Users</h2>
-                <p className="work-card-description">Designed a voice-first mobile money app using local languages and voice pattern recognition to help non-literate users in Ghana perform transactions confidently.</p>
+                <p className="work-card-description">Designed a voice-first mobile money app using local languages and voice pattern recognition to help non-literate users perform transactions confidently.</p>
                 
                 <div className="work-card-image">
                   <div className="tumapay-preview">
@@ -91,7 +91,7 @@ function Work() {
                   </span>
                 </div>
                 <h2 className="work-card-title">Rebuilding Trust in Humanitarian Aid</h2>
-                <p className="work-card-description">A blockchain-powered transparency ecosystem that connects NGOs, field agents, and communities through verifiable proof of delivery — making aid traceable across Africa.</p>
+                <p className="work-card-description">Designed a blockchain-powered transparency platform that connects NGOs, field agents, and communities through verifiable proof of delivery.</p>
                 
                 <div className="work-card-image">
                   <div className="reliefledger-preview">
@@ -108,7 +108,7 @@ function Work() {
                   <span className="work-card-label">Tikiti</span>
                 </div>
                 <h2 className="work-card-title">Event Discovery & Ticketing App</h2>
-                <p className="work-card-description">Designed an intuitive event discovery platform that simplifies ticket booking with seamless user experience and modern interface design.</p>
+                <p className="work-card-description">Designed and shipped an event discovery and ticketing app with 1.7k downloads. QR scanning, mobile payments, real-time analytics.</p>
                 
                 <div className="work-card-image">
                   <div className="tikiti-preview">
@@ -136,7 +136,7 @@ function Work() {
                   </span>
                 </div>
                 <h2 className="work-card-title">Recycle more, earn more</h2>
-                <p className="work-card-description">A mobile-first recycling incentive platform that transforms waste management through gamified rewards and community-driven collection networks.</p>
+                <p className="work-card-description">Designed a mobile-first recycling incentive platform that transforms waste management through gamified rewards and community-driven collection.</p>
                 
                 <div className="work-card-image">
                   <div className="borlapay-preview">
@@ -156,7 +156,7 @@ function Work() {
                   </span>
                 </div>
                 <h2 className="work-card-title">Transform receipts into recipes</h2>
-                <p className="work-card-description">An innovative mobile application that converts grocery receipts into personalized cooking recipes, helping users make the most of their ingredients and reduce food waste.</p>
+                <p className="work-card-description">Designed and shipped an AI-powered app that converts grocery receipts into personalized meal plans, helping users reduce food waste.</p>
                 
                 <div className="work-card-image">
                   <div className="receipt2recipe-preview">
@@ -219,7 +219,7 @@ function Work() {
                   <span className="work-card-label">Article</span>
                 </div>
                 <h2 className="work-card-title">Designing a Confidence-Based Feedback UI</h2>
-                <p className="work-card-description">A personal design project exploring how interfaces can communicate AI uncertainty — and keep users in control.</p>
+                <p className="work-card-description">A personal design project exploring how interfaces can communicate AI uncertainty. And keep users in control.</p>
                 
                 <div className="work-card-image">
                   <div className="confidence-illustration">

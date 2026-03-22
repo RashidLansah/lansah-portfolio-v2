@@ -152,11 +152,11 @@ function JenesysCaseStudy() {
     },
     whatsapp: {
       label: 'Feature 06',
-      title: 'WhatsApp Integration — Multi-Tenant System',
-      challenge: 'Many clients in emerging markets preferred WhatsApp over email. But our power users managed multiple organisations—they needed a way to submit documents for different clients from a single WhatsApp number.',
+      title: 'WhatsApp Integration: Multi-Tenant System',
+      challenge: 'Many clients in emerging markets preferred WhatsApp over email. But our power users managed multiple organisations. They needed a way to submit documents for different clients from a single WhatsApp number.',
       decisions: [
         'Designed a multi-tenant system where one user could connect to multiple organisations',
-        'Built smart client selection flow—when a user sends a document, they choose which organisation it belongs to',
+        'Built smart client selection flow where a user sends a document and chooses which organisation it belongs to',
         'Created admin controls for managing WhatsApp connections across teams',
         'Added automatic extraction with organisation-aware routing'
       ],
@@ -224,7 +224,7 @@ function JenesysCaseStudy() {
         >
           <div className="case-meta-pills">
             <span className="case-pill">Founding Designer</span>
-            <span className="case-pill">2022 — 2025</span>
+            <span className="case-pill">2022 to 2025</span>
             <span className="case-pill">Fintech / AI</span>
           </div>
           <h1 className="about-headline">
@@ -274,10 +274,10 @@ function JenesysCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">Bookkeepers were drowning in manual work</h2>
             <p className="about-section-text">
-              SME bookkeepers spent 15+ hours weekly on repetitive tasks: matching bank transactions, chasing clients for invoices, and reconciling accounts. Jenesys wanted to use AI to automate this—but users didn't trust black-box automation with their clients' finances.
+              SME bookkeepers spent 15+ hours weekly on repetitive tasks: matching bank transactions, chasing clients for invoices, and reconciling accounts. Jenesys wanted to use AI to automate this, but users didn't trust black-box automation with their clients' finances.
             </p>
             <p className="about-section-text">
-              As the founding designer, I joined to build the entire product experience from scratch—from information architecture to component library to every user flow.
+              As the founding designer, I joined to build the entire product experience from scratch. From information architecture to component library to every user flow.
             </p>
           </div>
         </motion.div>
@@ -294,7 +294,7 @@ function JenesysCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">My Role</span>
-            <h2 className="about-section-title">End-to-end product design ownership</h2>
+            <h2 className="about-section-title">End-to-end product design</h2>
             <div className="role-grid">
               <div className="role-item">
                 <strong>Research</strong>
@@ -330,7 +330,7 @@ function JenesysCaseStudy() {
             <span className="section-label">The Core Challenge</span>
             <h2 className="about-section-title">Users didn't trust what they couldn't see</h2>
             <p className="about-section-text">
-              In early testing, <strong>70% of users manually re-checked</strong> every AI decision. They weren't against automation—they just couldn't see the reasoning. "I need to know why it made that choice," one bookkeeper told me. "My reputation is on the line."
+              In early testing, <strong>70% of users manually re-checked</strong> every AI decision. They weren't against automation. They just couldn't see the reasoning. "I need to know why it made that choice," one bookkeeper told me. "My reputation is on the line."
             </p>
             <p className="about-section-text">
               This insight shaped everything: transparency became our design principle. Every AI decision needed to show its work.
@@ -352,7 +352,7 @@ function JenesysCaseStudy() {
             <span className="section-label">What I Shipped</span>
             <h2 className="about-section-title">6 major features that transformed the workflow</h2>
             <p className="about-section-text">
-              Click any feature to see the full design story—the challenge, my decisions, and the outcome.
+              Click any feature to see the full design story. The challenge, my decisions, and the outcome.
             </p>
           </div>
         </motion.div>
@@ -421,7 +421,7 @@ function JenesysCaseStudy() {
           <span className="feature-number">04</span>
           <h2 className="about-section-title">Transaction Details & AI Extraction</h2>
           <p className="about-section-text">
-            Transparent AI that shows its reasoning—manual review dropped from 70% to 15%.
+            Transparent AI that shows its reasoning. Manual review dropped from 70% to 15%.
           </p>
           <ArrowButton />
         </motion.div>
@@ -455,7 +455,7 @@ function JenesysCaseStudy() {
           <span className="feature-number">06</span>
           <h2 className="about-section-title">WhatsApp Integration</h2>
           <p className="about-section-text">
-            Meet users where they are—40% of documents now submitted via WhatsApp.
+            Meet users where they are. 40% of documents now submitted via WhatsApp.
           </p>
           <ArrowButton />
         </motion.div>
@@ -480,7 +480,7 @@ function JenesysCaseStudy() {
               </div>
               <div className="learning-item">
                 <strong>Edge cases are opportunities.</strong>
-                <p>WhatsApp integration seemed niche—it became our biggest differentiator in emerging markets where email isn't the norm.</p>
+                <p>WhatsApp integration seemed niche, but it became our biggest differentiator in emerging markets where email isn't the norm.</p>
               </div>
               <div className="learning-item">
                 <strong>Speed to value beats feature count.</strong>
@@ -503,7 +503,7 @@ function JenesysCaseStudy() {
           <div className="about-text-content">
             <span className="section-label">Next Project</span>
             <Link to="/kaaka-case-study" className="next-case-link">
-              <h2 className="about-section-title">Kaaka — AI Cooking Assistant</h2>
+              <h2 className="about-section-title">Kaaka: AI Cooking Assistant</h2>
               <ArrowButton />
             </Link>
           </div>
