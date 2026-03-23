@@ -87,32 +87,32 @@ function Portfolio() {
       title: 'Tikiti',
       description: 'Designed and shipped an event ticketing app with 1.7k downloads. Event discovery, mobile payments, QR scanning.',
       link: '/tikiti-case-study',
-      bgColor: '#5a4fcf',
+      bgColor: '#c8d9f0',
       image: '/images/case-studies/tikiti-screen-5.png'
     },
     {
       id: 3,
-      title: 'Kaaka',
-      description: 'Designed and shipped an AI cooking assistant that turns grocery receipts into personalized meal plans.',
-      link: '/kaaka-case-study',
-      bgColor: '#1a1a1a',
-      image: '/images/case-studies/kaaka-home.png'
+      title: 'Tikiti Dashboard',
+      description: 'Designed and shipped a B2B event management platform. Multi-channel messaging, attendee management, and AI reports.',
+      link: '/tikiti-dashboard-case-study',
+      bgColor: '#d6e4f0',
+      image: '/images/tikiti-dashboard-hero.png'
     },
     {
       id: 4,
+      title: 'Kaaka',
+      description: 'Designed and shipped an AI cooking assistant that turns grocery receipts into personalized meal plans.',
+      link: '/kaaka-case-study',
+      bgColor: '#e0ddd5',
+      image: '/images/case-studies/kaaka-home.png'
+    },
+    {
+      id: 5,
       title: 'SheFundIt',
       description: 'Designed and shipped a milestone-based crowdfunding platform empowering women entrepreneurs to fund their businesses.',
       link: '/shefundit-case-study',
       bgColor: '#e8f5e9',
       image: '/images/case-studies/shefundit-screen-7.png'
-    },
-    {
-      id: 5,
-      title: 'Tikiti Dashboard',
-      description: 'Designed and shipped a B2B event management platform. Multi-channel messaging, attendee management, and AI reports.',
-      link: '/tikiti-dashboard-case-study',
-      bgColor: '#1e293b',
-      image: '/images/tikiti-dashboard-hero.png'
     },
   ];
 
@@ -268,7 +268,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[1].link} className="project-card-inner mobile-card dark-card" style={{ background: mainProjects[1].bgColor }}>
+              <Link to={mainProjects[1].link} className="project-card-inner mobile-card" style={{ background: mainProjects[1].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[1].title}</h3>
                   <p className="project-card-description">{mainProjects[1].description}</p>
@@ -289,7 +289,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[2].link} className="project-card-inner mobile-card dark-card" style={{ background: mainProjects[2].bgColor }}>
+              <Link to={mainProjects[2].link} className="project-card-inner" style={{ background: mainProjects[2].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[2].title}</h3>
                   <p className="project-card-description">{mainProjects[2].description}</p>
@@ -328,7 +328,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[4].link} className="project-card-inner dark-card" style={{ background: mainProjects[4].bgColor }}>
+              <Link to={mainProjects[4].link} className="project-card-inner mobile-card" style={{ background: mainProjects[4].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[4].title}</h3>
                   <p className="project-card-description">{mainProjects[4].description}</p>
