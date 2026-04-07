@@ -4673,6 +4673,22 @@
   object-fit: contain;
 }
 
+/* PayChalk - full width desktop hero */
+.paychalk-case .case-hero-visual {
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.paychalk-case .case-hero-screen {
+  width: 100%;
+  max-width: 1100px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.12);
+}
+
 /* Dashboard case studies - wider hero images */
 .tikiti-dashboard-case .case-hero-visual {
   display: flex;

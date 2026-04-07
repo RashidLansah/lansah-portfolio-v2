@@ -13,6 +13,7 @@ import ParleyAICaseStudy from './ParleyAICaseStudy';
 import MrVisaCaseStudy from './MrVisaCaseStudy';
 import KaakaCaseStudy from './KaakaCaseStudy';
 import SheFundItCaseStudy from './SheFundItCaseStudy';
+import PayChalkCaseStudy from './PayChalkCaseStudy';
 import Work from './Work';
 import AboutMe from './AboutMe';
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/mrvisa-case-study" element={<MrVisaCaseStudy />} />
         <Route path="/kaaka-case-study" element={<KaakaCaseStudy />} />
         <Route path="/shefundit-case-study" element={<SheFundItCaseStudy />} />
+        <Route path="/paychalk-case-study" element={<PayChalkCaseStudy />} />
         <Route path="/about" element={<AboutMe />} />
       </Routes>
     </Router>

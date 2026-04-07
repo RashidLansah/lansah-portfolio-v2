@@ -27,6 +27,25 @@ function Work() {
         <div className="work-container">
           <div className="work-grid">
             
+            {/* PayChalk Card */}
+            <Link to="/paychalk-case-study" className="work-card paychalk-card clickable-card">
+              <div className="work-card-content">
+                <div className="work-card-header">
+                  <span className="work-card-label paychalk-label">
+                    <span>PayChalk</span>
+                  </span>
+                </div>
+                <h2 className="work-card-title">School Fee Collection Made Simple</h2>
+                <p className="work-card-description">Designed and built a WhatsApp-first school fee collection platform for Ghana. Instant payments, automated reminders, real-time tracking.</p>
+
+                <div className="work-card-image">
+                  <div className="interface-preview">
+                    <img src="/images/case-studies/paychalk-hero.png" alt="PayChalk Dashboard" className="work-interface-image" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
             {/* Jenesys AI Card */}
             <Link to="/case-study" className="work-card jenesys-card clickable-card">
               <div className="work-card-content">

@@ -100,6 +100,14 @@ function Portfolio() {
     },
     {
       id: 4,
+      title: 'PayChalk',
+      description: 'Designed and built a WhatsApp-first school fee collection platform for Ghana. Instant payments, automated reminders, real-time tracking.',
+      link: '/paychalk-case-study',
+      bgColor: '#e8f0e4',
+      image: '/images/case-studies/paychalk-dashboard.png'
+    },
+    {
+      id: 5,
       title: 'Kaaka',
       description: 'Designed and shipped an AI cooking assistant that turns grocery receipts into personalized meal plans.',
       link: '/kaaka-case-study',
@@ -107,7 +115,7 @@ function Portfolio() {
       image: '/images/case-studies/kaaka-home.png'
     },
     {
-      id: 5,
+      id: 6,
       title: 'SheFundIt',
       description: 'Designed and shipped a milestone-based crowdfunding platform empowering women entrepreneurs to fund their businesses.',
       link: '/shefundit-case-study',
@@ -307,7 +315,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[3].link} className="project-card-inner mobile-card" style={{ background: mainProjects[3].bgColor }}>
+              <Link to={mainProjects[3].link} className="project-card-inner" style={{ background: mainProjects[3].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[3].title}</h3>
                   <p className="project-card-description">{mainProjects[3].description}</p>
