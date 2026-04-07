@@ -347,6 +347,24 @@ function Portfolio() {
                 </div>
               </Link>
             </motion.div>
+            <motion.div
+              className="project-card-large"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Link to={mainProjects[5].link} className="project-card-inner mobile-card" style={{ background: mainProjects[5].bgColor }}>
+                <div className="project-card-content">
+                  <h3 className="project-card-title">{mainProjects[5].title}</h3>
+                  <p className="project-card-description">{mainProjects[5].description}</p>
+                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
+                </div>
+                <div className="project-card-image-wrapper">
+                  <img src={mainProjects[5].image} alt={mainProjects[5].title} className="project-card-image" />
+                </div>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
