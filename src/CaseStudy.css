@@ -3721,14 +3721,14 @@
   margin: 0 0 12px 0;
 }
 
-.highlight-text {
+.highlight-section .highlight-text {
   font-size: 16px;
   color: #333333;
   line-height: 1.6;
   margin: 0;
 }
 
-.highlight-text.centered {
+.highlight-section .highlight-text.centered {
   text-align: center;
   font-weight: 600;
 }
@@ -3980,7 +3980,7 @@
     padding: 20px !important;
   }
   
-  .highlight-text {
+  .highlight-section .highlight-text {
     font-size: 16px !important;
     line-height: 1.5 !important;
   }
@@ -4613,6 +4613,11 @@
 
 .highlight-text {
   color: #5a4fcf;
+}
+
+.about-headline .highlight-text {
+  color: #5a4fcf;
+  font: inherit;
 }
 
 .case-impact-stats {
@@ -5313,5 +5318,4 @@
     padding: 50px 20px;
   }
 }
-
 
