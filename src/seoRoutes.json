@@ -1,0 +1,159 @@
+[
+  {
+    "path": "/",
+    "title": "Lansah | Senior Product Designer | AI-Native × 0→1 | Figma · Claude Code · Cursor",
+    "description": "Senior Product Designer specializing in AI-native product design and 0-to-1 builds. 7+ years in Fintech, Edtech, B2B SaaS. Remote-first. Available globally.",
+    "keywords": "Lansah, Abdul-Rashid Lansah, senior product designer, AI-native product design, 0-to-1 product design, Figma, Claude Code, Cursor, fintech product designer, edtech, B2B SaaS, remote product designer",
+    "image": "/images/lansah-profile.png",
+    "pageType": "ProfilePage",
+    "schemaType": "ProfilePage"
+  },
+  {
+    "path": "/work",
+    "title": "Work | Product Design and AI Case Studies by Lansah",
+    "description": "Browse product design and AI case studies by Lansah, including fintech, civic tech, event platforms, conversational AI, and growth-focused product work.",
+    "keywords": "product design case studies, AI UX portfolio, fintech UX case study, product designer Ghana portfolio, Lansah work",
+    "image": "/images/case-studies/jenesys-dashboard.png",
+    "pageType": "CollectionPage",
+    "schemaType": "CollectionPage"
+  },
+  {
+    "path": "/about",
+    "title": "About Lansah | Product Strategist and Builder",
+    "description": "Learn about Lansah, a product strategist and builder with experience shipping AI, fintech, and consumer products across emerging markets.",
+    "keywords": "about Lansah, product strategist Ghana, product builder Africa, AI product designer bio",
+    "image": "/images/lansah-profile.png",
+    "pageType": "ProfilePage",
+    "schemaType": "ProfilePage"
+  },
+  {
+    "path": "/jenesys-case-study",
+    "title": "Jenesys Case Study | Designing AI Bookkeeping for Growth",
+    "description": "How Lansah helped Jenesys, an AI bookkeeping platform, reach $1M ARR by designing trustworthy automation, reconciliation flows, and document-chasing workflows.",
+    "keywords": "Jenesys case study, AI bookkeeping UX, fintech product design, accounting software design, Lansah portfolio",
+    "image": "/images/case-studies/jenesys-dashboard.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/case-study",
+    "title": "Jenesys Case Study | Designing AI Bookkeeping for Growth",
+    "description": "How Lansah helped Jenesys, an AI bookkeeping platform, reach $1M ARR by designing trustworthy automation, reconciliation flows, and document-chasing workflows.",
+    "keywords": "Jenesys case study, AI bookkeeping UX, fintech product design, accounting software design, Lansah portfolio",
+    "image": "/images/case-studies/jenesys-dashboard.png",
+    "pageType": "Article",
+    "schemaType": "Article",
+    "canonicalPath": "/jenesys-case-study",
+    "robots": "noindex, follow"
+  },
+  {
+    "path": "/case-study-old",
+    "title": "Jenesys Archive Case Study | Lansah Portfolio",
+    "description": "Archived Jenesys case study from Lansah's product design portfolio.",
+    "keywords": "archived case study, Jenesys archive, Lansah portfolio",
+    "image": "/images/case-studies/jenesys-dashboard.png",
+    "pageType": "Article",
+    "schemaType": "Article",
+    "canonicalPath": "/jenesys-case-study",
+    "robots": "noindex, follow"
+  },
+  {
+    "path": "/tumapay-case-study",
+    "title": "TumaPay Case Study | Voice-First Fintech for Non-Literate Users",
+    "description": "A voice-first fintech case study focused on helping non-literate users complete mobile money transactions confidently through local-language product design.",
+    "keywords": "voice UX fintech, mobile money design Africa, inclusive product design, accessibility fintech, TumaPay case study",
+    "image": "/images/tumapay-placeholder.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/borlapay-case-study",
+    "title": "BorlaPay Case Study | Recycling Rewards Product Design",
+    "description": "How Lansah designed a mobile-first recycling rewards platform that makes waste collection rewarding through incentives, logistics, and local participation.",
+    "keywords": "BorlaPay case study, recycling app design, civic tech UX, sustainability product design Africa",
+    "image": "/images/borlapay-full-image.svg",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/receipt2recipe-case-study",
+    "title": "Receipt2Recipe Case Study | AI Meal Planning from Grocery Receipts",
+    "description": "An AI product design case study on turning grocery receipts into meal plans through OCR, extraction review, and personalized recipe workflows.",
+    "keywords": "AI meal planning app, OCR product design, receipt scanning UX, consumer AI case study",
+    "image": "/images/receipt2recipe-image.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/reliefledger-case-study",
+    "title": "ReliefLedger Case Study | Blockchain Transparency for Aid Delivery",
+    "description": "A humanitarian transparency case study showing how Lansah designed blockchain-powered aid delivery workflows for NGOs, field agents, and beneficiaries.",
+    "keywords": "blockchain UX case study, humanitarian aid platform, NGO product design, ReliefLedger",
+    "image": "/images/reliefledger-full-image.svg",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/tikiti-case-study",
+    "title": "Tikiti Case Study | Event Discovery and Ticketing App Design",
+    "description": "How Lansah designed and shipped Tikiti, an event discovery and ticketing app with QR entry, mobile payments, and attendee networking.",
+    "keywords": "event app design, ticketing UX case study, QR check-in product design, Tikiti",
+    "image": "/images/case-studies/tikiti-screen-5.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/tikiti-dashboard-case-study",
+    "title": "Tikiti Dashboard Case Study | B2B Event Management Platform",
+    "description": "A B2B event management case study covering organizer dashboards, messaging, attendee workflows, reporting, and speaker management.",
+    "keywords": "B2B SaaS dashboard design, event management platform UX, organizer dashboard case study",
+    "image": "/images/tikiti-dashboard-hero.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/parley-case-study",
+    "title": "Parley AI Case Study | Designing Multi-Model AI Deliberation",
+    "description": "How Lansah designed the UX for Parley AI, a multi-model platform where GPT-4, Claude, and Gemini collaborate to generate stronger answers.",
+    "keywords": "multi-agent AI UX, LLM product design, conversational AI case study, Parley AI",
+    "image": "/images/parley-app-preview.svg",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/mrvisa-case-study",
+    "title": "Mr. VISA Case Study | AI-Powered Visa Interview Coaching",
+    "description": "A product design case study on AI-powered visa interview coaching, rehearsal flows, immigration guidance, and confidence-building UX.",
+    "keywords": "AI coaching product design, interview prep UX, visa tech case study, Mr. VISA",
+    "image": "/images/mrvisa-app-preview.svg",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/kaaka-case-study",
+    "title": "Kaaka Case Study | AI Cooking Assistant and Meal Planning App",
+    "description": "How Lansah designed Kaaka, an AI cooking assistant that turns receipts into meal plans, recipes, and personalized grocery workflows.",
+    "keywords": "AI cooking assistant, meal planning app case study, consumer AI product design, Kaaka",
+    "image": "/images/case-studies/kaaka-home.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/shefundit-case-study",
+    "title": "SheFundIt Case Study | Milestone-Based Crowdfunding for Women Entrepreneurs",
+    "description": "A crowdfunding UX case study focused on helping women entrepreneurs raise funds through milestone-based campaigns, onboarding, trust, and storytelling.",
+    "keywords": "crowdfunding UX case study, fintech for women entrepreneurs, fundraising platform design, SheFundIt",
+    "image": "/images/case-studies/shefundit-screen-7.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
+    "path": "/paychalk-case-study",
+    "title": "PayChalk Case Study | WhatsApp-First School Fee Collection",
+    "description": "How Lansah designed PayChalk, a WhatsApp-first school fee collection platform for Ghana with reminders, payment pages, and school dashboards.",
+    "keywords": "WhatsApp fintech case study, school fee collection product design, Ghana fintech UX, PayChalk",
+    "image": "/images/case-studies/paychalk-dashboard.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  }
+]

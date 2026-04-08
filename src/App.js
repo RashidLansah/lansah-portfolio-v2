@@ -16,10 +16,12 @@ import SheFundItCaseStudy from './SheFundItCaseStudy';
 import PayChalkCaseStudy from './PayChalkCaseStudy';
 import Work from './Work';
 import AboutMe from './AboutMe';
+import SeoHead from './SeoHead';
 
 function App() {
   return (
     <Router>
+      <SeoHead />
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/work" element={<Work />} />
