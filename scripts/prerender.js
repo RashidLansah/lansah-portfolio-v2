@@ -2,6 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
+const { execFileSync } = require('child_process');
 const seoRoutes = require('../src/seoRoutes.json');
 const puppeteer = require('puppeteer');
 
@@ -85,6 +86,40 @@ function serveBuildDirectory() {
   });
 }
 
+function installChromeForPuppeteer() {
+  const npxCommand = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+
+  console.log('Chrome not found for Puppeteer. Installing browser binary...');
+  execFileSync(npxCommand, ['puppeteer', 'browsers', 'install', 'chrome'], {
+    stdio: 'inherit'
+  });
+}
+
+async function launchBrowser() {
+  try {
+    return await puppeteer.launch({
+      headless: 'new',
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+  } catch (error) {
+    const message = String(error && error.message ? error.message : error);
+    const missingChrome =
+      message.includes('Could not find Chrome') ||
+      message.includes('Could not find Chromium');
+
+    if (!missingChrome) {
+      throw error;
+    }
+
+    installChromeForPuppeteer();
+
+    return puppeteer.launch({
+      headless: 'new',
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+  }
+}
+
 function outputPathForRoute(route) {
   if (route === '/') {
     return path.join(buildDir, 'index.html');
@@ -120,10 +155,7 @@ async function prerender() {
   await new Promise((resolve) => server.listen(port, host, resolve));
 
   try {
-    const browser = await puppeteer.launch({
-      headless: 'new',
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
+    const browser = await launchBrowser();
 
     try {
       for (const route of routes) {
