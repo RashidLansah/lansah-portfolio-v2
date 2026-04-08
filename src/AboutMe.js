@@ -249,7 +249,7 @@ function AboutMe() {
             <img src="/images/lansah-profile.png" alt="Lansah" />
           </div>
           <h1 className="about-headline">
-            Hi, I'm Lansah. I'm a product strategist and builder with 7+ years of experience. I design products, then I ship them.
+            Hi, I'm Lansah. I'm a senior product designer and builder focused on AI-native, 0-to-1, fintech, and B2B SaaS products. I design them, then I help ship them.
           </h1>
         </motion.div>
       </section>
@@ -274,7 +274,7 @@ function AboutMe() {
             Currently exploring opportunities across AI, education, fintech, consumer, and B2B SaaS
           </h2>
           <p className="about-section-text">
-            I use AI tools like Claude and Cursor to go from design to working product without waiting on a dev team. Open to roles where I can design, build, and lead.
+            I use AI-native tools like Claude Code and Cursor to move from product thinking to working product faster. I am most valuable in roles where I can combine product strategy, interface design, systems thinking, and builder energy.
           </p>
         </motion.div>
 
@@ -296,7 +296,7 @@ function AboutMe() {
             Previously, Founding Product Designer at Jenesys
           </h2>
           <p className="about-section-text">
-            2023 to 2025: Led product design for AI-powered financial management tools, reconciliation systems, and business dashboards that helped achieve $1M ARR.
+            From 2023 to 2025, I led product design for AI-powered financial workflows, reconciliation systems, and B2B dashboards that helped Jenesys reach $1M ARR.
           </p>
         </motion.div>
       </section>
@@ -334,7 +334,7 @@ function AboutMe() {
           <div className="about-text-content">
             <h2 className="about-section-title">All those experiences led me to building products</h2>
             <p className="about-section-text">
-              Every role taught me something about people, how they think, what they need, and why they behave the way they do. Now I channel all of that into designing and shipping products that actually work for humans.
+              Every role taught me something about people, how they think, what they need, and why they behave the way they do. Now I channel all of that into designing and shipping products that actually work for humans, especially in AI, fintech, education, and workflow-heavy software.
             </p>
           </div>
           <div className="about-illustration">
@@ -355,7 +355,7 @@ function AboutMe() {
           <div className="about-text-content">
             <h2 className="about-section-title">I build products that solve real problems and look good doing it</h2>
             <p className="about-section-text">
-              With 7+ years across fintech, education, and B2B SaaS, I bring a deep understanding of how products succeed in competitive markets. I study user needs, analyze what is working (and what is not), and use that insight to shape product decisions from concept through launch. I have taken products from zero to one, guided teams through full product lifecycles, and shipped across web and mobile.
+              With 7+ years across fintech, education, AI, and B2B SaaS, I bring a deep understanding of how products succeed in competitive markets. I study user needs, analyze what is working and what is not, and use that insight to shape product decisions from concept through launch. I have taken products from zero to one, guided teams through full product lifecycles, and shipped across web and mobile.
             </p>
           </div>
           <div className="about-illustration">
@@ -376,7 +376,7 @@ function AboutMe() {
           <div className="about-text-content">
             <h2 className="about-section-title">Every product deserves an interface that feels like it was made just for its users</h2>
             <p className="about-section-text">
-              I design bespoke user interfaces that are visually refined, intentional, and built around how people actually think and behave. I combine strong visual design craft with UX principles rooted in behavioral psychology, making sure that every layout, interaction, and micro-detail serves a purpose. The result is products that don't just function well but feel right.
+              I design bespoke user interfaces that are visually refined, intentional, and built around how people actually think and behave. I combine strong visual craft with behavioral design so the final product is not just usable, but strategically aligned with what users need to do and what the business needs to achieve.
             </p>
           </div>
           <div className="about-illustration">
@@ -397,7 +397,7 @@ function AboutMe() {
           <div className="about-text-content">
             <h2 className="about-section-title">Good design without strategy is just decoration</h2>
             <p className="about-section-text">
-              I start every engagement by understanding the business problem, the market landscape, and where the real opportunity sits. From there, I develop a product strategy that connects user needs to business goals. I don't just hand over a strategy deck. I stay involved through execution, making sure the product we ship reflects the thinking behind it.
+              I start every engagement by understanding the business problem, the market landscape, and where the real opportunity sits. From there, I develop a product strategy that connects user needs to business goals. I do not just hand over a strategy deck. I stay involved through execution, making sure the shipped product reflects the thinking behind it.
             </p>
           </div>
           <div className="about-illustration">
@@ -463,12 +463,12 @@ function AboutMe() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
-            <h2 className="about-section-title">
-              Beyond fintech, I'm drawn to healthcare, education, AI, and complex data systems
-            </h2>
-            <p className="about-section-text">
-              These are the spaces where thoughtful product design has the most leverage, as long as the right safeguards are in place.
-            </p>
+          <h2 className="about-section-title">
+            Beyond fintech, I'm drawn to healthcare, education, AI, and complex data systems
+          </h2>
+          <p className="about-section-text">
+            These are the spaces where thoughtful product design has the most leverage, especially when the work involves trust, complexity, or underserved users. That is the kind of problem space I enjoy most.
+          </p>
           </div>
           <div className="about-illustration">
             <WorldIcon size={200} />
@@ -561,7 +561,7 @@ function AboutMe() {
             And a builder at heart
           </h2>
           <p className="about-section-text">
-            I'm working on building products that solve real problems. The side projects above are just the beginning. I'm in it for the long game.
+            I am not interested in handing off polished mockups and disappearing. I like being close to the product, close to the constraints, and close to shipping. The side projects above are part of how I keep that builder muscle active.
           </p>
         </motion.div>
       </section>

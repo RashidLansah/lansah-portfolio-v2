@@ -171,7 +171,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Product Strategist & Builder
+              Senior Product Designer for AI-Native and 0-to-1 Products
             </motion.div>
 
             <motion.h1
@@ -180,7 +180,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I design products and ship them.
+              I design AI, fintech, and B2B SaaS products and ship them.
             </motion.h1>
 
             <motion.p
@@ -189,7 +189,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Product strategy, behavioral design, and bespoke interfaces backed by real market insight. I use AI tools like Claude and Cursor to go from concept to production.
+              Senior product designer focused on AI-native product design, 0-to-1 builds, fintech, and B2B SaaS. I combine product strategy, behavioral design, and tools like Claude Code and Cursor to take products from concept to production.
             </motion.p>
           </div>
 
@@ -379,7 +379,7 @@ function Portfolio() {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h2 className="expertise-title">What I bring to the table</h2>
+            <h2 className="expertise-title">What I specialize in</h2>
           </motion.div>
 
           <div className="expertise-grid">
@@ -390,8 +390,8 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="expertise-card-title">Product Expertise</h3>
-              <p className="expertise-card-text">I specialize in market trend analysis, product performance forecasting, and identifying hidden opportunities and threats. I use data research and strategic frameworks to develop products that keep clients ahead of the competition, guiding teams through the entire product lifecycle.</p>
+              <h3 className="expertise-card-title">0-to-1 Product Design</h3>
+              <p className="expertise-card-text">I help startups turn rough ideas into real products with clear positioning, sharp user flows, and launch-ready interfaces. My work spans product discovery, UX strategy, feature prioritization, and end-to-end execution for early-stage teams.</p>
             </motion.div>
 
             <motion.div
@@ -401,8 +401,8 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="expertise-card-title">Behavioral Design</h3>
-              <p className="expertise-card-text">I integrate neuroscience and UX principles with the psychology of user interactions, ensuring every design decision is informed by how users think, feel, and act. By applying behavioral models, I create interfaces that are not just functional but deeply resonant with the user's psychological drivers.</p>
+              <h3 className="expertise-card-title">AI Product Design</h3>
+              <p className="expertise-card-text">I design AI-native products that make complex systems feel understandable and useful. From confidence-driven interfaces to automation workflows and human-in-the-loop review, I focus on building trust into the product experience.</p>
             </motion.div>
 
             <motion.div
@@ -412,8 +412,8 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h3 className="expertise-card-title">Strategy</h3>
-              <p className="expertise-card-text">I craft comprehensive product strategies that encompass market analysis, competitive positioning, and lifecycle planning. Through a deep understanding of market dynamics and consumer behavior, I develop actionable strategies that anticipate market shifts and position your product for long-term growth.</p>
+              <h3 className="expertise-card-title">Fintech & B2B SaaS</h3>
+              <p className="expertise-card-text">A lot of my strongest work sits at the intersection of fintech, operations, and B2B SaaS. I design dashboards, payment flows, reconciliation tools, and workflow-heavy products that need both clarity for users and measurable business outcomes.</p>
             </motion.div>
 
             <motion.div
@@ -423,8 +423,8 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h3 className="expertise-card-title">AI-Assisted Development</h3>
-              <p className="expertise-card-text">I use tools like Claude and Cursor to go from design to production-level code. No dev team needed. I ship real products, not just prototypes, guiding the entire journey from concept to launch.</p>
+              <h3 className="expertise-card-title">Design to Production</h3>
+              <p className="expertise-card-text">I use tools like Claude Code and Cursor to move from design into production-ready implementation. That means I can help teams close the gap between product strategy, interface design, and a working shipped experience.</p>
             </motion.div>
           </div>
         </div>

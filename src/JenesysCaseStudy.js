@@ -274,10 +274,10 @@ function JenesysCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">Bookkeepers were drowning in manual work</h2>
             <p className="about-section-text">
-              SME bookkeepers spent 15+ hours weekly on repetitive tasks: matching bank transactions, chasing clients for invoices, and reconciling accounts. Jenesys wanted to use AI to automate this, but users didn't trust black-box automation with their clients' finances.
+              This AI fintech and B2B SaaS case study focuses on Jenesys, an accounting platform for SME bookkeepers. Users spent 15+ hours weekly on repetitive tasks like matching bank transactions, chasing clients for invoices, and reconciling accounts. Jenesys wanted to automate that work with AI, but users did not trust black-box automation with their clients' finances.
             </p>
             <p className="about-section-text">
-              As the founding designer, I joined to build the entire product experience from scratch. From information architecture to component library to every user flow.
+              As the founding product designer, I built the product experience from scratch: information architecture, workflow design, component systems, and the trust-building UX needed to make AI bookkeeping usable in a real business context.
             </p>
           </div>
         </motion.div>

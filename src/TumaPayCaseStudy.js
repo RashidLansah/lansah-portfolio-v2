@@ -197,7 +197,7 @@ function TumaPayCaseStudy() {
           </div>
           <h1 className="case-study-title">Designing a Voice-First Fintech Experience for Non-Literate Users</h1>
           <p className="case-study-subtitle">
-            As Product Designer for TumaPay, I designed a voice-first mobile money app using local languages and voice pattern recognition to help non-literate users perform transactions confidently. No typing, no reading, just conversation.
+            A fintech and accessibility product design case study about building a voice-first mobile money app for non-literate users. Using local languages and voice interaction, TumaPay helps people complete financial tasks confidently without typing or reading.
           </p>
         </div>
       </section>
@@ -237,7 +237,7 @@ function TumaPayCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">Making Mobile Money Accessible to Everyone</h2>
               <p className="section-paragraph">
-                In many emerging markets, mobile money is the backbone of financial access. Yet, millions of people (especially older or less educated users) struggle to use existing apps because they require reading, typing, and memorizing numeric codes.
+                This fintech UX case study explores how mobile money products can become more inclusive in emerging markets. Mobile money is the backbone of financial access, yet millions of people, especially older or less educated users, struggle to use existing apps because they require reading, typing, and memorizing numeric codes.
               </p>
               <p className="section-paragraph">
                 <strong>Challenge:</strong> How can we make digital finance accessible to users who can't read or type in English?

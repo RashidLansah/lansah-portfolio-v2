@@ -195,8 +195,8 @@ function MrVisaCaseStudy() {
           </div>
           <h1 className="case-study-title">Ace Every Visa Interview with AI-Powered Coaching</h1>
           <p className="case-study-subtitle">
-            Designed the UX for an AI visa interview coaching platform that provides personalized rehearsals,
-            immigration intelligence, and concierge support to help applicants boost their approval odds.
+            An AI product design case study about a visa interview coaching platform that combines personalized rehearsals,
+            immigration intelligence, and concierge support to help applicants prepare for high-stakes interviews.
           </p>
         </div>
       </section>
@@ -243,10 +243,10 @@ function MrVisaCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">Your AI Visa Officer for Interview Success</h2>
               <p className="section-paragraph">
-                Mr. VISA is an AI-powered platform that helps visa applicants prepare for their embassy interviews
-                with personalized coaching, document review, and immigration intelligence. The platform acts as a
-                virtual visa officer, providing realistic interview rehearsals and real-time feedback to boost
-                approval chances.
+                Mr. VISA is an AI-powered coaching platform that helps visa applicants prepare for embassy interviews
+                with personalized coaching, document review, and immigration intelligence. This case study focuses on
+                designing an AI product for a high-anxiety, high-stakes workflow where clarity and trust matter as much
+                as raw functionality.
               </p>
               <p className="section-paragraph">
                 <strong>The Challenge:</strong> Visa interviews are high-stakes moments where applicants often fail

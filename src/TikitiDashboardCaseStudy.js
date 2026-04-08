@@ -285,13 +285,13 @@ function TikitiDashboardCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">From mobile-only to B2B platform</h2>
             <p className="about-section-text">
-              After launching Tikiti mobile app and reaching 1.7k downloads, a clear pattern emerged: our power users weren't individual attendees. They were <strong>NGOs, companies, and organizations</strong> running events.
+              This B2B SaaS product design case study shows how Tikiti expanded from a consumer event app into a workflow-heavy platform for organizers. After launching Tikiti mobile app and reaching 1.7k downloads, a clear pattern emerged: our power users were not individual attendees. They were <strong>NGOs, companies, and organizations</strong> running events.
             </p>
             <p className="about-section-text">
               These organizations needed more than a mobile app. They needed a command center to create events, manage attendees, send updates through multiple channels, and generate reports for stakeholders and sponsors.
             </p>
             <p className="about-section-text">
-              This insight led to Tikiti's pivot to a <strong>B2B SaaS model</strong>. The mobile app for attendees to discover and attend events, and a web dashboard for organizations to manage everything behind the scenes.
+              This insight led to Tikiti's pivot to a <strong>B2B SaaS model</strong>: the mobile app for attendees to discover and attend events, and a web dashboard for organizations to manage everything behind the scenes.
             </p>
           </div>
         </motion.div>

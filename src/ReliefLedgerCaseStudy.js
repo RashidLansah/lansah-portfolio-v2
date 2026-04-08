@@ -188,7 +188,7 @@ function ReliefLedgerCaseStudy() {
             </div>
           </div>
           <h1 className="case-study-title">Designing Trust Through Blockchain Transparency</h1>
-          <p className="case-study-subtitle">ReliefLedger is a blockchain-powered transparency ecosystem designed to rebuild trust in humanitarian aid. It connects NGOs, field agents, and communities through verifiable proof of delivery, making every act of giving traceable and human.</p>
+          <p className="case-study-subtitle">A civic tech and systems design case study about using blockchain transparency, multi-sided workflows, and proof of delivery to rebuild trust in humanitarian aid.</p>
           <div className="hero-caption" style={{ textAlign: 'center', marginTop: '20px', color: '#666', fontSize: '16px', fontWeight: '500' }}>
             Built on Celo · Designed for Impact · Made for Transparency
           </div>
@@ -237,7 +237,7 @@ function ReliefLedgerCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">The Hidden Gap in Humanitarian Transparency</h2>
               <p className="section-paragraph">
-                Billions are spent on aid each year, but the proof rarely reaches those who need it most. In rural communities, NGOs rely on fragmented spreadsheets and reports, leaving donors blind to outcomes and communities powerless to confirm deliveries.
+                This civic-tech product design case study focuses on the hidden gap in humanitarian transparency. Billions are spent on aid each year, but the proof rarely reaches those who need it most. In rural communities, NGOs rely on fragmented spreadsheets and reports, leaving donors blind to outcomes and communities powerless to confirm deliveries.
               </p>
               <p className="section-paragraph">
                 ReliefLedger reimagines this process with data integrity at its core. By connecting NGOs, field agents, and communities through verifiable proof of delivery, every act of giving becomes traceable and human.
@@ -782,4 +782,3 @@ function ReliefLedgerCaseStudy() {
 }
 
 export default ReliefLedgerCaseStudy;
-

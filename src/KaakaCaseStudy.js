@@ -240,10 +240,10 @@ function KaakaCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">The gap between grocery shopping and cooking</h2>
             <p className="about-section-text">
-              People buy groceries with good intentions but often don't know what to cook. They end up wasting food, ordering takeout, or eating the same repetitive meals. The disconnect between "what I bought" and "what I can make" was causing frustration and food waste.
+              This consumer AI product design case study is about Kaaka, an app that turns grocery receipts into personalized meal plans. People buy groceries with good intentions but often do not know what to cook. They end up wasting food, ordering takeout, or eating the same repetitive meals. The disconnect between what they bought and what they could make was causing frustration and food waste.
             </p>
             <p className="about-section-text">
-              I built Kaaka as a side project to solve my own problem and discovered many others shared the same struggle. The idea: snap a photo of your receipt, and AI figures out what you can cook.
+              I built Kaaka as a side project to solve my own problem and discovered many others shared the same struggle. The idea was simple but useful: snap a photo of your receipt, and AI helps figure out what you can cook next.
             </p>
           </div>
         </motion.div>

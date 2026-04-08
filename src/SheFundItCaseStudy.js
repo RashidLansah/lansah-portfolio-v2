@@ -274,10 +274,10 @@ function SheFundItCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">The funding gap for women-led businesses</h2>
             <p className="about-section-text">
-              Women entrepreneurs in emerging markets face significant barriers to accessing capital. Traditional banks require collateral most women don't have. International crowdfunding platforms feel foreign and disconnected from local realities. The result: brilliant business ideas that never get funded.
+              This fintech and social-impact product design case study explores how crowdfunding can be redesigned for women entrepreneurs in emerging markets. Traditional banks require collateral many women do not have. International crowdfunding platforms often feel foreign and disconnected from local realities. The result is that brilliant business ideas never get funded.
             </p>
             <p className="about-section-text">
-              SheFundIt was born from a simple observation: women support other women. What if we created a platform specifically designed for women entrepreneurs, with features that understand their unique challenges?
+              SheFundIt was born from a simple observation: women support other women. What if we created a mobile-first fundraising platform specifically designed for women entrepreneurs, with product choices that understand their real constraints and motivations?
             </p>
           </div>
         </motion.div>

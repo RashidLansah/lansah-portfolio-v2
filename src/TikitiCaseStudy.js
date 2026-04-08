@@ -269,10 +269,10 @@ function TikitiCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">Event ticketing was broken</h2>
             <p className="about-section-text">
-              The local events industry was fragmented. Event discovery happened through WhatsApp forwards and Instagram posts, while ticketing relied on physical purchases or error-prone manual processes. Attendees waited 30+ minutes in verification queues, and organizers had no real-time visibility into sales.
+              This 0-to-1 consumer product design case study focuses on Tikiti, a mobile event discovery and ticketing app built for a fragmented local events market. Event discovery happened through WhatsApp forwards and Instagram posts, while ticketing relied on physical purchases or error-prone manual processes. Attendees waited 30+ minutes in verification queues, and organizers had no real-time visibility into sales.
             </p>
             <p className="about-section-text">
-              I built Tikiti to unify discovery, purchase, and entry into one mobile experience that works with the payment methods people already trust.
+              I built Tikiti to unify discovery, purchase, and entry into one mobile experience that works with the payment methods people already trust. It was a 0-to-1 build designed to prove that a better end-to-end event experience could exist beyond just checkout.
             </p>
           </div>
         </motion.div>

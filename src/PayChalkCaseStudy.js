@@ -267,13 +267,13 @@ function PayChalkCaseStudy() {
             <span className="section-label">The Context</span>
             <h2 className="about-section-title">The behavior was already there. The trigger wasn't.</h2>
             <p className="about-section-text">
-              BJ Fogg's Behavior Model states that behavior happens when Motivation, Ability, and a Prompt converge at the same moment: <strong>B = MAP</strong>. Most school fee solutions failed not because parents were unwilling — they failed because the prompt arrived through the wrong channel, and the ability to pay required too many steps.
+              This fintech and edtech product design case study is about PayChalk, a WhatsApp-first school fee collection platform built for Ghana. BJ Fogg's Behavior Model states that behavior happens when Motivation, Ability, and a Prompt converge at the same moment: <strong>B = MAP</strong>. Most school fee solutions failed not because parents were unwilling, but because the prompt arrived through the wrong channel and the ability to pay required too many steps.
             </p>
             <p className="about-section-text">
-              In Ghana, WhatsApp isn't an app people check. It is the dominant communication stack. The average Ghanaian parent opens WhatsApp 50+ times daily — it is where they receive school notices, coordinate pickups, and talk to their child's teacher. The motivation to pay school fees exists. The ability to pay via mobile money exists. What was missing was a prompt delivered exactly where parents already were, with a frictionless path from notification to payment.
+              In Ghana, WhatsApp is the dominant communication stack. The average Ghanaian parent opens WhatsApp 50+ times daily. It is where they receive school notices, coordinate pickups, and talk to their child's teacher. The motivation to pay school fees exists. The ability to pay via mobile money exists. What was missing was a prompt delivered exactly where parents already were, with a frictionless path from notification to payment.
             </p>
             <p className="about-section-text">
-              Meanwhile, school administrators were spending 2–3 days per term manually reconciling payments from receipt books, calling parents individually, and generating reports by hand. The existing system produced high administrative load, delayed revenue visibility, and inconsistent follow-through.
+              Meanwhile, school administrators were spending 2 to 3 days per term manually reconciling payments from receipt books, calling parents individually, and generating reports by hand. The existing system created high administrative load, delayed revenue visibility, and inconsistent follow-through across the payment workflow.
             </p>
           </div>
         </motion.div>

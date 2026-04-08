@@ -182,7 +182,7 @@ function BorlaPayCaseStudy() {
             </div>
           </div>
           <h1 className="case-study-title">Making Recycling Rewarding</h1>
-          <p className="case-study-subtitle">Designed a mobile-first platform that connects users with local "Wastepreneurs" through mobile money rewards. Achieved 80% retention by making recycling as easy, and rewarding, as sending mobile money.</p>
+          <p className="case-study-subtitle">A civic tech and fintech product design case study about a mobile-first recycling platform that uses incentives, logistics, and mobile money rewards to drive repeat behavior.</p>
         </div>
       </section>
 
@@ -227,7 +227,7 @@ function BorlaPayCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">What If Recycling Paid Like Mobile Money?</h2>
               <p className="section-paragraph">
-                BorlaPay turns a recycling problem into an opportunity by making it rewarding. Drop off your plastic waste with a local "Wastepreneur," scan a QR code, and get paid instantly through mobile money. Simple as that.
+                BorlaPay is a civic-tech recycling concept that turns a waste problem into an opportunity by making the behavior financially rewarding. Drop off your plastic waste with a local "Wastepreneur," scan a QR code, and get paid instantly through mobile money.
               </p>
               <p className="section-paragraph">
                 <strong>The Problem:</strong> The region generates 1M+ tons of plastic waste annually, but only 5% gets recycled. Why? No reward, no community support, and no way to see your impact. Meanwhile, 70% of people use mobile money daily, a ready-made trust layer waiting to be tapped.

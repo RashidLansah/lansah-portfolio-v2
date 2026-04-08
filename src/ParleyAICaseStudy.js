@@ -201,8 +201,8 @@ function ParleyAICaseStudy() {
           </div>
           <h1 className="case-study-title">Smarter Answers Through AI Deliberation</h1>
           <p className="case-study-subtitle">
-            Designed the UX for a multi-model AI platform where GPT-4, Claude, and Gemini collaborate
-            to deliver higher-quality, bias-free answers through a transparent deliberation process.
+            An AI product design case study about a multi-model platform where GPT-4, Claude, and Gemini collaborate
+            to deliver higher-quality answers through a transparent deliberation process.
           </p>
         </div>
       </section>
@@ -249,10 +249,10 @@ function ParleyAICaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">A Council of AI Models Working Together</h2>
               <p className="section-paragraph">
-                Parley AI is a revolutionary platform that brings together multiple leading AI models (GPT-4, Claude, Gemini,
-                and more) to deliberate on your questions and synthesize the best possible answers. Instead of relying on a
-                single AI that might hallucinate or have blind spots, Parley creates a "council of LLMs" that independently
-                analyze, peer-review, and synthesize responses.
+                Parley AI is an AI-native product that brings together multiple leading models like GPT-4, Claude, and Gemini
+                to deliberate on questions and synthesize the best possible answer. Instead of relying on a single AI that might
+                hallucinate or have blind spots, Parley creates a council of LLMs that independently analyze, peer-review, and
+                synthesize responses.
               </p>
               <p className="section-paragraph">
                 <strong>The Challenge:</strong> Single AI models can hallucinate, have knowledge gaps, or provide biased

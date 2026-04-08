@@ -220,7 +220,7 @@ function Receipt2RecipeCaseStudy() {
             </div>
           </div>
           <h1 className="case-study-title">An AI Experiment That Turns Grocery Receipts Into Meal Ideas</h1>
-          <p className="case-study-subtitle">Concept, UX flow, and prototype built in under a week using Cursor + Figma. Exploring how AI can transform everyday grocery shopping into zero-effort meal planning.</p>
+          <p className="case-study-subtitle">An AI product design experiment built with Figma and Cursor to explore how receipt scanning, OCR, and meal generation can turn grocery shopping into low-friction meal planning.</p>
         </div>
       </section>
 
@@ -263,7 +263,7 @@ function Receipt2RecipeCaseStudy() {
               <p className="section-label">Overview</p>
               <h2 className="section-title">What If Your Receipt Knew What to Cook?</h2>
               <p className="section-paragraph">
-                Receipt2Recipe is an AI experiment that turns grocery receipts into meal ideas. Built in under a week using Cursor and Figma, it explores how we can make meal planning effortless by starting with what you actually bought, not what you wish you had.
+                Receipt2Recipe is a 0-to-1 AI product design experiment that turns grocery receipts into meal ideas. Built in under a week using Cursor and Figma, it explores how meal planning can start with what you actually bought, not what you wish you had.
               </p>
               <p className="section-paragraph">
                 <strong>The Concept:</strong> Snap a photo of your grocery receipt. AI reads the items, understands what you have, and generates a week of meal ideas. No manual input. No endless recipe browsing. Just practical, achievable meals based on what's in your kitchen.
