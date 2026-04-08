@@ -17,11 +17,13 @@ import PayChalkCaseStudy from './PayChalkCaseStudy';
 import Work from './Work';
 import AboutMe from './AboutMe';
 import SeoHead from './SeoHead';
+import RouteAnalytics from './RouteAnalytics';
 
 function App() {
   return (
     <Router>
       <SeoHead />
+      <RouteAnalytics />
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/work" element={<Work />} />
