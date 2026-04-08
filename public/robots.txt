@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 Allow: /
 
-Sitemap: https://uxlansah.com/sitemap.xml
+Sitemap: https://www.uxlansah.com/sitemap.xml

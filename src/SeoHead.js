@@ -3,12 +3,12 @@ import { useLocation } from 'react-router-dom';
 import seoRoutes from './seoRoutes.json';
 
 const SITE_NAME = 'Lansah Portfolio';
-const SITE_URL = 'https://uxlansah.com';
+const SITE_URL = 'https://www.uxlansah.com';
 const DEFAULT_IMAGE = '/images/lansah-profile.png';
 
 const PERSON_SCHEMA = {
   '@context': 'https://schema.org',
-  '@type': ['Person', 'ProfilePage'],
+  '@type': 'Person',
   name: 'Abdul-Rashid Lansah',
   alternateName: 'Lansah',
   url: SITE_URL,
@@ -120,7 +120,11 @@ function getPageSchema(config, pathname, canonicalUrl) {
     description: config.description,
     url: canonicalUrl,
     image: imageUrl,
-    author: PERSON_SCHEMA,
+    author: {
+      '@type': 'Person',
+      name: PERSON_SCHEMA.name,
+      url: PERSON_SCHEMA.url
+    },
     isPartOf: {
       '@type': 'WebSite',
       name: SITE_NAME,
@@ -131,7 +135,15 @@ function getPageSchema(config, pathname, canonicalUrl) {
   if (config.schemaType === 'ProfilePage') {
     return {
       ...shared,
-      mainEntity: PERSON_SCHEMA
+      mainEntity: {
+        '@type': 'Person',
+        name: PERSON_SCHEMA.name,
+        url: PERSON_SCHEMA.url,
+        image: PERSON_SCHEMA.image,
+        jobTitle: PERSON_SCHEMA.jobTitle,
+        description: PERSON_SCHEMA.description,
+        sameAs: PERSON_SCHEMA.sameAs
+      }
     };
   }
 
