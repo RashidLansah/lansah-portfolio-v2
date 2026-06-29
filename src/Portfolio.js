@@ -75,6 +75,15 @@ function Portfolio() {
   // Project data - main case studies
   const mainProjects = [
     {
+      id: 0,
+      title: 'Stimulir',
+      description: 'Product engineer on an adaptive AI inference gateway — console, mobile, docs, design system, and go-to-market from 0 to 1.',
+      link: '/stimulir-case-study',
+      bgColor: '#1a1a1a',
+      image: '/images/case-studies/stimulir-hero.png',
+      dark: true,
+    },
+    {
       id: 1,
       title: 'Jenesys',
       description: 'Designed the product experience for an AI bookkeeping platform that reached $1M ARR and 80% feature adoption.',

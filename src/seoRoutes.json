@@ -27,6 +27,15 @@
     "schemaType": "ProfilePage"
   },
   {
+    "path": "/stimulir-case-study",
+    "title": "Stimulir | Product Engineer — Adaptive AI Inference Gateway",
+    "description": "How Lansah built the Stimulir console, mobile app, docs, and design system — an adaptive AI inference gateway that gets sharper as it runs.",
+    "keywords": "Stimulir case study, AI gateway product design, adaptive AI stack, product engineer portfolio, Lansah",
+    "image": "/stimulir-icon.png",
+    "pageType": "Article",
+    "schemaType": "Article"
+  },
+  {
     "path": "/jenesys-case-study",
     "title": "Jenesys Case Study | Designing AI Bookkeeping for Growth",
     "description": "How Lansah helped Jenesys, an AI bookkeeping platform, reach $1M ARR by designing trustworthy automation, reconciliation flows, and document-chasing workflows.",
