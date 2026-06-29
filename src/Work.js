@@ -26,7 +26,27 @@ function Work() {
       <main className="work-main">
         <div className="work-container">
           <div className="work-grid">
-            
+
+            {/* Stimulir Card */}
+            <Link to="/stimulir-case-study" className="work-card clickable-card" style={{ background: '#0f0f0f', color: '#fff' }}>
+              <div className="work-card-content">
+                <div className="work-card-header">
+                  <span className="work-card-label" style={{ color: 'rgba(255,255,255,0.5)', background: 'rgba(255,255,255,0.08)' }}>
+                    <span className="ai-badge-small">AI</span>
+                    <span>Stimulir</span>
+                  </span>
+                  <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#c9a07a', background: 'rgba(201,160,122,0.15)', padding: '3px 8px', borderRadius: 3 }}>Case study coming soon</span>
+                </div>
+                <h2 className="work-card-title" style={{ color: '#fff' }}>Adaptive AI Inference Gateway</h2>
+                <p className="work-card-description" style={{ color: 'rgba(255,255,255,0.55)' }}>Product engineer on an adaptive AI stack — console, mobile, docs, design system, and go-to-market from 0 to 1.</p>
+                <div className="work-card-image">
+                  <div className="interface-preview">
+                    <img src="/images/case-studies/stimulir-hero.png" alt="Stimulir" className="work-interface-image" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
             {/* PayChalk Card */}
             <Link to="/paychalk-case-study" className="work-card paychalk-card clickable-card">
               <div className="work-card-content">

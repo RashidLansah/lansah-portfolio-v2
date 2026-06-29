@@ -75,6 +75,15 @@ function Portfolio() {
   // Project data - main case studies
   const mainProjects = [
     {
+      id: 0,
+      title: 'Stimulir',
+      description: 'Product engineer on an adaptive AI inference gateway — console, mobile, docs, design system, and go-to-market from 0 to 1.',
+      link: '/stimulir-case-study',
+      bgColor: '#1a1a1a',
+      image: '/images/case-studies/stimulir-hero.png',
+      dark: true,
+    },
+    {
       id: 1,
       title: 'Jenesys',
       description: 'Designed the product experience for an AI bookkeeping platform that reached $1M ARR and 80% feature adoption.',
@@ -258,11 +267,11 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[0].link} className="project-card-inner" style={{ background: mainProjects[0].bgColor }}>
+              <Link to={mainProjects[0].link} className="project-card-inner" style={{ background: mainProjects[0].bgColor, color: mainProjects[0].dark ? '#fff' : undefined }}>
                 <div className="project-card-content">
-                  <h3 className="project-card-title">{mainProjects[0].title}</h3>
-                  <p className="project-card-description">{mainProjects[0].description}</p>
-                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
+                  <h3 className="project-card-title" style={{ color: mainProjects[0].dark ? '#fff' : undefined }}>{mainProjects[0].title}</h3>
+                  <p className="project-card-description" style={{ color: mainProjects[0].dark ? 'rgba(255,255,255,0.55)' : undefined }}>{mainProjects[0].description}</p>
+                  <p className="project-card-link" style={{ color: mainProjects[0].dark ? 'rgba(255,255,255,0.7)' : undefined }}>Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
                 </div>
                 <div className="project-card-image-wrapper">
                   <img src={mainProjects[0].image} alt={mainProjects[0].title} className="project-card-image" />
