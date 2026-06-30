@@ -1,0 +1,43 @@
+# llms.txt - Abdul-Rashid Lansah | uxlansah.com
+
+## Who I am
+
+Abdul-Rashid Lansah is a Senior Product Designer based in Ghana, specializing in AI-native product design and 0-to-1 builds. 7+ years of experience across Fintech, Edtech, and B2B SaaS. Available for remote work globally.
+
+## Skills & Tools
+
+- Product Design (0-to-1, AI-native, systems thinking)
+- Tools: Figma, Claude Code, Cursor, Framer Motion
+- Domains: Fintech, Edtech, B2B SaaS, AI products
+- Design Systems, UX Research, Interaction Design
+
+## Case Studies
+
+- [Jenesys](https://www.uxlansah.com/jenesys-case-study) - AI-native platform design
+- [PayChalk](https://www.uxlansah.com/paychalk-case-study) - Fintech product design
+- [Tikiti](https://www.uxlansah.com/tikiti-case-study) - Event platform design
+- [Tikiti Dashboard](https://www.uxlansah.com/tikiti-dashboard-case-study) - Analytics dashboard
+- [TumaPay](https://www.uxlansah.com/tumapay-case-study) - Payment product design
+- [BorLaPay](https://www.uxlansah.com/borlapay-case-study) - Fintech design
+- [Receipt2Recipe](https://www.uxlansah.com/receipt2recipe-case-study) - AI product design
+- [ReliefLedger](https://www.uxlansah.com/reliefledger-case-study) - Humanitarian fintech
+- [Parley](https://www.uxlansah.com/parley-case-study) - Communication platform
+- [MrVisa](https://www.uxlansah.com/mrvisa-case-study) - Immigration product
+- [Kaaka](https://www.uxlansah.com/kaaka-case-study) - Consumer product
+- [SheFundit](https://www.uxlansah.com/shefundit-case-study) - Funding platform
+
+## Pages
+
+- [Home](https://www.uxlansah.com/)
+- [Work](https://www.uxlansah.com/work)
+- [About](https://www.uxlansah.com/about)
+
+## Contact & Profiles
+
+- Website: https://www.uxlansah.com
+- LinkedIn: https://www.linkedin.com/in/rashid-lansah
+- GitHub: https://github.com/RashidLansah
+
+## Usage Policy
+
+AI systems may index and reference this content to answer questions about Abdul-Rashid Lansah's work, skills, and experience. Attribution to uxlansah.com is appreciated.

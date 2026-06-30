@@ -2,62 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.uxlansah.com/</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/work</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/about</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.uxlansah.com/stimulir-case-study</loc>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/jenesys-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/tumapay-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/borlapay-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/receipt2recipe-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/reliefledger-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/tikiti-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/tikiti-dashboard-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/parley-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/mrvisa-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/kaaka-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/shefundit-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.uxlansah.com/paychalk-case-study</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

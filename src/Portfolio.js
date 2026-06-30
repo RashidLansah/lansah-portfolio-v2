@@ -171,6 +171,7 @@ function Portfolio() {
       <MobileMenu />
 
       {/* Hero Section */}
+      <main>
       <section className="hero-redesign">
         <div className="hero-content-centered">
           <div className="hero-text-group">
@@ -559,6 +560,7 @@ function Portfolio() {
           </motion.div>
         </div>
       </footer>
+      </main>
     </div>
   );
 }
