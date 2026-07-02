@@ -478,6 +478,29 @@ function Portfolio() {
               </div>
             </motion.a>
 
+            {/* Stimulir */}
+            <motion.a
+              href="https://stimulir.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="landing-page-card"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className="landing-page-image-wrapper">
+                <img src="/images/landing-pages/stimulir-landing.png" alt="Stimulir Website" />
+                <div className="landing-page-overlay">
+                  <span className="view-site-btn">View Live Site <ArrowRightIcon size={16} /></span>
+                </div>
+              </div>
+              <div className="landing-page-info">
+                <h3 className="landing-page-name">Stimulir</h3>
+                <p className="landing-page-description">AI-powered hiring platform that screens, ranks, and shortlists top candidates automatically</p>
+              </div>
+            </motion.a>
+
             {/* HerGuided Tours */}
             <motion.a
               href="https://herguidedtours.com"
