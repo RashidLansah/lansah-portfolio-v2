@@ -8,6 +8,152 @@
   font-family: inherit;
 }
 
+/* Project card v2 — logo + pill header, meta rail, vignette (Bending Spoons structure) */
+.project-card-v2,
+.project-card-v2 * {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+.project-card-v2 {
+  padding: 34px 40px 0;
+  box-sizing: border-box;
+  color: #1a1a1a;
+}
+
+.pcv2-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pcv2-logo {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.pcv2-wordmark {
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: inherit;
+}
+
+.pcv2-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: inherit;
+  background: rgba(0, 0, 0, 0.07);
+  padding: 10px 16px;
+  border-radius: 999px;
+  transition: background 0.25s ease;
+}
+
+.project-card-v2:hover .pcv2-pill {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.pcv2-pill svg {
+  transition: transform 0.25s ease;
+}
+
+.project-card-v2:hover .pcv2-pill svg {
+  transform: translate(1px, -1px);
+}
+
+.pcv2-meta {
+  margin-top: 26px;
+}
+
+.pcv2-meta-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pcv2-bullets {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.pcv2-bullets li {
+  position: relative;
+  padding-left: 25px;
+  margin-top: 8px;
+  font-size: 14.5px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.pcv2-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid rgba(26, 26, 26, 0.35);
+  border-radius: 50%;
+}
+
+.project-card-v2.pcv2-dark {
+  color: #ffffff;
+}
+
+.project-card-v2.pcv2-dark .pcv2-pill {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.project-card-v2.pcv2-dark:hover .pcv2-pill {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.project-card-v2.pcv2-dark .pcv2-bullets li {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.project-card-v2.pcv2-dark .pcv2-bullets li::before {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .project-card-v2 {
+    padding: 24px 22px 0;
+  }
+
+  .pcv2-wordmark {
+    font-size: 21px;
+  }
+
+  .pcv2-pill {
+    padding: 8px 12px;
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .pcv2-meta {
+    margin-top: 18px;
+  }
+
+  .pcv2-meta-head {
+    font-size: 14px;
+  }
+
+  .pcv2-bullets li {
+    font-size: 13px;
+    padding-left: 22px;
+  }
+}
+
 .App {
   min-height: 100vh;
   background-color: #ffffff;

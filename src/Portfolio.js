@@ -1,15 +1,16 @@
 import './App.css';
-import { Link } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 import Sidebar from './Sidebar';
 import { motion } from 'framer-motion';
 import { LinkedInIcon, GitHubIcon, MediumIcon, ArrowRightIcon } from './Icons';
+import ProjectCard from './ProjectCard';
 import PayChalkVignette from './PayChalkVignette';
 import StimulirVignette from './StimulirVignette';
 import JenesysVignette from './JenesysVignette';
 import TikitiVignette from './TikitiVignette';
 import TikitiDashboardVignette from './TikitiDashboardVignette';
 import KaakaVignette from './KaakaVignette';
+import ChoperlyVignette from './ChoperlyVignette';
 import { useEffect, useState } from 'react';
 
 function Portfolio() {
@@ -274,16 +275,19 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[0].link} className="project-card-inner" style={{ background: mainProjects[0].bgColor, color: mainProjects[0].dark ? '#fff' : undefined }}>
-                <div className="project-card-content">
-                  <h3 className="project-card-title" style={{ color: mainProjects[0].dark ? '#fff' : undefined }}>{mainProjects[0].title}</h3>
-                  <p className="project-card-description" style={{ color: mainProjects[0].dark ? 'rgba(255,255,255,0.55)' : undefined }}>{mainProjects[0].description}</p>
-                  <p className="project-card-link" style={{ color: mainProjects[0].dark ? 'rgba(255,255,255,0.7)' : undefined }}>Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
-                </div>
-                <div className="project-card-image-wrapper">
-                  <StimulirVignette />
-                </div>
-              </Link>
+              <ProjectCard
+                link={mainProjects[0].link}
+                bgColor={mainProjects[0].bgColor}
+                dark
+                name="Stimulir"
+                meta="Product engineer · 2025–present"
+                bullets={[
+                  'Console, mobile, docs, and design system from 0 to 1',
+                  'Adaptive routing across every AI product and workflow',
+                ]}
+              >
+                <StimulirVignette />
+              </ProjectCard>
             </motion.div>
             <motion.div
               className="project-card-large"
@@ -292,16 +296,18 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[1].link} className="project-card-inner" style={{ background: mainProjects[1].bgColor }}>
-                <div className="project-card-content">
-                  <h3 className="project-card-title">{mainProjects[1].title}</h3>
-                  <p className="project-card-description">{mainProjects[1].description}</p>
-                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
-                </div>
-                <div className="project-card-image-wrapper">
-                  <JenesysVignette />
-                </div>
-              </Link>
+              <ProjectCard
+                link={mainProjects[1].link}
+                bgColor={mainProjects[1].bgColor}
+                name="Jenesys"
+                meta="Product designer · 2023–2024"
+                bullets={[
+                  'Reached $1M ARR with 80% feature adoption',
+                  'Designed invoicing, matching, and chaser workflows end to end',
+                ]}
+              >
+                <JenesysVignette />
+              </ProjectCard>
             </motion.div>
           </div>
           {/* Row 2 */}
@@ -313,16 +319,18 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[2].link} className="project-card-inner" style={{ background: mainProjects[2].bgColor }}>
-                <div className="project-card-content">
-                  <h3 className="project-card-title">{mainProjects[2].title}</h3>
-                  <p className="project-card-description">{mainProjects[2].description}</p>
-                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
-                </div>
-                <div className="project-card-image-wrapper">
-                  <TikitiVignette />
-                </div>
-              </Link>
+              <ProjectCard
+                link={mainProjects[2].link}
+                bgColor={mainProjects[2].bgColor}
+                name="Tikiti"
+                meta="Founder & product designer · 2024"
+                bullets={[
+                  '1.7k downloads on iOS and Android',
+                  'Event discovery, mobile payments, and QR check-in',
+                ]}
+              >
+                <TikitiVignette />
+              </ProjectCard>
             </motion.div>
             <motion.div
               className="project-card-large"
@@ -331,16 +339,18 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[3].link} className="project-card-inner" style={{ background: mainProjects[3].bgColor }}>
-                <div className="project-card-content">
-                  <h3 className="project-card-title">{mainProjects[3].title}</h3>
-                  <p className="project-card-description">{mainProjects[3].description}</p>
-                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
-                </div>
-                <div className="project-card-image-wrapper">
-                  <TikitiDashboardVignette />
-                </div>
-              </Link>
+              <ProjectCard
+                link={mainProjects[3].link}
+                bgColor={mainProjects[3].bgColor}
+                name="Tikiti Dashboard"
+                meta="Founder & product designer · 2024–2025"
+                bullets={[
+                  'Multi-channel messaging and attendee management for organizers',
+                  'AI-generated event reports and analytics',
+                ]}
+              >
+                <TikitiDashboardVignette />
+              </ProjectCard>
             </motion.div>
           </div>
           {/* Row 3 */}
@@ -352,16 +362,18 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[4].link} className="project-card-inner" style={{ background: mainProjects[4].bgColor }}>
-                <div className="project-card-content">
-                  <h3 className="project-card-title">{mainProjects[4].title}</h3>
-                  <p className="project-card-description">{mainProjects[4].description}</p>
-                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
-                </div>
-                <div className="project-card-image-wrapper">
-                  <PayChalkVignette />
-                </div>
-              </Link>
+              <ProjectCard
+                link={mainProjects[4].link}
+                bgColor={mainProjects[4].bgColor}
+                name="PayChalk"
+                meta="Product designer · 2025"
+                bullets={[
+                  'WhatsApp-first fee collection for schools in Ghana',
+                  'Instant payments, automated reminders, real-time tracking',
+                ]}
+              >
+                <PayChalkVignette />
+              </ProjectCard>
             </motion.div>
             <motion.div
               className="project-card-large"
@@ -370,16 +382,41 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[5].link} className="project-card-inner" style={{ background: mainProjects[5].bgColor }}>
-                <div className="project-card-content">
-                  <h3 className="project-card-title">{mainProjects[5].title}</h3>
-                  <p className="project-card-description">{mainProjects[5].description}</p>
-                  <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
-                </div>
-                <div className="project-card-image-wrapper">
-                  <KaakaVignette />
-                </div>
-              </Link>
+              <ProjectCard
+                link={mainProjects[5].link}
+                bgColor={mainProjects[5].bgColor}
+                name="Kaaka"
+                meta="Product designer · 2024"
+                bullets={[
+                  'Turns grocery receipts into personalized meal plans',
+                  'Designed and shipped the full app experience',
+                ]}
+              >
+                <KaakaVignette />
+              </ProjectCard>
+            </motion.div>
+          </div>
+          {/* Row 4 */}
+          <div className="project-grid-row">
+            <motion.div
+              className="project-card-large"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <ProjectCard
+                link="/choperly-case-study"
+                bgColor="#ffe3f9"
+                name="Choperly"
+                meta="Designed & built solo · 2025"
+                bullets={[
+                  'WhatsApp bot handles orders, MoMo payments, and rider dispatch',
+                  'AI menu onboarding — from signup to live bot in 15 minutes',
+                ]}
+              >
+                <ChoperlyVignette />
+              </ProjectCard>
             </motion.div>
           </div>
         </div>
