@@ -3125,6 +3125,8 @@ html {
 .expertise-section {
   padding: 120px 20px;
   position: relative;
+  background-image: radial-gradient(rgba(27, 27, 26, 0.12) 1.3px, transparent 1.3px);
+  background-size: 26px 26px;
 }
 
 .expertise-container {
@@ -3361,9 +3363,43 @@ html {
   padding: 100px 40px;
   background: #ffffff;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-squares-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.grid-squares-cell {
+  position: absolute;
+  background: rgba(27, 27, 26, 0.05);
+  opacity: 0;
+  animation: grid-cell-pulse 9s ease-in-out infinite;
+}
+
+@keyframes grid-cell-pulse {
+  0%, 55%, 100% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid-squares-cell {
+    animation: none;
+    opacity: 0.6;
+  }
 }
 
 .contact-footer-container {
+  position: relative;
+  z-index: 1;
   max-width: 1364px;
   margin: 0 auto;
   display: flex;
