@@ -164,5 +164,14 @@
     "image": "/images/case-studies/paychalk-dashboard.png",
     "pageType": "Article",
     "schemaType": "Article"
+  },
+  {
+    "path": "/choperly-case-study",
+    "title": "Choperly Case Study | WhatsApp-Native Food Ordering for Ghana",
+    "description": "How Lansah designed and built Choperly, a WhatsApp-native food ordering platform for Ghana's home kitchens — an AI-onboarded ordering bot with mobile money payments and rider dispatch.",
+    "keywords": "WhatsApp commerce case study, conversational UX design, food ordering bot Ghana, mobile money UX, Choperly, AI onboarding",
+    "image": "/images/case-studies/choperly-landing.png",
+    "pageType": "Article",
+    "schemaType": "Article"
   }
 ]
