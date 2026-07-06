@@ -2,6 +2,12 @@
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
+/* Project card vignettes draw product UI — they use the UI font set inline
+   on the SVG root (or a mono override), not the site serif */
+.vignette-svg * {
+  font-family: inherit;
+}
+
 .App {
   min-height: 100vh;
   background-color: #ffffff;
