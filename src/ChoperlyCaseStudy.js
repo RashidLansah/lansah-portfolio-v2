@@ -11,7 +11,7 @@ const ArrowButton = () => (
   </div>
 );
 
-function StimulirCaseStudy() {
+function ChoperlyCaseStudy() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -32,7 +32,7 @@ function StimulirCaseStudy() {
           <span className="about-breadcrumb-separator">/</span>
           <Link to="/work" className="about-breadcrumb-link">Work</Link>
           <span className="about-breadcrumb-separator">/</span>
-          <span className="about-breadcrumb-current">Stimulir</span>
+          <span className="about-breadcrumb-current">Choperly</span>
         </div>
       </nav>
 
@@ -45,32 +45,31 @@ function StimulirCaseStudy() {
           transition={{ duration: 0.8 }}
         >
           <div className="case-meta-pills">
-            <span className="case-pill">Web</span>
-            <span className="case-pill">Desktop</span>
-            <span className="case-pill">iOS</span>
-            <span className="case-pill">Product Engineer</span>
-            <span className="case-pill">2025 – Present</span>
+            <span className="case-pill">Side Project</span>
+            <span className="case-pill">2025</span>
+            <span className="case-pill">Food / Commerce</span>
+            <span className="case-pill">WhatsApp + AI</span>
           </div>
           <h1 className="about-headline">
-            Building an <span className="highlight-text">adaptive AI gateway</span> from 0 to 1 — console, mobile, docs, design system
+            Turning WhatsApp chats into an <span className="highlight-text">automated food storefront</span>
           </h1>
           <div className="case-impact-stats">
             <div className="impact-stat-item">
-              <span className="stat-number">0→1</span>
-              <span className="stat-label">Product build</span>
+              <span className="stat-number">15 min</span>
+              <span className="stat-label">Menu to live bot</span>
             </div>
             <div className="impact-stat-item">
-              <span className="stat-number">6</span>
-              <span className="stat-label">Surfaces shipped</span>
+              <span className="stat-number">5%</span>
+              <span className="stat-label">Flat fee per order</span>
             </div>
             <div className="impact-stat-item">
-              <span className="stat-number">Web · Desktop · iOS</span>
-              <span className="stat-label">Platforms</span>
+              <span className="stat-number">10</span>
+              <span className="stat-label">Conversation states</span>
             </div>
           </div>
-          <a href="https://stimulir.com" target="_blank" rel="noopener noreferrer" className="case-live-link">
+          <a href="https://choperly.com" target="_blank" rel="noopener noreferrer" className="case-live-link">
             <span className="live-dot" />
-            Try Stimulir live — stimulir.com
+            Try Choperly live — choperly.com
             <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M3 9L9 3M9 3H4.5M9 3V7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -86,8 +85,8 @@ function StimulirCaseStudy() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <img
-          src="/images/case-studies/stimulir-hero.png"
-          alt="Stimulir — adaptive AI inference gateway"
+          src="/images/case-studies/choperly-landing.png"
+          alt="Choperly — WhatsApp-native food ordering for Ghana"
           className="case-hero-screen"
         />
       </motion.section>
@@ -103,12 +102,12 @@ function StimulirCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">The Context</span>
-            <h2 className="about-section-title">One integration for every AI modality</h2>
+            <h2 className="about-section-title">Ghana's home kitchens already run on WhatsApp</h2>
             <p className="about-section-text">
-              Stimulir is an adaptive AI inference gateway — a single integration point that routes tasks across models, agents, and modalities. Instead of managing multiple SDKs, teams connect once and get access to text, vision, code, and agent workflows from a unified interface.
+              Thousands of home-based food businesses in Ghana take every order through WhatsApp DMs. The storefront already exists — what's missing is the automation. Sellers answer "what's on your menu?" dozens of times a day, mix up orders, chase mobile money payments they can't reconcile, and coordinate riders by voice note.
             </p>
             <p className="about-section-text">
-              The gateway gets sharper as it runs, learning which models perform best for which task types. When confidence is low, it surfaces the edge case for human review rather than guessing — making human-in-the-loop a core product feature, not a fallback.
+              Choperly turns a seller's WhatsApp number into an automated storefront: a bot that takes orders end to end, collects mobile money payments, dispatches riders, and keeps customers updated — while the seller just cooks.
             </p>
           </div>
         </motion.div>
@@ -125,23 +124,23 @@ function StimulirCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">My Role</span>
-            <h2 className="about-section-title">Product engineer across the full stack</h2>
+            <h2 className="about-section-title">Designed and built end to end</h2>
             <div className="role-grid">
               <div className="role-item">
-                <strong>Console</strong>
-                <p>React + Electron desktop app — task feed, session replay, integrations, admin tooling</p>
+                <strong>Product design</strong>
+                <p>Landing page, seller dashboard, storefront pages, and the onboarding flow — brand, UI, and copy</p>
               </div>
               <div className="role-item">
-                <strong>Mobile</strong>
-                <p>Native iOS app in Expo / React Native with full parity to the web shell</p>
+                <strong>Conversation design</strong>
+                <p>The full ordering flow as a 10-state machine — greeting, browsing, cart, delivery, payment, tracking</p>
               </div>
               <div className="role-item">
-                <strong>Design system</strong>
-                <p>Tokens, component library (Radix + shadcn pattern), Tailwind v4 theme, brand identity</p>
+                <strong>Engineering</strong>
+                <p>Next.js + Firebase build with WhatsApp Cloud API, Paystack mobile money, and rider dispatch</p>
               </div>
               <div className="role-item">
-                <strong>Go-to-market</strong>
-                <p>Docs product, sitemap, GA4 conversion tracking, structured data, SEO coverage</p>
+                <strong>AI onboarding</strong>
+                <p>Claude-powered menu import — paste text or a photo and get a structured, categorized menu</p>
               </div>
             </div>
           </div>
@@ -159,18 +158,18 @@ function StimulirCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">The Core Challenge</span>
-            <h2 className="about-section-title">AI tools treat every request in isolation</h2>
+            <h2 className="about-section-title">The interface is a conversation, not a screen</h2>
             <p className="about-section-text">
-              Most inference layers are stateless — each call starts fresh. We wanted to build something that compounds. A gateway that knows which model handled task X best last week, and routes accordingly this week. That insight shaped everything: the console UX, the mobile review flow, and how we present confidence in the interface.
+              Customers never download an app — the entire product lives inside a WhatsApp thread. That means the "UI" is a state machine and the design work is conversation design: what the bot says, which quick-reply buttons appear, and how it recovers when someone changes their mind mid-order, messages at 2am, or picks cash instead of mobile money.
             </p>
             <p className="about-section-text">
-              <strong>Human-in-the-loop isn't a fallback — it's a feature.</strong> When the system is uncertain, it flags the task and routes to a human reviewer. That's the core of the console and mobile experience.
+              <strong>Every edge case is copywriting plus state design.</strong> Out-of-hours messages, cart edits, delivery vs pickup, payment fallbacks — each one had to be designed as carefully as any screen, because there's no interface to fall back on.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* What we shipped */}
+      {/* What I shipped */}
       <section className="about-full-width">
         <motion.div
           className="about-full-content"
@@ -180,10 +179,10 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
-            <span className="section-label">What We Shipped</span>
-            <h2 className="about-section-title">6 surfaces built from scratch</h2>
+            <span className="section-label">What I Shipped</span>
+            <h2 className="about-section-title">One bot, six connected surfaces</h2>
             <p className="about-section-text">
-              From the console desktop app to native iOS, developer docs, and the brand — every surface was designed and built as part of this engagement.
+              From the customer's chat thread to the seller's dashboard, the rider's dispatch flow, and a public storefront page — every surface designed and built solo.
             </p>
           </div>
         </motion.div>
@@ -199,9 +198,9 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <span className="feature-number">01</span>
-          <h2 className="about-section-title">Console (0→1)</h2>
+          <h2 className="about-section-title">WhatsApp ordering bot</h2>
           <p className="about-section-text">
-            Task feed, session replay, context studio, integrations, and admin tooling — built from scratch as a React + Electron desktop app with Supabase auth.
+            A 10-state conversation flow — browse by category, build a cart, choose delivery or pickup, share location, pay, and track. Handles cart edits, repeat orders, and out-of-hours messages gracefully.
           </p>
         </motion.div>
 
@@ -213,9 +212,9 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <span className="feature-number">02</span>
-          <h2 className="about-section-title">Mobile — native iOS</h2>
+          <h2 className="about-section-title">AI menu onboarding</h2>
           <p className="about-section-text">
-            Full parity native iOS app in Expo + React Native. Real-time inbox, task review flows, and deep-link routing via stimulir:// scheme.
+            Sellers paste their menu as text — or upload a photo of a handwritten one — and Claude parses it into structured items with prices and Ghanaian food categories. From signup to a live bot in about 15 minutes.
           </p>
         </motion.div>
       </section>
@@ -230,9 +229,9 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <span className="feature-number">03</span>
-          <h2 className="about-section-title">Design system</h2>
+          <h2 className="about-section-title">Mobile money built in</h2>
           <p className="about-section-text">
-            Built from tokens up — colour, typography (Manrope + Lora + IBM Plex Mono), component library in Radix + shadcn pattern, and a Tailwind v4 theme with scoped finance and studio modes.
+            Paystack-powered MTN, Vodafone Cash, and AirtelTigo payments prompted right in the chat, with automatic confirmation back to both customer and seller. No POS, no bank account, no chasing.
           </p>
         </motion.div>
 
@@ -244,9 +243,9 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <span className="feature-number">04</span>
-          <h2 className="about-section-title">Brand identity</h2>
+          <h2 className="about-section-title">Rider dispatch on WhatsApp</h2>
           <p className="about-section-text">
-            Defined the Stimulir brand: warm neutrals, a luminance-removed icon, and a visual language that communicates precision without feeling cold or clinical.
+            The moment an order confirms, the rider gets a WhatsApp dispatch with the drop-off location and payment note. Auto-pick or manual assignment, accept/decline handling, and re-send when a rider goes quiet.
           </p>
         </motion.div>
       </section>
@@ -261,9 +260,9 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <span className="feature-number">05</span>
-          <h2 className="about-section-title">Docs product</h2>
+          <h2 className="about-section-title">Seller dashboard</h2>
           <p className="about-section-text">
-            Developer documentation from scratch — getting started, SDK reference, CLI guide, engineering and compute sections — with sitemap coverage across 23 URLs.
+            Live orders, daily revenue, menu management, payouts, and analytics — top sellers, peak hours, repeat customers — so sellers know what to cook more of, and when.
           </p>
         </motion.div>
 
@@ -275,9 +274,9 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <span className="feature-number">06</span>
-          <h2 className="about-section-title">GA4 + SEO</h2>
+          <h2 className="about-section-title">Storefront + broadcasts</h2>
           <p className="about-section-text">
-            Wired GA4 key event tracking across all conversion CTAs, added llms.txt for AI discoverability, JSON-LD structured data, and full organic search coverage.
+            Every seller gets a shareable choperly.com page with their menu, a QR code, and an "Order on WhatsApp" button — plus one-tap promo broadcasts to everyone who has ever ordered.
           </p>
         </motion.div>
       </section>
@@ -292,20 +291,20 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
-            <span className="section-label">The Bets We Made</span>
+            <span className="section-label">The Bets I Made</span>
             <h2 className="about-section-title">Product thinking behind the build</h2>
             <div className="learnings-list">
               <div className="learning-item">
-                <strong>Compounding inference beats stateless APIs.</strong>
-                <p>Routing that learns task-model fit over time is a stronger moat than any individual model. That's the positioning we built toward from day one.</p>
+                <strong>Meet customers where they already are.</strong>
+                <p>No app download, no new habit. The customer orders in the same WhatsApp thread they were already using — the automation is invisible until it's helpful.</p>
               </div>
               <div className="learning-item">
-                <strong>Uncertainty is honest UX.</strong>
-                <p>Rather than hiding low confidence, Stimulir surfaces it and routes to a human. Users trust a system more when it knows its own limits.</p>
+                <strong>Conversation design is product design.</strong>
+                <p>The state machine is the core UX artifact. Button labels, error recovery, and message tone did the work that screens, modals, and empty states do in a normal app.</p>
               </div>
               <div className="learning-item">
-                <strong>One integration is a product decision, not just a technical one.</strong>
-                <p>Reducing the connection overhead to a single SDK shapes everything downstream — docs, onboarding, pricing, and how we design the console.</p>
+                <strong>Honest pricing is a wedge.</strong>
+                <p>Food aggregators charge 15–30% per order. Choperly charges a flat 5% with no monthly fee — a number a home seller can say yes to without a calculator.</p>
               </div>
             </div>
           </div>
@@ -323,9 +322,9 @@ function StimulirCaseStudy() {
         >
           <div className="about-text-content">
             <span className="section-label">In Progress</span>
-            <h2 className="about-section-title">Full case study coming soon.</h2>
+            <h2 className="about-section-title">Live pilot underway.</h2>
             <p className="about-section-text">
-              I'm documenting the product decisions, design system, and engineering work in more detail. Check back shortly.
+              Choperly is in pilot with home-based sellers in Accra. I'm documenting the conversation design and the WhatsApp Cloud API build in more detail as the pilot grows.
             </p>
             <Link to="/work" className="next-case-link" style={{ marginTop: 24, display: 'inline-flex', alignItems: 'center', gap: 8 }}>
               <h2 className="about-section-title" style={{ margin: 0 }}>Back to all work</h2>
@@ -340,4 +339,4 @@ function StimulirCaseStudy() {
   );
 }
 
-export default StimulirCaseStudy;
+export default ChoperlyCaseStudy;

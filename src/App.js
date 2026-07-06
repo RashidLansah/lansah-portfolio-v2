@@ -15,6 +15,7 @@ import KaakaCaseStudy from './KaakaCaseStudy';
 import SheFundItCaseStudy from './SheFundItCaseStudy';
 import PayChalkCaseStudy from './PayChalkCaseStudy';
 import StimulirCaseStudy from './StimulirCaseStudy';
+import ChoperlyCaseStudy from './ChoperlyCaseStudy';
 import Work from './Work';
 import AboutMe from './AboutMe';
 import SeoHead from './SeoHead';
@@ -43,6 +44,7 @@ function App() {
         <Route path="/shefundit-case-study" element={<SheFundItCaseStudy />} />
         <Route path="/paychalk-case-study" element={<PayChalkCaseStudy />} />
         <Route path="/stimulir-case-study" element={<StimulirCaseStudy />} />
+        <Route path="/choperly-case-study" element={<ChoperlyCaseStudy />} />
         <Route path="/about" element={<AboutMe />} />
       </Routes>
     </Router>

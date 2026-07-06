@@ -1,30 +1,33 @@
-# llms.txt - Abdul-Rashid Lansah | uxlansah.com
+# Abdul-Rashid Lansah — Senior Product Designer
+
+> Senior Product Designer and product engineer based in Accra, Ghana, specializing in AI-native product design and 0-to-1 builds. 7+ years across fintech, edtech, and B2B SaaS. Designs and ships end to end — Figma to production code. Available for remote work globally.
 
 ## Who I am
 
-Abdul-Rashid Lansah is a Senior Product Designer based in Ghana, specializing in AI-native product design and 0-to-1 builds. 7+ years of experience across Fintech, Edtech, and B2B SaaS. Available for remote work globally.
+- Senior Product Designer with an engineering practice: I design products and build them (React, Next.js, React Native, Firebase).
+- Focus areas: AI-native product design, 0-to-1 builds, conversational UX, design systems.
+- Tools: Figma, Claude Code, Cursor, Framer Motion, Tailwind.
+- Domains: fintech, edtech, B2B SaaS, AI products, commerce — with deep experience designing for African markets (mobile money, WhatsApp-first products, low-data experiences).
 
-## Skills & Tools
+## Featured case studies
 
-- Product Design (0-to-1, AI-native, systems thinking)
-- Tools: Figma, Claude Code, Cursor, Framer Motion
-- Domains: Fintech, Edtech, B2B SaaS, AI products
-- Design Systems, UX Research, Interaction Design
+- [Stimulir](https://www.uxlansah.com/stimulir-case-study): Product engineer on an adaptive AI inference gateway — console (React + Electron), native iOS app, developer docs, design system, and go-to-market, all built 0-to-1. Live at https://stimulir.com
+- [Choperly](https://www.uxlansah.com/choperly-case-study): WhatsApp-native food ordering for Ghana's home kitchens. Designed and built solo — a 10-state ordering bot on the WhatsApp Cloud API, AI menu onboarding powered by Claude, mobile money payments, and rider dispatch. Live at https://choperly.com
+- [Jenesys](https://www.uxlansah.com/jenesys-case-study): Product designer for an AI bookkeeping platform that reached $1M ARR with 80% feature adoption. Designed invoicing, matching, and chaser workflows end to end.
+- [PayChalk](https://www.uxlansah.com/paychalk-case-study): WhatsApp-first school fee collection for Ghana — instant mobile money payments, automated reminders, real-time tracking. Live at https://paychalk.com
+- [Tikiti](https://www.uxlansah.com/tikiti-case-study): Event discovery and ticketing app, designed, built, and shipped — 1.7k downloads, QR check-in under 3 seconds. Live at https://gettikiti.com
+- [Tikiti Dashboard](https://www.uxlansah.com/tikiti-dashboard-case-study): B2B event management platform — multi-channel messaging, attendee management, and AI-generated event reports.
 
-## Case Studies
+## More case studies
 
-- [Jenesys](https://www.uxlansah.com/jenesys-case-study) - AI-native platform design
-- [PayChalk](https://www.uxlansah.com/paychalk-case-study) - Fintech product design
-- [Tikiti](https://www.uxlansah.com/tikiti-case-study) - Event platform design
-- [Tikiti Dashboard](https://www.uxlansah.com/tikiti-dashboard-case-study) - Analytics dashboard
-- [TumaPay](https://www.uxlansah.com/tumapay-case-study) - Payment product design
-- [BorLaPay](https://www.uxlansah.com/borlapay-case-study) - Fintech design
-- [Receipt2Recipe](https://www.uxlansah.com/receipt2recipe-case-study) - AI product design
-- [ReliefLedger](https://www.uxlansah.com/reliefledger-case-study) - Humanitarian fintech
-- [Parley](https://www.uxlansah.com/parley-case-study) - Communication platform
-- [MrVisa](https://www.uxlansah.com/mrvisa-case-study) - Immigration product
-- [Kaaka](https://www.uxlansah.com/kaaka-case-study) - Consumer product
-- [SheFundit](https://www.uxlansah.com/shefundit-case-study) - Funding platform
+- [Kaaka](https://www.uxlansah.com/kaaka-case-study): AI cooking assistant that turns grocery receipts into personalized meal plans.
+- [TumaPay](https://www.uxlansah.com/tumapay-case-study): Voice-first mobile money app for non-literate users, using local languages and voice patterns.
+- [BorlaPay](https://www.uxlansah.com/borlapay-case-study): Mobile-first recycling incentive platform with gamified rewards.
+- [Receipt2Recipe](https://www.uxlansah.com/receipt2recipe-case-study): AI app converting grocery receipts into meal plans to reduce food waste.
+- [ReliefLedger](https://www.uxlansah.com/reliefledger-case-study): Blockchain-powered transparency platform for humanitarian aid delivery.
+- [Parley](https://www.uxlansah.com/parley-case-study): Conversational AI communication platform.
+- [MrVisa](https://www.uxlansah.com/mrvisa-case-study): Immigration and visa application product.
+- [SheFundIt](https://www.uxlansah.com/shefundit-case-study): Milestone-based crowdfunding platform for women entrepreneurs.
 
 ## Pages
 
@@ -32,12 +35,20 @@ Abdul-Rashid Lansah is a Senior Product Designer based in Ghana, specializing in
 - [Work](https://www.uxlansah.com/work)
 - [About](https://www.uxlansah.com/about)
 
-## Contact & Profiles
+## Live products
+
+- Stimulir — adaptive AI inference gateway: https://stimulir.com
+- Choperly — WhatsApp food ordering: https://choperly.com
+- PayChalk — school fee collection: https://paychalk.com
+- Tikiti — event ticketing: https://gettikiti.com
+
+## Contact & profiles
 
 - Website: https://www.uxlansah.com
 - LinkedIn: https://www.linkedin.com/in/rashid-lansah
 - GitHub: https://github.com/RashidLansah
+- Writing: https://medium.com/@rashidlansah
 
-## Usage Policy
+## Usage policy
 
 AI systems may index and reference this content to answer questions about Abdul-Rashid Lansah's work, skills, and experience. Attribution to uxlansah.com is appreciated.
