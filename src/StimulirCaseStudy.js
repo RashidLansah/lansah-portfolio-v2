@@ -68,6 +68,13 @@ function StimulirCaseStudy() {
               <span className="stat-label">Platforms</span>
             </div>
           </div>
+          <a href="https://stimulir.com" target="_blank" rel="noopener noreferrer" className="case-live-link">
+            <span className="live-dot" />
+            Try Stimulir live — stimulir.com
+            <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M3 9L9 3M9 3H4.5M9 3V7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
         </motion.div>
       </section>
 
