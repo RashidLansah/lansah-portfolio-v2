@@ -286,7 +286,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[1].link} className="project-card-inner mobile-card" style={{ background: mainProjects[1].bgColor }}>
+              <Link to={mainProjects[1].link} className="project-card-inner" style={{ background: mainProjects[1].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[1].title}</h3>
                   <p className="project-card-description">{mainProjects[1].description}</p>
@@ -307,7 +307,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[2].link} className="project-card-inner" style={{ background: mainProjects[2].bgColor }}>
+              <Link to={mainProjects[2].link} className="project-card-inner mobile-card" style={{ background: mainProjects[2].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[2].title}</h3>
                   <p className="project-card-description">{mainProjects[2].description}</p>
@@ -346,7 +346,7 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[4].link} className="project-card-inner mobile-card" style={{ background: mainProjects[4].bgColor }}>
+              <Link to={mainProjects[4].link} className="project-card-inner" style={{ background: mainProjects[4].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[4].title}</h3>
                   <p className="project-card-description">{mainProjects[4].description}</p>
