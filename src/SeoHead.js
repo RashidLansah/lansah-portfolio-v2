@@ -19,7 +19,9 @@ const PERSON_SCHEMA = {
   email: 'mailto:rashidlansahadam@gmail.com',
   sameAs: [
     'https://www.linkedin.com/in/rashid-lansah',
-    'https://github.com/RashidLansah'
+    'https://github.com/RashidLansah',
+    'https://medium.com/@rashidlansah',
+    'https://www.upwork.com/freelancers/~016c15f52dd06d2f4c'
   ],
   homeLocation: {
     '@type': 'Place',
