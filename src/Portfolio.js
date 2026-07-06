@@ -4,6 +4,12 @@ import MobileMenu from './MobileMenu';
 import Sidebar from './Sidebar';
 import { motion } from 'framer-motion';
 import { LinkedInIcon, GitHubIcon, MediumIcon, ArrowRightIcon } from './Icons';
+import PayChalkVignette from './PayChalkVignette';
+import StimulirVignette from './StimulirVignette';
+import JenesysVignette from './JenesysVignette';
+import TikitiVignette from './TikitiVignette';
+import TikitiDashboardVignette from './TikitiDashboardVignette';
+import KaakaVignette from './KaakaVignette';
 import { useEffect, useState } from 'react';
 
 function Portfolio() {
@@ -275,7 +281,7 @@ function Portfolio() {
                   <p className="project-card-link" style={{ color: mainProjects[0].dark ? 'rgba(255,255,255,0.7)' : undefined }}>Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
                 </div>
                 <div className="project-card-image-wrapper">
-                  <img src={mainProjects[0].image} alt={mainProjects[0].title} className="project-card-image" />
+                  <StimulirVignette />
                 </div>
               </Link>
             </motion.div>
@@ -293,7 +299,7 @@ function Portfolio() {
                   <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
                 </div>
                 <div className="project-card-image-wrapper">
-                  <img src={mainProjects[1].image} alt={mainProjects[1].title} className="project-card-image" />
+                  <JenesysVignette />
                 </div>
               </Link>
             </motion.div>
@@ -307,14 +313,14 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[2].link} className="project-card-inner mobile-card" style={{ background: mainProjects[2].bgColor }}>
+              <Link to={mainProjects[2].link} className="project-card-inner" style={{ background: mainProjects[2].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[2].title}</h3>
                   <p className="project-card-description">{mainProjects[2].description}</p>
                   <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
                 </div>
                 <div className="project-card-image-wrapper">
-                  <img src={mainProjects[2].image} alt={mainProjects[2].title} className="project-card-image" />
+                  <TikitiVignette />
                 </div>
               </Link>
             </motion.div>
@@ -332,7 +338,7 @@ function Portfolio() {
                   <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
                 </div>
                 <div className="project-card-image-wrapper">
-                  <img src={mainProjects[3].image} alt={mainProjects[3].title} className="project-card-image" />
+                  <TikitiDashboardVignette />
                 </div>
               </Link>
             </motion.div>
@@ -353,7 +359,7 @@ function Portfolio() {
                   <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
                 </div>
                 <div className="project-card-image-wrapper">
-                  <img src={mainProjects[4].image} alt={mainProjects[4].title} className="project-card-image" />
+                  <PayChalkVignette />
                 </div>
               </Link>
             </motion.div>
@@ -364,14 +370,14 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Link to={mainProjects[5].link} className="project-card-inner mobile-card" style={{ background: mainProjects[5].bgColor }}>
+              <Link to={mainProjects[5].link} className="project-card-inner" style={{ background: mainProjects[5].bgColor }}>
                 <div className="project-card-content">
                   <h3 className="project-card-title">{mainProjects[5].title}</h3>
                   <p className="project-card-description">{mainProjects[5].description}</p>
                   <p className="project-card-link">Read case study <ArrowRightIcon className="arrow-icon" size={16} /></p>
                 </div>
                 <div className="project-card-image-wrapper">
-                  <img src={mainProjects[5].image} alt={mainProjects[5].title} className="project-card-image" />
+                  <KaakaVignette />
                 </div>
               </Link>
             </motion.div>
