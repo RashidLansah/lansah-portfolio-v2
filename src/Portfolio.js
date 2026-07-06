@@ -11,6 +11,7 @@ import TikitiVignette from './TikitiVignette';
 import TikitiDashboardVignette from './TikitiDashboardVignette';
 import KaakaVignette from './KaakaVignette';
 import ChoperlyVignette from './ChoperlyVignette';
+import GridSquares from './GridSquares';
 import { useEffect, useState } from 'react';
 
 function Portfolio() {
@@ -572,6 +573,7 @@ function Portfolio() {
 
       {/* Contact Footer */}
       <footer className="contact-footer-simple" id="contact">
+        <GridSquares />
         <div className="contact-footer-container">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
