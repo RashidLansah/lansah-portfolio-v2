@@ -12,6 +12,7 @@ import TikitiDashboardVignette from './TikitiDashboardVignette';
 import KaakaVignette from './KaakaVignette';
 import ChoperlyVignette from './ChoperlyVignette';
 import GridSquares from './GridSquares';
+import { BOOKING_URL, EMAIL } from './links';
 import { useEffect, useState } from 'react';
 
 function Portfolio() {
@@ -59,11 +60,15 @@ function Portfolio() {
       try {
         // Using wttr.in for simple weather data (no API key needed)
         const response = await fetch('https://wttr.in/Accra?format=%t+%C');
+        if (!response.ok) throw new Error('weather unavailable');
         const data = await response.text();
         const parts = data.trim().split(' ');
-        const temp = parts[0] || '--';
+        const temp = parts[0] || '';
+        // wttr.in returns an HTML error page when rate-limited — only accept
+        // values that actually look like a temperature (e.g. "+28°C")
+        if (!/^[+-]?\d{1,3}°[CF]$/.test(temp)) throw new Error('bad payload');
         const condition = parts.slice(1).join(' ') || 'Clear';
-        setWeather({ temp, condition });
+        setWeather({ temp: temp.replace(/^\+/, ''), condition });
       } catch (error) {
         setWeather({ temp: '28°C', condition: 'Sunny' }); // Fallback for Accra
       }
@@ -209,6 +214,22 @@ function Portfolio() {
             >
               Senior product designer focused on AI-native product design, 0-to-1 builds, fintech, and B2B SaaS. I combine product strategy, behavioral design, and tools like Claude Code and Cursor to take products from concept to production.
             </motion.p>
+
+            <motion.div
+              className="hero-cta-row"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="hero-cta-primary">
+                <span className="live-dot" />
+                Book a 30-min intro call
+                <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3 9L9 3M9 3H4.5M9 3V7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+              <span className="hero-cta-note">Free · no commitment · for contracts and projects</span>
+            </motion.div>
           </div>
 
           {/* Previously At and Featured In sections - hidden for now
@@ -586,11 +607,18 @@ function Portfolio() {
             <p className="contact-subtext">
               Have a product that needs designing or shipping? Let's talk.
             </p>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="contact-book-btn">
+              <span className="live-dot" />
+              Book a 30-min intro call
+              <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M3 9L9 3M9 3H4.5M9 3V7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
             <a
-              href="mailto:rashidlansahadam@gmail.com"
+              href={`mailto:${EMAIL}`}
               className="contact-email-link"
             >
-              rashidlansahadam@gmail.com
+              or email {EMAIL}
             </a>
           </motion.div>
 

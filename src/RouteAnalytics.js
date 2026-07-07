@@ -49,7 +49,7 @@ function RouteAnalytics() {
         return;
       }
 
-      if (absoluteHref.includes('calendly.com')) {
+      if (absoluteHref.includes('calendly.com') || absoluteHref.includes('cal.eu')) {
         trackEvent('schedule_call_click', {
           link_text: linkText || 'Schedule Call',
           destination: absoluteHref

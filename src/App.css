@@ -3374,6 +3374,85 @@ html {
   pointer-events: none;
 }
 
+/* Booking CTA (hero + contact footer) */
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.hero-cta-primary,
+.contact-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 28px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border-radius: 999px;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-cta-primary:hover,
+.contact-book-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta-primary .live-dot,
+.contact-book-btn .live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  animation: live-dot-pulse 2s ease-out infinite;
+}
+
+@keyframes live-dot-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(74, 222, 128, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+  }
+}
+
+.hero-cta-note {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+.contact-book-btn {
+  margin: 10px 0 6px;
+}
+
+/* Tablet / narrow laptop: fixed 600px cards can't sit two-up — stack them
+   in a single centered column instead of clipping off both viewport edges */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .project-grid-row {
+    flex-direction: column;
+    min-height: 0;
+    gap: 28px;
+    padding: 14px 0;
+  }
+
+  .project-card-large {
+    width: 600px;
+    max-width: 100%;
+  }
+}
+
 .grid-squares-cell {
   position: absolute;
   background: rgba(27, 27, 26, 0.05);

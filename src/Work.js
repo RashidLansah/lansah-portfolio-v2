@@ -18,7 +18,7 @@ function Work() {
           <Link to="/#highlights" className="nav-link">Highlights</Link>
           <Link to="/work" className="nav-link active">Work</Link>
           <a href="https://linkedin.com/in/rashid-lansah" className="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://calendly.com/rashidlansahadam" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
+          <a href="https://cal.eu/abdul-rashid-lansah-adam-ccloo9/30min" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
         </div>
       </nav>
       <MobileMenu />
