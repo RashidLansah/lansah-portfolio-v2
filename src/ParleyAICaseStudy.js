@@ -169,7 +169,7 @@ function ParleyAICaseStudy() {
           <Link to="/" className="nav-link active">Lansah</Link>
           <Link to="/#highlights" className="nav-link">Highlights</Link>
           <Link to="/work" className="nav-link">Work</Link>
-          <a href="https://calendly.com/rashidlansahadam" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
+          <a href="https://cal.eu/abdul-rashid-lansah-adam-ccloo9/30min" className="nav-link" target="_blank" rel="noopener noreferrer">Schedule a call</a>
         </div>
       </nav>
 

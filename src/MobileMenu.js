@@ -107,7 +107,7 @@ const MobileMenu = () => {
             {/* Schedule Call Button */}
             <div className="mobile-schedule-section">
               <a
-                href="https://calendly.com/rashidlansahadam"
+                href="https://cal.eu/abdul-rashid-lansah-adam-ccloo9/30min"
                 className="mobile-schedule-btn"
                 target="_blank"
                 rel="noopener noreferrer"
