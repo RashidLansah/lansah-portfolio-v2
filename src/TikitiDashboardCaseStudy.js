@@ -430,7 +430,37 @@ function TikitiDashboardCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
+            <span className="section-label">The Trade-offs</span>
+            <h2 className="about-section-title">Decisions that had a cost</h2>
+            <div className="learnings-list">
+              <div className="learning-item">
+                <strong>A second product over a bigger app.</strong>
+                <p>Organizer power tools could have been bolted into the mobile app that already had 900 downloads. Building a separate web dashboard cost a second codebase, but kept the app focused on attendees and gave organizers a real work surface.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Paid pilot before polish.</strong>
+                <p>Three organizations are paying for a 3-month pilot instead of testing a free beta. A harder sell and a smaller cohort — but payment is the only validation signal that cannot be polite.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Building for a flywheel, not a feature list.</strong>
+                <p>Every roadmap decision serves one loop: more organizations bring more attendees, which attracts more organizations. Features that did not feed the loop waited, however requested they were.</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="about-full-width case-next-section">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
             <span className="section-label">Related Project</span>
+
             <Link to="/tikiti-case-study" className="next-case-link">
               <h2 className="about-section-title">Tikiti Mobile: Event Discovery App</h2>
               <ArrowButton />

@@ -471,6 +471,36 @@ function JenesysCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
+            <span className="section-label">The Trade-offs</span>
+            <h2 className="about-section-title">Decisions that had a cost</h2>
+            <div className="learnings-list">
+              <div className="learning-item">
+                <strong>Transparency over magic.</strong>
+                <p>Showing the AI's reasoning and confidence on every extraction made screens denser and slowed the "wow" of full automation — but it's why manual review fell from 70% to 15%. Accountants approve what they can verify; they audit what they can't.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Meeting users off-platform.</strong>
+                <p>Building WhatsApp document intake competed directly with our goal of driving platform adoption. We chose the channel clients already trusted — 40% of documents now arrive through it, and bookkeepers stopped chasing.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Automating less than we could.</strong>
+                <p>The model could auto-post most matches, but we kept low-confidence transactions in a human review queue. The headline automation number looked worse; the 80% feature adoption exists because users never got burned by a silent error.</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Key Learnings */}
+      <section className="about-full-width case-learnings-section">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
             <span className="section-label">Looking Back</span>
             <h2 className="about-section-title">What this project taught me</h2>
             <div className="learnings-list">

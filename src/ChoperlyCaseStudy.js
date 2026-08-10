@@ -321,7 +321,37 @@ function ChoperlyCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
+            <span className="section-label">The Trade-offs</span>
+            <h2 className="about-section-title">Decisions that had a cost</h2>
+            <div className="learnings-list">
+              <div className="learning-item">
+                <strong>The bot lives in WhatsApp, not an app.</strong>
+                <p>No install and no new habit — but the entire ordering UI had to fit WhatsApp’s primitives: buttons, lists, and text. Designing a 10-state ordering flow inside someone else’s interface was the constraint that shaped everything.</p>
+              </div>
+              <div className="learning-item">
+                <strong>AI onboarding over a menu builder.</strong>
+                <p>Parsing a pasted menu or photo with Claude risks extraction errors a structured form would not make. Sellers abandon long forms, so I accepted a correction step — 15 minutes to a live bot beat a perfect but unfinished setup.</p>
+              </div>
+              <div className="learning-item">
+                <strong>5% flat over aggregator pricing.</strong>
+                <p>Aggregators take 15–30%; Choperly takes 5% per completed order. Thinner margin per transaction is a bet that fair pricing compounds — sellers who keep their margin stay, and volume beats extraction.</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="about-full-width case-next-section">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
             <span className="section-label">In Progress</span>
+
             <h2 className="about-section-title">Live pilot underway.</h2>
             <p className="about-section-text">
               Choperly is in pilot with home-based sellers in Accra. I'm documenting the conversation design and the WhatsApp Cloud API build in more detail as the pilot grows.
