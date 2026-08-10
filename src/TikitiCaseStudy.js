@@ -473,7 +473,37 @@ function TikitiCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
+            <span className="section-label">The Trade-offs</span>
+            <h2 className="about-section-title">Decisions that had a cost</h2>
+            <div className="learnings-list">
+              <div className="learning-item">
+                <strong>Offline tickets over live validation.</strong>
+                <p>QR tickets are stored in-app and work with zero connectivity, because Ghanaian venues have dead zones at the gate. That meant accepting stale-state risk instead of server-side checks — mitigated by sub-3-second scans and duplicate detection. Zero reported fraud since launch.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Richer registration over one-tap.</strong>
+                <p>Custom organizer fields, dietary and accessibility options add friction to a flow most apps reduce to a single button. Organizers got better-prepared events, and completion still rose because the form itself was ruthlessly streamlined.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Discovery-first home over wallet-first.</strong>
+                <p>Revenue comes from ticketing, but the home screen bets on “Events near you” discovery. Users browse 8 events per session — discovery is the acquisition loop that fills the ticketing funnel, so it got the prime real estate.</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="about-full-width case-learnings-section">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
             <span className="section-label">Looking Back</span>
+
             <h2 className="about-section-title">What building Tikiti taught me</h2>
             <div className="learnings-list">
               <div className="learning-item">

@@ -496,7 +496,37 @@ function PayChalkCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
+            <span className="section-label">The Trade-offs</span>
+            <h2 className="about-section-title">Decisions that had a cost</h2>
+            <div className="learnings-list">
+              <div className="learning-item">
+                <strong>No parent app at all.</strong>
+                <p>Going WhatsApp-only for parents surrendered brand surface, push notifications, and engagement metrics. In exchange, paying school fees attached to a habit parents already have — and completion hit 95% because there was nothing to download, learn, or remember.</p>
+              </div>
+              <div className="learning-item">
+                <strong>A flat GHS 5 over a percentage.</strong>
+                <p>Percentage pricing earns more on large invoices, and giving that up was a real cost. But schools distrust fees that scale unpredictably — one fixed number closed the trust gap faster than any onboarding screen could.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Ten-minute setup as a hard constraint.</strong>
+                <p>Admin features that needed training or IT support were cut, even useful ones. A school that cannot self-onboard before the first distraction never becomes a customer — depth lost to the setup budget was the price of adoption.</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="about-full-width case-learnings-section">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
             <span className="section-label">Looking Back</span>
+
             <h2 className="about-section-title">What building PayChalk taught me</h2>
             <div className="learnings-list">
               <div className="learning-item">

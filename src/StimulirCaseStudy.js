@@ -322,7 +322,37 @@ function StimulirCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
+            <span className="section-label">The Trade-offs</span>
+            <h2 className="about-section-title">Decisions that had a cost</h2>
+            <div className="learnings-list">
+              <div className="learning-item">
+                <strong>Six surfaces over one polished.</strong>
+                <p>Console, native iOS, docs, design system, brand, and analytics — each got MVP depth first instead of one surface getting obsessive polish. A gateway needs credibility across the whole journey before any single screen matters.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Human-in-the-loop over full automation.</strong>
+                <p>Routing every uncertain task to a person caps the automation headline number. It is also why users trust the system — uncertainty surfaced honestly converts better than confidence faked.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Native iOS parity over a webview shell.</strong>
+                <p>A wrapped webview would have shipped in a week. The parity native app cost far more — and matters because human review happens away from desks, where a laggy shell would kill the loop.</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="about-full-width case-next-section">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
             <span className="section-label">In Progress</span>
+
             <h2 className="about-section-title">Full case study coming soon.</h2>
             <p className="about-section-text">
               I'm documenting the product decisions, design system, and engineering work in more detail. Check back shortly.

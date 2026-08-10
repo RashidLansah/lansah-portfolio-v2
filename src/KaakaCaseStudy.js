@@ -403,7 +403,37 @@ function KaakaCaseStudy() {
           viewport={{ once: true }}
         >
           <div className="about-text-content">
+            <span className="section-label">The Trade-offs</span>
+            <h2 className="about-section-title">Decisions that had a cost</h2>
+            <div className="learnings-list">
+              <div className="learning-item">
+                <strong>Conversation over catalog.</strong>
+                <p>A chat-first interface is slower for power browsing than a recipe grid. But testers called the grid version “a database lookup, not a cooking buddy” — the conversational flow fixed the trust problem the catalog created.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Shipping at 85% accuracy.</strong>
+                <p>Waiting for near-perfect receipt extraction would have delayed launch by months. I shipped with visible correction affordances instead — 30 seconds from receipt to recipes with an occasional fix beat a perfect parse that did not exist.</p>
+              </div>
+              <div className="learning-item">
+                <strong>Personality as scope.</strong>
+                <p>Time spent on tone and voice was time not spent on features. It was the right spend: the same functionality read completely differently once Kaaka sounded like a friend who cooks.</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="about-full-width case-learnings-section">
+        <motion.div
+          className="about-full-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="about-text-content">
             <span className="section-label">Looking Back</span>
+
             <h2 className="about-section-title">What building Kaaka taught me</h2>
             <div className="learnings-list">
               <div className="learning-item">
