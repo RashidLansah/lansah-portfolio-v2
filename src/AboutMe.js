@@ -249,7 +249,7 @@ function AboutMe() {
             <img src="/images/lansah-profile.png" alt="Lansah" />
           </div>
           <h1 className="about-headline">
-            Hi, I'm Lansah. I'm a senior product designer and builder focused on AI-native, 0-to-1, fintech, and B2B SaaS products. I design them, then I help ship them.
+            Hi, I'm Lansah. I've spent seven years learning why products win — researching markets, reading product signals, and shipping the answers myself.
           </h1>
         </motion.div>
       </section>

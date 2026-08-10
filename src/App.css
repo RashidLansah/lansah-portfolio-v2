@@ -3433,6 +3433,47 @@ html {
   color: #9a9a9a;
 }
 
+/* Hero proof strip — quantified receipts for the 6-second scan */
+.hero-proof-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 44px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.hero-proof-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-proof-number {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1a1a1a;
+}
+
+.hero-proof-label {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 12.5px;
+  color: #9a9a9a;
+}
+
+@media (max-width: 768px) {
+  .hero-proof-row {
+    gap: 22px;
+  }
+
+  .hero-proof-number {
+    font-size: 18px;
+  }
+}
+
 .contact-book-btn {
   margin: 10px 0 6px;
 }

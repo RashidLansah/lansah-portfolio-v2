@@ -194,7 +194,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Senior Product Designer for AI-Native and 0-to-1 Products
+              For founders and teams shipping AI-native products
             </motion.div>
 
             <motion.h1
@@ -203,7 +203,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I design AI, fintech, and B2B SaaS products and ship them.
+              I find the signal, design the product, and ship it.
             </motion.h1>
 
             <motion.p
@@ -212,8 +212,32 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Senior product designer focused on AI-native product design, 0-to-1 builds, fintech, and B2B SaaS. I combine product strategy, behavioral design, and tools like Claude Code and Cursor to take products from concept to production.
+              Senior product designer and builder — seven years across AI, fintech, and B2B SaaS. Research-led 0→1 builds, 1→100 scaling, and production code when the team needs it.
             </motion.p>
+
+            <motion.div
+              className="hero-proof-row"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+            >
+              <div className="hero-proof-item">
+                <span className="hero-proof-number">4</span>
+                <span className="hero-proof-label">products live today</span>
+              </div>
+              <div className="hero-proof-item">
+                <span className="hero-proof-number">$1M ARR</span>
+                <span className="hero-proof-label">platform designed</span>
+              </div>
+              <div className="hero-proof-item">
+                <span className="hero-proof-number">1.7k</span>
+                <span className="hero-proof-label">downloads shipped solo</span>
+              </div>
+              <div className="hero-proof-item">
+                <span className="hero-proof-number">7+ yrs</span>
+                <span className="hero-proof-label">in product</span>
+              </div>
+            </motion.div>
 
             <motion.div
               className="hero-cta-row"
