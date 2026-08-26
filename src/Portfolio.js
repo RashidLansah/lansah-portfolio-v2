@@ -11,6 +11,7 @@ import TikitiVignette from './TikitiVignette';
 import TikitiDashboardVignette from './TikitiDashboardVignette';
 import KaakaVignette from './KaakaVignette';
 import ChoperlyVignette from './ChoperlyVignette';
+import StudioStrip from './StudioStrip';
 import GridSquares from './GridSquares';
 import { BOOKING_URL, EMAIL } from './links';
 import { useEffect, useState } from 'react';
@@ -212,7 +213,7 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Senior product designer and builder — seven years across AI, fintech, and B2B SaaS. Research-led 0→1 builds, 1→100 scaling, and production code when the team needs it.
+              I take products from the first research call to the code that ships, then stay to scale what works — across AI, fintech, and B2B SaaS.
             </motion.p>
 
             <motion.div
@@ -467,6 +468,9 @@ function Portfolio() {
           </div>
         </div>
       </section>
+
+      {/* Now in the Studio — in-progress work */}
+      <StudioStrip />
 
       {/* What I Bring Section */}
       <section className="expertise-section">
