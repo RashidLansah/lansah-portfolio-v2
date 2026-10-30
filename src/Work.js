@@ -27,6 +27,21 @@ function Work() {
         <div className="work-container">
           <div className="work-grid">
 
+            {/* Product design case studies */}
+            {[
+              { name: 'Intervia ACA', path: '/aca-case-study', title: 'From Assessment Entry to Useful Results', description: 'Product Engineer. Individual and team assessment journeys, onboarding, organisation setup, invitations, and competency reporting.', image: '/images/case-studies/aca/card-preview.svg' },
+              { name: 'Polliplus', path: '/polliplus-case-study', title: 'Connecting Evidence and Field Operations', description: 'Product Engineer. Research, user journeys, and product design across field reporting, intelligence, and workspace administration.', image: '/images/case-studies/polliplus/silence-board.jpg' },
+              { name: 'Intervia NSAT', path: '/nsat-case-study', title: 'Designing the Newcomer Settlement Journey', description: 'Product Engineer. Research-informed intake, assessment, worker review, and settlement-plan experiences across three platform surfaces.', image: '/images/case-studies/nsat/landing.jpg' },
+            ].map((project) => (
+              <Link to={project.path} className="work-card clickable-card" key={project.path}>
+                <div className="work-card-content">
+                  <div className="work-card-header"><span className="work-card-label">{project.name}</span></div>
+                  <h2 className="work-card-title">{project.title}</h2>
+                  <p className="work-card-description">{project.description}</p>
+                  <div className="work-card-image"><div className="interface-preview"><img src={project.image} alt={`${project.name} product interface`} className="work-interface-image" style={{ objectFit: 'contain', background: '#f5f5f5' }} loading="lazy" /></div></div>
+                </div>
+              </Link>
+            ))}
             {/* Stimulir Card */}
             <Link to="/stimulir-case-study" className="work-card clickable-card" style={{ background: '#0f0f0f', color: '#fff' }}>
               <div className="work-card-content">
@@ -35,13 +50,12 @@ function Work() {
                     <span className="ai-badge-small">AI</span>
                     <span>Stimulir</span>
                   </span>
-                  <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 10, fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#c9a07a', background: 'rgba(201,160,122,0.15)', padding: '3px 8px', borderRadius: 3 }}>Case study coming soon</span>
                 </div>
-                <h2 className="work-card-title" style={{ color: '#fff' }}>Adaptive AI Inference Gateway</h2>
-                <p className="work-card-description" style={{ color: 'rgba(255,255,255,0.55)' }}>Product engineer on an adaptive AI stack — console, mobile, docs, design system, and go-to-market from 0 to 1.</p>
+                <h2 className="work-card-title" style={{ color: '#fff' }}>Console, Website & Product UX</h2>
+                <p className="work-card-description" style={{ color: 'rgba(255,255,255,0.55)' }}>Product Engineer. UX flows, task review, context gathering, onboarding, and the website connecting product discovery to first use.</p>
                 <div className="work-card-image">
                   <div className="interface-preview">
-                    <img src="/images/case-studies/stimulir-hero.png" alt="Stimulir" className="work-interface-image" />
+                    <img src="/images/case-studies/stimulir/console-traces.png" alt="Stimulir console showing traces and an agent proposal" className="work-interface-image" style={{ objectFit: 'contain', background: '#111' }} />
                   </div>
                 </div>
               </div>
@@ -359,4 +373,4 @@ function Work() {
   );
 }
 
-export default Work; 
+export default Work;

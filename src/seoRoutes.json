@@ -28,10 +28,10 @@
   },
   {
     "path": "/stimulir-case-study",
-    "title": "Stimulir | Product Engineer — Adaptive AI Inference Gateway",
-    "description": "How Lansah built the Stimulir console, mobile app, docs, and design system — an adaptive AI inference gateway that gets sharper as it runs.",
-    "keywords": "Stimulir case study, AI gateway product design, adaptive AI stack, product engineer portfolio, Lansah",
-    "image": "/stimulir-icon.png",
+    "title": "Stimulir | Console, Website & UX Case Study | Lansah",
+    "description": "Product Engineer case study covering Stimulir console UX, task review, onboarding flows, website design, and developer experience.",
+    "keywords": "Stimulir case study, product engineer, console UX, website design, user journeys, onboarding, product design, Lansah",
+    "image": "/images/case-studies/stimulir/console-traces.png",
     "pageType": "Article",
     "schemaType": "Article"
   },
@@ -173,5 +173,35 @@
     "image": "/images/case-studies/choperly-landing.png",
     "pageType": "Article",
     "schemaType": "Article"
+  },
+  {
+    "path": "/polliplus-case-study",
+    "title": "Polliplus | Product Design & UX Case Study | Lansah",
+    "description": "Product Engineer case study: research, journey mapping, and product design across field reporting, intelligence workflows, and workspace administration.",
+    "keywords": "Polliplus, product design case study, UX research, user journeys, product engineer, Lansah",
+    "image": "/images/case-studies/polliplus/silence-board.jpg",
+    "pageType": "Article",
+    "schemaType": "Article",
+    "canonicalPath": "/polliplus-case-study"
+  },
+  {
+    "path": "/nsat-case-study",
+    "title": "Intervia NSAT | Product Design & UX Case Study | Lansah",
+    "description": "Product Engineer case study: research-informed newcomer intake, assessment journeys, worker casework, and settlement-plan design.",
+    "keywords": "Intervia NSAT, product design case study, UX research, user journeys, product engineer, Lansah",
+    "image": "/images/case-studies/nsat/landing.jpg",
+    "pageType": "Article",
+    "schemaType": "Article",
+    "canonicalPath": "/nsat-case-study"
+  },
+  {
+    "path": "/aca-case-study",
+    "title": "Intervia ACA | Assessment UX Case Study | Lansah",
+    "description": "Product Engineer case study covering Intervia AI Competency Assessment: individual and team journeys, onboarding, organisation setup, invitations, results, and reporting.",
+    "keywords": "ACA case study, InterviaIQ, AI Competency Assessment, product engineer, UX design, user journeys, assessment reporting, Lansah",
+    "image": "/images/case-studies/aca/results.jpg",
+    "pageType": "Article",
+    "schemaType": "Article",
+    "canonicalPath": "/aca-case-study"
   }
 ]

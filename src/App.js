@@ -16,6 +16,10 @@ import SheFundItCaseStudy from './SheFundItCaseStudy';
 import PayChalkCaseStudy from './PayChalkCaseStudy';
 import StimulirCaseStudy from './StimulirCaseStudy';
 import ChoperlyCaseStudy from './ChoperlyCaseStudy';
+import ProductDesignCaseStudy from './ProductDesignCaseStudy';
+import polliplus from './case-studies/polliplus';
+import nsat from './case-studies/nsat';
+import aca from './case-studies/aca';
 import Work from './Work';
 import AboutMe from './AboutMe';
 import SeoHead from './SeoHead';
@@ -29,6 +33,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/polliplus-case-study" element={<ProductDesignCaseStudy study={polliplus} />} />
+        <Route path="/nsat-case-study" element={<ProductDesignCaseStudy study={nsat} />} />
+        <Route path="/aca-case-study" element={<ProductDesignCaseStudy study={aca} />} />
         <Route path="/case-study" element={<JenesysCaseStudy />} />
         <Route path="/jenesys-case-study" element={<JenesysCaseStudy />} />
         <Route path="/case-study-old" element={<CaseStudy />} />

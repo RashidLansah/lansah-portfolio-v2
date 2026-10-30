@@ -2,6 +2,20 @@
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
+.case-study-card-screen {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 8px 8px 0 0;
+}
+
+.case-study-card-screen.aca-card-preview {
+  object-fit: contain;
+  object-position: center;
+}
+
 /* Project card vignettes draw product UI — they use the UI font set inline
    on the SVG root (or a mono override), not the site serif */
 .vignette-svg * {

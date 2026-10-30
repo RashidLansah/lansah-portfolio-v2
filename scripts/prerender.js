@@ -131,8 +131,30 @@ function outputPathForRoute(route) {
 async function writePrerenderedRoute(browser, route) {
   const page = await browser.newPage();
   const routeUrl = `http://${host}:${port}${route}`;
+  const localOrigin = new URL(routeUrl).origin;
 
-  await page.goto(routeUrl, { waitUntil: 'networkidle0' });
+  // Serialize local content without depending on external fonts, telemetry,
+  // or weather availability. Their original links/scripts remain in the HTML
+  // and load normally when a visitor opens the site.
+  await page.setRequestInterception(true);
+  page.on('request', (request) => {
+    const url = request.url();
+    if (url.startsWith('data:') || url.startsWith('blob:') || new URL(url).origin === localOrigin) {
+      request.continue();
+    } else {
+      request.abort();
+    }
+  });
+
+  // The homepage makes external weather, font, and analytics requests. Those
+  // can remain pending even after the React route is ready to serialize.
+  await page.goto(routeUrl, { waitUntil: 'domcontentloaded' });
+  const config = seoRoutes.find((item) => item.path === route);
+  await page.waitForFunction(
+    (expectedTitle) => document.querySelector('#root')?.children.length > 0 && document.title === expectedTitle,
+    { timeout: 30000 },
+    config.title
+  );
   await new Promise((resolve) => setTimeout(resolve, 500));
 
   const html = await page.content();

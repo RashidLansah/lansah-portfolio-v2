@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { LinkedInIcon, GitHubIcon, MediumIcon, ArrowRightIcon } from './Icons';
 import ProjectCard from './ProjectCard';
 import PayChalkVignette from './PayChalkVignette';
-import StimulirVignette from './StimulirVignette';
 import JenesysVignette from './JenesysVignette';
 import TikitiVignette from './TikitiVignette';
 import TikitiDashboardVignette from './TikitiDashboardVignette';
@@ -91,10 +90,10 @@ function Portfolio() {
     {
       id: 0,
       title: 'Stimulir',
-      description: 'Product engineer on an adaptive AI inference gateway — console, mobile, docs, design system, and go-to-market from 0 to 1.',
+      description: 'Product Engineer across console UX, website, onboarding, developer experience, and design systems.',
       link: '/stimulir-case-study',
       bgColor: '#1a1a1a',
-      image: '/images/case-studies/stimulir-hero.png',
+      image: '/images/case-studies/stimulir/console-traces.png',
       dark: true,
     },
     {
@@ -313,6 +312,18 @@ function Portfolio() {
       {/* Two-Column Project Grid */}
       <section className="project-grid-section">
         <div className="project-grid-container">
+          <div className="project-grid-row">
+            <div className="project-card-large">
+              <ProjectCard link="/polliplus-case-study" bgColor="#e4e8e0" name="Polliplus" meta="Product Engineer · 2026" bullets={['Research, journeys, and UX across field reporting and intelligence', 'From evidence and reporting gaps to team follow-up']}>
+                <img src="/images/case-studies/polliplus/silence-board.jpg" alt="Polliplus product interface showing the Silence Board" className="case-study-card-screen" loading="lazy" />
+              </ProjectCard>
+            </div>
+            <div className="project-card-large">
+              <ProjectCard link="/nsat-case-study" bgColor="#dce9e5" name="Intervia NSAT" meta="Product Engineer · 2026" bullets={['Newcomer intake, assessment, and settlement planning', 'Research-led flows across client, worker, and admin experiences']}>
+                <img src="/images/case-studies/nsat/landing.jpg" alt="NSAT newcomer product entry experience" className="case-study-card-screen" loading="lazy" />
+              </ProjectCard>
+            </div>
+          </div>
           {/* Row 1 */}
           <div className="project-grid-row">
             <motion.div
@@ -327,13 +338,13 @@ function Portfolio() {
                 bgColor={mainProjects[0].bgColor}
                 dark
                 name="Stimulir"
-                meta="Product engineer · 2025–present"
+                meta="Product Engineer · 2025–2026"
                 bullets={[
-                  'Console, mobile, docs, and design system from 0 to 1',
-                  'Adaptive routing across every AI product and workflow',
+                  'Console UX, review flows, and the shared design language',
+                  'Website, onboarding, and developer experience',
                 ]}
               >
-                <StimulirVignette />
+                <img src="/images/case-studies/stimulir/console-traces.png" alt="Stimulir console with traces and an agent proposal" className="case-study-card-screen" loading="lazy" />
               </ProjectCard>
             </motion.div>
             <motion.div
@@ -445,6 +456,11 @@ function Portfolio() {
           </div>
           {/* Row 4 */}
           <div className="project-grid-row">
+            <div className="project-card-large">
+              <ProjectCard link="/aca-case-study" bgColor="#e2e8f4" name="Intervia ACA" meta="Product Engineer · 2026" bullets={['Individual and team assessment journeys, setup, and invitations', 'Results, reporting, and the UX between each stage']}>
+                <img src="/images/case-studies/aca/card-preview.svg" alt="InterviaIQ competency report preview with an illustrative score and competency breakdown" className="case-study-card-screen aca-card-preview" loading="lazy" />
+              </ProjectCard>
+            </div>
             <motion.div
               className="project-card-large"
               initial={{ opacity: 0, y: 30 }}
@@ -583,7 +599,7 @@ function Portfolio() {
               viewport={{ once: true, amount: 0.2 }}
             >
               <div className="landing-page-image-wrapper">
-                <img src="/images/landing-pages/stimulir-landing.png" alt="Stimulir Website" />
+                <img src="/images/case-studies/stimulir/website.jpg" alt="Stimulir Website" />
                 <div className="landing-page-overlay">
                   <span className="view-site-btn">View Live Site <ArrowRightIcon size={16} /></span>
                 </div>
